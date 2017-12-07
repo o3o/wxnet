@@ -18,23 +18,23 @@ namespace wx
 {
 	public class FontMapper : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxFontMapper_ctor();
-		[DllImport("wx-c")] static extern void   wxFontMapper_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontMapper_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontMapper_dtor(IntPtr self);
 		
-		[DllImport("wx-c")] static extern IntPtr wxFontMapper_Get();
-		[DllImport("wx-c")] static extern IntPtr wxFontMapper_Set(IntPtr mapper);
-		[DllImport("wx-c")] static extern int    wxFontMapper_GetSupportedEncodingsCount();
-		[DllImport("wx-c")] static extern int    wxFontMapper_GetEncoding(int n);
-		[DllImport("wx-c")] static extern IntPtr wxFontMapper_GetEncodingName(int encoding);
-		[DllImport("wx-c")] static extern IntPtr wxFontMapper_GetEncodingDescription(int encoding);
-		[DllImport("wx-c")] static extern int    wxFontMapper_GetEncodingFromName(string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontMapper_Get();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontMapper_Set(IntPtr mapper);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFontMapper_GetSupportedEncodingsCount();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFontMapper_GetEncoding(int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontMapper_GetEncodingName(int encoding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontMapper_GetEncodingDescription(int encoding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFontMapper_GetEncodingFromName(string name);
 		
-		[DllImport("wx-c")] static extern int    wxFontMapper_CharsetToEncoding(IntPtr self, string charset, bool interactive);
-		[DllImport("wx-c")] static extern bool   wxFontMapper_IsEncodingAvailable(IntPtr self, int encoding, string facename);
-		[DllImport("wx-c")] static extern bool   wxFontMapper_GetAltForEncoding(IntPtr self, int encoding, out int alt_encoding, string facename, bool interactive);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFontMapper_CharsetToEncoding(IntPtr self, string charset, bool interactive);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFontMapper_IsEncodingAvailable(IntPtr self, int encoding, string facename);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFontMapper_GetAltForEncoding(IntPtr self, int encoding, out int alt_encoding, string facename, bool interactive);
 		
-		[DllImport("wx-c")] static extern void   wxFontMapper_SetDialogParent(IntPtr self, IntPtr parent);
-		[DllImport("wx-c")] static extern void   wxFontMapper_SetDialogTitle(IntPtr self, string title);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontMapper_SetDialogParent(IntPtr self, IntPtr parent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontMapper_SetDialogTitle(IntPtr self, string title);
 		
 		//---------------------------------------------------------------------
 		
@@ -206,9 +206,9 @@ namespace wx
 			 wxCONVERT_SUBSTITUTE
 		}
 		
-		[DllImport("wx-c")] static extern IntPtr wxEncodingConverter_ctor();
-		[DllImport("wx-c")] static extern bool wxEncodingConverter_Init(IntPtr self, int input_enc, int output_enc, int method);
-		[DllImport("wx-c")] static extern IntPtr wxEncodingConverter_Convert(IntPtr self, string input);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxEncodingConverter_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxEncodingConverter_Init(IntPtr self, int input_enc, int output_enc, int method);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxEncodingConverter_Convert(IntPtr self, string input);
 		
 		//---------------------------------------------------------------------
 		
@@ -252,15 +252,15 @@ namespace wx
 		private Virtual_OnFacename virtual_OnFacename;
 		private Virtual_OnFontEncoding virtual_OnFontEncoding;
 		
-		[DllImport("wx-c")] static extern IntPtr wxFontEnumerator_ctor();
-		[DllImport("wx-c")] static extern void wxFontEnumerator_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxFontEnumerator_RegisterVirtual(IntPtr self, Virtual_EnumerateFacenames enumerateFacenames, Virtual_EnumerateEncodings enumerateEncodings, Virtual_OnFacename onFacename, Virtual_OnFontEncoding onFontEncoding);
-		[DllImport("wx-c")] static extern IntPtr wxFontEnumerator_GetFacenames(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxFontEnumerator_GetEncodings(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxFontEnumerator_OnFacename(IntPtr self, string facename);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontEnumerator_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFontEnumerator_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFontEnumerator_RegisterVirtual(IntPtr self, Virtual_EnumerateFacenames enumerateFacenames, Virtual_EnumerateEncodings enumerateEncodings, Virtual_OnFacename onFacename, Virtual_OnFontEncoding onFontEncoding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontEnumerator_GetFacenames(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontEnumerator_GetEncodings(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxFontEnumerator_OnFacename(IntPtr self, string facename);
 		[DllImport("wx.c")] static extern bool wxFontEnumerator_OnFontEncoding(IntPtr self, string facename, string encoding);
-		[DllImport("wx-c")] static extern bool wxFontEnumerator_EnumerateFacenames(IntPtr self, int encoding, bool fixedWidthOnly);
-		[DllImport("wx-c")] static extern bool wxFontEnumerator_EnumerateEncodings(IntPtr self, string facename);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxFontEnumerator_EnumerateFacenames(IntPtr self, int encoding, bool fixedWidthOnly);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxFontEnumerator_EnumerateEncodings(IntPtr self, string facename);
 		
 		//---------------------------------------------------------------------
 		

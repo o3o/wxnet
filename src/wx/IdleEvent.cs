@@ -25,13 +25,13 @@ namespace wx
 
 	public class IdleEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxIdleEvent_ctor();
-		[DllImport("wx-c")] static extern void   wxIdleEvent_RequestMore(IntPtr self, bool needMore);
-		[DllImport("wx-c")] static extern bool   wxIdleEvent_MoreRequested(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxIdleEvent_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxIdleEvent_RequestMore(IntPtr self, bool needMore);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxIdleEvent_MoreRequested(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxIdleEvent_SetMode(IdleMode mode);
-		[DllImport("wx-c")] static extern IdleMode wxIdleEvent_GetMode();
-		[DllImport("wx-c")] static extern bool   wxIdleEvent_CanSend(IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxIdleEvent_SetMode(IdleMode mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IdleMode wxIdleEvent_GetMode();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxIdleEvent_CanSend(IntPtr win);
 		
 		//-----------------------------------------------------------------------------
 

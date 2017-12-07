@@ -18,15 +18,15 @@ namespace wx
 {
 	public class Button : Control
 	{
-		[DllImport("wx-c")] static extern IntPtr wxButton_ctor();
-		[DllImport("wx-c")] static extern bool   wxButton_Create(IntPtr self, IntPtr parent, int id, string label, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern void   wxButton_SetDefault(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxButton_GetDefaultSize(out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxButton_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxButton_Create(IntPtr self, IntPtr parent, int id, string label, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxButton_SetDefault(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxButton_GetDefaultSize(out Size size);
 		
-		[DllImport("wx-c")] static extern void wxButton_SetImageMargins(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern void wxButton_SetImageLabel(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxButton_SetImageMargins(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxButton_SetImageLabel(IntPtr self, IntPtr bitmap);
 		
-		[DllImport("wx-c")] static extern void wxButton_SetLabel(IntPtr self, string label);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxButton_SetLabel(IntPtr self, string label);
 
 		//---------------------------------------------------------------------
 

@@ -18,10 +18,10 @@ namespace wx
 {
 	public class StaticLine : Control
 	{
-		[DllImport("wx-c")] static extern IntPtr wxStaticLine_ctor();
-		[DllImport("wx-c")] static extern bool wxStaticLine_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern bool wxStaticLine_IsVertical(IntPtr self);
-		[DllImport("wx-c")] static extern int  wxStaticLine_GetDefaultSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStaticLine_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxStaticLine_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxStaticLine_IsVertical(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int  wxStaticLine_GetDefaultSize(IntPtr self);
 
 		//---------------------------------------------------------------------
 

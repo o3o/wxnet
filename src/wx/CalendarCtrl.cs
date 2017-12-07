@@ -45,32 +45,32 @@ namespace wx
 
         //-----------------------------------------------------------------------------
 
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_ctor();
-        [DllImport("wx-c")] static extern bool   wxCalendarCtrl_Create(IntPtr self, IntPtr parent, int id, IntPtr date, ref Point pos, ref Size size, uint style, string name);
-        [DllImport("wx-c")] static extern bool   wxCalendarCtrl_SetDate(IntPtr self, IntPtr date);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetDate(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxCalendarCtrl_SetLowerDateLimit(IntPtr self, IntPtr date);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetLowerDateLimit(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxCalendarCtrl_SetUpperDateLimit(IntPtr self, IntPtr date);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetUpperDateLimit(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxCalendarCtrl_SetDateRange(IntPtr self, IntPtr lowerdate, IntPtr upperdate);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_EnableYearChange(IntPtr self, bool enable);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_EnableMonthChange(IntPtr self, bool enable);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_EnableHolidayDisplay(IntPtr self, bool display);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_SetHeaderColours(IntPtr self, IntPtr colFg, IntPtr colBg);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetHeaderColourFg(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetHeaderColourBg(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_SetHighlightColours(IntPtr self, IntPtr colFg, IntPtr colBg);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetHighlightColourFg(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetHighlightColourBg(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_SetHolidayColours(IntPtr self, IntPtr colFg, IntPtr colBg);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetHolidayColourFg(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetHolidayColourBg(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarCtrl_GetAttr(IntPtr self, int day);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_SetAttr(IntPtr self, int day, IntPtr attr);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_SetHoliday(IntPtr self, int day);
-        [DllImport("wx-c")] static extern void   wxCalendarCtrl_ResetAttr(IntPtr self, int day);
-        [DllImport("wx-c")] static extern int    wxCalendarCtrl_HitTest(IntPtr self, ref Point pos, IntPtr date, ref DayOfWeek wd);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarCtrl_Create(IntPtr self, IntPtr parent, int id, IntPtr date, ref Point pos, ref Size size, uint style, string name);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarCtrl_SetDate(IntPtr self, IntPtr date);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetDate(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarCtrl_SetLowerDateLimit(IntPtr self, IntPtr date);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetLowerDateLimit(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarCtrl_SetUpperDateLimit(IntPtr self, IntPtr date);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetUpperDateLimit(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarCtrl_SetDateRange(IntPtr self, IntPtr lowerdate, IntPtr upperdate);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_EnableYearChange(IntPtr self, bool enable);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_EnableMonthChange(IntPtr self, bool enable);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_EnableHolidayDisplay(IntPtr self, bool display);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_SetHeaderColours(IntPtr self, IntPtr colFg, IntPtr colBg);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetHeaderColourFg(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetHeaderColourBg(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_SetHighlightColours(IntPtr self, IntPtr colFg, IntPtr colBg);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetHighlightColourFg(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetHighlightColourBg(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_SetHolidayColours(IntPtr self, IntPtr colFg, IntPtr colBg);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetHolidayColourFg(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetHolidayColourBg(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarCtrl_GetAttr(IntPtr self, int day);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_SetAttr(IntPtr self, int day, IntPtr attr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_SetHoliday(IntPtr self, int day);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarCtrl_ResetAttr(IntPtr self, int day);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxCalendarCtrl_HitTest(IntPtr self, ref Point pos, IntPtr date, ref DayOfWeek wd);
 
         //-----------------------------------------------------------------------------
 
@@ -307,28 +307,28 @@ namespace wx
 
     public class CalendarDateAttr : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxCalendarDateAttr_ctor();
-        //[DllImport("wx-c")] static extern IntPtr wxCalendarDateAttr_ctor(IntPtr colText, IntPtr colBack, IntPtr colBorder, IntPtr font, wxCalendarDateBorder border);
-        //[DllImport("wx-c")] static extern IntPtr wxCalendarDateAttr_ctor(wxCalendarDateBorder border, IntPtr colBorder);
-	[DllImport("wx-c")] static extern void   wxCalendarDateAttr_dtor(IntPtr self);
-	[DllImport("wx-c")] static extern void   wxCalendarDateAttr_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-        [DllImport("wx-c")] static extern void   wxCalendarDateAttr_SetTextColour(IntPtr self, IntPtr colText);
-        [DllImport("wx-c")] static extern void   wxCalendarDateAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
-        [DllImport("wx-c")] static extern void   wxCalendarDateAttr_SetBorderColour(IntPtr self, IntPtr col);
-        [DllImport("wx-c")] static extern void   wxCalendarDateAttr_SetFont(IntPtr self, IntPtr font);
-        [DllImport("wx-c")] static extern void   wxCalendarDateAttr_SetBorder(IntPtr self, int border);
-        [DllImport("wx-c")] static extern void   wxCalendarDateAttr_SetHoliday(IntPtr self, bool holiday);
-        [DllImport("wx-c")] static extern bool   wxCalendarDateAttr_HasTextColour(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxCalendarDateAttr_HasBackgroundColour(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxCalendarDateAttr_HasBorderColour(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxCalendarDateAttr_HasFont(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxCalendarDateAttr_HasBorder(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxCalendarDateAttr_IsHoliday(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarDateAttr_GetTextColour(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarDateAttr_GetBackgroundColour(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarDateAttr_GetBorderColour(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarDateAttr_GetFont(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxCalendarDateAttr_GetBorder(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarDateAttr_ctor();
+        //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarDateAttr_ctor(IntPtr colText, IntPtr colBack, IntPtr colBorder, IntPtr font, wxCalendarDateBorder border);
+        //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarDateAttr_ctor(wxCalendarDateBorder border, IntPtr colBorder);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarDateAttr_dtor(IntPtr self);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarDateAttr_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarDateAttr_SetTextColour(IntPtr self, IntPtr colText);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarDateAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarDateAttr_SetBorderColour(IntPtr self, IntPtr col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarDateAttr_SetFont(IntPtr self, IntPtr font);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarDateAttr_SetBorder(IntPtr self, int border);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCalendarDateAttr_SetHoliday(IntPtr self, bool holiday);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarDateAttr_HasTextColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarDateAttr_HasBackgroundColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarDateAttr_HasBorderColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarDateAttr_HasFont(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarDateAttr_HasBorder(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCalendarDateAttr_IsHoliday(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarDateAttr_GetTextColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarDateAttr_GetBackgroundColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarDateAttr_GetBorderColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarDateAttr_GetFont(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxCalendarDateAttr_GetBorder(IntPtr self);
 	
         //-----------------------------------------------------------------------------
 
@@ -468,10 +468,10 @@ namespace wx
 
     public class CalendarEvent : CommandEvent
     {
-        [DllImport("wx-c")] static extern IntPtr wxCalendarEvent_ctor();
-        //[DllImport("wx-c")] static extern IntPtr wxCalendarEvent_ctor(IntPtr cal, wxEventType type);
-        [DllImport("wx-c")] static extern IntPtr wxCalendarEvent_GetDate(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxCalendarEvent_GetWeekDay(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarEvent_ctor();
+        //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarEvent_ctor(IntPtr cal, wxEventType type);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalendarEvent_GetDate(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxCalendarEvent_GetWeekDay(IntPtr self);
 
         //-----------------------------------------------------------------------------
 	

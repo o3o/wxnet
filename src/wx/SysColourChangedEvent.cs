@@ -17,7 +17,7 @@ namespace wx
 {
 	public class SysColourChangedEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxSysColourChangedEvent_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSysColourChangedEvent_ctor();
 		
 		//-----------------------------------------------------------------------------
 

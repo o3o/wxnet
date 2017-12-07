@@ -30,44 +30,44 @@ namespace wx
 		    
 		//-----------------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxFrame_ctor();
-		[DllImport("wx-c")] static extern bool   wxFrame_Create(IntPtr self, IntPtr parent, int id, string title, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFrame_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFrame_Create(IntPtr self, IntPtr parent, int id, string title, ref Point pos, ref Size size, uint style, string name);
 
-		[DllImport("wx-c")] static extern IntPtr wxFrame_CreateStatusBar(IntPtr self, int number, uint style, int id, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFrame_CreateStatusBar(IntPtr self, int number, uint style, int id, string name);
 
-		[DllImport("wx-c")] static extern void   wxFrame_SendSizeEvent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_SendSizeEvent(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFrame_SetIcon(IntPtr self, IntPtr icon);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_SetIcon(IntPtr self, IntPtr icon);
 
-		[DllImport("wx-c")] static extern void   wxFrame_SetMenuBar(IntPtr self, IntPtr menuBar);
-		[DllImport("wx-c")] static extern IntPtr wxFrame_GetMenuBar(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_SetMenuBar(IntPtr self, IntPtr menuBar);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFrame_GetMenuBar(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFrame_SetStatusText(IntPtr self, string text, int number);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_SetStatusText(IntPtr self, string text, int number);
 
-		[DllImport("wx-c")] static extern IntPtr wxFrame_CreateToolBar(IntPtr self, uint style, int id, string name);
-		[DllImport("wx-c")] static extern IntPtr wxFrame_GetToolBar(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxFrame_SetToolBar(IntPtr self, IntPtr toolbar);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFrame_CreateToolBar(IntPtr self, uint style, int id, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFrame_GetToolBar(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_SetToolBar(IntPtr self, IntPtr toolbar);
 
-		[DllImport("wx-c")] static extern bool   wxFrame_ShowFullScreen(IntPtr self, bool show, uint style);
-		[DllImport("wx-c")] static extern bool   wxFrame_IsFullScreen(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFrame_ShowFullScreen(IntPtr self, bool show, uint style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFrame_IsFullScreen(IntPtr self);
 
-		[DllImport("wx-c")] static extern IntPtr wxFrame_GetStatusBar(IntPtr wxObject); 
-		[DllImport("wx-c")] static extern void   wxFrame_SetStatusBar(IntPtr wxObject, IntPtr statusbar);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFrame_GetStatusBar(IntPtr wxObject); 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_SetStatusBar(IntPtr wxObject, IntPtr statusbar);
 
-		[DllImport("wx-c")] static extern int    wxFrame_GetStatusBarPane(IntPtr wxObject); 
-		[DllImport("wx-c")] static extern void   wxFrame_SetStatusBarPane(IntPtr wxObject, int n); 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFrame_GetStatusBarPane(IntPtr wxObject); 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_SetStatusBarPane(IntPtr wxObject, int n); 
 
-		[DllImport("wx-c")] static extern void   wxFrame_SetStatusWidths(IntPtr self, int n, int[] widths);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_SetStatusWidths(IntPtr self, int n, int[] widths);
 
-		[DllImport("wx-c")] static extern void   wxFrame_Iconize(IntPtr wxObject, bool iconize); 
-		[DllImport("wx-c")] static extern bool   wxFrame_IsIconized(IntPtr wxObject); 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_Iconize(IntPtr wxObject, bool iconize); 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFrame_IsIconized(IntPtr wxObject); 
 
-		[DllImport("wx-c")] static extern void   wxFrame_Maximize(IntPtr wxObject, bool maximize); 
-		[DllImport("wx-c")] static extern bool   wxFrame_IsMaximized(IntPtr wxObject); 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_Maximize(IntPtr wxObject, bool maximize); 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFrame_IsMaximized(IntPtr wxObject); 
 
-		//[DllImport("wx-c")] static extern bool   wxFrame_SetShape(IntPtr self, IntPtr region);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFrame_SetShape(IntPtr self, IntPtr region);
 		
-		[DllImport("wx-c")] static extern void   wxFrame_GetClientAreaOrigin(IntPtr self, ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFrame_GetClientAreaOrigin(IntPtr self, ref Point pt);
             
 		//---------------------------------------------------------------------
 

@@ -130,13 +130,13 @@ namespace wx
 
     public class SystemSettings
     {
-        [DllImport("wx-c")] static extern int    wxSystemSettings_GetScreenType();
-        [DllImport("wx-c")] static extern void   wxSystemSettings_SetScreenType(int screen);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSystemSettings_GetScreenType();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSystemSettings_SetScreenType(int screen);
 
-        [DllImport("wx-c")] static extern IntPtr wxSystemSettings_GetColour(int index);
-        [DllImport("wx-c")] static extern IntPtr wxSystemSettings_GetFont(int index);
-        [DllImport("wx-c")] static extern int    wxSystemSettings_GetMetric(int index);
-        [DllImport("wx-c")] static extern bool   wxSystemSettings_HasFeature(int index);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSystemSettings_GetColour(int index);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSystemSettings_GetFont(int index);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSystemSettings_GetMetric(int index);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSystemSettings_HasFeature(int index);
 
         //-----------------------------------------------------------------------------
 

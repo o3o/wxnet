@@ -21,96 +21,96 @@ namespace wx
 {
 	public class Image : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxImage_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxImage_ctorByName(string name, BitmapType type);
-		[DllImport("wx-c")] static extern IntPtr wxImage_ctorintintbool(int width, int height, bool clear);
-		[DllImport("wx-c")] static extern IntPtr wxImage_ctorByImage(IntPtr image);
-		[DllImport("wx-c")] static extern IntPtr wxImage_ctorByByteArray(IntPtr data, int length, BitmapType type);
-		[DllImport("wx-c")] static extern void   wxImage_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_ctorByName(string name, BitmapType type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_ctorintintbool(int width, int height, bool clear);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_ctorByImage(IntPtr image);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_ctorByByteArray(IntPtr data, int length, BitmapType type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_dtor(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxImage_Destroy(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_Destroy(IntPtr self);
 		
-		[DllImport("wx-c")] static extern int    wxImage_GetHeight(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxImage_GetWidth(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxImage_InitAllHandlers();
-		[DllImport("wx-c")] static extern void   wxImage_Rescale(IntPtr self, int width, int height);
-		[DllImport("wx-c")] static extern IntPtr wxImage_Scale(IntPtr self, int width, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxImage_GetHeight(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxImage_GetWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_InitAllHandlers();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_Rescale(IntPtr self, int width, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_Scale(IntPtr self, int width, int height);
 
-		[DllImport("wx-c")] static extern void   wxImage_SetMask(IntPtr self, bool mask);
-		[DllImport("wx-c")] static extern bool   wxImage_HasMask(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxImage_SetMaskColour(IntPtr self, byte r, byte g, byte b);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_SetMask(IntPtr self, bool mask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_HasMask(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_SetMaskColour(IntPtr self, byte r, byte g, byte b);
 
-		[DllImport("wx-c")] static extern bool   wxImage_LoadFileByTypeId(IntPtr self, string name, BitmapType type, int index);
-		[DllImport("wx-c")] static extern bool   wxImage_LoadFileByMimeTypeId(IntPtr self, string name, string mimetype, int index);
-		[DllImport("wx-c")] static extern bool   wxImage_SaveFileByType(IntPtr self, string name, BitmapType type);
-		[DllImport("wx-c")] static extern bool   wxImage_SaveFileByMimeType(IntPtr self, string name, string mimetype);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_LoadFileByTypeId(IntPtr self, string name, BitmapType type, int index);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_LoadFileByMimeTypeId(IntPtr self, string name, string mimetype, int index);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_SaveFileByType(IntPtr self, string name, BitmapType type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_SaveFileByMimeType(IntPtr self, string name, string mimetype);
 		
-		[DllImport("wx-c")] static extern IntPtr wxImage_Copy(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxImage_GetSubImage(IntPtr self, ref Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_Copy(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_GetSubImage(IntPtr self, ref Rectangle rect);
 		
-		[DllImport("wx-c")] static extern void   wxImage_Paste(IntPtr self, IntPtr image, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_Paste(IntPtr self, IntPtr image, int x, int y);
 		
-		[DllImport("wx-c")] static extern IntPtr wxImage_ShrinkBy(IntPtr self, int xFactor, int yFactor);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_ShrinkBy(IntPtr self, int xFactor, int yFactor);
 		
-		[DllImport("wx-c")] static extern IntPtr wxImage_Rotate(IntPtr self, double angle, ref Point centre_of_rotation, bool interpolating, ref Point offset_after_rotation);
-		[DllImport("wx-c")] static extern IntPtr wxImage_Rotate90(IntPtr self, bool clockwise);
-		[DllImport("wx-c")] static extern IntPtr wxImage_Mirror(IntPtr self, bool horizontally);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_Rotate(IntPtr self, double angle, ref Point centre_of_rotation, bool interpolating, ref Point offset_after_rotation);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_Rotate90(IntPtr self, bool clockwise);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_Mirror(IntPtr self, bool horizontally);
 		
-		[DllImport("wx-c")] static extern void   wxImage_Replace(IntPtr self, byte r1, byte g1, byte b1, byte r2, byte g2, byte b2);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_Replace(IntPtr self, byte r1, byte g1, byte b1, byte r2, byte g2, byte b2);
 		
-		[DllImport("wx-c")] static extern IntPtr wxImage_ConvertToMono(IntPtr self, byte r, byte g, byte b);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_ConvertToMono(IntPtr self, byte r, byte g, byte b);
 		
-		[DllImport("wx-c")] static extern void   wxImage_SetRGB(IntPtr self, int x, int y, byte r, byte g, byte b);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_SetRGB(IntPtr self, int x, int y, byte r, byte g, byte b);
 		
-		[DllImport("wx-c")] static extern byte   wxImage_GetRed(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern byte   wxImage_GetGreen(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern byte   wxImage_GetBlue(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxImage_GetRed(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxImage_GetGreen(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxImage_GetBlue(IntPtr self, int x, int y);
 		
-		[DllImport("wx-c")] static extern void   wxImage_SetAlpha(IntPtr self, int x, int y, byte alpha);
-		[DllImport("wx-c")] static extern byte   wxImage_GetAlpha(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_SetAlpha(IntPtr self, int x, int y, byte alpha);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxImage_GetAlpha(IntPtr self, int x, int y);
 		
-		[DllImport("wx-c")] static extern bool   wxImage_FindFirstUnusedColour(IntPtr self, ref byte r, ref byte g, ref byte b, byte startR, byte startG, byte startB);
-		[DllImport("wx-c")] static extern bool   wxImage_SetMaskFromImage(IntPtr self, IntPtr mask, byte mr, byte mg, byte mb);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_FindFirstUnusedColour(IntPtr self, ref byte r, ref byte g, ref byte b, byte startR, byte startG, byte startB);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_SetMaskFromImage(IntPtr self, IntPtr mask, byte mr, byte mg, byte mb);
 		
-		[DllImport("wx-c")] static extern bool   wxImage_ConvertAlphaToMask(IntPtr self, byte threshold);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_ConvertAlphaToMask(IntPtr self, byte threshold);
 		
-		[DllImport("wx-c")] static extern bool   wxImage_CanRead(string name);
-		[DllImport("wx-c")] static extern int    wxImage_GetImageCount(string name, int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_CanRead(string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxImage_GetImageCount(string name, int type);
 		
-		[DllImport("wx-c")] static extern bool   wxImage_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_Ok(IntPtr self);
 		//--Alex
-		[DllImport("wx-c")] static extern byte   wxImage_GetMaskRed(IntPtr self);
-		[DllImport("wx-c")] static extern byte   wxImage_GetMaskGreen(IntPtr self);
-		[DllImport("wx-c")] static extern byte   wxImage_GetMaskBlue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxImage_GetMaskRed(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxImage_GetMaskGreen(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxImage_GetMaskBlue(IntPtr self);
 		
-		[DllImport("wx-c")] static extern bool   wxImage_HasPalette(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxImage_GetPalette(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxImage_SetPalette(IntPtr self, IntPtr palette);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_HasPalette(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_GetPalette(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_SetPalette(IntPtr self, IntPtr palette);
 		
-		[DllImport("wx-c")] static extern void   wxImage_SetOption(IntPtr self, string name, string value);
-		[DllImport("wx-c")] static extern void   wxImage_SetOption2(IntPtr self, string name, int value);
-		[DllImport("wx-c")] static extern IntPtr wxImage_GetOption(IntPtr self, string name);
-		[DllImport("wx-c")] static extern int    wxImage_GetOptionInt(IntPtr self, string name);
-		[DllImport("wx-c")] static extern bool   wxImage_HasOption(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_SetOption(IntPtr self, string name, string value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_SetOption2(IntPtr self, string name, int value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_GetOption(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxImage_GetOptionInt(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_HasOption(IntPtr self, string name);
 		
-		[DllImport("wx-c")] static extern ulong  wxImage_CountColours(IntPtr self, ulong stopafter);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ulong  wxImage_CountColours(IntPtr self, ulong stopafter);
 		
-		[DllImport("wx-c")] static extern ulong  wxImage_ComputeHistogram(IntPtr self, IntPtr h);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ulong  wxImage_ComputeHistogram(IntPtr self, IntPtr h);
 		
-		[DllImport("wx-c")] static extern IntPtr wxImage_GetHandlers();
-		[DllImport("wx-c")] static extern void   wxImage_AddHandler(IntPtr handler);
-		[DllImport("wx-c")] static extern void   wxImage_InsertHandler(IntPtr handler);
-		[DllImport("wx-c")] static extern bool   wxImage_RemoveHandler(string name);
-		[DllImport("wx-c")] static extern IntPtr wxImage_FindHandler(string name);
-		[DllImport("wx-c")] static extern IntPtr wxImage_FindHandler2(string name, uint imageType);
-		[DllImport("wx-c")] static extern IntPtr wxImage_FindHandler3(uint imageType);
-		[DllImport("wx-c")] static extern IntPtr wxImage_FindHandlerMime(string mimetype);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_GetHandlers();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_AddHandler(IntPtr handler);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_InsertHandler(IntPtr handler);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImage_RemoveHandler(string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_FindHandler(string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_FindHandler2(string name, uint imageType);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_FindHandler3(uint imageType);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_FindHandlerMime(string mimetype);
 		
-		[DllImport("wx-c")] static extern IntPtr wxImage_GetImageExtWildcard();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImage_GetImageExtWildcard();
 		
-		[DllImport("wx-c")] static extern void   wxImage_CleanUpHandlers();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_CleanUpHandlers();
 		
-		[DllImport("wx-c")] static extern void   wxImage_InitStandardHandlers();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImage_InitStandardHandlers();
 
 		//---------------------------------------------------------------------
 
@@ -683,14 +683,14 @@ namespace wx
 	
 	public class ImageHandler : Object
 	{
-		[DllImport("wx-c")] static extern void   wxImageHandler_SetName(IntPtr self, string name);
-		[DllImport("wx-c")] static extern void   wxImageHandler_SetExtension(IntPtr self, string ext);
-		[DllImport("wx-c")] static extern void   wxImageHandler_SetType(IntPtr self, uint type);
-		[DllImport("wx-c")] static extern void   wxImageHandler_SetMimeType(IntPtr self, string type);
-		[DllImport("wx-c")] static extern IntPtr wxImageHandler_GetName(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxImageHandler_GetExtension(IntPtr self);
-		[DllImport("wx-c")] static extern uint   wxImageHandler_GetType(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxImageHandler_GetMimeType(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImageHandler_SetName(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImageHandler_SetExtension(IntPtr self, string ext);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImageHandler_SetType(IntPtr self, uint type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImageHandler_SetMimeType(IntPtr self, string type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImageHandler_GetName(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImageHandler_GetExtension(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxImageHandler_GetType(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImageHandler_GetMimeType(IntPtr self);
 		
 		//---------------------------------------------------------------------
 	
@@ -734,12 +734,12 @@ namespace wx
 	
 	public class ImageHistogramEntry : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxImageHistogramEntry_ctor();
-		[DllImport("wx-c")] static extern void   wxImageHistogramEntry_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern ulong  wxImageHistogramEntry_index(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxImageHistogramEntry_Setindex(IntPtr self, ulong v);
-		[DllImport("wx-c")] static extern ulong  wxImageHistogramEntry_value(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxImageHistogramEntry_Setvalue(IntPtr self, ulong v);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImageHistogramEntry_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImageHistogramEntry_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ulong  wxImageHistogramEntry_index(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImageHistogramEntry_Setindex(IntPtr self, ulong v);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ulong  wxImageHistogramEntry_value(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImageHistogramEntry_Setvalue(IntPtr self, ulong v);
 		
 		//---------------------------------------------------------------------
 		
@@ -810,10 +810,10 @@ namespace wx
 	
 	public class ImageHistogram : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxImageHistogram_ctor();	
-		[DllImport("wx-c")] static extern void   wxImageHistogram_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern ulong  wxImageHistogram_MakeKey(byte r, byte g, byte b);
-		[DllImport("wx-c")] static extern bool   wxImageHistogram_FindFirstUnusedColour(IntPtr self, ref byte r, ref byte g, ref byte b, byte startR, byte startG, byte startB);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImageHistogram_ctor();	
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxImageHistogram_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ulong  wxImageHistogram_MakeKey(byte r, byte g, byte b);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImageHistogram_FindFirstUnusedColour(IntPtr self, ref byte r, ref byte g, ref byte b, byte startR, byte startG, byte startB);
 				
 		//---------------------------------------------------------------------
 		

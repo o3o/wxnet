@@ -18,13 +18,13 @@ namespace wx
 {
 	public class HelpEvent : CommandEvent
 	{
-		[DllImport("wx-c")] static extern IntPtr wxHelpEvent_ctor(int type);
-		[DllImport("wx-c")] static extern void   wxHelpEvent_GetPosition(IntPtr self, ref Point pos);
-		[DllImport("wx-c")] static extern void   wxHelpEvent_SetPosition(IntPtr self, ref Point pos);
-		[DllImport("wx-c")] static extern IntPtr wxHelpEvent_GetLink(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHelpEvent_SetLink(IntPtr self, string link);
-		[DllImport("wx-c")] static extern IntPtr wxHelpEvent_GetTarget(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHelpEvent_SetTarget(IntPtr self, string target);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHelpEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHelpEvent_GetPosition(IntPtr self, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHelpEvent_SetPosition(IntPtr self, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHelpEvent_GetLink(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHelpEvent_SetLink(IntPtr self, string link);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHelpEvent_GetTarget(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHelpEvent_SetTarget(IntPtr self, string target);
 		
 		//-----------------------------------------------------------------------------
 

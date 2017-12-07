@@ -18,8 +18,8 @@ namespace wx
 {
 	public class MoveEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxMoveEvent_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxMoveEvent_GetPosition(IntPtr self, out Point point);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMoveEvent_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMoveEvent_GetPosition(IntPtr self, out Point point);
 		
 		//-----------------------------------------------------------------------------
 

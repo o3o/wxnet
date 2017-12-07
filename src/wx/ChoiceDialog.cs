@@ -20,11 +20,11 @@ namespace wx
     {
         public const long wxCHOICEDLG_STYLE	= (wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER | wxOK | wxCANCEL | wxCENTRE);
 
-        [DllImport("wx-c")] static extern IntPtr wxSingleChoiceDialog_ctor(IntPtr parent, string message, string caption, int n, string[] choices, IntPtr clientData, uint style, ref Point pos);
-        [DllImport("wx-c")] static extern void wxSingleChoiceDialog_SetSelection(IntPtr self, int sel);
-        [DllImport("wx-c")] static extern int wxSingleChoiceDialog_GetSelection(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxSingleChoiceDialog_GetStringSelection(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxSingleChoiceDialog_GetSelectionClientData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSingleChoiceDialog_ctor(IntPtr parent, string message, string caption, int n, string[] choices, IntPtr clientData, uint style, ref Point pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSingleChoiceDialog_SetSelection(IntPtr self, int sel);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSingleChoiceDialog_GetSelection(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSingleChoiceDialog_GetStringSelection(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSingleChoiceDialog_GetSelectionClientData(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -78,9 +78,9 @@ namespace wx
 
     public class MultiChoiceDialog : Dialog
     {
-        [DllImport("wx-c")] static extern IntPtr wxMultiChoiceDialog_ctor(IntPtr parent, string message, string caption, int n, string[] choices, uint style, ref Point pos);
-        [DllImport("wx-c")] static extern void wxMultiChoiceDialog_SetSelections(IntPtr self, int[] sel, int numsel);
-        [DllImport("wx-c")] static extern IntPtr wxMultiChoiceDialog_GetSelections(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMultiChoiceDialog_ctor(IntPtr parent, string message, string caption, int n, string[] choices, uint style, ref Point pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxMultiChoiceDialog_SetSelections(IntPtr self, int[] sel, int numsel);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMultiChoiceDialog_GetSelections(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -121,7 +121,7 @@ namespace wx
 
 		//-----------------------------------------------------------------------------
 
-	        [DllImport("wx-c")] static extern IntPtr wxGetSingleChoice_func(string message, string caption, int n, string[] choices, IntPtr parent, int x, int y, bool centre, int width, int height);
+	        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGetSingleChoice_func(string message, string caption, int n, string[] choices, IntPtr parent, int x, int y, bool centre, int width, int height);
 
         	//-----------------------------------------------------------------------------
 

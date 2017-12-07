@@ -17,20 +17,20 @@ namespace wx
 {
 	public class Colour : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxColour_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxColour_ctorByName(string name);
-		[DllImport("wx-c")] static extern IntPtr wxColour_ctorByParts(byte red, byte green, byte blue);
-		[DllImport("wx-c")] static extern void   wxColour_dtor(IntPtr self);
-		//[DllImport("wx-c")] static extern void   wxColour_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColour_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColour_ctorByName(string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColour_ctorByParts(byte red, byte green, byte blue);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxColour_dtor(IntPtr self);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxColour_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
 
-		[DllImport("wx-c")] static extern byte   wxColour_Red(IntPtr self);
-		[DllImport("wx-c")] static extern byte   wxColour_Blue(IntPtr self);
-		[DllImport("wx-c")] static extern byte   wxColour_Green(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxColour_Red(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxColour_Blue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern byte   wxColour_Green(IntPtr self);
 
-		[DllImport("wx-c")] static extern bool   wxColour_Ok(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxColour_Set(IntPtr self, byte red, byte green, byte blue);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxColour_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxColour_Set(IntPtr self, byte red, byte green, byte blue);
 		
-		[DllImport("wx-c")] static extern IntPtr wxColour_CreateByName(string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColour_CreateByName(string name);
 
 		//---------------------------------------------------------------------
 

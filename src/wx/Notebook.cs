@@ -18,14 +18,14 @@ namespace wx
 {
 	public class NotebookEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxNotebookEvent_ctor(int commandType, int id, int nSel, int nOldSel);
-		[DllImport("wx-c")] static extern int    wxNotebookEvent_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxNotebookEvent_SetSelection(IntPtr self, int nSel);
-		[DllImport("wx-c")] static extern int    wxNotebookEvent_GetOldSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxNotebookEvent_SetOldSelection(IntPtr self, int nOldSel);
-		[DllImport("wx-c")] static extern void wxNotebookEvent_Veto(IntPtr self);
-		[DllImport("wx-c")] static extern void wxNotebookEvent_Allow(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxNotebookEvent_IsAllowed(IntPtr self);		
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNotebookEvent_ctor(int commandType, int id, int nSel, int nOldSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxNotebookEvent_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxNotebookEvent_SetSelection(IntPtr self, int nSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxNotebookEvent_GetOldSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxNotebookEvent_SetOldSelection(IntPtr self, int nOldSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxNotebookEvent_Veto(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxNotebookEvent_Allow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxNotebookEvent_IsAllowed(IntPtr self);		
 
 		//-----------------------------------------------------------------------------
 
@@ -84,29 +84,29 @@ namespace wx
 	
 		//-----------------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxNotebook_ctor();
-		[DllImport("wx-c")] static extern bool   wxNotebook_AddPage(IntPtr self, IntPtr page, string text, bool select, int imageId);
-		[DllImport("wx-c")] static extern bool   wxNotebook_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern int    wxNotebook_GetPageCount(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxNotebook_GetPage(IntPtr self, int nPage);
-		[DllImport("wx-c")] static extern int    wxNotebook_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxNotebook_SetPageText(IntPtr self, int nPage, string strText);
-		[DllImport("wx-c")] static extern IntPtr wxNotebook_GetPageText(IntPtr self, int nPage);
-		[DllImport("wx-c")] static extern void   wxNotebook_SetImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern void   wxNotebook_AssignImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern IntPtr wxNotebook_GetImageList(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxNotebook_GetPageImage(IntPtr self, int nPage);
-		[DllImport("wx-c")] static extern bool   wxNotebook_SetPageImage(IntPtr self, int nPage, int nImage);
-		[DllImport("wx-c")] static extern int    wxNotebook_GetRowCount(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxNotebook_SetPageSize(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern void   wxNotebook_SetPadding(IntPtr self, ref Size padding);
-		[DllImport("wx-c")] static extern void   wxNotebook_SetTabSize(IntPtr self, ref Size sz);
-		[DllImport("wx-c")] static extern bool   wxNotebook_DeletePage(IntPtr self, int nPage);
-		[DllImport("wx-c")] static extern bool   wxNotebook_RemovePage(IntPtr self, int nPage);
-		[DllImport("wx-c")] static extern bool   wxNotebook_DeleteAllPages(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxNotebook_InsertPage(IntPtr self, int nPage, IntPtr pPage, string strText, bool bSelect, int imageId);
-		[DllImport("wx-c")] static extern int    wxNotebook_SetSelection(IntPtr self, int nPage);
-		[DllImport("wx-c")] static extern void   wxNotebook_AdvanceSelection(IntPtr self, bool forward);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNotebook_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxNotebook_AddPage(IntPtr self, IntPtr page, string text, bool select, int imageId);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxNotebook_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxNotebook_GetPageCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNotebook_GetPage(IntPtr self, int nPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxNotebook_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxNotebook_SetPageText(IntPtr self, int nPage, string strText);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNotebook_GetPageText(IntPtr self, int nPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxNotebook_SetImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxNotebook_AssignImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNotebook_GetImageList(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxNotebook_GetPageImage(IntPtr self, int nPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxNotebook_SetPageImage(IntPtr self, int nPage, int nImage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxNotebook_GetRowCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxNotebook_SetPageSize(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxNotebook_SetPadding(IntPtr self, ref Size padding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxNotebook_SetTabSize(IntPtr self, ref Size sz);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxNotebook_DeletePage(IntPtr self, int nPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxNotebook_RemovePage(IntPtr self, int nPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxNotebook_DeleteAllPages(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxNotebook_InsertPage(IntPtr self, int nPage, IntPtr pPage, string strText, bool bSelect, int imageId);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxNotebook_SetSelection(IntPtr self, int nPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxNotebook_AdvanceSelection(IntPtr self, bool forward);
 
 		//---------------------------------------------------------------------
 		

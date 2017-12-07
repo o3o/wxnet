@@ -18,20 +18,20 @@ namespace wx
 {
 	public class Caret : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxCaret_ctor();
-		[DllImport("wx-c")] static extern void wxCaret_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxCaret_Create(IntPtr self, IntPtr window, int width, int height);
-		[DllImport("wx-c")] static extern bool wxCaret_IsOk(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxCaret_IsVisible(IntPtr self);
-		[DllImport("wx-c")] static extern void wxCaret_GetPosition(IntPtr self, out int x, out int y);
-		[DllImport("wx-c")] static extern void wxCaret_GetSize(IntPtr self, out int width, out int height);
-		[DllImport("wx-c")] static extern IntPtr wxCaret_GetWindow(IntPtr self);
-		[DllImport("wx-c")] static extern void wxCaret_SetSize(IntPtr self, int width, int height);
-		[DllImport("wx-c")] static extern void wxCaret_Move(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern void wxCaret_Show(IntPtr self, bool show);
-		[DllImport("wx-c")] static extern void wxCaret_Hide(IntPtr self);
-		[DllImport("wx-c")] static extern int wxCaret_GetBlinkTime();
-		[DllImport("wx-c")] static extern void wxCaret_SetBlinkTime(int milliseconds);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCaret_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaret_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCaret_Create(IntPtr self, IntPtr window, int width, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCaret_IsOk(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCaret_IsVisible(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaret_GetPosition(IntPtr self, out int x, out int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaret_GetSize(IntPtr self, out int width, out int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCaret_GetWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaret_SetSize(IntPtr self, int width, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaret_Move(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaret_Show(IntPtr self, bool show);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaret_Hide(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxCaret_GetBlinkTime();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaret_SetBlinkTime(int milliseconds);
 		
 		//---------------------------------------------------------------------
 
@@ -185,8 +185,8 @@ namespace wx
 
 	public class CaretSuspend : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxCaretSuspend_ctor(IntPtr win);
-		[DllImport("wx-c")] static extern void wxCaretSuspend_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCaretSuspend_ctor(IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCaretSuspend_dtor(IntPtr self);
 		
 		//---------------------------------------------------------------------
 

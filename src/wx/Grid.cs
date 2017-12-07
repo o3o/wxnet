@@ -25,18 +25,18 @@ namespace wx
 
     public class GridEvent : Event 
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridEvent_ctor(int id, int type, IntPtr obj, int row, int col, int x, int y, bool sel, bool control, bool shift, bool alt, bool meta);
-        [DllImport("wx-c")] static extern int    wxGridEvent_GetRow(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxGridEvent_GetCol(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridEvent_GetPosition(IntPtr self, ref Point pt);
-        [DllImport("wx-c")] static extern bool   wxGridEvent_Selecting(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridEvent_ControlDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridEvent_MetaDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridEvent_ShiftDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridEvent_AltDown(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridEvent_Veto(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridEvent_Allow(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxGridEvent_IsAllowed(IntPtr self);      
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridEvent_ctor(int id, int type, IntPtr obj, int row, int col, int x, int y, bool sel, bool control, bool shift, bool alt, bool meta);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridEvent_GetRow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridEvent_GetCol(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridEvent_GetPosition(IntPtr self, ref Point pt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridEvent_Selecting(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridEvent_ControlDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridEvent_MetaDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridEvent_ShiftDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridEvent_AltDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridEvent_Veto(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridEvent_Allow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridEvent_IsAllowed(IntPtr self);      
 
         //-----------------------------------------------------------------------------
 
@@ -156,9 +156,9 @@ namespace wx
         
         //-----------------------------------------------------------------------------
         
-        [DllImport("wx-c")] static extern IntPtr wxGridCellEditor_ctor();
-	[DllImport("wx-c")] static extern void wxGridCellEditor_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellEditor_RegisterVirtual(IntPtr self, 
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellEditor_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellEditor_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellEditor_RegisterVirtual(IntPtr self, 
             Virtual_Create create, 
             Virtual_BeginEdit beginEdit, 
             Virtual_EndEdit endEdit, 
@@ -173,16 +173,16 @@ namespace wx
             Virtual_HandleReturn handleReturn,
             Virtual_Destroy destroy,
             Virtual_GetValue getvalue);
-        [DllImport("wx-c")] static extern bool   wxGridCellEditor_IsCreated(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellEditor_SetSize(IntPtr self, ref Rectangle rect);
-        [DllImport("wx-c")] static extern void   wxGridCellEditor_Show(IntPtr self, bool show, IntPtr attr);
-        [DllImport("wx-c")] static extern void   wxGridCellEditor_PaintBackground(IntPtr self, ref Rectangle rectCell, IntPtr attr);
-        [DllImport("wx-c")] static extern bool wxGridCellEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void   wxGridCellEditor_StartingKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void   wxGridCellEditor_StartingClick(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellEditor_HandleReturn(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void   wxGridCellEditor_Destroy(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellEditor_GetValue(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellEditor_IsCreated(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellEditor_SetSize(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellEditor_Show(IntPtr self, bool show, IntPtr attr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellEditor_PaintBackground(IntPtr self, ref Rectangle rectCell, IntPtr attr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellEditor_StartingKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellEditor_StartingClick(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellEditor_HandleReturn(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellEditor_Destroy(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellEditor_GetValue(IntPtr self);
 	
         //-----------------------------------------------------------------------------
         
@@ -402,18 +402,18 @@ namespace wx
     
     public class GridCellTextEditor : GridCellEditor
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellTextEditor_ctor();
-	[DllImport("wx-c")] static extern void wxGridCellTextEditor_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellTextEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
-        [DllImport("wx-c")] static extern void wxGridCellTextEditor_SetSize(IntPtr self, ref Rectangle rect);
-        [DllImport("wx-c")] static extern void wxGridCellTextEditor_PaintBackground(IntPtr self, ref Rectangle rectCell, IntPtr attr);
-        [DllImport("wx-c")] static extern bool wxGridCellTextEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void wxGridCellTextEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern bool wxGridCellTextEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern void wxGridCellTextEditor_Reset(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellTextEditor_StartingKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void wxGridCellTextEditor_SetParameters(IntPtr self, string parameter);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellTextEditor_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellTextEditor_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellTextEditor_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellTextEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellTextEditor_SetSize(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellTextEditor_PaintBackground(IntPtr self, ref Rectangle rectCell, IntPtr attr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellTextEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellTextEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellTextEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellTextEditor_Reset(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellTextEditor_StartingKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellTextEditor_SetParameters(IntPtr self, string parameter);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellTextEditor_Clone(IntPtr self);
 	
         public GridCellTextEditor()
             : this(wxGridCellTextEditor_ctor(), true) { }
@@ -516,17 +516,17 @@ namespace wx
 
     public class GridCellNumberEditor : GridCellTextEditor
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellNumberEditor_ctor(int min, int max);
-	[DllImport("wx-c")] static extern void wxGridCellNumberEditor_dtor(IntPtr self);
-	[DllImport("wx-c")] static extern void wxGridCellNumberEditor_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-        [DllImport("wx-c")] static extern void wxGridCellNumberEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
-        [DllImport("wx-c")] static extern bool wxGridCellNumberEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void wxGridCellNumberEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern bool wxGridCellNumberEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern void wxGridCellNumberEditor_Reset(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellNumberEditor_StartingKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void wxGridCellNumberEditor_SetParameters(IntPtr self, string parameter);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellNumberEditor_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellNumberEditor_ctor(int min, int max);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberEditor_dtor(IntPtr self);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberEditor_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellNumberEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellNumberEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberEditor_Reset(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberEditor_StartingKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberEditor_SetParameters(IntPtr self, string parameter);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellNumberEditor_Clone(IntPtr self);
 	
         public GridCellNumberEditor()
             : this(-1, -1) { }
@@ -629,16 +629,16 @@ namespace wx
 
     public class GridCellFloatEditor : GridCellTextEditor
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellFloatEditor_ctor(int width, int precision);
-	[DllImport("wx-c")] static extern void wxGridCellFloatEditor_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellFloatEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
-        [DllImport("wx-c")] static extern bool wxGridCellFloatEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void wxGridCellFloatEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern bool wxGridCellFloatEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern void wxGridCellFloatEditor_Reset(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellFloatEditor_StartingKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void wxGridCellFloatEditor_SetParameters(IntPtr self, string parameter);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellFloatEditor_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellFloatEditor_ctor(int width, int precision);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatEditor_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellFloatEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellFloatEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatEditor_Reset(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatEditor_StartingKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatEditor_SetParameters(IntPtr self, string parameter);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellFloatEditor_Clone(IntPtr self);
 	
         public GridCellFloatEditor()
             : this(-1, -1) { }
@@ -737,17 +737,17 @@ namespace wx
     
     public class GridCellBoolEditor : GridCellEditor
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellBoolEditor_ctor();
-	[DllImport("wx-c")] static extern void wxGridCellBoolEditor_dtor(IntPtr self);
-	[DllImport("wx-c")] static extern void wxGridCellBoolEditor_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-        [DllImport("wx-c")] static extern void wxGridCellBoolEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
-        [DllImport("wx-c")] static extern void wxGridCellBoolEditor_SetSize(IntPtr self, ref Rectangle rect);
-        [DllImport("wx-c")] static extern bool wxGridCellBoolEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
-        [DllImport("wx-c")] static extern void wxGridCellBoolEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern bool wxGridCellBoolEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern void wxGridCellBoolEditor_Reset(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellBoolEditor_StartingClick(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellBoolEditor_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellBoolEditor_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolEditor_dtor(IntPtr self);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolEditor_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolEditor_SetSize(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellBoolEditor_IsAcceptedKey(IntPtr self, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellBoolEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolEditor_Reset(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolEditor_StartingClick(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellBoolEditor_Clone(IntPtr self);
 	
         public GridCellBoolEditor()
             : this(wxGridCellBoolEditor_ctor(), true) 
@@ -844,16 +844,16 @@ namespace wx
     
     public class GridCellChoiceEditor : GridCellEditor
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellChoiceEditor_ctor(int n, string[] choices, bool allowOthers);
-	[DllImport("wx-c")] static extern void wxGridCellChoiceEditor_dtor(IntPtr self);
-	[DllImport("wx-c")] static extern void wxGridCellChoiceEditor_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-        [DllImport("wx-c")] static extern void wxGridCellChoiceEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
-        [DllImport("wx-c")] static extern void wxGridCellChoiceEditor_PaintBackground(IntPtr self, ref Rectangle rectCell, IntPtr attr);
-        [DllImport("wx-c")] static extern void wxGridCellChoiceEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern bool wxGridCellChoiceEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
-        [DllImport("wx-c")] static extern void wxGridCellChoiceEditor_Reset(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellChoiceEditor_SetParameters(IntPtr self, string parameter);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellChoiceEditor_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellChoiceEditor_ctor(int n, string[] choices, bool allowOthers);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellChoiceEditor_dtor(IntPtr self);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellChoiceEditor_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellChoiceEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellChoiceEditor_PaintBackground(IntPtr self, ref Rectangle rectCell, IntPtr attr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellChoiceEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellChoiceEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellChoiceEditor_Reset(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellChoiceEditor_SetParameters(IntPtr self, string parameter);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellChoiceEditor_Clone(IntPtr self);
 	
         public GridCellChoiceEditor()
             : this(null, false) { }
@@ -951,21 +951,21 @@ namespace wx
 
     public class GridRangeSelectEvent : Event
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridRangeSelectEvent_ctor(int id, int type, IntPtr obj, IntPtr topLeft, IntPtr bottomRight, bool sel, bool control, bool shift, bool alt, bool meta);
-        [DllImport("wx-c")] static extern IntPtr wxGridRangeSelectEvent_GetTopLeftCoords(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxGridRangeSelectEvent_GetBottomRightCoords(IntPtr self);
-        [DllImport("wx-c")] static extern int wxGridRangeSelectEvent_GetTopRow(IntPtr self);
-        [DllImport("wx-c")] static extern int wxGridRangeSelectEvent_GetBottomRow(IntPtr self);
-        [DllImport("wx-c")] static extern int wxGridRangeSelectEvent_GetLeftCol(IntPtr self);
-        [DllImport("wx-c")] static extern int wxGridRangeSelectEvent_GetRightCol(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxGridRangeSelectEvent_Selecting(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxGridRangeSelectEvent_ControlDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxGridRangeSelectEvent_MetaDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxGridRangeSelectEvent_ShiftDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxGridRangeSelectEvent_AltDown(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridRangeSelectEvent_Veto(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridRangeSelectEvent_Allow(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxGridRangeSelectEvent_IsAllowed(IntPtr self);       
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridRangeSelectEvent_ctor(int id, int type, IntPtr obj, IntPtr topLeft, IntPtr bottomRight, bool sel, bool control, bool shift, bool alt, bool meta);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridRangeSelectEvent_GetTopLeftCoords(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridRangeSelectEvent_GetBottomRightCoords(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridRangeSelectEvent_GetTopRow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridRangeSelectEvent_GetBottomRow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridRangeSelectEvent_GetLeftCol(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridRangeSelectEvent_GetRightCol(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridRangeSelectEvent_Selecting(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridRangeSelectEvent_ControlDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridRangeSelectEvent_MetaDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridRangeSelectEvent_ShiftDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridRangeSelectEvent_AltDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridRangeSelectEvent_Veto(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridRangeSelectEvent_Allow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridRangeSelectEvent_IsAllowed(IntPtr self);       
     
         //-----------------------------------------------------------------------------
     
@@ -1068,11 +1068,11 @@ namespace wx
 
 		private Virtual_SetParameters virtual_SetParameters;
     
-        [DllImport("wx-c")] static extern IntPtr wxGridCellWorker_ctor();
-        [DllImport("wx-c")] static extern void wxGridCellWorker_RegisterVirtual(IntPtr self, Virtual_SetParameters setParameters);
-        [DllImport("wx-c")] static extern void wxGridCellWorker_IncRef(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellWorker_DecRef(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellWorker_SetParameters(IntPtr self, string parms);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellWorker_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellWorker_RegisterVirtual(IntPtr self, Virtual_SetParameters setParameters);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellWorker_IncRef(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellWorker_DecRef(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellWorker_SetParameters(IntPtr self, string parms);
 	
         //-----------------------------------------------------------------------------
         
@@ -1148,13 +1148,13 @@ namespace wx
 
     public class GridEditorCreatedEvent : CommandEvent 
     {
-            [DllImport("wx-c")] static extern IntPtr wxGridEditorCreatedEvent_ctor(int id, int type, IntPtr obj, int row, int col, IntPtr ctrl);
-            [DllImport("wx-c")] static extern int    wxGridEditorCreatedEvent_GetRow(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGridEditorCreatedEvent_GetCol(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGridEditorCreatedEvent_GetControl(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGridEditorCreatedEvent_SetRow(IntPtr self, int row);
-            [DllImport("wx-c")] static extern void   wxGridEditorCreatedEvent_SetCol(IntPtr self, int col);
-            [DllImport("wx-c")] static extern void   wxGridEditorCreatedEvent_SetControl(IntPtr self, IntPtr ctrl);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridEditorCreatedEvent_ctor(int id, int type, IntPtr obj, int row, int col, IntPtr ctrl);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridEditorCreatedEvent_GetRow(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridEditorCreatedEvent_GetCol(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridEditorCreatedEvent_GetControl(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridEditorCreatedEvent_SetRow(IntPtr self, int row);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridEditorCreatedEvent_SetCol(IntPtr self, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridEditorCreatedEvent_SetControl(IntPtr self, IntPtr ctrl);
 
             //-----------------------------------------------------------------------------
     
@@ -1193,220 +1193,220 @@ namespace wx
 
     public class Grid : ScrolledWindow
     {
-            [DllImport("wx-c")] static extern IntPtr wxGrid_ctor();
-            [DllImport("wx-c")] static extern IntPtr wxGrid_ctorFull(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-            [DllImport("wx-c")] static extern bool   wxGrid_CreateGrid(IntPtr self, int numRows, int numCols,  int selmode);
-            [DllImport("wx-c")] static extern void   wxGrid_SetSelectionMode(IntPtr self, int selmode);
-            [DllImport("wx-c")] static extern int    wxGrid_GetNumberRows(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetNumberCols(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetTable(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_SetTable(IntPtr self, IntPtr table, bool takeOwnership, int select);
-            [DllImport("wx-c")] static extern void   wxGrid_ClearGrid(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_InsertRows(IntPtr self, int pos, int numRows, bool updateLabels);
-            [DllImport("wx-c")] static extern bool   wxGrid_AppendRows(IntPtr self, int numRows, bool updateLabels);
-            [DllImport("wx-c")] static extern bool   wxGrid_DeleteRows(IntPtr self, int pos, int numRows, bool updateLabels);
-            [DllImport("wx-c")] static extern bool   wxGrid_InsertCols(IntPtr self, int pos, int numCols, bool updateLabels);
-            [DllImport("wx-c")] static extern bool   wxGrid_AppendCols(IntPtr self, int numCols, bool updateLabels);
-            [DllImport("wx-c")] static extern bool   wxGrid_DeleteCols(IntPtr self, int pos, int numCols, bool updateLabels);
-            [DllImport("wx-c")] static extern void   wxGrid_BeginBatch(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_EndBatch(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetBatchCount(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_ForceRefresh(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_IsEditable(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_EnableEditing(IntPtr self, bool edit);
-            [DllImport("wx-c")] static extern void   wxGrid_EnableCellEditControl(IntPtr self, bool enable);
-            [DllImport("wx-c")] static extern void   wxGrid_DisableCellEditControl(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_CanEnableCellControl(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_IsCellEditControlEnabled(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_IsCellEditControlShown(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_IsCurrentCellReadOnly(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_ShowCellEditControl(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_HideCellEditControl(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SaveEditControlValue(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_YToRow(IntPtr self, int y);
-            [DllImport("wx-c")] static extern int    wxGrid_XToCol(IntPtr self, int x);
-            [DllImport("wx-c")] static extern int    wxGrid_YToEdgeOfRow(IntPtr self, int y);
-            [DllImport("wx-c")] static extern int    wxGrid_XToEdgeOfCol(IntPtr self, int x);
-            [DllImport("wx-c")] static extern void   wxGrid_CellToRect(IntPtr self, int row, int col, ref Rectangle rect);
-            [DllImport("wx-c")] static extern int    wxGrid_GetGridCursorRow(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetGridCursorCol(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_IsVisible(IntPtr self, int row, int col, bool wholeCellVisible);
-            [DllImport("wx-c")] static extern void   wxGrid_MakeCellVisible(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetGridCursor(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern bool   wxGrid_MoveCursorUp(IntPtr self, bool expandSelection);
-            [DllImport("wx-c")] static extern bool   wxGrid_MoveCursorDown(IntPtr self, bool expandSelection);
-            [DllImport("wx-c")] static extern bool   wxGrid_MoveCursorLeft(IntPtr self, bool expandSelection);
-            [DllImport("wx-c")] static extern bool   wxGrid_MoveCursorRight(IntPtr self, bool expandSelection);
-            [DllImport("wx-c")] static extern bool   wxGrid_MovePageDown(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_MovePageUp(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_MoveCursorUpBlock(IntPtr self, bool expandSelection);
-            [DllImport("wx-c")] static extern bool   wxGrid_MoveCursorDownBlock(IntPtr self, bool expandSelection);
-            [DllImport("wx-c")] static extern bool   wxGrid_MoveCursorLeftBlock(IntPtr self, bool expandSelection);
-            [DllImport("wx-c")] static extern bool   wxGrid_MoveCursorRightBlock(IntPtr self, bool expandSelection);
-            [DllImport("wx-c")] static extern int    wxGrid_GetDefaultRowLabelSize(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetRowLabelSize(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetDefaultColLabelSize(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetColLabelSize(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetLabelBackgroundColour(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetLabelTextColour(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetLabelFont(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_GetRowLabelAlignment(IntPtr self, out int horiz, out int vert);
-            [DllImport("wx-c")] static extern void   wxGrid_GetColLabelAlignment(IntPtr self, out int horiz, out int vert);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetRowLabelValue(IntPtr self, int row);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetColLabelValue(IntPtr self, int col);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetGridLineColour(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellHighlightColour(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetCellHighlightPenWidth(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetCellHighlightROPenWidth(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetRowLabelSize(IntPtr self, int width);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColLabelSize(IntPtr self, int height);
-            [DllImport("wx-c")] static extern void   wxGrid_SetLabelBackgroundColour(IntPtr self, IntPtr col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetLabelTextColour(IntPtr self, IntPtr col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetLabelFont(IntPtr self, IntPtr fnt);
-            [DllImport("wx-c")] static extern void   wxGrid_SetRowLabelAlignment(IntPtr self, int horiz, int vert);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColLabelAlignment(IntPtr self, int horiz, int vert);
-            [DllImport("wx-c")] static extern void   wxGrid_SetRowLabelValue(IntPtr self, int row, string val);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColLabelValue(IntPtr self, int col, string val);
-            [DllImport("wx-c")] static extern void   wxGrid_SetGridLineColour(IntPtr self, IntPtr col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellHighlightColour(IntPtr self, IntPtr col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellHighlightPenWidth(IntPtr self, int width);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellHighlightROPenWidth(IntPtr self, int width);
-            [DllImport("wx-c")] static extern void   wxGrid_EnableDragRowSize(IntPtr self, bool enable);
-            [DllImport("wx-c")] static extern void   wxGrid_DisableDragRowSize(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_CanDragRowSize(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_EnableDragColSize(IntPtr self, bool enable);
-            [DllImport("wx-c")] static extern void   wxGrid_DisableDragColSize(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_CanDragColSize(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_EnableDragGridSize(IntPtr self, bool enable);
-            [DllImport("wx-c")] static extern void   wxGrid_DisableDragGridSize(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_CanDragGridSize(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetAttr(IntPtr self, int row, int col, IntPtr attr);
-            [DllImport("wx-c")] static extern void   wxGrid_SetRowAttr(IntPtr self, int row, IntPtr attr);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColAttr(IntPtr self, int col, IntPtr attr);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColFormatBool(IntPtr self, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColFormatNumber(IntPtr self, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColFormatFloat(IntPtr self, int col, int width, int precision);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColFormatCustom(IntPtr self, int col, string typeName);
-            [DllImport("wx-c")] static extern void   wxGrid_EnableGridLines(IntPtr self, bool enable);
-            [DllImport("wx-c")] static extern bool   wxGrid_GridLinesEnabled(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetDefaultRowSize(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetRowSize(IntPtr self, int row);
-            [DllImport("wx-c")] static extern int    wxGrid_GetDefaultColSize(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetColSize(IntPtr self, int col);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultCellBackgroundColour(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellBackgroundColour(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultCellTextColour(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellTextColour(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultCellFont(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellFont(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_GetDefaultCellAlignment(IntPtr self, ref int horiz, ref int vert);
-            [DllImport("wx-c")] static extern void   wxGrid_GetCellAlignment(IntPtr self, int row, int col, ref int horiz, ref int vert);
-            [DllImport("wx-c")] static extern bool   wxGrid_GetDefaultCellOverflow(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_GetCellOverflow(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_GetCellSize(IntPtr self, int row, int col, ref int num_rows, ref int num_cols);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultRowSize(IntPtr self, int height, bool resizeExistingRows);
-            [DllImport("wx-c")] static extern void   wxGrid_SetRowSize(IntPtr self, int row, int height);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultColSize(IntPtr self, int width, bool resizeExistingCols);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColSize(IntPtr self, int col, int width);
-            [DllImport("wx-c")] static extern void   wxGrid_AutoSizeColumn(IntPtr self, int col, bool setAsMin);
-            [DllImport("wx-c")] static extern void   wxGrid_AutoSizeRow(IntPtr self, int row, bool setAsMin);
-            [DllImport("wx-c")] static extern void   wxGrid_AutoSizeColumns(IntPtr self, bool setAsMin);
-            [DllImport("wx-c")] static extern void   wxGrid_AutoSizeRows(IntPtr self, bool setAsMin);
-            [DllImport("wx-c")] static extern void   wxGrid_AutoSize(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColMinimalWidth(IntPtr self, int col, int width);
-            [DllImport("wx-c")] static extern void   wxGrid_SetRowMinimalHeight(IntPtr self, int row, int width);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColMinimalAcceptableWidth(IntPtr self, int width);
-            [DllImport("wx-c")] static extern void   wxGrid_SetRowMinimalAcceptableHeight(IntPtr self, int width);
-            [DllImport("wx-c")] static extern int    wxGrid_GetColMinimalAcceptableWidth(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetRowMinimalAcceptableHeight(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultCellBackgroundColour(IntPtr self, IntPtr wxColour);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultCellTextColour(IntPtr self, IntPtr wxColour);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultCellFont(IntPtr self, IntPtr wxFont);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellFont(IntPtr self, int row, int col, IntPtr wxFont );
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultCellAlignment(IntPtr self, int horiz, int vert);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellAlignmentHV(IntPtr self, int row, int col, int horiz, int vert);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultCellOverflow(IntPtr self, bool allow);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellOverflow(IntPtr self, int row, int col, bool allow);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellSize(IntPtr self, int row, int col, int num_rows, int num_cols);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultRenderer(IntPtr self, IntPtr renderer);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellRenderer(IntPtr self, int row, int col, IntPtr renderer);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultRenderer(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellRenderer(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDefaultEditor(IntPtr self, IntPtr editor);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellEditor(IntPtr self, int row, int col, IntPtr editor);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultEditor(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellEditor(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellValue(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellValue(IntPtr self, int row, int col, string s);
-            [DllImport("wx-c")] static extern bool   wxGrid_IsReadOnly(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetReadOnly(IntPtr self, int row, int col, bool isReadOnly);
-            [DllImport("wx-c")] static extern void   wxGrid_SelectRow(IntPtr self, int row, bool addToSelected);
-            [DllImport("wx-c")] static extern void   wxGrid_SelectCol(IntPtr self, int col, bool addToSelected);
-            [DllImport("wx-c")] static extern void   wxGrid_SelectBlock(IntPtr self, int topRow, int leftCol, int bottomRow, int rightCol, bool addToSelected);
-            [DllImport("wx-c")] static extern void   wxGrid_SelectAll(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_IsSelection(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_DeselectRow(IntPtr self, int row);
-            [DllImport("wx-c")] static extern void   wxGrid_DeselectCol(IntPtr self, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_DeselectCell(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_ClearSelection(IntPtr self);
-            [DllImport("wx-c")] static extern bool   wxGrid_IsInSelection(IntPtr self, int row, int col);
-            //[DllImport("wx-c")] static extern IntPtr wxGrid_GetSelectedCells(IntPtr self);
-            //[DllImport("wx-c")] static extern IntPtr wxGrid_GetSelectionBlockTopLeft(IntPtr self);
-            //[DllImport("wx-c")] static extern IntPtr wxGrid_GetSelectionBlockBottomRight(IntPtr self);
-            //[DllImport("wx-c")] static extern IntPtr wxGrid_GetSelectedRows(IntPtr self);
-            //[DllImport("wx-c")] static extern IntPtr wxGrid_GetSelectedCols(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_BlockToDeviceRect(IntPtr self, IntPtr topLeft, IntPtr bottomRight, ref Rectangle rect);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetSelectionBackground(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetSelectionForeground(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetSelectionBackground(IntPtr self, IntPtr c);
-            [DllImport("wx-c")] static extern void   wxGrid_SetSelectionForeground(IntPtr self, IntPtr c);
-            [DllImport("wx-c")] static extern void   wxGrid_RegisterDataType(IntPtr self, string typeName, IntPtr renderer, IntPtr editor);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultEditorForCell(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultRendererForCell(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultEditorForType(IntPtr self, string typeName);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDefaultRendererForType(IntPtr self, string typeName);
-            [DllImport("wx-c")] static extern void   wxGrid_SetMargins(IntPtr self, int extraWidth, int extraHeight);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetGridWindow(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetGridRowLabelWindow(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetGridColLabelWindow(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetGridCornerLabelWindow(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_UpdateDimensions(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetRows(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetCols(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetCursorRow(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetCursorColumn(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetScrollPosX(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetScrollPosY(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetScrollX(IntPtr self, int x);
-            [DllImport("wx-c")] static extern void   wxGrid_SetScrollY(IntPtr self, int y);
-            [DllImport("wx-c")] static extern void   wxGrid_SetColumnWidth(IntPtr self, int col, int width);
-            [DllImport("wx-c")] static extern int    wxGrid_GetColumnWidth(IntPtr self, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetRowHeight(IntPtr self, int row, int height);
-            [DllImport("wx-c")] static extern int    wxGrid_GetViewHeight(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetViewWidth(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetLabelSize(IntPtr self, int orientation, int sz);
-            [DllImport("wx-c")] static extern int    wxGrid_GetLabelSize(IntPtr self, int orientation);
-            [DllImport("wx-c")] static extern void   wxGrid_SetLabelAlignment(IntPtr self, int orientation, int align);
-            [DllImport("wx-c")] static extern int    wxGrid_GetLabelAlignment(IntPtr self, int orientation, int align);
-            [DllImport("wx-c")] static extern void   wxGrid_SetLabelValue(IntPtr self, int orientation, string val, int pos);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetLabelValue(IntPtr self, int orientation, int pos);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellTextFontGrid(IntPtr self);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetCellTextFont(IntPtr self, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellTextFontGrid(IntPtr self, IntPtr fnt);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellTextFont(IntPtr self, IntPtr fnt, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellTextColour(IntPtr self, int row, int col, IntPtr val);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellTextColourGrid(IntPtr self, IntPtr col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellBackgroundColourGrid(IntPtr self, IntPtr col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellBackgroundColour(IntPtr self, int row, int col, IntPtr colour);
-            [DllImport("wx-c")] static extern bool   wxGrid_GetEditable(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetEditable(IntPtr self, bool edit);
-            [DllImport("wx-c")] static extern bool   wxGrid_GetEditInPlace(IntPtr self);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellAlignment(IntPtr self, int align, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellAlignmentGrid(IntPtr self, int align);
-            [DllImport("wx-c")] static extern void   wxGrid_SetCellBitmap(IntPtr self, IntPtr bitmap, int row, int col);
-            [DllImport("wx-c")] static extern void   wxGrid_SetDividerPen(IntPtr self, IntPtr pen);
-            [DllImport("wx-c")] static extern IntPtr wxGrid_GetDividerPen(IntPtr self);
-            [DllImport("wx-c")] static extern int    wxGrid_GetRowHeight(IntPtr self, int row);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_ctor();
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_ctorFull(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_CreateGrid(IntPtr self, int numRows, int numCols,  int selmode);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetSelectionMode(IntPtr self, int selmode);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetNumberRows(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetNumberCols(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetTable(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_SetTable(IntPtr self, IntPtr table, bool takeOwnership, int select);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_ClearGrid(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_InsertRows(IntPtr self, int pos, int numRows, bool updateLabels);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_AppendRows(IntPtr self, int numRows, bool updateLabels);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_DeleteRows(IntPtr self, int pos, int numRows, bool updateLabels);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_InsertCols(IntPtr self, int pos, int numCols, bool updateLabels);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_AppendCols(IntPtr self, int numCols, bool updateLabels);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_DeleteCols(IntPtr self, int pos, int numCols, bool updateLabels);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_BeginBatch(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_EndBatch(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetBatchCount(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_ForceRefresh(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_IsEditable(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_EnableEditing(IntPtr self, bool edit);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_EnableCellEditControl(IntPtr self, bool enable);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_DisableCellEditControl(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_CanEnableCellControl(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_IsCellEditControlEnabled(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_IsCellEditControlShown(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_IsCurrentCellReadOnly(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_ShowCellEditControl(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_HideCellEditControl(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SaveEditControlValue(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_YToRow(IntPtr self, int y);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_XToCol(IntPtr self, int x);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_YToEdgeOfRow(IntPtr self, int y);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_XToEdgeOfCol(IntPtr self, int x);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_CellToRect(IntPtr self, int row, int col, ref Rectangle rect);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetGridCursorRow(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetGridCursorCol(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_IsVisible(IntPtr self, int row, int col, bool wholeCellVisible);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_MakeCellVisible(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetGridCursor(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MoveCursorUp(IntPtr self, bool expandSelection);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MoveCursorDown(IntPtr self, bool expandSelection);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MoveCursorLeft(IntPtr self, bool expandSelection);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MoveCursorRight(IntPtr self, bool expandSelection);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MovePageDown(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MovePageUp(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MoveCursorUpBlock(IntPtr self, bool expandSelection);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MoveCursorDownBlock(IntPtr self, bool expandSelection);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MoveCursorLeftBlock(IntPtr self, bool expandSelection);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_MoveCursorRightBlock(IntPtr self, bool expandSelection);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetDefaultRowLabelSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetRowLabelSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetDefaultColLabelSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetColLabelSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetLabelBackgroundColour(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetLabelTextColour(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetLabelFont(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_GetRowLabelAlignment(IntPtr self, out int horiz, out int vert);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_GetColLabelAlignment(IntPtr self, out int horiz, out int vert);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetRowLabelValue(IntPtr self, int row);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetColLabelValue(IntPtr self, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetGridLineColour(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellHighlightColour(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetCellHighlightPenWidth(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetCellHighlightROPenWidth(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetRowLabelSize(IntPtr self, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColLabelSize(IntPtr self, int height);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetLabelBackgroundColour(IntPtr self, IntPtr col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetLabelTextColour(IntPtr self, IntPtr col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetLabelFont(IntPtr self, IntPtr fnt);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetRowLabelAlignment(IntPtr self, int horiz, int vert);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColLabelAlignment(IntPtr self, int horiz, int vert);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetRowLabelValue(IntPtr self, int row, string val);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColLabelValue(IntPtr self, int col, string val);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetGridLineColour(IntPtr self, IntPtr col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellHighlightColour(IntPtr self, IntPtr col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellHighlightPenWidth(IntPtr self, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellHighlightROPenWidth(IntPtr self, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_EnableDragRowSize(IntPtr self, bool enable);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_DisableDragRowSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_CanDragRowSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_EnableDragColSize(IntPtr self, bool enable);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_DisableDragColSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_CanDragColSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_EnableDragGridSize(IntPtr self, bool enable);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_DisableDragGridSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_CanDragGridSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetAttr(IntPtr self, int row, int col, IntPtr attr);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetRowAttr(IntPtr self, int row, IntPtr attr);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColAttr(IntPtr self, int col, IntPtr attr);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColFormatBool(IntPtr self, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColFormatNumber(IntPtr self, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColFormatFloat(IntPtr self, int col, int width, int precision);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColFormatCustom(IntPtr self, int col, string typeName);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_EnableGridLines(IntPtr self, bool enable);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_GridLinesEnabled(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetDefaultRowSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetRowSize(IntPtr self, int row);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetDefaultColSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetColSize(IntPtr self, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultCellBackgroundColour(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellBackgroundColour(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultCellTextColour(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellTextColour(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultCellFont(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellFont(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_GetDefaultCellAlignment(IntPtr self, ref int horiz, ref int vert);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_GetCellAlignment(IntPtr self, int row, int col, ref int horiz, ref int vert);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_GetDefaultCellOverflow(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_GetCellOverflow(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_GetCellSize(IntPtr self, int row, int col, ref int num_rows, ref int num_cols);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultRowSize(IntPtr self, int height, bool resizeExistingRows);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetRowSize(IntPtr self, int row, int height);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultColSize(IntPtr self, int width, bool resizeExistingCols);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColSize(IntPtr self, int col, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_AutoSizeColumn(IntPtr self, int col, bool setAsMin);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_AutoSizeRow(IntPtr self, int row, bool setAsMin);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_AutoSizeColumns(IntPtr self, bool setAsMin);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_AutoSizeRows(IntPtr self, bool setAsMin);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_AutoSize(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColMinimalWidth(IntPtr self, int col, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetRowMinimalHeight(IntPtr self, int row, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColMinimalAcceptableWidth(IntPtr self, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetRowMinimalAcceptableHeight(IntPtr self, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetColMinimalAcceptableWidth(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetRowMinimalAcceptableHeight(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultCellBackgroundColour(IntPtr self, IntPtr wxColour);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultCellTextColour(IntPtr self, IntPtr wxColour);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultCellFont(IntPtr self, IntPtr wxFont);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellFont(IntPtr self, int row, int col, IntPtr wxFont );
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultCellAlignment(IntPtr self, int horiz, int vert);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellAlignmentHV(IntPtr self, int row, int col, int horiz, int vert);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultCellOverflow(IntPtr self, bool allow);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellOverflow(IntPtr self, int row, int col, bool allow);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellSize(IntPtr self, int row, int col, int num_rows, int num_cols);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultRenderer(IntPtr self, IntPtr renderer);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellRenderer(IntPtr self, int row, int col, IntPtr renderer);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultRenderer(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellRenderer(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDefaultEditor(IntPtr self, IntPtr editor);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellEditor(IntPtr self, int row, int col, IntPtr editor);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultEditor(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellEditor(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellValue(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellValue(IntPtr self, int row, int col, string s);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_IsReadOnly(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetReadOnly(IntPtr self, int row, int col, bool isReadOnly);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SelectRow(IntPtr self, int row, bool addToSelected);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SelectCol(IntPtr self, int col, bool addToSelected);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SelectBlock(IntPtr self, int topRow, int leftCol, int bottomRow, int rightCol, bool addToSelected);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SelectAll(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_IsSelection(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_DeselectRow(IntPtr self, int row);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_DeselectCol(IntPtr self, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_DeselectCell(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_ClearSelection(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_IsInSelection(IntPtr self, int row, int col);
+            //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetSelectedCells(IntPtr self);
+            //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetSelectionBlockTopLeft(IntPtr self);
+            //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetSelectionBlockBottomRight(IntPtr self);
+            //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetSelectedRows(IntPtr self);
+            //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetSelectedCols(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_BlockToDeviceRect(IntPtr self, IntPtr topLeft, IntPtr bottomRight, ref Rectangle rect);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetSelectionBackground(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetSelectionForeground(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetSelectionBackground(IntPtr self, IntPtr c);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetSelectionForeground(IntPtr self, IntPtr c);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_RegisterDataType(IntPtr self, string typeName, IntPtr renderer, IntPtr editor);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultEditorForCell(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultRendererForCell(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultEditorForType(IntPtr self, string typeName);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDefaultRendererForType(IntPtr self, string typeName);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetMargins(IntPtr self, int extraWidth, int extraHeight);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetGridWindow(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetGridRowLabelWindow(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetGridColLabelWindow(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetGridCornerLabelWindow(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_UpdateDimensions(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetRows(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetCols(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetCursorRow(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetCursorColumn(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetScrollPosX(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetScrollPosY(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetScrollX(IntPtr self, int x);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetScrollY(IntPtr self, int y);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetColumnWidth(IntPtr self, int col, int width);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetColumnWidth(IntPtr self, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetRowHeight(IntPtr self, int row, int height);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetViewHeight(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetViewWidth(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetLabelSize(IntPtr self, int orientation, int sz);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetLabelSize(IntPtr self, int orientation);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetLabelAlignment(IntPtr self, int orientation, int align);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetLabelAlignment(IntPtr self, int orientation, int align);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetLabelValue(IntPtr self, int orientation, string val, int pos);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetLabelValue(IntPtr self, int orientation, int pos);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellTextFontGrid(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetCellTextFont(IntPtr self, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellTextFontGrid(IntPtr self, IntPtr fnt);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellTextFont(IntPtr self, IntPtr fnt, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellTextColour(IntPtr self, int row, int col, IntPtr val);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellTextColourGrid(IntPtr self, IntPtr col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellBackgroundColourGrid(IntPtr self, IntPtr col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellBackgroundColour(IntPtr self, int row, int col, IntPtr colour);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_GetEditable(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetEditable(IntPtr self, bool edit);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGrid_GetEditInPlace(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellAlignment(IntPtr self, int align, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellAlignmentGrid(IntPtr self, int align);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetCellBitmap(IntPtr self, IntPtr bitmap, int row, int col);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGrid_SetDividerPen(IntPtr self, IntPtr pen);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGrid_GetDividerPen(IntPtr self);
+            [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGrid_GetRowHeight(IntPtr self, int row);
 
         //-----------------------------------------------------------------------------
 
@@ -2845,13 +2845,13 @@ namespace wx
 
     public class GridCellCoords : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellCoords_ctor();
-	[DllImport("wx-c")] static extern void   wxGridCellCoords_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxGridCellCoords_GetRow(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellCoords_SetRow(IntPtr self, int n);
-        [DllImport("wx-c")] static extern int    wxGridCellCoords_GetCol(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellCoords_SetCol(IntPtr self, int n);
-        [DllImport("wx-c")] static extern void   wxGridCellCoords_Set(IntPtr self, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellCoords_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellCoords_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridCellCoords_GetRow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellCoords_SetRow(IntPtr self, int n);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridCellCoords_GetCol(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellCoords_SetCol(IntPtr self, int n);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellCoords_Set(IntPtr self, int row, int col);
 	
         //-----------------------------------------------------------------------------
     
@@ -2940,39 +2940,39 @@ namespace wx
     
         //-----------------------------------------------------------------------------
     
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_ctor(IntPtr colText, IntPtr colBack, IntPtr font, int hAlign, int vAlign);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_ctor2();
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_ctor3(IntPtr attrDefault);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_Clone(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_MergeWith(IntPtr self, IntPtr mergefrom);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_IncRef(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_DecRef(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetTextColour(IntPtr self, IntPtr colText);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetFont(IntPtr self, IntPtr font);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetAlignment(IntPtr self, int hAlign, int vAlign);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetSize(IntPtr self, int num_rows, int num_cols);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetOverflow(IntPtr self, bool allow);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetReadOnly(IntPtr self, bool isReadOnly);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetRenderer(IntPtr self, IntPtr renderer);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetEditor(IntPtr self, IntPtr editor);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_HasTextColour(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_HasBackgroundColour(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_HasFont(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_HasAlignment(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_HasRenderer(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_HasEditor(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_HasReadWriteMode(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_GetTextColour(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_GetBackgroundColour(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_GetFont(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_GetAlignment(IntPtr self, ref int hAlign, ref int vAlign);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_GetSize(IntPtr self, ref int num_rows, ref int num_cols);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_GetOverflow(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_GetRenderer(IntPtr self, IntPtr grid, int row, int col);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttr_GetEditor(IntPtr self, IntPtr grid, int row, int col);
-        [DllImport("wx-c")] static extern bool   wxGridCellAttr_IsReadOnly(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridCellAttr_SetDefAttr(IntPtr self, IntPtr defAttr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_ctor(IntPtr colText, IntPtr colBack, IntPtr font, int hAlign, int vAlign);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_ctor2();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_ctor3(IntPtr attrDefault);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_MergeWith(IntPtr self, IntPtr mergefrom);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_IncRef(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_DecRef(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetTextColour(IntPtr self, IntPtr colText);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetFont(IntPtr self, IntPtr font);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetAlignment(IntPtr self, int hAlign, int vAlign);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetSize(IntPtr self, int num_rows, int num_cols);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetOverflow(IntPtr self, bool allow);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetReadOnly(IntPtr self, bool isReadOnly);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetRenderer(IntPtr self, IntPtr renderer);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetEditor(IntPtr self, IntPtr editor);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_HasTextColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_HasBackgroundColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_HasFont(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_HasAlignment(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_HasRenderer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_HasEditor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_HasReadWriteMode(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_GetTextColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_GetBackgroundColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_GetFont(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_GetAlignment(IntPtr self, ref int hAlign, ref int vAlign);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_GetSize(IntPtr self, ref int num_rows, ref int num_cols);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_GetOverflow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_GetRenderer(IntPtr self, IntPtr grid, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttr_GetEditor(IntPtr self, IntPtr grid, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridCellAttr_IsReadOnly(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAttr_SetDefAttr(IntPtr self, IntPtr defAttr);
 	
         //-----------------------------------------------------------------------------
     
@@ -3190,17 +3190,17 @@ namespace wx
 
     public class GridSizeEvent : Event 
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridSizeEvent_ctor();
-        [DllImport("wx-c")] static extern IntPtr wxGridSizeEvent_ctorParam(int id, int type, IntPtr obj, int rowOrCol, int x, int y, bool control, bool shift, bool alt, bool meta);
-        [DllImport("wx-c")] static extern int    wxGridSizeEvent_GetRowOrCol(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridSizeEvent_GetPosition(IntPtr self, ref Point pt);
-        [DllImport("wx-c")] static extern bool   wxGridSizeEvent_ControlDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridSizeEvent_MetaDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridSizeEvent_ShiftDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridSizeEvent_AltDown(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridSizeEvent_Veto(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridSizeEvent_Allow(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxGridSizeEvent_IsAllowed(IntPtr self);          
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridSizeEvent_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridSizeEvent_ctorParam(int id, int type, IntPtr obj, int rowOrCol, int x, int y, bool control, bool shift, bool alt, bool meta);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridSizeEvent_GetRowOrCol(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridSizeEvent_GetPosition(IntPtr self, ref Point pt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridSizeEvent_ControlDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridSizeEvent_MetaDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridSizeEvent_ShiftDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridSizeEvent_AltDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridSizeEvent_Veto(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridSizeEvent_Allow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridSizeEvent_IsAllowed(IntPtr self);          
     
         //-----------------------------------------------------------------------------
         
@@ -3289,9 +3289,9 @@ namespace wx
         
         //-----------------------------------------------------------------------------
         
-        [DllImport("wx-c")] static extern IntPtr wxGridCellRenderer_ctor();
-	[DllImport("wx-c")] static extern void wxGridCellRenderer_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellRenderer_RegisterVirtual(IntPtr self, Virtual_Draw draw, Virtual_GetBestSize getBestSize, Virtual_RendererClone clone);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellRenderer_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellRenderer_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellRenderer_RegisterVirtual(IntPtr self, Virtual_Draw draw, Virtual_GetBestSize getBestSize, Virtual_RendererClone clone);
 	
 	//-----------------------------------------------------------------------------
 	
@@ -3385,12 +3385,12 @@ namespace wx
     
     public class GridCellStringRenderer : GridCellRenderer
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellStringRenderer_ctor();
-	[DllImport("wx-c")] static extern void wxGridCellStringRenderer_dtor(IntPtr self);
-	[DllImport("wx-c")] static extern void wxGridCellStringRenderer_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-        [DllImport("wx-c")] static extern void wxGridCellStringRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
-        [DllImport("wx-c")] static extern void wxGridCellStringRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellStringRenderer_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellStringRenderer_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellStringRenderer_dtor(IntPtr self);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellStringRenderer_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellStringRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellStringRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellStringRenderer_Clone(IntPtr self);
 	
         public GridCellStringRenderer()
             : this(wxGridCellStringRenderer_ctor(), true) 
@@ -3464,11 +3464,11 @@ namespace wx
     
     public class GridCellNumberRenderer : GridCellStringRenderer
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellNumberRenderer_ctor();
-	[DllImport("wx-c")] static extern void wxGridCellNumberRenderer_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellNumberRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
-        [DllImport("wx-c")] static extern void wxGridCellNumberRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellNumberRenderer_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellNumberRenderer_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberRenderer_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellNumberRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellNumberRenderer_Clone(IntPtr self);
 	
         public GridCellNumberRenderer()
             : this(wxGridCellNumberRenderer_ctor(), true) { }
@@ -3538,16 +3538,16 @@ namespace wx
     
     public class GridCellFloatRenderer : GridCellStringRenderer
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellFloatRenderer_ctor(int width, int precision);
-	[DllImport("wx-c")] static extern void wxGridCellFloatRenderer_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellFloatRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
-        [DllImport("wx-c")] static extern void wxGridCellFloatRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellFloatRenderer_Clone(IntPtr self);
-        [DllImport("wx-c")] static extern int wxGridCellFloatRenderer_GetWidth(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellFloatRenderer_SetWidth(IntPtr self, int width);
-        [DllImport("wx-c")] static extern int wxGridCellFloatRenderer_GetPrecision(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellFloatRenderer_SetPrecision(IntPtr self, int precision);
-        [DllImport("wx-c")] static extern void wxGridCellFloatRenderer_SetParameters(IntPtr self, string parameter);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellFloatRenderer_ctor(int width, int precision);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatRenderer_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellFloatRenderer_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridCellFloatRenderer_GetWidth(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatRenderer_SetWidth(IntPtr self, int width);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridCellFloatRenderer_GetPrecision(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatRenderer_SetPrecision(IntPtr self, int precision);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellFloatRenderer_SetParameters(IntPtr self, string parameter);
 	
         public GridCellFloatRenderer()
             : this(-1, -1) { }
@@ -3640,12 +3640,12 @@ namespace wx
     
     public class GridCellBoolRenderer : GridCellRenderer
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridCellBoolRenderer_ctor();
-	[DllImport("wx-c")] static extern void wxGridCellBoolRenderer_dtor(IntPtr self);
-	[DllImport("wx-c")] static extern void wxGridCellBoolRenderer_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-        [DllImport("wx-c")] static extern void wxGridCellBoolRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
-        [DllImport("wx-c")] static extern void wxGridCellBoolRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellBoolRenderer_Clone(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellBoolRenderer_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolRenderer_dtor(IntPtr self);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolRenderer_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellBoolRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellBoolRenderer_Clone(IntPtr self);
 	
         public GridCellBoolRenderer()
             : this(wxGridCellBoolRenderer_ctor(), true) 
@@ -3784,8 +3784,8 @@ namespace wx
 		private Virtual_SetRowAttr setRowAttr;
 		private Virtual_SetRowAttr setColAttr;
         
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_ctor();
-        [DllImport("wx-c")] static extern void wxGridTableBase_RegisterVirtual(IntPtr self, 
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridTableBase_RegisterVirtual(IntPtr self, 
             Virtual_GetNumberRows getNumberRows, 
             Virtual_GetNumberCols getNumberCols, 
             Virtual_IsEmptyCell isEmptyCell, 
@@ -3823,42 +3823,42 @@ namespace wx
             Virtual_SetRowAttr setRowAttr,
             Virtual_SetRowAttr setColAttr);
 
-        [DllImport("wx-c")] static extern int    wxGridTableBase_GetNumberRows(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxGridTableBase_GetNumberCols(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_IsEmptyCell(IntPtr self, int row, int col);
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_GetValue(IntPtr self, int row, int col);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetValue(IntPtr self, int row, int col, string val);
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_GetTypeName(IntPtr self, int row, int col);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_CanGetValueAs(IntPtr self, int row, int col, string typeName);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_CanSetValueAs(IntPtr self, int row, int col, string typeName);
-        [DllImport("wx-c")] static extern long   wxGridTableBase_GetValueAsLong(IntPtr self, int row, int col);
-        [DllImport("wx-c")] static extern double wxGridTableBase_GetValueAsDouble(IntPtr self, int row, int col);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_GetValueAsBool(IntPtr self, int row, int col);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetValueAsLong(IntPtr self, int row, int col, long val);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetValueAsDouble(IntPtr self, int row, int col, double val);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetValueAsBool(IntPtr self, int row, int col, bool val);
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_GetValueAsCustom(IntPtr self, int row, int col, string typeName);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetValueAsCustom(IntPtr self, int row, int col, string typeName, IntPtr val);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetView(IntPtr self, IntPtr grid);
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_GetView(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_Clear(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_InsertRows(IntPtr self, int pos, int numRows);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_AppendRows(IntPtr self, int numRows);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_DeleteRows(IntPtr self, int pos, int numRows);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_InsertCols(IntPtr self, int pos, int numCols);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_AppendCols(IntPtr self, int numCols);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_DeleteCols(IntPtr self, int pos, int numCols);
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_GetRowLabelValue(IntPtr self, int row);
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_GetColLabelValue(IntPtr self, int col);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetRowLabelValue(IntPtr self, int row, string val);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetColLabelValue(IntPtr self, int col, string val);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetAttrProvider(IntPtr self, IntPtr attrProvider);
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_GetAttrProvider(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxGridTableBase_CanHaveAttributes(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxGridTableBase_GetAttr(IntPtr self, int row, int col, int kind);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetAttr(IntPtr self, IntPtr attr, int row, int col);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetRowAttr(IntPtr self, IntPtr attr, int row);
-        [DllImport("wx-c")] static extern void   wxGridTableBase_SetColAttr(IntPtr self, IntPtr attr, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridTableBase_GetNumberRows(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGridTableBase_GetNumberCols(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_IsEmptyCell(IntPtr self, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_GetValue(IntPtr self, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetValue(IntPtr self, int row, int col, string val);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_GetTypeName(IntPtr self, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_CanGetValueAs(IntPtr self, int row, int col, string typeName);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_CanSetValueAs(IntPtr self, int row, int col, string typeName);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern long   wxGridTableBase_GetValueAsLong(IntPtr self, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern double wxGridTableBase_GetValueAsDouble(IntPtr self, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_GetValueAsBool(IntPtr self, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetValueAsLong(IntPtr self, int row, int col, long val);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetValueAsDouble(IntPtr self, int row, int col, double val);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetValueAsBool(IntPtr self, int row, int col, bool val);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_GetValueAsCustom(IntPtr self, int row, int col, string typeName);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetValueAsCustom(IntPtr self, int row, int col, string typeName, IntPtr val);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetView(IntPtr self, IntPtr grid);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_GetView(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_Clear(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_InsertRows(IntPtr self, int pos, int numRows);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_AppendRows(IntPtr self, int numRows);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_DeleteRows(IntPtr self, int pos, int numRows);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_InsertCols(IntPtr self, int pos, int numCols);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_AppendCols(IntPtr self, int numCols);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_DeleteCols(IntPtr self, int pos, int numCols);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_GetRowLabelValue(IntPtr self, int row);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_GetColLabelValue(IntPtr self, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetRowLabelValue(IntPtr self, int row, string val);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetColLabelValue(IntPtr self, int col, string val);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetAttrProvider(IntPtr self, IntPtr attrProvider);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_GetAttrProvider(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridTableBase_CanHaveAttributes(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridTableBase_GetAttr(IntPtr self, int row, int col, int kind);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetAttr(IntPtr self, IntPtr attr, int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetRowAttr(IntPtr self, IntPtr attr, int row);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridTableBase_SetColAttr(IntPtr self, IntPtr attr, int col);
         
         //-----------------------------------------------------------------------------
     
@@ -4242,19 +4242,19 @@ namespace wx
 		private Virtual_SetRowAttr setRowAttr;
 		private Virtual_SetRowAttr setColAttr;
         
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttrProvider_ctor();
-	[DllImport("wx-c")] static extern void wxGridCellAttrProvider_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void wxGridCellAttrProvider_RegisterVirtual(IntPtr self,
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttrProvider_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAttrProvider_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAttrProvider_RegisterVirtual(IntPtr self,
             Virtual_GetAttr getAttr,
             Virtual_SetAttr setAttr,
             Virtual_SetRowAttr setRowAttr,
             Virtual_SetRowAttr setColAttr);
-        [DllImport("wx-c")] static extern IntPtr wxGridCellAttrProvider_GetAttr(IntPtr self, int row, int col, int kind);
-        [DllImport("wx-c")] static extern void wxGridCellAttrProvider_SetAttr(IntPtr self, IntPtr attr, int row, int col); 
-        [DllImport("wx-c")] static extern void wxGridCellAttrProvider_SetRowAttr(IntPtr self, IntPtr attr, int row); 
-        [DllImport("wx-c")] static extern void wxGridCellAttrProvider_SetColAttr(IntPtr self, IntPtr attr, int col); 
-        [DllImport("wx-c")] static extern void wxGridCellAttrProvider_UpdateAttrRows(IntPtr self, int pos, int numRows);
-        [DllImport("wx-c")] static extern void wxGridCellAttrProvider_UpdateAttrCols(IntPtr self, int pos, int numCols);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAttrProvider_GetAttr(IntPtr self, int row, int col, int kind);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAttrProvider_SetAttr(IntPtr self, IntPtr attr, int row, int col); 
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAttrProvider_SetRowAttr(IntPtr self, IntPtr attr, int row); 
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAttrProvider_SetColAttr(IntPtr self, IntPtr attr, int col); 
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAttrProvider_UpdateAttrRows(IntPtr self, int pos, int numRows);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAttrProvider_UpdateAttrCols(IntPtr self, int pos, int numCols);
 	
         //-----------------------------------------------------------------------------
         

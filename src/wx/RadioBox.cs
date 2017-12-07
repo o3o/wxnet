@@ -27,29 +27,29 @@ namespace wx
 
 		//---------------------------------------------------------------------
         
-		[DllImport("wx-c")] static extern IntPtr wxRadioBox_ctor();
-		[DllImport("wx-c")] static extern bool   wxRadioBox_Create(IntPtr self, IntPtr parent, int id,
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRadioBox_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRadioBox_Create(IntPtr self, IntPtr parent, int id,
 		                                                           string label, ref Point pos, ref Size size,
 		                                                           int n, string[] choices, int majorDimension,
 		                                                           uint style, IntPtr val, string name);
 
-		[DllImport("wx-c")] static extern void   wxRadioBox_SetSelection(IntPtr self, int n);
-		[DllImport("wx-c")] static extern int    wxRadioBox_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRadioBox_SetSelection(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRadioBox_GetSelection(IntPtr self);
 
-		[DllImport("wx-c")] static extern IntPtr wxRadioBox_GetStringSelection(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxRadioBox_SetStringSelection(IntPtr self, string s);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRadioBox_GetStringSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRadioBox_SetStringSelection(IntPtr self, string s);
 
-		[DllImport("wx-c")] static extern int    wxRadioBox_GetCount(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxRadioBox_FindString(IntPtr self, string s);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRadioBox_GetCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRadioBox_FindString(IntPtr self, string s);
 
-		[DllImport("wx-c")] static extern IntPtr wxRadioBox_GetString(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxRadioBox_SetString(IntPtr self, int n, string label);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRadioBox_GetString(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRadioBox_SetString(IntPtr self, int n, string label);
 
-		[DllImport("wx-c")] static extern void   wxRadioBox_Enable(IntPtr self, int n, bool enable);
-		[DllImport("wx-c")] static extern void   wxRadioBox_Show(IntPtr self, int n, bool show);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRadioBox_Enable(IntPtr self, int n, bool enable);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRadioBox_Show(IntPtr self, int n, bool show);
 		
-		[DllImport("wx-c")] static extern IntPtr wxRadioBox_GetLabel(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxRadioBox_SetLabel(IntPtr self, string label);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRadioBox_GetLabel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRadioBox_SetLabel(IntPtr self, string label);
 
 		//---------------------------------------------------------------------
 		

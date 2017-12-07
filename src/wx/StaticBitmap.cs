@@ -18,10 +18,10 @@ namespace wx
 {
 	public class StaticBitmap : Control
 	{
-		[DllImport("wx-c")] static extern IntPtr wxStaticBitmap_ctor();
-		[DllImport("wx-c")] static extern bool wxStaticBitmap_Create(IntPtr self, IntPtr parent, int id, IntPtr label, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void wxStaticBitmap_SetBitmap(IntPtr self, IntPtr bitmap);
-		[DllImport("wx-c")] static extern IntPtr wxStaticBitmap_GetBitmap(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStaticBitmap_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxStaticBitmap_Create(IntPtr self, IntPtr parent, int id, IntPtr label, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxStaticBitmap_SetBitmap(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStaticBitmap_GetBitmap(IntPtr self);
 
 		//---------------------------------------------------------------------
 

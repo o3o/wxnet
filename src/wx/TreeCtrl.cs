@@ -30,11 +30,11 @@ namespace wx
 
 	public class TreeItemData : ClientData
 	{
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemData_ctor();
-		[DllImport("wx-c")] static extern void   wxTreeItemData_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void   wxTreeItemData_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemData_GetId(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeItemData_SetId(IntPtr self, IntPtr param);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemData_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemData_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemData_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemData_GetId(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemData_SetId(IntPtr self, IntPtr param);
 		
 		//-----------------------------------------------------------------------------
 
@@ -101,19 +101,19 @@ namespace wx
 	
 	public class TreeItemAttr : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemAttr_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemAttr_ctor2(IntPtr colText, IntPtr colBack, IntPtr font);
-		[DllImport("wx-c")] static extern void   wxTreeItemAttr_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeItemAttr_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void   wxTreeItemAttr_SetTextColour(IntPtr self, IntPtr colText);
-		[DllImport("wx-c")] static extern void   wxTreeItemAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
-		[DllImport("wx-c")] static extern void   wxTreeItemAttr_SetFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern bool   wxTreeItemAttr_HasTextColour(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTreeItemAttr_HasBackgroundColour(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTreeItemAttr_HasFont(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemAttr_GetTextColour(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemAttr_GetBackgroundColour(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemAttr_GetFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemAttr_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemAttr_ctor2(IntPtr colText, IntPtr colBack, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemAttr_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemAttr_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemAttr_SetTextColour(IntPtr self, IntPtr colText);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemAttr_SetFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeItemAttr_HasTextColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeItemAttr_HasBackgroundColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeItemAttr_HasFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemAttr_GetTextColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemAttr_GetBackgroundColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemAttr_GetFont(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 
@@ -225,12 +225,12 @@ namespace wx
 	//[StructLayout(LayoutKind.Sequential)]
 	public class TreeItemId : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemId_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxTreeItemId_ctor2(IntPtr pItem);
-		[DllImport("wx-c")] static extern void   wxTreeItemId_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeItem_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern bool   wxTreeItemId_Equal(IntPtr item1, IntPtr item2);
-		[DllImport("wx-c")] static extern bool   wxTreeItemId_IsOk(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemId_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeItemId_ctor2(IntPtr pItem);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItemId_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeItem_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeItemId_Equal(IntPtr item1, IntPtr item2);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeItemId_IsOk(IntPtr self);
 		
 		//---------------------------------------------------------------------
 
@@ -407,116 +407,116 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern uint   wxTreeCtrl_GetDefaultStyle();
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_ctor();
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_RegisterVirtual(IntPtr self, Virtual_OnCompareItems onCompareItems);
-		[DllImport("wx-c")] static extern int    wxTreeCtrl_OnCompareItems(IntPtr self, IntPtr item1, IntPtr item2);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_AddRoot(IntPtr self, string text, int image, int selImage, IntPtr data);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_AppendItem(IntPtr self, IntPtr parent, string text, int image, int selImage, IntPtr data);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_AssignImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_AssignStateImageList(IntPtr self, IntPtr imageList);
-		//[DllImport("wx-c")] static extern void   wxTreeCtrl_AssignButtonsImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern bool   wxTreeCtrl_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, IntPtr val, string name);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetImageList(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetStateImageList(IntPtr self);
-		//[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetButtonsImageList(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetStateImageList(IntPtr self, IntPtr imageList);
-		//[DllImport("wx-c")] static extern void   wxTreeCtrl_SetButtonsImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemImage(IntPtr self, IntPtr item, int image, TreeItemIcon which);
-		[DllImport("wx-c")] static extern int    wxTreeCtrl_GetItemImage(IntPtr self, IntPtr item, TreeItemIcon which);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTreeCtrl_GetDefaultStyle();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_RegisterVirtual(IntPtr self, Virtual_OnCompareItems onCompareItems);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTreeCtrl_OnCompareItems(IntPtr self, IntPtr item1, IntPtr item2);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_AddRoot(IntPtr self, string text, int image, int selImage, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_AppendItem(IntPtr self, IntPtr parent, string text, int image, int selImage, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_AssignImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_AssignStateImageList(IntPtr self, IntPtr imageList);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_AssignButtonsImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeCtrl_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, IntPtr val, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetImageList(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetStateImageList(IntPtr self);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetButtonsImageList(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetStateImageList(IntPtr self, IntPtr imageList);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetButtonsImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemImage(IntPtr self, IntPtr item, int image, TreeItemIcon which);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTreeCtrl_GetItemImage(IntPtr self, IntPtr item, TreeItemIcon which);
 
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_DeleteAllItems(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_Delete(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_DeleteChildren(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_DeleteAllItems(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_Delete(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_DeleteChildren(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_Unselect(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_UnselectAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_Unselect(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_UnselectAll(IntPtr self);
 
-		[DllImport("wx-c")] static extern bool   wxTreeCtrl_IsSelected(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SelectItem(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeCtrl_IsSelected(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SelectItem(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetItemText(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemText(IntPtr self, IntPtr item, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetItemText(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemText(IntPtr self, IntPtr item, string text);
 
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_HitTest(IntPtr self, ref Point pt, ref int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_HitTest(IntPtr self, ref Point pt, ref int flags);
 
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemData(IntPtr self, IntPtr item, IntPtr data);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetItemData(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemData(IntPtr self, IntPtr item, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetItemData(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetRootItem(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetItemParent(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetRootItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetItemParent(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetFirstChild(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetNextChild(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetLastChild(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetFirstChild(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetNextChild(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetLastChild(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetNextSibling(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetPrevSibling(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetNextSibling(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetPrevSibling(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetFirstVisibleItem(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetNextVisible(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetPrevVisible(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetFirstVisibleItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetNextVisible(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetPrevVisible(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_Expand(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_Expand(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_Collapse(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_CollapseAndReset(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_Collapse(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_CollapseAndReset(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_Toggle(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_Toggle(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_EnsureVisible(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_ScrollTo(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_EnsureVisible(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_ScrollTo(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern int    wxTreeCtrl_GetChildrenCount(IntPtr self, IntPtr item, bool recursively);
-		[DllImport("wx-c")] static extern int    wxTreeCtrl_GetCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTreeCtrl_GetChildrenCount(IntPtr self, IntPtr item, bool recursively);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTreeCtrl_GetCount(IntPtr self);
 
-		[DllImport("wx-c")] static extern bool   wxTreeCtrl_IsVisible(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeCtrl_IsVisible(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern bool   wxTreeCtrl_ItemHasChildren(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeCtrl_ItemHasChildren(IntPtr self, IntPtr item);
 
-		[DllImport("wx-c")] static extern bool   wxTreeCtrl_IsExpanded(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeCtrl_IsExpanded(IntPtr self, IntPtr item);
 		
-		[DllImport("wx-c")] static extern uint   wxTreeCtrl_GetIndent(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetIndent(IntPtr self, uint indent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTreeCtrl_GetIndent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetIndent(IntPtr self, uint indent);
 		
-		[DllImport("wx-c")] static extern uint   wxTreeCtrl_GetSpacing(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetSpacing(IntPtr self, uint indent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTreeCtrl_GetSpacing(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetSpacing(IntPtr self, uint indent);
 		
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetItemTextColour(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetItemBackgroundColour(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetItemFont(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetItemTextColour(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetItemBackgroundColour(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetItemFont(IntPtr self, IntPtr item);
 		
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemHasChildren(IntPtr self, IntPtr item, bool has);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemBold(IntPtr self, IntPtr item, bool bold);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemTextColour(IntPtr self, IntPtr item, IntPtr col);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemBackgroundColour(IntPtr self, IntPtr item, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemHasChildren(IntPtr self, IntPtr item, bool has);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemBold(IntPtr self, IntPtr item, bool bold);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemTextColour(IntPtr self, IntPtr item, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemBackgroundColour(IntPtr self, IntPtr item, IntPtr col);
 		
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_EditLabel(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_EditLabel(IntPtr self, IntPtr item);
 		
-		[DllImport("wx-c")] static extern bool   wxTreeCtrl_GetBoundingRect(IntPtr self, IntPtr item, ref Rectangle rect, bool textOnly);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeCtrl_GetBoundingRect(IntPtr self, IntPtr item, ref Rectangle rect, bool textOnly);
 		
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_InsertItem(IntPtr self, IntPtr parent, IntPtr idPrevious, string text, int image, int selectedImage, IntPtr data);
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_InsertItem2(IntPtr self, IntPtr parent, int before, string text, int image, int selectedImage, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_InsertItem(IntPtr self, IntPtr parent, IntPtr idPrevious, string text, int image, int selectedImage, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_InsertItem2(IntPtr self, IntPtr parent, int before, string text, int image, int selectedImage, IntPtr data);
 		
-		[DllImport("wx-c")] static extern bool   wxTreeCtrl_IsBold(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeCtrl_IsBold(IntPtr self, IntPtr item);
 		
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_PrependItem(IntPtr self, IntPtr parent, string text, int image, int selectedImage, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_PrependItem(IntPtr self, IntPtr parent, string text, int image, int selectedImage, IntPtr data);
 		
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemSelectedImage(IntPtr self, IntPtr item, int selImage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemSelectedImage(IntPtr self, IntPtr item, int selImage);
 		
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_ToggleItemSelection(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_ToggleItemSelection(IntPtr self, IntPtr item);
 		
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_UnselectItem(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_UnselectItem(IntPtr self, IntPtr item);
 		
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetMyCookie(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetMyCookie(IntPtr self, IntPtr newval);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetMyCookie(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetMyCookie(IntPtr self, IntPtr newval);
 		
-		[DllImport("wx-c")] static extern IntPtr wxTreeCtrl_GetSelections(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeCtrl_GetSelections(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SetItemFont(IntPtr self, IntPtr item, IntPtr font);
-		[DllImport("wx-c")] static extern void   wxTreeCtrl_SortChildren(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SetItemFont(IntPtr self, IntPtr item, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeCtrl_SortChildren(IntPtr self, IntPtr item);
 
 		//---------------------------------------------------------------------
 
@@ -1366,26 +1366,26 @@ namespace wx
 
 	public class TreeEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxTreeEvent_ctor(int commandType, int id);
-		[DllImport("wx-c")] static extern IntPtr wxTreeEvent_GetItem(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_SetItem(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern IntPtr wxTreeEvent_GetOldItem(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_SetOldItem(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_GetPoint(IntPtr self, ref Point pt);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_SetPoint(IntPtr self, ref Point pt);
-		[DllImport("wx-c")] static extern IntPtr wxTreeEvent_GetKeyEvent(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxTreeEvent_GetKeyCode(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_SetKeyEvent(IntPtr self, IntPtr evt);
-		[DllImport("wx-c")] static extern IntPtr wxTreeEvent_GetLabel(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_SetLabel(IntPtr self, string label);
-		[DllImport("wx-c")] static extern bool   wxTreeEvent_IsEditCancelled(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_SetEditCanceled(IntPtr self, bool editCancelled);
-		//[DllImport("wx-c")] static extern int    wxTreeEvent_GetCode(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_Veto(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTreeEvent_Allow(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTreeEvent_IsAllowed(IntPtr self);       
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeEvent_ctor(int commandType, int id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeEvent_GetItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_SetItem(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeEvent_GetOldItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_SetOldItem(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_GetPoint(IntPtr self, ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_SetPoint(IntPtr self, ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeEvent_GetKeyEvent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTreeEvent_GetKeyCode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_SetKeyEvent(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTreeEvent_GetLabel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_SetLabel(IntPtr self, string label);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeEvent_IsEditCancelled(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_SetEditCanceled(IntPtr self, bool editCancelled);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTreeEvent_GetCode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_Veto(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_Allow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTreeEvent_IsAllowed(IntPtr self);       
 		
-		[DllImport("wx-c")] static extern void   wxTreeEvent_SetToolTip(IntPtr self, string toolTip);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTreeEvent_SetToolTip(IntPtr self, string toolTip);
 
 		//-----------------------------------------------------------------------------
 
@@ -1483,12 +1483,12 @@ namespace wx
 
 	public class ArrayTreeItemIds : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxArrayTreeItemIds_ctor();
-		[DllImport("wx-c")] static extern void   wxArrayTreeItemIds_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxArrayTreeItemIds_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void   wxArrayTreeItemIds_Add(IntPtr self, IntPtr toadd);
-		[DllImport("wx-c")] static extern IntPtr wxArrayTreeItemIds_Item(IntPtr self, int num);
-		[DllImport("wx-c")] static extern int    wxArrayTreeItemIds_GetCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxArrayTreeItemIds_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayTreeItemIds_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayTreeItemIds_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayTreeItemIds_Add(IntPtr self, IntPtr toadd);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxArrayTreeItemIds_Item(IntPtr self, int num);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxArrayTreeItemIds_GetCount(IntPtr self);
 		
 		//---------------------------------------------------------------------
 

@@ -25,49 +25,49 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 		
-		[DllImport("wx-c")] static extern IntPtr wxComboBox_ctor();
-		[DllImport("wx-c")] static extern bool   wxComboBox_Create(IntPtr self, IntPtr window, int id, string value, ref Point pos, ref Size size, int n, string[] choices, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxComboBox_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxComboBox_Create(IntPtr self, IntPtr window, int id, string value, ref Point pos, ref Size size, int n, string[] choices, uint style, IntPtr validator, string name);
 		
-		[DllImport("wx-c")] static extern void   wxComboBox_Append(IntPtr self, string item);
-		[DllImport("wx-c")] static extern void   wxComboBox_AppendData(IntPtr self, string item, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_Append(IntPtr self, string item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_AppendData(IntPtr self, string item, IntPtr data);
 		
-		[DllImport("wx-c")] static extern void   wxComboBox_Clear(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxComboBox_Delete(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_Delete(IntPtr self, int n);
 		
-		[DllImport("wx-c")] static extern int    wxComboBox_FindString(IntPtr self, string str);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxComboBox_FindString(IntPtr self, string str);
 		
-		[DllImport("wx-c")] static extern int    wxComboBox_GetCount(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxComboBox_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxComboBox_GetString(IntPtr self, int n);
-		//[DllImport("wx-c")] static extern void   wxComboBox_SetString(IntPtr self, int n, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxComboBox_GetCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxComboBox_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxComboBox_GetString(IntPtr self, int n);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetString(IntPtr self, int n, string text);
 		
-		[DllImport("wx-c")] static extern IntPtr wxComboBox_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxComboBox_SetValue(IntPtr self, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxComboBox_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetValue(IntPtr self, string text);
 		
-		[DllImport("wx-c")] static extern IntPtr wxComboBox_GetStringSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxComboBox_SetStringSelection(IntPtr self, string value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxComboBox_GetStringSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetStringSelection(IntPtr self, string value);
 		
-		[DllImport("wx-c")] static extern IntPtr wxComboBox_GetClientData(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxComboBox_SetClientData(IntPtr self, int n, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxComboBox_GetClientData(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetClientData(IntPtr self, int n, IntPtr data);
 		
-		[DllImport("wx-c")] static extern void   wxComboBox_Copy(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxComboBox_Cut(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxComboBox_Paste(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_Copy(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_Cut(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_Paste(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxComboBox_SetInsertionPoint(IntPtr self, uint pos);
-		[DllImport("wx-c")] static extern uint   wxComboBox_GetInsertionPoint(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxComboBox_SetInsertionPointEnd(IntPtr self);
-		[DllImport("wx-c")] static extern uint   wxComboBox_GetLastPosition(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetInsertionPoint(IntPtr self, uint pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxComboBox_GetInsertionPoint(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetInsertionPointEnd(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxComboBox_GetLastPosition(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxComboBox_Replace(IntPtr self, uint from, uint to, string value);
-		[DllImport("wx-c")] static extern void   wxComboBox_SetSelectionSingle(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxComboBox_SetSelectionMult(IntPtr self, uint from, uint to);
-		[DllImport("wx-c")] static extern void   wxComboBox_SetEditable(IntPtr self, bool editable);
-		[DllImport("wx-c")] static extern void   wxComboBox_Remove(IntPtr self, uint from, uint to);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_Replace(IntPtr self, uint from, uint to, string value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetSelectionSingle(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetSelectionMult(IntPtr self, uint from, uint to);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_SetEditable(IntPtr self, bool editable);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxComboBox_Remove(IntPtr self, uint from, uint to);
 		
-		[DllImport("wx-c")] static extern void wxComboBox_SetSelection(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxComboBox_SetSelection(IntPtr self, int n);
 		
-		[DllImport("wx-c")] static extern void wxComboBox_Select(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxComboBox_Select(IntPtr self, int n);
 		
 		//---------------------------------------------------------------------
 	

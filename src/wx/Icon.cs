@@ -18,9 +18,9 @@ namespace wx
 {
 	public class Icon : Bitmap
 	{
-		[DllImport("wx-c")] static extern IntPtr wxIcon_ctor();
-		[DllImport("wx-c")] static extern void   wxIcon_CopyFromBitmap(IntPtr self, IntPtr bitmap);
-		[DllImport("wx-c")] static extern bool   wxIcon_LoadFile(IntPtr self, string name, BitmapType type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxIcon_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxIcon_CopyFromBitmap(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxIcon_LoadFile(IntPtr self, string name, BitmapType type);
 
 		//---------------------------------------------------------------------
 

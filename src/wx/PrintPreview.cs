@@ -18,29 +18,29 @@ namespace wx
 {
     public class PrintPreview : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxPrintPreview_ctor(IntPtr printout, IntPtr printoutForPrinting, IntPtr data);
-        [DllImport("wx-c")] static extern IntPtr wxPrintPreview_ctorPrintData(IntPtr printout, IntPtr printoutForPrinting, IntPtr data);
-        [DllImport("wx-c")] static extern bool   wxPrintPreview_SetCurrentPage(IntPtr self, int pageNum);
-        [DllImport("wx-c")] static extern int    wxPrintPreview_GetCurrentPage(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintPreview_SetPrintout(IntPtr self, IntPtr printout);
-        [DllImport("wx-c")] static extern IntPtr wxPrintPreview_GetPrintout(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxPrintPreview_GetPrintoutForPrinting(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintPreview_SetFrame(IntPtr self, IntPtr frame);
-        [DllImport("wx-c")] static extern void   wxPrintPreview_SetCanvas(IntPtr self, IntPtr canvas);
-        [DllImport("wx-c")] static extern IntPtr wxPrintPreview_GetFrame(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxPrintPreview_GetCanvas(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxPrintPreview_PaintPage(IntPtr self, IntPtr canvas, IntPtr dc);
-        [DllImport("wx-c")] static extern bool   wxPrintPreview_DrawBlankPage(IntPtr self, IntPtr canvas, IntPtr dc);
-        [DllImport("wx-c")] static extern bool   wxPrintPreview_RenderPage(IntPtr self, int pageNum);
-        [DllImport("wx-c")] static extern IntPtr wxPrintPreview_GetPrintDialogData(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintPreview_SetZoom(IntPtr self, int percent);
-        [DllImport("wx-c")] static extern int    wxPrintPreview_GetZoom(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxPrintPreview_GetMaxPage(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxPrintPreview_GetMinPage(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxPrintPreview_Ok(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintPreview_SetOk(IntPtr self, bool ok);
-        [DllImport("wx-c")] static extern bool   wxPrintPreview_Print(IntPtr self, bool interactive);
-        [DllImport("wx-c")] static extern void   wxPrintPreview_DetermineScaling(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintPreview_ctor(IntPtr printout, IntPtr printoutForPrinting, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintPreview_ctorPrintData(IntPtr printout, IntPtr printoutForPrinting, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintPreview_SetCurrentPage(IntPtr self, int pageNum);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPrintPreview_GetCurrentPage(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintPreview_SetPrintout(IntPtr self, IntPtr printout);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintPreview_GetPrintout(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintPreview_GetPrintoutForPrinting(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintPreview_SetFrame(IntPtr self, IntPtr frame);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintPreview_SetCanvas(IntPtr self, IntPtr canvas);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintPreview_GetFrame(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintPreview_GetCanvas(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintPreview_PaintPage(IntPtr self, IntPtr canvas, IntPtr dc);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintPreview_DrawBlankPage(IntPtr self, IntPtr canvas, IntPtr dc);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintPreview_RenderPage(IntPtr self, int pageNum);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintPreview_GetPrintDialogData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintPreview_SetZoom(IntPtr self, int percent);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPrintPreview_GetZoom(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPrintPreview_GetMaxPage(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPrintPreview_GetMinPage(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintPreview_Ok(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintPreview_SetOk(IntPtr self, bool ok);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintPreview_Print(IntPtr self, bool interactive);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintPreview_DetermineScaling(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -172,10 +172,10 @@ namespace wx
 
     public class PreviewFrame : Frame
     {
-        [DllImport("wx-c")] static extern IntPtr wxPreviewFrame_ctor(IntPtr preview, IntPtr parent, string title, ref Point pos, ref Size size, uint style, string name);
-        [DllImport("wx-c")] static extern void   wxPreviewFrame_Initialize(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPreviewFrame_CreateCanvas(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPreviewFrame_CreateControlBar(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPreviewFrame_ctor(IntPtr preview, IntPtr parent, string title, ref Point pos, ref Size size, uint style, string name);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPreviewFrame_Initialize(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPreviewFrame_CreateCanvas(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPreviewFrame_CreateControlBar(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -217,11 +217,11 @@ namespace wx
 
     public class PreviewControlBar : Panel
     {
-        [DllImport("wx-c")] static extern IntPtr wxPreviewControlBar_ctor(IntPtr preview, int buttons, IntPtr parent, ref Point pos, ref Size size, uint style, string name);
-        [DllImport("wx-c")] static extern void   wxPreviewControlBar_CreateButtons(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPreviewControlBar_SetZoomControl(IntPtr self, int zoom);
-        [DllImport("wx-c")] static extern int    wxPreviewControlBar_GetZoomControl(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxPreviewControlBar_GetPrintPreview(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPreviewControlBar_ctor(IntPtr preview, int buttons, IntPtr parent, ref Point pos, ref Size size, uint style, string name);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPreviewControlBar_CreateButtons(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPreviewControlBar_SetZoomControl(IntPtr self, int zoom);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPreviewControlBar_GetZoomControl(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPreviewControlBar_GetPrintPreview(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -264,7 +264,7 @@ namespace wx
 
     public class PreviewCanvas : ScrolledWindow
     {
-        [DllImport("wx-c")] static extern IntPtr wxPreviewCanvas_ctor(IntPtr preview, IntPtr parent, ref Point pos, ref Size size, uint style, string name);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPreviewCanvas_ctor(IntPtr preview, IntPtr parent, ref Point pos, ref Size size, uint style, string name);
 
         //-----------------------------------------------------------------------------
 

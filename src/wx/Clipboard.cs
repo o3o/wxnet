@@ -18,17 +18,17 @@ namespace wx
 {
 	public class Clipboard : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxClipboard_ctor();
-		[DllImport("wx-c")] static extern bool   wxClipboard_Open(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxClipboard_Close(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxClipboard_IsOpened(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxClipboard_AddData(IntPtr self, IntPtr data);
-		[DllImport("wx-c")] static extern bool   wxClipboard_SetData(IntPtr self, IntPtr data);
-		[DllImport("wx-c")] static extern bool   wxClipboard_IsSupported(IntPtr self, IntPtr format);
-		[DllImport("wx-c")] static extern bool   wxClipboard_GetData(IntPtr self, IntPtr data);
-		[DllImport("wx-c")] static extern void   wxClipboard_Clear(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxClipboard_Flush(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxClipboard_UsePrimarySelection(IntPtr self, bool primary);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxClipboard_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxClipboard_Open(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxClipboard_Close(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxClipboard_IsOpened(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxClipboard_AddData(IntPtr self, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxClipboard_SetData(IntPtr self, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxClipboard_IsSupported(IntPtr self, IntPtr format);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxClipboard_GetData(IntPtr self, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxClipboard_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxClipboard_Flush(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxClipboard_UsePrimarySelection(IntPtr self, bool primary);
 
 		//-----------------------------------------------------------------------------
 		
@@ -109,7 +109,7 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxTheClipboard_static();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTheClipboard_static();
 		
 		//-----------------------------------------------------------------------------
 	
@@ -128,9 +128,9 @@ namespace wx
 	
 	public class ClipboardLocker : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxClipboardLocker_ctor(IntPtr clipboard);
-		[DllImport("wx-c")] static extern void   wxClipBoardLocker_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxClipboardLocker_IsOpen(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxClipboardLocker_ctor(IntPtr clipboard);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxClipBoardLocker_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxClipboardLocker_IsOpen(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 		

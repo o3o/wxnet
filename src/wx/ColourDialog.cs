@@ -17,16 +17,16 @@ namespace wx
 {
 	public class ColourData : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxColourData_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColourData_ctor();
 
-		[DllImport("wx-c")] static extern void   wxColourData_SetChooseFull(IntPtr self, bool flag);
-		[DllImport("wx-c")] static extern bool   wxColourData_GetChooseFull(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxColourData_SetChooseFull(IntPtr self, bool flag);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxColourData_GetChooseFull(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxColourData_SetColour(IntPtr self, IntPtr colour);
-		[DllImport("wx-c")] static extern IntPtr wxColourData_GetColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxColourData_SetColour(IntPtr self, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColourData_GetColour(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxColourData_SetCustomColour(IntPtr self, int i, IntPtr colour);
-		[DllImport("wx-c")] static extern IntPtr wxColourData_GetCustomColour(IntPtr self, int i);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxColourData_SetCustomColour(IntPtr self, int i, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColourData_GetCustomColour(IntPtr self, int i);
 
 		//---------------------------------------------------------------------
         
@@ -82,12 +82,12 @@ namespace wx
 	
 	public class ColourDialog : Dialog
 	{
-		[DllImport("wx-c")] static extern IntPtr wxColourDialog_ctor();
-		[DllImport("wx-c")] static extern bool   wxColourDialog_Create(IntPtr self, IntPtr parent, IntPtr data);
-		[DllImport("wx-c")] static extern IntPtr wxColourDialog_GetColourData(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxColourDialog_ShowModal(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColourDialog_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxColourDialog_Create(IntPtr self, IntPtr parent, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColourDialog_GetColourData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxColourDialog_ShowModal(IntPtr self);
 		
-		[DllImport("wx-c")] static extern IntPtr wxColourDialog_GetColourFromUser(IntPtr parent, IntPtr colInit);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColourDialog_GetColourFromUser(IntPtr parent, IntPtr colInit);
 	
 		//---------------------------------------------------------------------
 	

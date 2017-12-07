@@ -14,11 +14,11 @@ namespace wx
 {
     public class TipWindow : Window
     {
-        [DllImport("wx-c")] static extern IntPtr wxTipWindow_ctor(IntPtr parent, string text, int maxLength, ref Rectangle rectBound);
-        [DllImport("wx-c")] static extern IntPtr wxTipWindow_ctorNoRect(IntPtr parent, string text, int maxLength);
-        //[DllImport("wx-c")] static extern void   wxTipWindow_SetTipWindowPtr(IntPtr self, IntPtr wxTipWindow* windowPtr);
-        [DllImport("wx-c")] static extern void   wxTipWindow_SetBoundingRect(IntPtr self, ref Rectangle rectBound);
-        [DllImport("wx-c")] static extern void   wxTipWindow_Close(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTipWindow_ctor(IntPtr parent, string text, int maxLength, ref Rectangle rectBound);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTipWindow_ctorNoRect(IntPtr parent, string text, int maxLength);
+        //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTipWindow_SetTipWindowPtr(IntPtr self, IntPtr wxTipWindow* windowPtr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTipWindow_SetBoundingRect(IntPtr self, ref Rectangle rectBound);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTipWindow_Close(IntPtr self);
 
         //-----------------------------------------------------------------------------
 

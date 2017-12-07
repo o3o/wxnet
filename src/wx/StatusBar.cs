@@ -23,22 +23,22 @@ namespace wx
 	
 		//-----------------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxStatusBar_ctor();
-		[DllImport("wx-c")] static extern bool   wxStatusBar_Create(IntPtr self, IntPtr parent, int id, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStatusBar_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxStatusBar_Create(IntPtr self, IntPtr parent, int id, uint style, string name);
 	
-		[DllImport("wx-c")] static extern void   wxStatusBar_SetFieldsCount(IntPtr self, int number, int[] widths);
-		[DllImport("wx-c")] static extern bool   wxStatusBar_GetFieldRect(IntPtr self, int i, ref Rectangle rect);
-		[DllImport("wx-c")] static extern int    wxStatusBar_GetBorderY(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxStatusBar_GetStatusText(IntPtr self, int number);
-		[DllImport("wx-c")] static extern int    wxStatusBar_GetBorderX(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxStatusBar_SetStatusText(IntPtr self, string text, int number);
-		[DllImport("wx-c")] static extern void   wxStatusBar_SetStatusWidths(IntPtr self, int n, int[] widths);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStatusBar_SetFieldsCount(IntPtr self, int number, int[] widths);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxStatusBar_GetFieldRect(IntPtr self, int i, ref Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxStatusBar_GetBorderY(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStatusBar_GetStatusText(IntPtr self, int number);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxStatusBar_GetBorderX(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStatusBar_SetStatusText(IntPtr self, string text, int number);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStatusBar_SetStatusWidths(IntPtr self, int n, int[] widths);
 		
-		[DllImport("wx-c")] static extern int    wxStatusBar_GetFieldsCount(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxStatusBar_PopStatusText(IntPtr self, int field);
-		[DllImport("wx-c")] static extern void   wxStatusBar_PushStatusText(IntPtr self, string xstring, int field);
-		[DllImport("wx-c")] static extern void   wxStatusBar_SetMinHeight(IntPtr self, int height);
-		[DllImport("wx-c")] static extern void   wxStatusBar_SetStatusStyles(IntPtr self, int n, [In,Out] int[] styles);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxStatusBar_GetFieldsCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStatusBar_PopStatusText(IntPtr self, int field);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStatusBar_PushStatusText(IntPtr self, string xstring, int field);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStatusBar_SetMinHeight(IntPtr self, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStatusBar_SetStatusStyles(IntPtr self, int n, [In,Out] int[] styles);
 	
 		//-----------------------------------------------------------------------------
 

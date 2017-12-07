@@ -18,16 +18,16 @@ namespace wx
 {
     public class wxDateTime : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxDateTime_ctor();
-	[DllImport("wx-c")] static extern void   wxDateTime_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDateTime_Set(IntPtr self, ushort day, int month, int year, ushort hour, ushort minute, ushort second, ushort millisec);
-        [DllImport("wx-c")] static extern ushort wxDateTime_GetYear(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxDateTime_GetMonth(IntPtr self);
-        [DllImport("wx-c")] static extern ushort wxDateTime_GetDay(IntPtr self);
-        [DllImport("wx-c")] static extern ushort wxDateTime_GetHour(IntPtr self);
-        [DllImport("wx-c")] static extern ushort wxDateTime_GetMinute(IntPtr self);
-        [DllImport("wx-c")] static extern ushort wxDateTime_GetSecond(IntPtr self);
-        [DllImport("wx-c")] static extern ushort wxDateTime_GetMillisecond(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDateTime_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDateTime_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDateTime_Set(IntPtr self, ushort day, int month, int year, ushort hour, ushort minute, ushort second, ushort millisec);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ushort wxDateTime_GetYear(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDateTime_GetMonth(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ushort wxDateTime_GetDay(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ushort wxDateTime_GetHour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ushort wxDateTime_GetMinute(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ushort wxDateTime_GetSecond(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern ushort wxDateTime_GetMillisecond(IntPtr self);
 	
         //-----------------------------------------------------------------------------
 

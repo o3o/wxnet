@@ -17,9 +17,9 @@ namespace wx
 {
 	public class FocusEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxFocusEvent_ctor(int type);
-		[DllImport("wx-c")] static extern IntPtr wxFocusEvent_GetWindow(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxFocusEvent_SetWindow(IntPtr self, IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFocusEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFocusEvent_GetWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFocusEvent_SetWindow(IntPtr self, IntPtr win);
 		
 		//-----------------------------------------------------------------------------
 

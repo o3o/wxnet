@@ -17,12 +17,12 @@ namespace wx
 {
 	public class SpinEvent : CommandEvent
 	{
-		[DllImport("wx-c")] static extern IntPtr wxSpinEvent_ctor(int commandType, int id);
-		[DllImport("wx-c")] static extern int wxSpinEvent_GetPosition(IntPtr self);
-		[DllImport("wx-c")] static extern void wxSpinEvent_SetPosition(IntPtr self, int pos);
-		[DllImport("wx-c")] static extern void wxSpinEvent_Veto(IntPtr self);
-		[DllImport("wx-c")] static extern void wxSpinEvent_Allow(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxSpinEvent_IsAllowed(IntPtr self);	
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSpinEvent_ctor(int commandType, int id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSpinEvent_GetPosition(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSpinEvent_SetPosition(IntPtr self, int pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSpinEvent_Veto(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSpinEvent_Allow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSpinEvent_IsAllowed(IntPtr self);	
 
 		//-----------------------------------------------------------------------------
 	
@@ -74,13 +74,13 @@ namespace wx
 	
 		//---------------------------------------------------------------------
         
-		[DllImport("wx-c")] static extern IntPtr wxSpinButton_ctor();
-		[DllImport("wx-c")] static extern bool   wxSpinButton_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern int    wxSpinButton_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSpinButton_GetMin(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSpinButton_GetMax(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSpinButton_SetValue(IntPtr self, int val);
-		[DllImport("wx-c")] static extern void   wxSpinButton_SetRange(IntPtr self, int minVal, int maxVal);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSpinButton_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSpinButton_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSpinButton_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSpinButton_GetMin(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSpinButton_GetMax(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSpinButton_SetValue(IntPtr self, int val);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSpinButton_SetRange(IntPtr self, int minVal, int maxVal);
 
 		//---------------------------------------------------------------------
 		

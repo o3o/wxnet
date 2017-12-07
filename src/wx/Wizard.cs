@@ -18,9 +18,9 @@ namespace wx
 {
 	public class Wizard : Dialog
 	{
-		[DllImport("wx-c")] static extern IntPtr wxWizard_ctor(IntPtr parent, int id, string title, IntPtr bitmap, ref Point pos);
-		[DllImport("wx-c")] static extern bool   wxWizard_RunWizard(IntPtr self, IntPtr firstPage);
-		[DllImport("wx-c")] static extern void   wxWizard_SetPageSize(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWizard_ctor(IntPtr parent, int id, string title, IntPtr bitmap, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxWizard_RunWizard(IntPtr self, IntPtr firstPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxWizard_SetPageSize(IntPtr self, ref Size size);
 
 		//---------------------------------------------------------------------
 		

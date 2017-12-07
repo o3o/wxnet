@@ -37,11 +37,11 @@ namespace wx
 
 	public class SashEdge : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxSashEdge_ctor();
-		[DllImport("wx-c")] static extern void wxSashEdge_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxSashEdge_m_show(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxSashEdge_m_border(IntPtr self);
-		[DllImport("wx-c")] static extern int wxSashEdge_m_margin(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSashEdge_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashEdge_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSashEdge_m_show(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSashEdge_m_border(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSashEdge_m_margin(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 	
@@ -129,25 +129,25 @@ namespace wx
 
 		//-----------------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxSashWindow_ctor();
-		[DllImport("wx-c")] static extern bool wxSashWindow_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void wxSashWindow_SetSashVisible(IntPtr self, SashEdgePosition edge, bool sash);
-		[DllImport("wx-c")] static extern bool wxSashWindow_GetSashVisible(IntPtr self, SashEdgePosition edge);
-		[DllImport("wx-c")] static extern void wxSashWindow_SetSashBorder(IntPtr self, SashEdgePosition edge, bool border);
-		[DllImport("wx-c")] static extern bool wxSashWindow_HasBorder(IntPtr self, SashEdgePosition edge);
-		[DllImport("wx-c")] static extern int wxSashWindow_GetEdgeMargin(IntPtr self, SashEdgePosition edge);
-		[DllImport("wx-c")] static extern void wxSashWindow_SetDefaultBorderSize(IntPtr self, int width);
-		[DllImport("wx-c")] static extern int wxSashWindow_GetDefaultBorderSize(IntPtr self);
-		[DllImport("wx-c")] static extern void wxSashWindow_SetExtraBorderSize(IntPtr self, int width);
-		[DllImport("wx-c")] static extern int wxSashWindow_GetExtraBorderSize(IntPtr self);
-		[DllImport("wx-c")] static extern void wxSashWindow_SetMinimumSizeX(IntPtr self, int min);
-		[DllImport("wx-c")] static extern void wxSashWindow_SetMinimumSizeY(IntPtr self, int min);
-		[DllImport("wx-c")] static extern int wxSashWindow_GetMinimumSizeX(IntPtr self);
-		[DllImport("wx-c")] static extern int wxSashWindow_GetMinimumSizeY(IntPtr self);
-		[DllImport("wx-c")] static extern void wxSashWindow_SetMaximumSizeX(IntPtr self, int max);
-		[DllImport("wx-c")] static extern void wxSashWindow_SetMaximumSizeY(IntPtr self, int max);
-		[DllImport("wx-c")] static extern int wxSashWindow_GetMaximumSizeX(IntPtr self);
-		[DllImport("wx-c")] static extern int wxSashWindow_GetMaximumSizeY(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSashWindow_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSashWindow_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashWindow_SetSashVisible(IntPtr self, SashEdgePosition edge, bool sash);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSashWindow_GetSashVisible(IntPtr self, SashEdgePosition edge);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashWindow_SetSashBorder(IntPtr self, SashEdgePosition edge, bool border);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSashWindow_HasBorder(IntPtr self, SashEdgePosition edge);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSashWindow_GetEdgeMargin(IntPtr self, SashEdgePosition edge);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashWindow_SetDefaultBorderSize(IntPtr self, int width);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSashWindow_GetDefaultBorderSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashWindow_SetExtraBorderSize(IntPtr self, int width);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSashWindow_GetExtraBorderSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashWindow_SetMinimumSizeX(IntPtr self, int min);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashWindow_SetMinimumSizeY(IntPtr self, int min);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSashWindow_GetMinimumSizeX(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSashWindow_GetMinimumSizeY(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashWindow_SetMaximumSizeX(IntPtr self, int max);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashWindow_SetMaximumSizeY(IntPtr self, int max);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSashWindow_GetMaximumSizeX(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxSashWindow_GetMaximumSizeY(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 		
@@ -284,13 +284,13 @@ namespace wx
 	
 	public class SashEvent : CommandEvent
 	{
-		[DllImport("wx-c")] static extern IntPtr wxSashEvent_ctor(int id, SashEdgePosition edge);
-		[DllImport("wx-c")] static extern void wxSashEvent_SetEdge(IntPtr self, SashEdgePosition edge);
-		[DllImport("wx-c")] static extern SashEdgePosition wxSashEvent_GetEdge(IntPtr self);
-		[DllImport("wx-c")] static extern void wxSashEvent_SetDragRect(IntPtr self, ref Rectangle rect);
-		[DllImport("wx-c")] static extern void wxSashEvent_GetDragRect(IntPtr self, out Rectangle rect);
-		[DllImport("wx-c")] static extern void wxSashEvent_SetDragStatus(IntPtr self, SashDragStatus status);
-		[DllImport("wx-c")] static extern SashDragStatus wxSashEvent_GetDragStatus(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSashEvent_ctor(int id, SashEdgePosition edge);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashEvent_SetEdge(IntPtr self, SashEdgePosition edge);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern SashEdgePosition wxSashEvent_GetEdge(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashEvent_SetDragRect(IntPtr self, ref Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashEvent_GetDragRect(IntPtr self, out Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashEvent_SetDragStatus(IntPtr self, SashDragStatus status);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern SashDragStatus wxSashEvent_GetDragStatus(IntPtr self);
 	
 		public SashEvent(IntPtr wxObject)
 			: base(wxObject) {}

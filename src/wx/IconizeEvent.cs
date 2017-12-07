@@ -17,8 +17,8 @@ namespace wx
 {
 	public class IconizeEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxIconizeEvent_ctor(int type);
-		[DllImport("wx-c")] static extern bool wxIconizeEvent_Iconized(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxIconizeEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxIconizeEvent_Iconized(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

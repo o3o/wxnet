@@ -17,28 +17,28 @@ namespace wx
 {
     public class FontData : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxFontData_ctor();
-		[DllImport("wx-c")] static extern void   wxFontData_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontData_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontData_dtor(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFontData_SetAllowSymbols(IntPtr self, bool flag);
-		[DllImport("wx-c")] static extern bool   wxFontData_GetAllowSymbols(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontData_SetAllowSymbols(IntPtr self, bool flag);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFontData_GetAllowSymbols(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFontData_SetColour(IntPtr self, IntPtr colour);
-		[DllImport("wx-c")] static extern IntPtr wxFontData_GetColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontData_SetColour(IntPtr self, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontData_GetColour(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFontData_SetShowHelp(IntPtr self, bool flag);
-		[DllImport("wx-c")] static extern bool   wxFontData_GetShowHelp(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontData_SetShowHelp(IntPtr self, bool flag);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFontData_GetShowHelp(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFontData_EnableEffects(IntPtr self, bool flag);
-		[DllImport("wx-c")] static extern bool   wxFontData_GetEnableEffects(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontData_EnableEffects(IntPtr self, bool flag);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFontData_GetEnableEffects(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFontData_SetInitialFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern IntPtr wxFontData_GetInitialFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontData_SetInitialFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontData_GetInitialFont(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFontData_SetChosenFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern IntPtr wxFontData_GetChosenFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontData_SetChosenFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontData_GetChosenFont(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxFontData_SetRange(IntPtr self, int minRange, int maxRange);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontData_SetRange(IntPtr self, int minRange, int maxRange);
 
         //---------------------------------------------------------------------
 
@@ -126,12 +126,12 @@ namespace wx
 
 	public class FontDialog : Dialog
 	{
-		[DllImport("wx-c")] static extern IntPtr wxFontDialog_ctor();
-		[DllImport("wx-c")] static extern bool   wxFontDialog_Create(IntPtr self, IntPtr parent, IntPtr data);
-		[DllImport("wx-c")] static extern void   wxFontDialog_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontDialog_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFontDialog_Create(IntPtr self, IntPtr parent, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFontDialog_dtor(IntPtr self);
 
-		[DllImport("wx-c")] static extern int    wxFontDialog_ShowModal(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxFontDialog_GetFontData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFontDialog_ShowModal(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFontDialog_GetFontData(IntPtr self);
 
         //---------------------------------------------------------------------
 

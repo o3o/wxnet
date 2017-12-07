@@ -18,9 +18,9 @@ namespace wx
 {
     public class TipProvider
     {
-	[DllImport("wx-c")] static extern IntPtr wxCreateFileTipProvider_func(string filename, int currentTip);
-	[DllImport("wx-c")] static extern bool wxShowTip_func(IntPtr parent, IntPtr tipProvider, bool showAtStartup);
-	[DllImport("wx-c")] static extern int wxTipProvider_GetCurrentTip();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCreateFileTipProvider_func(string filename, int currentTip);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxShowTip_func(IntPtr parent, IntPtr tipProvider, bool showAtStartup);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTipProvider_GetCurrentTip();
 
 	public static IntPtr CreateFileTipProvider(string filename, int currentTip)
 	{

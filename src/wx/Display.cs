@@ -31,24 +31,24 @@ namespace wx
 {
 	public class Display : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxDisplay_ctor(int index);
-		[DllImport("wx-c")] static extern IntPtr wxDisplay_ctor(ref VideoMode mode);
-		[DllImport("wx-c")] static extern int wxDisplay_GetCount();
-		[DllImport("wx-c")] static extern int wxDisplay_GetFromPoint(ref Point pt);
-		[DllImport("wx-c")] static extern int wxDisplay_GetFromWindow(IntPtr window);
-		[DllImport("wx-c")] static extern void wxDisplay_GetGeometry(IntPtr self, out Rectangle rect);
-		[DllImport("wx-c")] static extern IntPtr wxDisplay_GetName(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxDisplay_IsPrimary(IntPtr self);
-		[DllImport("wx-c")] static extern void wxDisplay_GetCurrentMode(IntPtr self, out VideoMode mode);
-		[DllImport("wx-c")] static extern bool wxDisplay_ChangeMode(IntPtr self, VideoMode mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDisplay_ctor(int index);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDisplay_ctor(ref VideoMode mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxDisplay_GetCount();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxDisplay_GetFromPoint(ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxDisplay_GetFromWindow(IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDisplay_GetGeometry(IntPtr self, out Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDisplay_GetName(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxDisplay_IsPrimary(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDisplay_GetCurrentMode(IntPtr self, out VideoMode mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxDisplay_ChangeMode(IntPtr self, VideoMode mode);
 
 
-		[DllImport("wx-c")] static extern int wxDisplay_GetNumModes(IntPtr self, VideoMode mode);
-		[DllImport("wx-c")] static extern void wxDisplay_GetModes(IntPtr self, VideoMode mode, [In, Out] VideoMode[] modes);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxDisplay_GetNumModes(IntPtr self, VideoMode mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDisplay_GetModes(IntPtr self, VideoMode mode, [In, Out] VideoMode[] modes);
 
 		
-		[DllImport("wx-c")] static extern void wxDisplay_ResetMode(IntPtr self);
-		[DllImport("wx-c")] static extern void wxDisplay_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDisplay_ResetMode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDisplay_dtor(IntPtr self);
 
 		//------------------------------------------------------------------------
 

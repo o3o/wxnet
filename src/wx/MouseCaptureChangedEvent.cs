@@ -17,8 +17,8 @@ namespace wx
 {
 	public class MouseCaptureChangedEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxMouseCaptureChangedEvent_ctor(int type);
-		[DllImport("wx-c")] static extern IntPtr wxMouseCaptureChangedEvent_GetCapturedWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMouseCaptureChangedEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMouseCaptureChangedEvent_GetCapturedWindow(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

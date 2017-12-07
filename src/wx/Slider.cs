@@ -33,27 +33,27 @@ namespace wx
 
 		//---------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxSlider_ctor();
-		[DllImport("wx-c")] static extern bool   wxSlider_Create(IntPtr self, IntPtr parent, int id, int value, int minValue, int maxValue, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern int    wxSlider_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSlider_SetValue(IntPtr self, int value);
-		[DllImport("wx-c")] static extern void   wxSlider_SetRange(IntPtr self, int minValue, int maxValue);
-		[DllImport("wx-c")] static extern int    wxSlider_GetMin(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSlider_GetMax(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSlider_SetLineSize(IntPtr self, int lineSize);
-		[DllImport("wx-c")] static extern void   wxSlider_SetPageSize(IntPtr self, int pageSize);
-		[DllImport("wx-c")] static extern int    wxSlider_GetLineSize(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSlider_GetPageSize(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSlider_SetThumbLength(IntPtr self, int lenPixels);
-		[DllImport("wx-c")] static extern int    wxSlider_GetThumbLength(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSlider_SetTickFreq(IntPtr self, int n, int pos);
-		[DllImport("wx-c")] static extern int    wxSlider_GetTickFreq(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSlider_ClearTicks(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSlider_SetTick(IntPtr self, int tickPos);
-		[DllImport("wx-c")] static extern void   wxSlider_ClearSel(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSlider_GetSelEnd(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSlider_GetSelStart(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSlider_SetSelection(IntPtr self, int min, int max);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSlider_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSlider_Create(IntPtr self, IntPtr parent, int id, int value, int minValue, int maxValue, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_SetValue(IntPtr self, int value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_SetRange(IntPtr self, int minValue, int maxValue);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetMin(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetMax(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_SetLineSize(IntPtr self, int lineSize);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_SetPageSize(IntPtr self, int pageSize);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetLineSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetPageSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_SetThumbLength(IntPtr self, int lenPixels);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetThumbLength(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_SetTickFreq(IntPtr self, int n, int pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetTickFreq(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_ClearTicks(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_SetTick(IntPtr self, int tickPos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_ClearSel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetSelEnd(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSlider_GetSelStart(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSlider_SetSelection(IntPtr self, int min, int max);
 	
 		//---------------------------------------------------------------------
 		

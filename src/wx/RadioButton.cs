@@ -21,10 +21,10 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxRadioButton_ctor();
-		[DllImport("wx-c")] static extern bool   wxRadioButton_Create(IntPtr self, IntPtr parent, int id, string label, ref Point pos, ref Size size, uint style, IntPtr val, string name);
-		[DllImport("wx-c")] static extern bool   wxRadioButton_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxRadioButton_SetValue(IntPtr self, bool state);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRadioButton_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRadioButton_Create(IntPtr self, IntPtr parent, int id, string label, ref Point pos, ref Size size, uint style, IntPtr val, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRadioButton_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRadioButton_SetValue(IntPtr self, bool state);
 	
 		//---------------------------------------------------------------------
 		

@@ -17,14 +17,14 @@ namespace wx
 {
 	public class Brush : GDIObject
 	{
-        	[DllImport("wx-c")] static extern IntPtr wxBrush_ctor();
-		[DllImport("wx-c")] static extern bool   wxBrush_Ok(IntPtr self);
-		[DllImport("wx-c")] static extern FillStyle wxBrush_GetStyle(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxBrush_SetStyle(IntPtr self, FillStyle style);
-		[DllImport("wx-c")] static extern IntPtr wxBrush_GetStipple(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxBrush_SetStipple(IntPtr self, IntPtr stipple);
-        	[DllImport("wx-c")] static extern IntPtr wxBrush_GetColour(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxBrush_SetColour(IntPtr self, IntPtr col);
+        	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBrush_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxBrush_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern FillStyle wxBrush_GetStyle(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBrush_SetStyle(IntPtr self, FillStyle style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBrush_GetStipple(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBrush_SetStipple(IntPtr self, IntPtr stipple);
+        	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBrush_GetColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBrush_SetColour(IntPtr self, IntPtr col);
 
 		//---------------------------------------------------------------------
         

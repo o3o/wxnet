@@ -17,12 +17,12 @@ namespace wx
 {
 	public class wxString : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxString_ctor(string str);
-		[DllImport("wx-c")] static extern void   wxString_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern string wxString_mb_str(IntPtr self);
-		[DllImport("wx-c")] static extern uint   wxString_Length(IntPtr self);
-		[DllImport("wx-c")] static extern char   wxString_CharAt(IntPtr self, uint i);
-		[DllImport("wx-c")] static extern int    wxString_CharAtInt(IntPtr self, uint i);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxString_ctor(string str);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxString_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern string wxString_mb_str(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxString_Length(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern char   wxString_CharAt(IntPtr self, uint i);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxString_CharAtInt(IntPtr self, uint i);
 		
 		//---------------------------------------------------------------------
 

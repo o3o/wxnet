@@ -69,8 +69,8 @@ namespace wx
 	
 	public class ArtProvider
 	{
-		[DllImport("wx-c")] static extern IntPtr wxArtProvider_GetBitmap(int artid, int artclient, ref Size size);
-		[DllImport("wx-c")] static extern IntPtr wxArtProvider_GetIcon(int artid, int artclient, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxArtProvider_GetBitmap(int artid, int artclient, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxArtProvider_GetIcon(int artid, int artclient, ref Size size);
 		
 		//---------------------------------------------------------------------
 		

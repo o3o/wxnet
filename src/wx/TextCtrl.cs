@@ -58,37 +58,37 @@ namespace wx
 	
 		//---------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxTextAttr_ctor(IntPtr colText, IntPtr colBack, IntPtr font, int alignment);
-		[DllImport("wx-c")] static extern IntPtr wxTextAttr_ctor2();
-		[DllImport("wx-c")] static extern void   wxTextAttr_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextAttr_Init(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextAttr_SetTextColour(IntPtr self, IntPtr colText);
-		[DllImport("wx-c")] static extern IntPtr wxTextAttr_GetTextColour(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
-		[DllImport("wx-c")] static extern IntPtr wxTextAttr_GetBackgroundColour(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextAttr_SetFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern IntPtr wxTextAttr_GetFont(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_HasTextColour(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_HasBackgroundColour(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_HasFont(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_IsDefault(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextAttr_ctor(IntPtr colText, IntPtr colBack, IntPtr font, int alignment);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextAttr_ctor2();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_Init(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_SetTextColour(IntPtr self, IntPtr colText);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextAttr_GetTextColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextAttr_GetBackgroundColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_SetFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextAttr_GetFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_HasTextColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_HasBackgroundColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_HasFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_IsDefault(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxTextAttr_SetAlignment(IntPtr self, int alignment);
-		[DllImport("wx-c")] static extern int    wxTextAttr_GetAlignment(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextAttr_SetTabs(IntPtr self, IntPtr tabs);
-		[DllImport("wx-c")] static extern IntPtr wxTextAttr_GetTabs(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextAttr_SetLeftIndent(IntPtr self, int indent, int subIndent);
-		[DllImport("wx-c")] static extern int    wxTextAttr_GetLeftIndent(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxTextAttr_GetLeftSubIndent(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextAttr_SetRightIndent(IntPtr self, int indent);
-		[DllImport("wx-c")] static extern int    wxTextAttr_GetRightIndent(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextAttr_SetFlags(IntPtr self, uint flags);
-		[DllImport("wx-c")] static extern uint   wxTextAttr_GetFlags(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_HasAlignment(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_HasTabs(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_HasLeftIndent(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_HasRightIndent(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextAttr_HasFlag(IntPtr self, uint flag);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_SetAlignment(IntPtr self, int alignment);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTextAttr_GetAlignment(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_SetTabs(IntPtr self, IntPtr tabs);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextAttr_GetTabs(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_SetLeftIndent(IntPtr self, int indent, int subIndent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTextAttr_GetLeftIndent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTextAttr_GetLeftSubIndent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_SetRightIndent(IntPtr self, int indent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTextAttr_GetRightIndent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextAttr_SetFlags(IntPtr self, uint flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTextAttr_GetFlags(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_HasAlignment(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_HasTabs(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_HasLeftIndent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_HasRightIndent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextAttr_HasFlag(IntPtr self, uint flag);
 		
 		//---------------------------------------------------------------------
 		
@@ -329,66 +329,66 @@ namespace wx
 
 		//---------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxTextCtrl_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_SetValue(IntPtr self, string value);
-		[DllImport("wx-c")] static extern IntPtr wxTextCtrl_GetRange(IntPtr self, uint from, uint to);
-		[DllImport("wx-c")] static extern int    wxTextCtrl_GetLineLength(IntPtr self, uint lineNo);
-		[DllImport("wx-c")] static extern IntPtr wxTextCtrl_GetLineText(IntPtr self, uint lineNo);
-		[DllImport("wx-c")] static extern int    wxTextCtrl_GetNumberOfLines(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_IsModified(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_IsEditable(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_IsSingleLine(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_IsMultiLine(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_GetSelection(IntPtr self, out long from, out long to);
-		[DllImport("wx-c")] static extern IntPtr wxTextCtrl_GetStringSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Clear(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Replace(IntPtr self, uint from, uint to, string value);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Remove(IntPtr self, uint from, uint to);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_LoadFile(IntPtr self, string file);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_SaveFile(IntPtr self, string file);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_MarkDirty(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_DiscardEdits(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_SetMaxLength(IntPtr self, uint len);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_WriteText(IntPtr self, string text);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_AppendText(IntPtr self, string text);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_EmulateKeyPress(IntPtr self, IntPtr evt);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_SetStyle(IntPtr self, uint start, uint end, IntPtr style);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_GetStyle(IntPtr self, uint position, ref IntPtr style);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_SetDefaultStyle(IntPtr self, IntPtr style);
-		[DllImport("wx-c")] static extern IntPtr wxTextCtrl_GetDefaultStyle(IntPtr self);
-		[DllImport("wx-c")] static extern uint   wxTextCtrl_XYToPosition(IntPtr self, uint x, uint y);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_PositionToXY(IntPtr self, uint pos, out long x, out long y);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_ShowPosition(IntPtr self, uint pos);
-		[DllImport("wx-c")] static extern int    wxTextCtrl_HitTest(IntPtr self, ref Point pt, out long pos);
-		[DllImport("wx-c")] static extern int    wxTextCtrl_HitTest2(IntPtr self, ref Point pt, out long col, out long row);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Copy(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Cut(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Paste(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_CanCopy(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_CanCut(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_CanPaste(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Undo(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Redo(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_CanUndo(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_CanRedo(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_SetInsertionPoint(IntPtr self, uint pos);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_SetInsertionPointEnd(IntPtr self);
-		[DllImport("wx-c")] static extern uint   wxTextCtrl_GetInsertionPoint(IntPtr self);
-		[DllImport("wx-c")] static extern uint   wxTextCtrl_GetLastPosition(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_SetSelection(IntPtr self, uint from, uint to);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_SelectAll(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_SetEditable(IntPtr self, bool editable);
-		[DllImport("wx-c")] static extern        IntPtr wxTextCtrl_ctor();
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_Create(IntPtr self, IntPtr parent, int id, string value, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_Enable(IntPtr self, bool enable);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_OnDropFiles(IntPtr self, IntPtr evt);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_SetFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_SetForegroundColour(IntPtr self, IntPtr colour);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_SetBackgroundColour(IntPtr self, IntPtr colour);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Freeze(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTextCtrl_Thaw(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_ScrollLines(IntPtr self, int lines);
-		[DllImport("wx-c")] static extern bool   wxTextCtrl_ScrollPages(IntPtr self, int pages);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextCtrl_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_SetValue(IntPtr self, string value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextCtrl_GetRange(IntPtr self, uint from, uint to);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTextCtrl_GetLineLength(IntPtr self, uint lineNo);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextCtrl_GetLineText(IntPtr self, uint lineNo);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTextCtrl_GetNumberOfLines(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_IsModified(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_IsEditable(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_IsSingleLine(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_IsMultiLine(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_GetSelection(IntPtr self, out long from, out long to);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextCtrl_GetStringSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Replace(IntPtr self, uint from, uint to, string value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Remove(IntPtr self, uint from, uint to);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_LoadFile(IntPtr self, string file);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_SaveFile(IntPtr self, string file);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_MarkDirty(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_DiscardEdits(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_SetMaxLength(IntPtr self, uint len);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_WriteText(IntPtr self, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_AppendText(IntPtr self, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_EmulateKeyPress(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_SetStyle(IntPtr self, uint start, uint end, IntPtr style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_GetStyle(IntPtr self, uint position, ref IntPtr style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_SetDefaultStyle(IntPtr self, IntPtr style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextCtrl_GetDefaultStyle(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTextCtrl_XYToPosition(IntPtr self, uint x, uint y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_PositionToXY(IntPtr self, uint pos, out long x, out long y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_ShowPosition(IntPtr self, uint pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTextCtrl_HitTest(IntPtr self, ref Point pt, out long pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTextCtrl_HitTest2(IntPtr self, ref Point pt, out long col, out long row);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Copy(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Cut(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Paste(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_CanCopy(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_CanCut(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_CanPaste(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Undo(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Redo(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_CanUndo(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_CanRedo(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_SetInsertionPoint(IntPtr self, uint pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_SetInsertionPointEnd(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTextCtrl_GetInsertionPoint(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTextCtrl_GetLastPosition(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_SetSelection(IntPtr self, uint from, uint to);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_SelectAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_SetEditable(IntPtr self, bool editable);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern        IntPtr wxTextCtrl_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_Create(IntPtr self, IntPtr parent, int id, string value, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_Enable(IntPtr self, bool enable);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_OnDropFiles(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_SetFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_SetForegroundColour(IntPtr self, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_SetBackgroundColour(IntPtr self, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Freeze(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTextCtrl_Thaw(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_ScrollLines(IntPtr self, int lines);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxTextCtrl_ScrollPages(IntPtr self, int pages);
 
 		//---------------------------------------------------------------------
         
@@ -842,9 +842,9 @@ namespace wx
 
 	public class TextUrlEvent : CommandEvent
     	{
-		[DllImport("wx-c")] static extern IntPtr wxTextUrlEvent_ctor(int id, IntPtr evtMouse, uint start, uint end);
-		[DllImport("wx-c")] static extern uint   wxTextUrlEvent_GetURLStart(IntPtr self);
-		[DllImport("wx-c")] static extern uint   wxTextUrlEvent_GetURLEnd(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextUrlEvent_ctor(int id, IntPtr evtMouse, uint start, uint end);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTextUrlEvent_GetURLStart(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxTextUrlEvent_GetURLEnd(IntPtr self);
 	
 		// TODO: Replace Event with EventMouse
 		public TextUrlEvent(int id, Event evtMouse, long start, long end)

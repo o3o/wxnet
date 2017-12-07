@@ -17,7 +17,7 @@ namespace wx
 {
 	public class MaximizeEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxMaximizeEvent_ctor(int Id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMaximizeEvent_ctor(int Id);
 		
 		//-----------------------------------------------------------------------------
 

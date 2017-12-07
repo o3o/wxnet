@@ -17,9 +17,9 @@ namespace wx
 {
 	public class QueryNewPaletteEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxQueryNewPaletteEvent_ctor(int type);
-		[DllImport("wx-c")] static extern bool wxQueryNewPaletteEvent_GetPaletteRealized(IntPtr self);
-		[DllImport("wx-c")] static extern void wxQueryNewPaletteEvent_SetPaletteRealized(IntPtr self, bool realized);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxQueryNewPaletteEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxQueryNewPaletteEvent_GetPaletteRealized(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxQueryNewPaletteEvent_SetPaletteRealized(IntPtr self, bool realized);
 		
 		//-----------------------------------------------------------------------------
 

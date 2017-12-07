@@ -17,12 +17,12 @@ namespace wx
 {
 	public class Palette : GDIObject
 	{
-		[DllImport("wx-c")] static extern IntPtr wxPalette_ctor();
-		[DllImport("wx-c")] static extern void wxPalette_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxPalette_Ok(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxPalette_Create(IntPtr self, int n, char[] red, char[] green, char[] blue);
-		[DllImport("wx-c")] static extern int wxPalette_GetPixel(IntPtr self, char red, char green, char blue);
-		[DllImport("wx-c")] static extern bool wxPalette_GetRGB(IntPtr self, int pixel, out char red, out char green, out char blue);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPalette_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPalette_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_Create(IntPtr self, int n, char[] red, char[] green, char[] blue);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxPalette_GetPixel(IntPtr self, char red, char green, char blue);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_GetRGB(IntPtr self, int pixel, out char red, out char green, out char blue);
 
 		//---------------------------------------------------------------------
 

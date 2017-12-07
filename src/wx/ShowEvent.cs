@@ -17,9 +17,9 @@ namespace wx
 {
 	public class ShowEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxShowEvent_ctor(int type);
-		[DllImport("wx-c")] static extern bool wxShowEvent_GetShow(IntPtr self);
-		[DllImport("wx-c")] static extern void wxShowEvent_SetShow(IntPtr self, bool show);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxShowEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxShowEvent_GetShow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxShowEvent_SetShow(IntPtr self, bool show);
 		
 		//-----------------------------------------------------------------------------
 

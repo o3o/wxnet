@@ -17,12 +17,12 @@ namespace wx
 {
 	public class ToolTip : Object
 	{
-		[DllImport("wx-c")] static extern void   wxToolTip_Enable(bool flag);
-		[DllImport("wx-c")] static extern void   wxToolTip_SetDelay(uint msecs);
-		[DllImport("wx-c")] static extern IntPtr wxToolTip_ctor(string tip);
-		[DllImport("wx-c")] static extern void   wxToolTip_SetTip(IntPtr self, string tip);
-		[DllImport("wx-c")] static extern IntPtr wxToolTip_GetTip(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxToolTip_GetWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxToolTip_Enable(bool flag);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxToolTip_SetDelay(uint msecs);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxToolTip_ctor(string tip);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxToolTip_SetTip(IntPtr self, string tip);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxToolTip_GetTip(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxToolTip_GetWindow(IntPtr self);
 
         //---------------------------------------------------------------------
 

@@ -32,30 +32,30 @@ namespace wx
 	
 		//---------------------------------------------------------------------
     
-		[DllImport("wx-c")] static extern void wxXmlResource_InitAllHandlers(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxXmlResource_Load(IntPtr self, string filemask);
-		[DllImport("wx-c")] static extern bool wxXmlResource_LoadFromByteArray(IntPtr self, string filemask, IntPtr data, int length);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadDialog(IntPtr self, IntPtr parent, string name);
-		[DllImport("wx-c")] static extern bool wxXmlResource_LoadDialogDlg(IntPtr self, IntPtr dlg, IntPtr parent, string name);
-		[DllImport("wx-c")] static extern int wxXmlResource_GetXRCID(string str_id);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_ctorByFilemask(string filemask, int flags);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_ctor(int flags);
-		[DllImport("wx-c")] static extern uint wxXmlResource_GetVersion(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxXmlResource_LoadFrameWithFrame(IntPtr self, IntPtr frame, IntPtr parent, string name);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadFrame(IntPtr self, IntPtr parent, string name);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadBitmap(IntPtr self, string name);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadIcon(IntPtr self, string name);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadMenu(IntPtr self, string name);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadMenuBarWithParent(IntPtr self, IntPtr parent, string name);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadMenuBar(IntPtr self, string name);
-		[DllImport("wx-c")] static extern bool wxXmlResource_LoadPanelWithPanel(IntPtr self, IntPtr panel, IntPtr parent, string name);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadPanel(IntPtr self, IntPtr parent, string name);
-		[DllImport("wx-c")] static extern IntPtr wxXmlResource_LoadToolBar(IntPtr self, IntPtr parent, string name);
-		[DllImport("wx-c")] static extern int wxXmlResource_SetFlags(IntPtr self, int flags);
-		[DllImport("wx-c")] static extern int wxXmlResource_GetFlags(IntPtr self);
-		[DllImport("wx-c")] static extern void wxXmlResource_UpdateResources(IntPtr self);
-		[DllImport("wx-c")] static extern int wxXmlResource_CompareVersion(IntPtr self, int major, int minor, int release, int revision);
-		[DllImport("wx-c")] static extern bool wxXmlResource_AttachUnknownControl(IntPtr self, string name, IntPtr control, IntPtr parent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxXmlResource_InitAllHandlers(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxXmlResource_Load(IntPtr self, string filemask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxXmlResource_LoadFromByteArray(IntPtr self, string filemask, IntPtr data, int length);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadDialog(IntPtr self, IntPtr parent, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxXmlResource_LoadDialogDlg(IntPtr self, IntPtr dlg, IntPtr parent, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxXmlResource_GetXRCID(string str_id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_ctorByFilemask(string filemask, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_ctor(int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint wxXmlResource_GetVersion(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxXmlResource_LoadFrameWithFrame(IntPtr self, IntPtr frame, IntPtr parent, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadFrame(IntPtr self, IntPtr parent, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadBitmap(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadIcon(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadMenu(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadMenuBarWithParent(IntPtr self, IntPtr parent, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadMenuBar(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxXmlResource_LoadPanelWithPanel(IntPtr self, IntPtr panel, IntPtr parent, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadPanel(IntPtr self, IntPtr parent, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxXmlResource_LoadToolBar(IntPtr self, IntPtr parent, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxXmlResource_SetFlags(IntPtr self, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxXmlResource_GetFlags(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxXmlResource_UpdateResources(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxXmlResource_CompareVersion(IntPtr self, int major, int minor, int release, int revision);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxXmlResource_AttachUnknownControl(IntPtr self, string name, IntPtr control, IntPtr parent);
 
 		//---------------------------------------------------------------------
 
@@ -382,7 +382,7 @@ namespace wx
 		//---------------------------------------------------------------------
 		// XmlResource control subclassing
         
-		[DllImport("wx-c")] static extern bool wxXmlSubclassFactory_ctor(XmlSubclassCreate create);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxXmlSubclassFactory_ctor(XmlSubclassCreate create);
 
 		private delegate IntPtr XmlSubclassCreate(IntPtr className);
 

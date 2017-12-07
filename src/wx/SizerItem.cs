@@ -16,39 +16,39 @@ namespace wx
 {
     public class SizerItem : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxSizerItem_ctorSpace(int width, int height, int proportion, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern IntPtr wxSizerItem_ctorWindow(IntPtr window, int proportion, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern IntPtr wxSizerItem_ctorSizer(IntPtr sizer, int proportion, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern IntPtr wxSizerItem_ctor();
-        [DllImport("wx-c")] static extern void   wxSizerItem_DeleteWindows(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxSizerItem_DetachSizer(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxSizerItem_GetSize(IntPtr self, ref Size size);
-        [DllImport("wx-c")] static extern void   wxSizerItem_CalcMin(IntPtr self, ref Size min);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetDimension(IntPtr self, ref Point pos, ref Size size);
-        [DllImport("wx-c")] static extern void   wxSizerItem_GetMinSize(IntPtr self, ref Size size);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetInitSize(IntPtr self, int x, int y);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetRatioSize(IntPtr self, int width, int height);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetRatioFloat(IntPtr self, float ratio);
-        [DllImport("wx-c")] static extern float  wxSizerItem_GetRatioFloat(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxSizerItem_IsWindow(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxSizerItem_IsSizer(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxSizerItem_IsSpacer(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetProportion(IntPtr self, int proportion);
-        [DllImport("wx-c")] static extern int    wxSizerItem_GetProportion(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetFlag(IntPtr self, int flag);
-        [DllImport("wx-c")] static extern int    wxSizerItem_GetFlag(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetBorder(IntPtr self, int border);
-        [DllImport("wx-c")] static extern int    wxSizerItem_GetBorder(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxSizerItem_GetWindow(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetWindow(IntPtr self, IntPtr window);
-        [DllImport("wx-c")] static extern IntPtr wxSizerItem_GetSizer(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetSizer(IntPtr self, IntPtr sizer);
-        [DllImport("wx-c")] static extern void   wxSizerItem_GetSpacer(IntPtr self, ref Size size);
-        [DllImport("wx-c")] static extern void   wxSizerItem_SetSpacer(IntPtr self, ref Size size);
-        [DllImport("wx-c")] static extern void   wxSizerItem_Show(IntPtr self, bool show);
-        [DllImport("wx-c")] static extern bool   wxSizerItem_IsShown(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxSizerItem_GetUserData(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxSizerItem_GetPosition(IntPtr self, ref Point pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizerItem_ctorSpace(int width, int height, int proportion, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizerItem_ctorWindow(IntPtr window, int proportion, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizerItem_ctorSizer(IntPtr sizer, int proportion, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizerItem_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_DeleteWindows(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_DetachSizer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_GetSize(IntPtr self, ref Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_CalcMin(IntPtr self, ref Size min);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetDimension(IntPtr self, ref Point pos, ref Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_GetMinSize(IntPtr self, ref Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetInitSize(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetRatioSize(IntPtr self, int width, int height);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetRatioFloat(IntPtr self, float ratio);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern float  wxSizerItem_GetRatioFloat(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSizerItem_IsWindow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSizerItem_IsSizer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSizerItem_IsSpacer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetProportion(IntPtr self, int proportion);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSizerItem_GetProportion(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetFlag(IntPtr self, int flag);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSizerItem_GetFlag(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetBorder(IntPtr self, int border);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSizerItem_GetBorder(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizerItem_GetWindow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetWindow(IntPtr self, IntPtr window);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizerItem_GetSizer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetSizer(IntPtr self, IntPtr sizer);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_GetSpacer(IntPtr self, ref Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_SetSpacer(IntPtr self, ref Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_Show(IntPtr self, bool show);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSizerItem_IsShown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizerItem_GetUserData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSizerItem_GetPosition(IntPtr self, ref Point pos);
 
         //-----------------------------------------------------------------------------
 

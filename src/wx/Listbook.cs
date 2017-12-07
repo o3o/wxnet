@@ -18,14 +18,14 @@ namespace wx
 {
 	public class ListbookEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxListbookEvent_ctor(int commandType, int id, int nSel, int nOldSel);
-		[DllImport("wx-c")] static extern int    wxListbookEvent_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListbookEvent_SetSelection(IntPtr self, int nSel);
-		[DllImport("wx-c")] static extern int    wxListbookEvent_GetOldSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListbookEvent_SetOldSelection(IntPtr self, int nOldSel);
-		[DllImport("wx-c")] static extern void wxListbookEvent_Veto(IntPtr self);
-		[DllImport("wx-c")] static extern void wxListbookEvent_Allow(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxListbookEvent_IsAllowed(IntPtr self);		
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListbookEvent_ctor(int commandType, int id, int nSel, int nOldSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListbookEvent_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListbookEvent_SetSelection(IntPtr self, int nSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListbookEvent_GetOldSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListbookEvent_SetOldSelection(IntPtr self, int nOldSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListbookEvent_Veto(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListbookEvent_Allow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbookEvent_IsAllowed(IntPtr self);		
 
 		//-----------------------------------------------------------------------------
 
@@ -86,28 +86,28 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxListbook_ctor();
-		[DllImport("wx-c")] static extern bool wxListbook_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern int wxListbook_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxListbook_SetPageText(IntPtr self, int n, string strText);
-		[DllImport("wx-c")] static extern IntPtr wxListbook_GetPageText(IntPtr self, int n);
-		[DllImport("wx-c")] static extern int wxListbook_GetPageImage(IntPtr self, int n);
-		[DllImport("wx-c")] static extern bool wxListbook_SetPageImage(IntPtr self, int n, int imageId);
-		[DllImport("wx-c")] static extern void wxListbook_CalcSizeFromPage(IntPtr self, ref Size sizePage, out Size outSize);
-		[DllImport("wx-c")] static extern bool wxListbook_InsertPage(IntPtr self, int n, IntPtr page, string text, bool bSelect, int imageId);
-		[DllImport("wx-c")] static extern int wxListbook_SetSelection(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void wxListbook_SetImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern bool wxListbook_IsVertical(IntPtr self);
-		[DllImport("wx-c")] static extern int wxListbook_GetPageCount(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListbook_GetPage(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void wxListbook_AssignImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern IntPtr wxListbook_GetImageList(IntPtr self);
-		[DllImport("wx-c")] static extern void wxListbook_SetPageSize(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern bool wxListbook_DeletePage(IntPtr self, int nPage);
-		[DllImport("wx-c")] static extern bool wxListbook_RemovePage(IntPtr self, int nPage);
-		[DllImport("wx-c")] static extern bool wxListbook_DeleteAllPages(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxListbook_AddPage(IntPtr self, IntPtr page, string text, bool bselect, int imageId);
-		[DllImport("wx-c")] static extern void wxListbook_AdvanceSelection(IntPtr self, bool forward);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListbook_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListbook_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_SetPageText(IntPtr self, int n, string strText);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListbook_GetPageText(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListbook_GetPageImage(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_SetPageImage(IntPtr self, int n, int imageId);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListbook_CalcSizeFromPage(IntPtr self, ref Size sizePage, out Size outSize);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_InsertPage(IntPtr self, int n, IntPtr page, string text, bool bSelect, int imageId);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListbook_SetSelection(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListbook_SetImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_IsVertical(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListbook_GetPageCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListbook_GetPage(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListbook_AssignImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListbook_GetImageList(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListbook_SetPageSize(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_DeletePage(IntPtr self, int nPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_RemovePage(IntPtr self, int nPage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_DeleteAllPages(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListbook_AddPage(IntPtr self, IntPtr page, string text, bool bselect, int imageId);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListbook_AdvanceSelection(IntPtr self, bool forward);
 		
 		//-----------------------------------------------------------------------------
 

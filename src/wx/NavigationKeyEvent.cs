@@ -17,14 +17,14 @@ namespace wx
 {
 	public class NavigationKeyEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxNavigationKeyEvent_ctor();
-		[DllImport("wx-c")] static extern bool wxNavigationKeyEvent_GetDirection(IntPtr self);
-		[DllImport("wx-c")] static extern void wxNavigationKeyEvent_SetDirection(IntPtr self, bool bForward);
-		[DllImport("wx-c")] static extern bool wxNavigationKeyEvent_IsWindowChange(IntPtr self);
-		[DllImport("wx-c")] static extern void wxNavigationKeyEvent_SetWindowChange(IntPtr self, bool bIs);
-		[DllImport("wx-c")] static extern IntPtr wxNavigationKeyEvent_GetCurrentFocus(IntPtr self);
-		[DllImport("wx-c")] static extern void wxNavigationKeyEvent_SetCurrentFocus(IntPtr self, IntPtr win);
-		[DllImport("wx-c")] static extern void wxNavigationKeyEvent_SetFlags(IntPtr self, uint flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNavigationKeyEvent_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxNavigationKeyEvent_GetDirection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxNavigationKeyEvent_SetDirection(IntPtr self, bool bForward);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxNavigationKeyEvent_IsWindowChange(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxNavigationKeyEvent_SetWindowChange(IntPtr self, bool bIs);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNavigationKeyEvent_GetCurrentFocus(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxNavigationKeyEvent_SetCurrentFocus(IntPtr self, IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxNavigationKeyEvent_SetFlags(IntPtr self, uint flags);
 		
 		//-----------------------------------------------------------------------------
 

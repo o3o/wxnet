@@ -22,14 +22,14 @@ namespace wx
 {
 	public class TabEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxTabEvent_ctor(int commandType, int id, int nSel, int nOldSel);
-		[DllImport("wx-c")] static extern int    wxTabEvent_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTabEvent_SetSelection(IntPtr self, int nSel);
-		[DllImport("wx-c")] static extern int    wxTabEvent_GetOldSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxTabEvent_SetOldSelection(IntPtr self, int nOldSel);
-		[DllImport("wx-c")] static extern void wxTabEvent_Veto(IntPtr self);
-		[DllImport("wx-c")] static extern void wxTabEvent_Allow(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxTabEvent_IsAllowed(IntPtr self);		
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTabEvent_ctor(int commandType, int id, int nSel, int nOldSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTabEvent_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTabEvent_SetSelection(IntPtr self, int nSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxTabEvent_GetOldSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxTabEvent_SetOldSelection(IntPtr self, int nOldSel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTabEvent_Veto(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTabEvent_Allow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabEvent_IsAllowed(IntPtr self);		
 
 		//-----------------------------------------------------------------------------
 
@@ -81,29 +81,29 @@ namespace wx
 
 	public class TabCtrl : Control
 	{
-		[DllImport("wx-c")] static extern IntPtr wxTabCtrl_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxTabCtrl_ctor2(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern int wxTabCtrl_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern int wxTabCtrl_GetCurFocus(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTabCtrl_GetImageList(IntPtr self);
-		[DllImport("wx-c")] static extern int wxTabCtrl_GetItemCount(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxTabCtrl_GetItemRect(IntPtr self, int item, out Rectangle rect);
-		[DllImport("wx-c")] static extern int wxTabCtrl_GetRowCount(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTabCtrl_GetItemText(IntPtr self, int item);
-		[DllImport("wx-c")] static extern int wxTabCtrl_GetItemImage(IntPtr self, int item);
-		[DllImport("wx-c")] static extern IntPtr wxTabCtrl_GetItemData(IntPtr self, int item);
-		[DllImport("wx-c")] static extern int wxTabCtrl_SetSelection(IntPtr self, int item);
-		[DllImport("wx-c")] static extern void wxTabCtrl_SetImageList(IntPtr self, IntPtr imageList);
-		[DllImport("wx-c")] static extern bool wxTabCtrl_SetItemText(IntPtr self, int item, string text);
-		[DllImport("wx-c")] static extern bool wxTabCtrl_SetItemImage(IntPtr self, int item, int image);
-		[DllImport("wx-c")] static extern bool wxTabCtrl_SetItemData(IntPtr self, int item, IntPtr data);
-		[DllImport("wx-c")] static extern void wxTabCtrl_SetItemSize(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern bool wxTabCtrl_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void wxTabCtrl_SetPadding(IntPtr self, ref Size padding);
-		[DllImport("wx-c")] static extern bool wxTabCtrl_DeleteAllItems(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxTabCtrl_DeleteItem(IntPtr self, int item);
-		[DllImport("wx-c")] static extern int wxTabCtrl_HitTest(IntPtr self, ref Point pt, out long flags);
-		[DllImport("wx-c")] static extern bool wxTabCtrl_InsertItem(IntPtr self, int item, string text, int imageId, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTabCtrl_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTabCtrl_ctor2(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTabCtrl_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTabCtrl_GetCurFocus(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTabCtrl_GetImageList(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTabCtrl_GetItemCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabCtrl_GetItemRect(IntPtr self, int item, out Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTabCtrl_GetRowCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTabCtrl_GetItemText(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTabCtrl_GetItemImage(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTabCtrl_GetItemData(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTabCtrl_SetSelection(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTabCtrl_SetImageList(IntPtr self, IntPtr imageList);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabCtrl_SetItemText(IntPtr self, int item, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabCtrl_SetItemImage(IntPtr self, int item, int image);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabCtrl_SetItemData(IntPtr self, int item, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTabCtrl_SetItemSize(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabCtrl_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTabCtrl_SetPadding(IntPtr self, ref Size padding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabCtrl_DeleteAllItems(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabCtrl_DeleteItem(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTabCtrl_HitTest(IntPtr self, ref Point pt, out long flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTabCtrl_InsertItem(IntPtr self, int item, string text, int imageId, IntPtr data);
 
 		//-----------------------------------------------------------------------------
 

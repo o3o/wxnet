@@ -38,19 +38,19 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxHtmlHelpController_ctor(int style);
-		[DllImport("wx-c")] static extern void   wxHtmlHelpController_SetTitleFormat(IntPtr self, string format);
-		[DllImport("wx-c")] static extern void   wxHtmlHelpController_SetTempDir(IntPtr self, string path);
-		[DllImport("wx-c")] static extern bool   wxHtmlHelpController_AddBook(IntPtr self, string book_url);
-		[DllImport("wx-c")] static extern bool   wxHtmlHelpController_Display(IntPtr self, string x);
-		[DllImport("wx-c")] static extern bool   wxHtmlHelpController_DisplayInt(IntPtr self, int id);
-		[DllImport("wx-c")] static extern bool   wxHtmlHelpController_DisplayContents(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxHtmlHelpController_DisplayIndex(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxHtmlHelpController_KeywordSearch(IntPtr self, string keyword, int mode);
-		[DllImport("wx-c")] static extern void   wxHtmlHelpController_UseConfig(IntPtr self, IntPtr config, string rootpath);
-		[DllImport("wx-c")] static extern void   wxHtmlHelpController_ReadCustomization(IntPtr self, IntPtr cfg, string path);
-		[DllImport("wx-c")] static extern void   wxHtmlHelpController_WriteCustomization(IntPtr self, IntPtr cfg, string path);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlHelpController_GetFrame(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlHelpController_ctor(int style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlHelpController_SetTitleFormat(IntPtr self, string format);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlHelpController_SetTempDir(IntPtr self, string path);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlHelpController_AddBook(IntPtr self, string book_url);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlHelpController_Display(IntPtr self, string x);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlHelpController_DisplayInt(IntPtr self, int id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlHelpController_DisplayContents(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlHelpController_DisplayIndex(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlHelpController_KeywordSearch(IntPtr self, string keyword, int mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlHelpController_UseConfig(IntPtr self, IntPtr config, string rootpath);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlHelpController_ReadCustomization(IntPtr self, IntPtr cfg, string path);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlHelpController_WriteCustomization(IntPtr self, IntPtr cfg, string path);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlHelpController_GetFrame(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 		

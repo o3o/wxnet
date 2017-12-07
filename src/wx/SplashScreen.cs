@@ -30,10 +30,10 @@ namespace wx
 
         //-----------------------------------------------------------------------------
 
-        [DllImport("wx-c")] static extern IntPtr wxSplashScreen_ctor(IntPtr bitmap, uint splashStyle, int milliseconds, IntPtr parent, int id, ref Point pos, ref Size size, uint style);
-        [DllImport("wx-c")] static extern int    wxSplashScreen_GetSplashStyle(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxSplashScreen_GetSplashWindow(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxSplashScreen_GetTimeout(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSplashScreen_ctor(IntPtr bitmap, uint splashStyle, int milliseconds, IntPtr parent, int id, ref Point pos, ref Size size, uint style);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSplashScreen_GetSplashStyle(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSplashScreen_GetSplashWindow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSplashScreen_GetTimeout(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -76,9 +76,9 @@ namespace wx
 
     public class SplashScreenWindow : Window
     {
-        [DllImport("wx-c")] static extern IntPtr wxSplashScreenWindow_ctor(IntPtr bitmap, IntPtr parent, int id, ref Point pos, ref Size size, uint style);
-        [DllImport("wx-c")] static extern void   wxSplashScreenWindow_SetBitmap(IntPtr self, IntPtr bitmap);
-        [DllImport("wx-c")] static extern IntPtr wxSplashScreenWindow_GetBitmap(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSplashScreenWindow_ctor(IntPtr bitmap, IntPtr parent, int id, ref Point pos, ref Size size, uint style);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplashScreenWindow_SetBitmap(IntPtr self, IntPtr bitmap);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSplashScreenWindow_GetBitmap(IntPtr self);
 
         //-----------------------------------------------------------------------------
 

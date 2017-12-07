@@ -27,19 +27,19 @@ namespace wx
 	
 		//---------------------------------------------------------------------
 		
-		[DllImport("wx-c")] static extern IntPtr wxGauge_ctor();
-		[DllImport("wx-c")] static extern void   wxGauge_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxGauge_Create(IntPtr self, IntPtr parent, int id, int range, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern void   wxGauge_SetRange(IntPtr self, int range);
-		[DllImport("wx-c")] static extern int    wxGauge_GetRange(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxGauge_SetValue(IntPtr self, int pos);
-		[DllImport("wx-c")] static extern int    wxGauge_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxGauge_SetShadowWidth(IntPtr self, int w);
-		[DllImport("wx-c")] static extern int    wxGauge_GetShadowWidth(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxGauge_SetBezelFace(IntPtr self, int w);
-		[DllImport("wx-c")] static extern int    wxGauge_GetBezelFace(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxGauge_AcceptsFocus(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxGauge_IsVertical(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGauge_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGauge_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGauge_Create(IntPtr self, IntPtr parent, int id, int range, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGauge_SetRange(IntPtr self, int range);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGauge_GetRange(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGauge_SetValue(IntPtr self, int pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGauge_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGauge_SetShadowWidth(IntPtr self, int w);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGauge_GetShadowWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGauge_SetBezelFace(IntPtr self, int w);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGauge_GetBezelFace(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGauge_AcceptsFocus(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGauge_IsVertical(IntPtr self);
 	
 		//---------------------------------------------------------------------
 		

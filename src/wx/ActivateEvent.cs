@@ -17,8 +17,8 @@ namespace wx
 {
 	public class ActivateEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxActivateEvent_ctor(int type);
-		[DllImport("wx-c")] static extern bool wxActivateEvent_GetActive(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxActivateEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxActivateEvent_GetActive(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

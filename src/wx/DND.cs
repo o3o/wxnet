@@ -44,12 +44,12 @@ namespace wx
 		
 		protected DataObject m_dataObject = null;
 		
-		[DllImport("wx-c")] static extern IntPtr wxDropSource_Win_ctor(IntPtr win);
-		[DllImport("wx-c")] static extern IntPtr wxDropSource_DataObject_ctor(IntPtr dataObject, IntPtr win);
-		[DllImport("wx-c")] static extern void wxDropSource_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxDropSource_RegisterVirtual(IntPtr self, Virtual_DoDragDrop doDragDrop);
-		[DllImport("wx-c")] static extern int wxDropSource_DoDragDrop(IntPtr self, int flags);
-		[DllImport("wx-c")] static extern void wxDropSource_SetData(IntPtr self, IntPtr dataObject);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDropSource_Win_ctor(IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDropSource_DataObject_ctor(IntPtr dataObject, IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDropSource_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDropSource_RegisterVirtual(IntPtr self, Virtual_DoDragDrop doDragDrop);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxDropSource_DoDragDrop(IntPtr self, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDropSource_SetData(IntPtr self, IntPtr dataObject);
 		
 		//---------------------------------------------------------------------
 
@@ -161,16 +161,16 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 		
-		[DllImport("wx-c")] static extern IntPtr wxDropTarget_ctor(IntPtr dataObject);
-		[DllImport("wx-c")] static extern void wxDropTarget_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxDropTarget_RegisterVirtual(IntPtr self, Virtual_OnDragOver onDragOver, Virtual_OnDrop onDrop, Virtual_OnData3 onData, Virtual_GetData getData, Virtual_OnLeave onLeave, Virtual_OnEnter onEnter);  
-		[DllImport("wx-c")] static extern void   wxDropTarget_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void   wxDropTarget_SetDataObject(IntPtr self, IntPtr dataObject);
-		[DllImport("wx-c")] static extern int wxDropTarget_OnEnter(IntPtr self, int x, int y, int def);
-		[DllImport("wx-c")] static extern int wxDropTarget_OnDragOver(IntPtr self, int x, int y, int def);
-		[DllImport("wx-c")] static extern void   wxDropTarget_OnLeave(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxDropTarget_OnDrop(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern bool wxDropTarget_GetData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDropTarget_ctor(IntPtr dataObject);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDropTarget_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDropTarget_RegisterVirtual(IntPtr self, Virtual_OnDragOver onDragOver, Virtual_OnDrop onDrop, Virtual_OnData3 onData, Virtual_GetData getData, Virtual_OnLeave onLeave, Virtual_OnEnter onEnter);  
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDropTarget_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDropTarget_SetDataObject(IntPtr self, IntPtr dataObject);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxDropTarget_OnEnter(IntPtr self, int x, int y, int def);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxDropTarget_OnDragOver(IntPtr self, int x, int y, int def);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDropTarget_OnLeave(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxDropTarget_OnDrop(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxDropTarget_GetData(IntPtr self);
 		
 		//---------------------------------------------------------------------
 
@@ -310,8 +310,8 @@ namespace wx
 
 	public abstract class TextDropTarget : DropTarget
 	{
-		[DllImport("wx-c")] static extern bool wxTextDropTarget_OnDrop(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern bool wxTextDropTarget_GetData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTextDropTarget_OnDrop(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxTextDropTarget_GetData(IntPtr self);
 
 		//---------------------------------------------------------------------
 
@@ -351,8 +351,8 @@ namespace wx
 
 	public abstract class FileDropTarget : DropTarget
 	{
-		[DllImport("wx-c")] static extern bool wxFileDropTarget_OnDrop(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern bool wxFileDropTarget_GetData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxFileDropTarget_OnDrop(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxFileDropTarget_GetData(IntPtr self);
 
 		//---------------------------------------------------------------------
 

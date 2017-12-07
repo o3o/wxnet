@@ -19,134 +19,134 @@ namespace wx
 {
 	public class DC : Object
 	{
-		[DllImport("wx-c")] static extern void   wxDC_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxDC_DrawBitmap(IntPtr self, IntPtr bmp, int x, int y, bool transparent);
-		[DllImport("wx-c")] static extern void   wxDC_DrawPolygon(IntPtr self, int n, Point[] points, int xoffset, int yoffset, int fill_style);
-		[DllImport("wx-c")] static extern void   wxDC_DrawLine(IntPtr self, int x1, int y1, int x2, int y2);
-		[DllImport("wx-c")] static extern void   wxDC_DrawRectangle(IntPtr self, int x1, int y1, int x2, int y2);
-		[DllImport("wx-c")] static extern void   wxDC_DrawText(IntPtr self, string text, int x, int y);
-		[DllImport("wx-c")] static extern void   wxDC_DrawEllipse(IntPtr self, int x, int y, int width, int height);
-		[DllImport("wx-c")] static extern void   wxDC_DrawPoint(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern void   wxDC_DrawRoundedRectangle(IntPtr self, int x, int y, int width, int height, double radius);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawBitmap(IntPtr self, IntPtr bmp, int x, int y, bool transparent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawPolygon(IntPtr self, int n, Point[] points, int xoffset, int yoffset, int fill_style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawLine(IntPtr self, int x1, int y1, int x2, int y2);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawRectangle(IntPtr self, int x1, int y1, int x2, int y2);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawText(IntPtr self, string text, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawEllipse(IntPtr self, int x, int y, int width, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawPoint(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawRoundedRectangle(IntPtr self, int x, int y, int width, int height, double radius);
 	
-		[DllImport("wx-c")] static extern void   wxDC_SetBackgroundMode(IntPtr self, FillStyle mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetBackgroundMode(IntPtr self, FillStyle mode);
 	
-		[DllImport("wx-c")] static extern void   wxDC_SetTextBackground(IntPtr self, IntPtr colour);
-		[DllImport("wx-c")] static extern IntPtr wxDC_GetTextBackground(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetTextBackground(IntPtr self, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDC_GetTextBackground(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxDC_SetBrush(IntPtr self, IntPtr brush);
-		[DllImport("wx-c")] static extern IntPtr wxDC_GetBrush(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetBrush(IntPtr self, IntPtr brush);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDC_GetBrush(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxDC_SetBackground(IntPtr self, IntPtr brush);
-		[DllImport("wx-c")] static extern IntPtr wxDC_GetBackground(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetBackground(IntPtr self, IntPtr brush);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDC_GetBackground(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxDC_SetPen(IntPtr self, IntPtr pen);
-		[DllImport("wx-c")] static extern IntPtr wxDC_GetPen(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetPen(IntPtr self, IntPtr pen);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDC_GetPen(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxDC_SetTextForeground(IntPtr self, IntPtr colour);
-		[DllImport("wx-c")] static extern IntPtr wxDC_GetTextForeground(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetTextForeground(IntPtr self, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDC_GetTextForeground(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxDC_SetFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern IntPtr wxDC_GetFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDC_GetFont(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxDC_GetTextExtent(IntPtr self, string str, out int x, out int y, out int descent, out int externalLeading, IntPtr theFont);
-		[DllImport("wx-c")] static extern void   wxDC_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetTextExtent(IntPtr self, string str, out int x, out int y, out int descent, out int externalLeading, IntPtr theFont);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_Clear(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxDC_DestroyClippingRegion(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxDC_SetClippingRegion(IntPtr self, int x, int y, int width, int height);
-		[DllImport("wx-c")] static extern void   wxDC_SetClippingRegionPos(IntPtr self, ref Point pos, ref Size size);
-		[DllImport("wx-c")] static extern void   wxDC_SetClippingRegionRect(IntPtr self, ref Rectangle rect);
-		[DllImport("wx-c")] static extern void   wxDC_SetClippingRegionReg(IntPtr self, IntPtr reg);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DestroyClippingRegion(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetClippingRegion(IntPtr self, int x, int y, int width, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetClippingRegionPos(IntPtr self, ref Point pos, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetClippingRegionRect(IntPtr self, ref Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetClippingRegionReg(IntPtr self, IntPtr reg);
 	
-		[DllImport("wx-c")] static extern int    wxDC_GetLogicalFunction(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxDC_SetLogicalFunction(IntPtr self, int function);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_GetLogicalFunction(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetLogicalFunction(IntPtr self, int function);
 	
-		[DllImport("wx-c")] static extern bool   wxDC_BeginDrawing(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxDC_Blit(IntPtr self, int xdest, int ydest, int width, int height, IntPtr source, int xsrc, int ysrc, int rop, bool useMask, int xsrcMask, int ysrcMask);
-		[DllImport("wx-c")] static extern void   wxDC_EndDrawing(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDC_BeginDrawing(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDC_Blit(IntPtr self, int xdest, int ydest, int width, int height, IntPtr source, int xsrc, int ysrc, int rop, bool useMask, int xsrcMask, int ysrcMask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_EndDrawing(IntPtr self);
 		
-		[DllImport("wx-c")] static extern bool   wxDC_FloodFill(IntPtr self, int x, int y, IntPtr col, int style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDC_FloodFill(IntPtr self, int x, int y, IntPtr col, int style);
 		
-		[DllImport("wx-c")] static extern bool   wxDC_GetPixel(IntPtr self, int x, int y, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDC_GetPixel(IntPtr self, int x, int y, IntPtr col);
 		
-		[DllImport("wx-c")] static extern void   wxDC_CrossHair(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_CrossHair(IntPtr self, int x, int y);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawArc(IntPtr self, int x1, int y1, int x2, int y2, int xc, int yc);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawArc(IntPtr self, int x1, int y1, int x2, int y2, int xc, int yc);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawCheckMark(IntPtr self, int x, int y, int width, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawCheckMark(IntPtr self, int x, int y, int width, int height);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawEllipticArc(IntPtr self, int x, int y, int w, int h, double sa, double ea);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawEllipticArc(IntPtr self, int x, int y, int w, int h, double sa, double ea);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawLines(IntPtr self, int n, Point[] points, int xoffset, int yoffset);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawLines(IntPtr self, int n, Point[] points, int xoffset, int yoffset);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawCircle(IntPtr self, int x, int y, int radius);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawCircle(IntPtr self, int x, int y, int radius);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawIcon(IntPtr self, IntPtr icon, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawIcon(IntPtr self, IntPtr icon, int x, int y);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawRotatedText(IntPtr self, string text, int x, int y, double angle);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawRotatedText(IntPtr self, string text, int x, int y, double angle);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawLabel(IntPtr self, string text, IntPtr image, ref Rectangle rect, int alignment, int indexAccel, ref Rectangle rectBounding);
-		[DllImport("wx-c")] static extern void   wxDC_DrawLabel2(IntPtr self, string text, ref Rectangle rect, int alignment, int indexAccel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawLabel(IntPtr self, string text, IntPtr image, ref Rectangle rect, int alignment, int indexAccel, ref Rectangle rectBounding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawLabel2(IntPtr self, string text, ref Rectangle rect, int alignment, int indexAccel);
 		
-		[DllImport("wx-c")] static extern void   wxDC_DrawSpline(IntPtr self, int x1, int y1, int x2, int y2, int x3, int y3);
-		[DllImport("wx-c")] static extern void   wxDC_DrawSpline2(IntPtr self, int n, Point[] points);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawSpline(IntPtr self, int x1, int y1, int x2, int y2, int x3, int y3);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_DrawSpline2(IntPtr self, int n, Point[] points);
 		
-		[DllImport("wx-c")] static extern bool   wxDC_StartDoc(IntPtr self, string message);
-		[DllImport("wx-c")] static extern void   wxDC_EndDoc(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxDC_StartPage(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxDC_EndPage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDC_StartDoc(IntPtr self, string message);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_EndDoc(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_StartPage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_EndPage(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxDC_GetClippingBox(IntPtr self, out int x, out int y, out int w, out int h);
-		[DllImport("wx-c")] static extern void   wxDC_GetClippingBox2(IntPtr self, out Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetClippingBox(IntPtr self, out int x, out int y, out int w, out int h);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetClippingBox2(IntPtr self, out Rectangle rect);
 		
-		[DllImport("wx-c")] static extern void   wxDC_GetMultiLineTextExtent(IntPtr self, string text, out int width, out int height, out int heightline, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetMultiLineTextExtent(IntPtr self, string text, out int width, out int height, out int heightline, IntPtr font);
 		
-		[DllImport("wx-c")] static extern bool   wxDC_GetPartialTextExtents(IntPtr self, string text, IntPtr widths);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDC_GetPartialTextExtents(IntPtr self, string text, IntPtr widths);
 		
-		[DllImport("wx-c")] static extern void   wxDC_GetSize(IntPtr self, out int width, out int height);
-		[DllImport("wx-c")] static extern void   wxDC_GetSize2(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern void   wxDC_GetSizeMM(IntPtr self, out int width, out int height);
-		[DllImport("wx-c")] static extern void   wxDC_GetSizeMM2(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetSize(IntPtr self, out int width, out int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetSize2(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetSizeMM(IntPtr self, out int width, out int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetSizeMM2(IntPtr self, ref Size size);
 		
-		[DllImport("wx-c")] static extern int    wxDC_DeviceToLogicalX(IntPtr self, int x);
-		[DllImport("wx-c")] static extern int    wxDC_DeviceToLogicalY(IntPtr self, int y);
-		[DllImport("wx-c")] static extern int    wxDC_DeviceToLogicalXRel(IntPtr self, int x);
-		[DllImport("wx-c")] static extern int    wxDC_DeviceToLogicalYRel(IntPtr self, int y);
-		[DllImport("wx-c")] static extern int    wxDC_LogicalToDeviceX(IntPtr self, int x);
-		[DllImport("wx-c")] static extern int    wxDC_LogicalToDeviceY(IntPtr self, int y);
-		[DllImport("wx-c")] static extern int    wxDC_LogicalToDeviceXRel(IntPtr self, int x);
-		[DllImport("wx-c")] static extern int    wxDC_LogicalToDeviceYRel(IntPtr self, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_DeviceToLogicalX(IntPtr self, int x);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_DeviceToLogicalY(IntPtr self, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_DeviceToLogicalXRel(IntPtr self, int x);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_DeviceToLogicalYRel(IntPtr self, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_LogicalToDeviceX(IntPtr self, int x);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_LogicalToDeviceY(IntPtr self, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_LogicalToDeviceXRel(IntPtr self, int x);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_LogicalToDeviceYRel(IntPtr self, int y);
 		
-		[DllImport("wx-c")] static extern bool   wxDC_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDC_Ok(IntPtr self);
 		
-		[DllImport("wx-c")] static extern int    wxDC_GetBackgroundMode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_GetBackgroundMode(IntPtr self);
 		
-		[DllImport("wx-c")] static extern int    wxDC_GetMapMode(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxDC_SetMapMode(IntPtr self, int mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_GetMapMode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetMapMode(IntPtr self, int mode);
 		
-		[DllImport("wx-c")] static extern void   wxDC_GetUserScale(IntPtr self, out double x, out double y);
-		[DllImport("wx-c")] static extern void   wxDC_SetUserScale(IntPtr self, double x, double y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetUserScale(IntPtr self, out double x, out double y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetUserScale(IntPtr self, double x, double y);
 		
-		[DllImport("wx-c")] static extern void   wxDC_GetLogicalScale(IntPtr self, out double x, out double y);
-		[DllImport("wx-c")] static extern void   wxDC_SetLogicalScale(IntPtr self, double x, double y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetLogicalScale(IntPtr self, out double x, out double y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetLogicalScale(IntPtr self, double x, double y);
 		
-		[DllImport("wx-c")] static extern void   wxDC_GetLogicalOrigin(IntPtr self, out int x, out int y);
-		[DllImport("wx-c")] static extern void   wxDC_GetLogicalOrigin2(IntPtr self, ref Point pt);
-		[DllImport("wx-c")] static extern void   wxDC_SetLogicalOrigin(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetLogicalOrigin(IntPtr self, out int x, out int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetLogicalOrigin2(IntPtr self, ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetLogicalOrigin(IntPtr self, int x, int y);
 		
-		[DllImport("wx-c")] static extern void   wxDC_GetDeviceOrigin(IntPtr self, out int x, out int y);
-		[DllImport("wx-c")] static extern void   wxDC_GetDeviceOrigin2(IntPtr self, ref Point pt);
-		[DllImport("wx-c")] static extern void   wxDC_SetDeviceOrigin(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetDeviceOrigin(IntPtr self, out int x, out int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_GetDeviceOrigin2(IntPtr self, ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetDeviceOrigin(IntPtr self, int x, int y);
 		
-		[DllImport("wx-c")] static extern void   wxDC_SetAxisOrientation(IntPtr self, bool xLeftRight, bool yBottomUp);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_SetAxisOrientation(IntPtr self, bool xLeftRight, bool yBottomUp);
 		
-		[DllImport("wx-c")] static extern void   wxDC_CalcBoundingBox(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern void   wxDC_ResetBoundingBox(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_CalcBoundingBox(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDC_ResetBoundingBox(IntPtr self);
 		
-		[DllImport("wx-c")] static extern int    wxDC_MinX(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxDC_MaxX(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxDC_MinY(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxDC_MaxY(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_MinX(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_MaxX(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_MinY(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDC_MaxY(IntPtr self);
 
 		//---------------------------------------------------------------------
 
@@ -955,24 +955,24 @@ namespace wx
 
 	public class WindowDC : DC
 	{
-		[DllImport("wx-c")] static extern IntPtr wxWindowDC_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxWindowDC_ctor2(IntPtr win);
-		[DllImport("wx-c")] static extern bool wxWindowDC_CanDrawBitmap(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxWindowDC_CanGetTextExtent(IntPtr self);
-		[DllImport("wx-c")] static extern int wxWindowDC_GetCharWidth(IntPtr self);
-		[DllImport("wx-c")] static extern int wxWindowDC_GetCharHeight(IntPtr self);
-		[DllImport("wx-c")] static extern void wxWindowDC_Clear(IntPtr self);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetPen(IntPtr self, IntPtr pen);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetBrush(IntPtr self, IntPtr brush);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetBackground(IntPtr self, IntPtr brush);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetLogicalFunction(IntPtr self, int function);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetTextForeground(IntPtr self, IntPtr colour);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetTextBackground(IntPtr self, IntPtr colour);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetBackgroundMode(IntPtr self, int mode);
-		[DllImport("wx-c")] static extern void wxWindowDC_SetPalette(IntPtr self, IntPtr palette);
-		[DllImport("wx-c")] static extern void wxWindowDC_GetPPI(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern int wxWindowDC_GetDepth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDC_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDC_ctor2(IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxWindowDC_CanDrawBitmap(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxWindowDC_CanGetTextExtent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxWindowDC_GetCharWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxWindowDC_GetCharHeight(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetPen(IntPtr self, IntPtr pen);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetBrush(IntPtr self, IntPtr brush);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetBackground(IntPtr self, IntPtr brush);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetLogicalFunction(IntPtr self, int function);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetTextForeground(IntPtr self, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetTextBackground(IntPtr self, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetBackgroundMode(IntPtr self, int mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_SetPalette(IntPtr self, IntPtr palette);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDC_GetPPI(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxWindowDC_GetDepth(IntPtr self);
 		
 		//---------------------------------------------------------------------
 	
@@ -1130,8 +1130,8 @@ namespace wx
 
 	public class ClientDC : WindowDC
 	{
-		[DllImport("wx-c")] static extern IntPtr wxClientDC_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxClientDC_ctor2(IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxClientDC_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxClientDC_ctor2(IntPtr window);
 
 		//---------------------------------------------------------------------
 		
@@ -1161,8 +1161,8 @@ namespace wx
 
 	public class PaintDC : WindowDC
 	{
-		[DllImport("wx-c")] static extern IntPtr wxPaintDC_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxPaintDC_ctor2(IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPaintDC_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPaintDC_ctor2(IntPtr window);
 
 		//---------------------------------------------------------------------
 

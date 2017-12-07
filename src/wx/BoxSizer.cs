@@ -24,14 +24,14 @@ namespace wx
 		private Virtual_voidvoid recalcSizes;
 		private Virtual_wxSizevoid calcMin;
 		
-		[DllImport("wx-c")] static extern void wxBoxSizer_RegisterVirtual(IntPtr self, Virtual_voidvoid recalcSizes, Virtual_wxSizevoid calcMin);	
-		[DllImport("wx-c")] static extern void wxBoxSizer_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBoxSizer_RegisterVirtual(IntPtr self, Virtual_voidvoid recalcSizes, Virtual_wxSizevoid calcMin);	
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBoxSizer_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
 	
-		[DllImport("wx-c")] static extern IntPtr wxBoxSizer_ctor(int orient);
-		[DllImport("wx-c")] static extern void wxBoxSizer_RecalcSizes(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxBoxSizer_CalcMin(IntPtr self);
-		[DllImport("wx-c")] static extern int wxBoxSizer_GetOrientation(IntPtr self);
-		[DllImport("wx-c")] static extern void wxBoxSizer_SetOrientation(IntPtr self, int orient);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBoxSizer_ctor(int orient);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBoxSizer_RecalcSizes(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBoxSizer_CalcMin(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxBoxSizer_GetOrientation(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBoxSizer_SetOrientation(IntPtr self, int orient);
 
 		//---------------------------------------------------------------------
 

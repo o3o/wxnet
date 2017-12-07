@@ -18,10 +18,10 @@ namespace wx
 {
 	public class NotebookSizer : Sizer
 	{
-		[DllImport("wx-c")] static extern IntPtr wxNotebookSizer_ctor(IntPtr nb);
-		[DllImport("wx-c")] static extern void wxNotebookSizer_RecalcSizes(IntPtr self);
-		[DllImport("wx-c")] static extern void wxNotebookSizer_CalcMin(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern IntPtr wxNotebookSizer_GetNotebook(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNotebookSizer_ctor(IntPtr nb);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxNotebookSizer_RecalcSizes(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxNotebookSizer_CalcMin(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNotebookSizer_GetNotebook(IntPtr self);
 
 		//---------------------------------------------------------------------
 

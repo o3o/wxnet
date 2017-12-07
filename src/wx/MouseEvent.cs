@@ -18,41 +18,41 @@ namespace wx
 {
     public class MouseEvent : Event
     {
-        [DllImport("wx-c")] static extern IntPtr wxMouseEvent_ctor(int mouseType);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_IsButton(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_ButtonDown(IntPtr self);
-	[DllImport("wx-c")] static extern bool   wxMouseEvent_ButtonDown2(IntPtr self, int button);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_ButtonDClick(IntPtr self, int but);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_ButtonUp(IntPtr self, int but);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_Button(IntPtr self, int but);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_ButtonIsDown(IntPtr self, int but);
-        [DllImport("wx-c")] static extern int    wxMouseEvent_GetButton(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_ControlDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_MetaDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_AltDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_ShiftDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_LeftDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_MiddleDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_RightDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_LeftUp(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_MiddleUp(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_RightUp(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_LeftDClick(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_MiddleDClick(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_RightDClick(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_LeftIsDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_MiddleIsDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_RightIsDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_Dragging(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_Moving(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_Entering(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_Leaving(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxMouseEvent_GetPosition(IntPtr self, ref Point pos);
-        [DllImport("wx-c")] static extern void   wxMouseEvent_LogicalPosition(IntPtr self, IntPtr dc, ref Point pos);
-        [DllImport("wx-c")] static extern int    wxMouseEvent_GetWheelRotation(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxMouseEvent_GetWheelDelta(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxMouseEvent_GetLinesPerAction(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxMouseEvent_IsPageScroll(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMouseEvent_ctor(int mouseType);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_IsButton(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_ButtonDown(IntPtr self);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_ButtonDown2(IntPtr self, int button);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_ButtonDClick(IntPtr self, int but);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_ButtonUp(IntPtr self, int but);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_Button(IntPtr self, int but);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_ButtonIsDown(IntPtr self, int but);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxMouseEvent_GetButton(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_ControlDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_MetaDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_AltDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_ShiftDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_LeftDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_MiddleDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_RightDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_LeftUp(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_MiddleUp(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_RightUp(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_LeftDClick(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_MiddleDClick(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_RightDClick(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_LeftIsDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_MiddleIsDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_RightIsDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_Dragging(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_Moving(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_Entering(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_Leaving(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMouseEvent_GetPosition(IntPtr self, ref Point pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMouseEvent_LogicalPosition(IntPtr self, IntPtr dc, ref Point pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxMouseEvent_GetWheelRotation(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxMouseEvent_GetWheelDelta(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxMouseEvent_GetLinesPerAction(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMouseEvent_IsPageScroll(IntPtr self);
 
 		//----------------------------------------------------------------------------
 

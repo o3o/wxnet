@@ -17,9 +17,9 @@ namespace wx
 {
 	public class PaletteChangedEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxPaletteChangedEvent_ctor(int type);
-		[DllImport("wx-c")] static extern void wxPaletteChangedEvent_SetChangedWindow(IntPtr self, IntPtr win);
-		[DllImport("wx-c")] static extern IntPtr wxPaletteChangedEvent_GetChangedWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPaletteChangedEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPaletteChangedEvent_SetChangedWindow(IntPtr self, IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPaletteChangedEvent_GetChangedWindow(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

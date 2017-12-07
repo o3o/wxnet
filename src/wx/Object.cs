@@ -21,8 +21,8 @@ namespace wx
 		protected delegate void Virtual_Dispose();
 		protected Virtual_Dispose virtual_Dispose;
 	
-		[DllImport("wx-c")] static extern IntPtr wxObject_GetTypeName(IntPtr obj);
-		[DllImport("wx-c")] static extern void   wxObject_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxObject_GetTypeName(IntPtr obj);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxObject_dtor(IntPtr self);
 
 		//---------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ namespace wx
 		//---------------------------------------------------------------------
 		// this is for Locale gettext support...
 		
-		[DllImport("wx-c")] static extern IntPtr wxGetTranslation_func(string str);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGetTranslation_func(string str);
 		
 		public static string GetTranslation(string str)
 		{

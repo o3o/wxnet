@@ -18,24 +18,24 @@ namespace wx
 {
     public class KeyEvent : Event
     {
-        [DllImport("wx-c")] static extern IntPtr wxKeyEvent_ctor(int type);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxKeyEvent_ctor(int type);
 
-        [DllImport("wx-c")] static extern bool   wxKeyEvent_ControlDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxKeyEvent_ShiftDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxKeyEvent_AltDown(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxKeyEvent_MetaDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxKeyEvent_ControlDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxKeyEvent_ShiftDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxKeyEvent_AltDown(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxKeyEvent_MetaDown(IntPtr self);
 
-        [DllImport("wx-c")] static extern uint   wxKeyEvent_GetRawKeyCode(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxKeyEvent_GetKeyCode(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxKeyEvent_GetRawKeyCode(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxKeyEvent_GetKeyCode(IntPtr self);
 
-        [DllImport("wx-c")] static extern uint   wxKeyEvent_GetRawKeyFlags(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxKeyEvent_HasModifiers(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint   wxKeyEvent_GetRawKeyFlags(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxKeyEvent_HasModifiers(IntPtr self);
 
-        [DllImport("wx-c")] static extern void   wxKeyEvent_GetPosition(IntPtr self, ref Point pt);
-        [DllImport("wx-c")] static extern int    wxKeyEvent_GetX(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxKeyEvent_GetY(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxKeyEvent_GetPosition(IntPtr self, ref Point pt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxKeyEvent_GetX(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxKeyEvent_GetY(IntPtr self);
 	
-	[DllImport("wx-c")] static extern bool   wxKeyEvent_CmdDown(IntPtr self);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxKeyEvent_CmdDown(IntPtr self);
 
         //-----------------------------------------------------------------------------
 

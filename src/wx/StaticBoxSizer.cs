@@ -17,8 +17,8 @@ namespace wx
 {
 	public class StaticBoxSizer : BoxSizer
 	{
-		[DllImport("wx-c")] static extern IntPtr wxStaticBoxSizer_ctor(IntPtr box, int orient);
-		[DllImport("wx-c")] static extern IntPtr wxStaticBoxSizer_GetStaticBox(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStaticBoxSizer_ctor(IntPtr box, int orient);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStaticBoxSizer_GetStaticBox(IntPtr self);
 
 		//---------------------------------------------------------------------
 

@@ -24,22 +24,22 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 		
-		[DllImport("wx-c")] static extern IntPtr wxVScrolledWindow_ctor(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void wxVScrolledWindow_RegisterVirtual(IntPtr self, Virtual_IntInt onGetLineHeight);
-		[DllImport("wx-c")] static extern bool wxVScrolledWindow_Create(IntPtr self,IntPtr parent, int id, ref Point pos, ref Size size, int style, string name);
-		[DllImport("wx-c")] static extern void wxVScrolledWindow_SetLineCount(IntPtr self, int count);
-		[DllImport("wx-c")] static extern bool wxVScrolledWindow_ScrollToLine(IntPtr self, int line);
-		[DllImport("wx-c")] static extern bool wxVScrolledWindow_ScrollLines(IntPtr self, int lines);
-		[DllImport("wx-c")] static extern bool wxVScrolledWindow_ScrollPages(IntPtr self, int pages);
-		[DllImport("wx-c")] static extern void wxVScrolledWindow_RefreshLine(IntPtr self, int line);
-		[DllImport("wx-c")] static extern void wxVScrolledWindow_RefreshLines(IntPtr self, int from, int to);
-		[DllImport("wx-c")] static extern int wxVScrolledWindow_HitTest(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern int wxVScrolledWindow_HitTest2(IntPtr self, ref Point pt);
-		[DllImport("wx-c")] static extern void wxVScrolledWindow_RefreshAll(IntPtr self);
-		[DllImport("wx-c")] static extern int wxVScrolledWindow_GetLineCount(IntPtr self);
-		[DllImport("wx-c")] static extern int wxVScrolledWindow_GetFirstVisibleLine(IntPtr self);
-		[DllImport("wx-c")] static extern int wxVScrolledWindow_GetLastVisibleLine(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxVScrolledWindow_IsVisible(IntPtr self, int line);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxVScrolledWindow_ctor(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVScrolledWindow_RegisterVirtual(IntPtr self, Virtual_IntInt onGetLineHeight);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVScrolledWindow_Create(IntPtr self,IntPtr parent, int id, ref Point pos, ref Size size, int style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVScrolledWindow_SetLineCount(IntPtr self, int count);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVScrolledWindow_ScrollToLine(IntPtr self, int line);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVScrolledWindow_ScrollLines(IntPtr self, int lines);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVScrolledWindow_ScrollPages(IntPtr self, int pages);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVScrolledWindow_RefreshLine(IntPtr self, int line);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVScrolledWindow_RefreshLines(IntPtr self, int from, int to);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVScrolledWindow_HitTest(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVScrolledWindow_HitTest2(IntPtr self, ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVScrolledWindow_RefreshAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVScrolledWindow_GetLineCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVScrolledWindow_GetFirstVisibleLine(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVScrolledWindow_GetLastVisibleLine(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVScrolledWindow_IsVisible(IntPtr self, int line);
 		
 		//-----------------------------------------------------------------------------
 		

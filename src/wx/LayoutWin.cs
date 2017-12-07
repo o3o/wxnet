@@ -37,13 +37,13 @@ namespace wx
 
 	public class SashLayoutWindow : SashWindow
 	{
-		[DllImport("wx-c")] static extern IntPtr wxSashLayoutWindow_ctor();
-		[DllImport("wx-c")] static extern bool wxSashLayoutWindow_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern LayoutAlignment wxSashLayoutWindow_GetAlignment(IntPtr self);
-		[DllImport("wx-c")] static extern LayoutOrientation wxSashLayoutWindow_GetOrientation(IntPtr self);
-		[DllImport("wx-c")] static extern void wxSashLayoutWindow_SetAlignment(IntPtr self, LayoutAlignment align);
-		[DllImport("wx-c")] static extern void wxSashLayoutWindow_SetOrientation(IntPtr self, LayoutOrientation orient);
-		[DllImport("wx-c")] static extern void wxSashLayoutWindow_SetDefaultSize(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSashLayoutWindow_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSashLayoutWindow_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern LayoutAlignment wxSashLayoutWindow_GetAlignment(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern LayoutOrientation wxSashLayoutWindow_GetOrientation(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashLayoutWindow_SetAlignment(IntPtr self, LayoutAlignment align);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashLayoutWindow_SetOrientation(IntPtr self, LayoutOrientation orient);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSashLayoutWindow_SetDefaultSize(IntPtr self, ref Size size);
 		
 		//-----------------------------------------------------------------------------
 	
@@ -127,10 +127,10 @@ namespace wx
 	
 	public class LayoutAlgorithm : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxLayoutAlgorithm_ctor();
-		[DllImport("wx-c")] static extern bool wxLayoutAlgorithm_LayoutMDIFrame(IntPtr self, IntPtr frame, ref Rectangle rect);
-		[DllImport("wx-c")] static extern bool wxLayoutAlgorithm_LayoutFrame(IntPtr self, IntPtr frame, IntPtr mainWindow);
-		[DllImport("wx-c")] static extern bool wxLayoutAlgorithm_LayoutWindow(IntPtr self, IntPtr frame, IntPtr mainWindow);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLayoutAlgorithm_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxLayoutAlgorithm_LayoutMDIFrame(IntPtr self, IntPtr frame, ref Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxLayoutAlgorithm_LayoutFrame(IntPtr self, IntPtr frame, IntPtr mainWindow);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxLayoutAlgorithm_LayoutWindow(IntPtr self, IntPtr frame, IntPtr mainWindow);
 		
 		//-----------------------------------------------------------------------------
 		
@@ -183,17 +183,17 @@ namespace wx
 	
 	public class QueryLayoutInfoEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxQueryLayoutInfoEvent_ctor(int id);
-		[DllImport("wx-c")] static extern void wxQueryLayoutInfoEvent_SetRequestedLength(IntPtr self, int length);
-		[DllImport("wx-c")] static extern int wxQueryLayoutInfoEvent_GetRequestedLength(IntPtr self);
-		[DllImport("wx-c")] static extern void wxQueryLayoutInfoEvent_SetFlags(IntPtr self, int flags);
-		[DllImport("wx-c")] static extern int wxQueryLayoutInfoEvent_GetFlags(IntPtr self);
-		[DllImport("wx-c")] static extern void wxQueryLayoutInfoEvent_SetSize(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern void wxQueryLayoutInfoEvent_GetSize(IntPtr self, out Size size);
-		[DllImport("wx-c")] static extern void wxQueryLayoutInfoEvent_SetOrientation(IntPtr self, LayoutOrientation orient);
-		[DllImport("wx-c")] static extern LayoutOrientation wxQueryLayoutInfoEvent_GetOrientation(IntPtr self);
-		[DllImport("wx-c")] static extern void wxQueryLayoutInfoEvent_SetAlignment(IntPtr self, LayoutAlignment align);
-		[DllImport("wx-c")] static extern LayoutAlignment wxQueryLayoutInfoEvent_GetAlignment(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxQueryLayoutInfoEvent_ctor(int id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxQueryLayoutInfoEvent_SetRequestedLength(IntPtr self, int length);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxQueryLayoutInfoEvent_GetRequestedLength(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxQueryLayoutInfoEvent_SetFlags(IntPtr self, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxQueryLayoutInfoEvent_GetFlags(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxQueryLayoutInfoEvent_SetSize(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxQueryLayoutInfoEvent_GetSize(IntPtr self, out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxQueryLayoutInfoEvent_SetOrientation(IntPtr self, LayoutOrientation orient);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern LayoutOrientation wxQueryLayoutInfoEvent_GetOrientation(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxQueryLayoutInfoEvent_SetAlignment(IntPtr self, LayoutAlignment align);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern LayoutAlignment wxQueryLayoutInfoEvent_GetAlignment(IntPtr self);
 	
 		//-----------------------------------------------------------------------------
 		
@@ -255,11 +255,11 @@ namespace wx
 	
 	public class CalculateLayoutEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxCalculateLayoutEvent_ctor(int id);
-		[DllImport("wx-c")] static extern void wxCalculateLayoutEvent_SetFlags(IntPtr self, int flags);
-		[DllImport("wx-c")] static extern int wxCalculateLayoutEvent_GetFlags(IntPtr self);
-		[DllImport("wx-c")] static extern void wxCalculateLayoutEvent_SetRect(IntPtr self, ref Rectangle rect);
-		[DllImport("wx-c")] static extern void wxCalculateLayoutEvent_GetRect(IntPtr self, out Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCalculateLayoutEvent_ctor(int id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCalculateLayoutEvent_SetFlags(IntPtr self, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxCalculateLayoutEvent_GetFlags(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCalculateLayoutEvent_SetRect(IntPtr self, ref Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCalculateLayoutEvent_GetRect(IntPtr self, out Rectangle rect);
 		
 		//-----------------------------------------------------------------------------
 	

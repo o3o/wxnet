@@ -30,35 +30,35 @@ namespace wx
 	
 		//---------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxListBox_ctor();
-		[DllImport("wx-c")] static extern void   wxListBox_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListBox_Clear(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListBox_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, int n, string[] choices, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern void   wxListBox_InsertText(IntPtr self, string item, int pos);
-		[DllImport("wx-c")] static extern void   wxListBox_InsertTextData(IntPtr self, string item, int pos, IntPtr data);
-		[DllImport("wx-c")] static extern void   wxListBox_InsertTextClientData(IntPtr self, string item, int pos, IntPtr clientData);
-		[DllImport("wx-c")] static extern void   wxListBox_InsertItems(IntPtr self, int nItems, string[] items, int pos);
-		[DllImport("wx-c")] static extern void   wxListBox_Set(IntPtr self, int n, string[] items, IntPtr clientData);
-		[DllImport("wx-c")] static extern void   wxListBox_SetSelection(IntPtr self, int n, bool select);
-		[DllImport("wx-c")] static extern void   wxListBox_Select(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxListBox_Deselect(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxListBox_DeselectAll(IntPtr self, int itemToLeaveSelected);
-		[DllImport("wx-c")] static extern bool   wxListBox_SetStringSelection(IntPtr self, string s, bool select);
-		[DllImport("wx-c")] static extern IntPtr wxListBox_GetSelections(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListBox_SetFirstItem(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxListBox_SetFirstItemText(IntPtr self, string s);
-		[DllImport("wx-c")] static extern bool   wxListBox_HasMultipleSelection(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListBox_IsSorted(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListBox_Command(IntPtr self, IntPtr evt);
-		[DllImport("wx-c")] static extern bool   wxListBox_Selected(IntPtr self, int n);
-		[DllImport("wx-c")] static extern int    wxListBox_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListBox_GetStringSelection(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListBox_SetSingleString(IntPtr self, int n, string s);
-		[DllImport("wx-c")] static extern IntPtr wxListBox_GetSingleString(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxListBox_Append(IntPtr self, string item);
-		[DllImport("wx-c")] static extern void   wxListBox_AppendClientData(IntPtr self, string item, IntPtr cliendData);
-		[DllImport("wx-c")] static extern void   wxListBox_Delete(IntPtr self, int n);
-		[DllImport("wx-c")] static extern int    wxListBox_GetCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListBox_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListBox_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, int n, string[] choices, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_InsertText(IntPtr self, string item, int pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_InsertTextData(IntPtr self, string item, int pos, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_InsertTextClientData(IntPtr self, string item, int pos, IntPtr clientData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_InsertItems(IntPtr self, int nItems, string[] items, int pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_Set(IntPtr self, int n, string[] items, IntPtr clientData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_SetSelection(IntPtr self, int n, bool select);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_Select(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_Deselect(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_DeselectAll(IntPtr self, int itemToLeaveSelected);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListBox_SetStringSelection(IntPtr self, string s, bool select);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListBox_GetSelections(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_SetFirstItem(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_SetFirstItemText(IntPtr self, string s);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListBox_HasMultipleSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListBox_IsSorted(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_Command(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListBox_Selected(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListBox_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListBox_GetStringSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_SetSingleString(IntPtr self, int n, string s);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListBox_GetSingleString(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_Append(IntPtr self, string item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_AppendClientData(IntPtr self, string item, IntPtr cliendData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListBox_Delete(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListBox_GetCount(IntPtr self);
 	
 		//---------------------------------------------------------------------
 		
@@ -320,8 +320,8 @@ namespace wx
 	
 	public class CheckListBox : ListBox
 	{
-		[DllImport("wx-c")] static extern IntPtr wxCheckListBox_ctor1();
-		[DllImport("wx-c")] static extern IntPtr wxCheckListBox_ctor2(IntPtr parent, 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCheckListBox_ctor1();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCheckListBox_ctor2(IntPtr parent, 
 			int id,
 			ref Point pos,
 			ref Size size,
@@ -330,9 +330,9 @@ namespace wx
 			uint style,
 			IntPtr validator,
 			string name);
-		[DllImport("wx-c")] static extern bool wxCheckListBox_IsChecked(IntPtr self, int index);
-		[DllImport("wx-c")] static extern void wxCheckListBox_Check(IntPtr self, int index, bool check);
-		[DllImport("wx-c")] static extern int wxCheckListBox_GetItemHeight(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCheckListBox_IsChecked(IntPtr self, int index);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCheckListBox_Check(IntPtr self, int index, bool check);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxCheckListBox_GetItemHeight(IntPtr self);
 		
 		//---------------------------------------------------------------------
 	

@@ -17,22 +17,22 @@ namespace wx
 {
 	public class Pen : GDIObject
 	{
-		[DllImport("wx-c")] static extern IntPtr wxPen_ctor(IntPtr col, int width, FillStyle style);
-		[DllImport("wx-c")] static extern IntPtr wxPen_ctorByName(string name, int width, FillStyle style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPen_ctor(IntPtr col, int width, FillStyle style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPen_ctorByName(string name, int width, FillStyle style);
 	
-		[DllImport("wx-c")] static extern IntPtr wxPen_GetColour(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxPen_SetColour(IntPtr self, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPen_GetColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPen_SetColour(IntPtr self, IntPtr col);
 	
-		[DllImport("wx-c")] static extern void   wxPen_SetWidth(IntPtr self, int width);
-		[DllImport("wx-c")] static extern int    wxPen_GetWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPen_SetWidth(IntPtr self, int width);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPen_GetWidth(IntPtr self);
 		
-		[DllImport("wx-c")] static extern int    wxPen_GetCap(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxPen_GetJoin(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxPen_GetStyle(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxPen_Ok(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxPen_SetCap(IntPtr self, int capStyle);
-		[DllImport("wx-c")] static extern void   wxPen_SetJoin(IntPtr self, int join_style);
-		[DllImport("wx-c")] static extern void   wxPen_SetStyle(IntPtr self, int style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPen_GetCap(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPen_GetJoin(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPen_GetStyle(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPen_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPen_SetCap(IntPtr self, int capStyle);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPen_SetJoin(IntPtr self, int join_style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPen_SetStyle(IntPtr self, int style);
 
 		//---------------------------------------------------------------------
 

@@ -20,11 +20,11 @@ namespace wx
     {
         public const long wxTextEntryDialogStyle = (Dialog.wxOK | Dialog.wxCANCEL | Dialog.wxCENTRE );
 
-        [DllImport("wx-c")] static extern IntPtr wxTextEntryDialog_ctor(IntPtr parent, string message, string caption, string value, uint style, ref Point pos);
-        [DllImport("wx-c")] static extern void wxTextEntryDialog_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern void wxTextEntryDialog_SetValue(IntPtr self, string val);
-        [DllImport("wx-c")] static extern IntPtr wxTextEntryDialog_GetValue(IntPtr self);
-        [DllImport("wx-c")] static extern int wxTextEntryDialog_ShowModal(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextEntryDialog_ctor(IntPtr parent, string message, string caption, string value, uint style, ref Point pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTextEntryDialog_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTextEntryDialog_SetValue(IntPtr self, string val);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextEntryDialog_GetValue(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTextEntryDialog_ShowModal(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -71,7 +71,7 @@ namespace wx
     {
         private string value = "";
 
-        [DllImport("wx-c")] static extern IntPtr wxGetPasswordFromUser_func(string message, string caption, string defaultValue, IntPtr parent);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGetPasswordFromUser_func(string message, string caption, string defaultValue, IntPtr parent);
 
         //-----------------------------------------------------------------------------
 
@@ -103,7 +103,7 @@ namespace wx
     {
         private string value = "";
 
-        [DllImport("wx-c")] static extern IntPtr wxGetTextFromUser_func(string message, string caption, string defaultValue, IntPtr parent, int x, int y, bool centre);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGetTextFromUser_func(string message, string caption, string defaultValue, IntPtr parent, int x, int y, bool centre);
 
         //-----------------------------------------------------------------------------
 

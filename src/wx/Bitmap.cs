@@ -55,36 +55,36 @@ namespace wx
 
 	public class Bitmap : GDIObject
 	{
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_ctorByImage(IntPtr image, int depth);
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_ctorByName(string name, BitmapType type);
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_ctorBySize(int width, int height, int depth);
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_ctorByBitmap(IntPtr bitmap);
-		//[DllImport("wx-c")] static extern void   wxBitmap_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_ctorByImage(IntPtr image, int depth);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_ctorByName(string name, BitmapType type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_ctorBySize(int width, int height, int depth);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_ctorByBitmap(IntPtr bitmap);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBitmap_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
 		
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_ConvertToImage(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxBitmap_LoadFile(IntPtr self, string name, BitmapType type);
-		[DllImport("wx-c")] static extern bool   wxBitmap_SaveFile(IntPtr self, string name, BitmapType type, IntPtr palette);
-		[DllImport("wx-c")] static extern bool   wxBitmap_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_ConvertToImage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxBitmap_LoadFile(IntPtr self, string name, BitmapType type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxBitmap_SaveFile(IntPtr self, string name, BitmapType type, IntPtr palette);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxBitmap_Ok(IntPtr self);
 	
-		[DllImport("wx-c")] static extern int    wxBitmap_GetHeight(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxBitmap_SetHeight(IntPtr self, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxBitmap_GetHeight(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBitmap_SetHeight(IntPtr self, int height);
 	
-		[DllImport("wx-c")] static extern int    wxBitmap_GetWidth(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxBitmap_SetWidth(IntPtr self, int width);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxBitmap_GetWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBitmap_SetWidth(IntPtr self, int width);
 		
-		[DllImport("wx-c")] static extern int    wxBitmap_GetDepth(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxBitmap_SetDepth(IntPtr self, int depth);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxBitmap_GetDepth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBitmap_SetDepth(IntPtr self, int depth);
 		
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_GetSubBitmap(IntPtr self, ref Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_GetSubBitmap(IntPtr self, ref Rectangle rect);
 		
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_GetMask(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_SetMask(IntPtr self, IntPtr mask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_GetMask(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_SetMask(IntPtr self, IntPtr mask);
 		
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_GetPalette(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxBitmap_CopyFromIcon(IntPtr self, IntPtr icon);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_GetPalette(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxBitmap_CopyFromIcon(IntPtr self, IntPtr icon);
 		
-		[DllImport("wx-c")] static extern IntPtr wxBitmap_GetColourMap(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmap_GetColourMap(IntPtr self);
 	
 		//---------------------------------------------------------------------
 
@@ -218,14 +218,14 @@ namespace wx
     
 	public class Mask : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxMask_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxMask_ctorByBitmpaColour(IntPtr bitmap, IntPtr colour);
-		[DllImport("wx-c")] static extern IntPtr wxMask_ctorByBitmapIndex(IntPtr bitmap, int paletteIndex);
-		[DllImport("wx-c")] static extern IntPtr wxMask_ctorByBitmap(IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMask_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMask_ctorByBitmpaColour(IntPtr bitmap, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMask_ctorByBitmapIndex(IntPtr bitmap, int paletteIndex);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMask_ctorByBitmap(IntPtr bitmap);
 		
-		[DllImport("wx-c")] static extern bool wxMask_CreateByBitmapColour(IntPtr self, IntPtr bitmap, IntPtr colour);
-		[DllImport("wx-c")] static extern bool wxMask_CreateByBitmapIndex(IntPtr self, IntPtr bitmap, int paletteIndex);
-		[DllImport("wx-c")] static extern bool wxMask_CreateByBitmap(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxMask_CreateByBitmapColour(IntPtr self, IntPtr bitmap, IntPtr colour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxMask_CreateByBitmapIndex(IntPtr self, IntPtr bitmap, int paletteIndex);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxMask_CreateByBitmap(IntPtr self, IntPtr bitmap);
 		
 		//---------------------------------------------------------------------
 		

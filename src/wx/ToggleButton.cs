@@ -18,12 +18,12 @@ namespace wx
 {
 	public class ToggleButton : Control
 	{
-		[DllImport("wx-c")] static extern IntPtr wxToggleButton_ctor();
-		[DllImport("wx-c")] static extern bool   wxToggleButton_Create(IntPtr self, IntPtr parent,
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxToggleButton_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxToggleButton_Create(IntPtr self, IntPtr parent,
 			int id, string label, ref Point pos, ref Size size, uint style,
 			IntPtr validator, string name);
-		[DllImport("wx-c")] static extern bool wxToggleButton_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxToggleButton_SetValue(IntPtr self, bool state);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxToggleButton_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxToggleButton_SetValue(IntPtr self, bool state);
 
 		//---------------------------------------------------------------------
 		

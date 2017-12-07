@@ -26,14 +26,14 @@ namespace wx
 	
 		//---------------------------------------------------------------------
 		
-		[DllImport("wx-c")] static extern IntPtr wxSpinCtrl_ctor();
-		[DllImport("wx-c")] static extern bool   wxSpinCtrl_Create(IntPtr self, IntPtr parent, int id, string value, ref Point pos, ref Size size, uint style, int min, int max, int initial, string name);
-		[DllImport("wx-c")] static extern int    wxSpinCtrl_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSpinCtrl_GetMin(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSpinCtrl_GetMax(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSpinCtrl_SetValueStr(IntPtr self, string value);
-		[DllImport("wx-c")] static extern void   wxSpinCtrl_SetValue(IntPtr self, int val);
-		[DllImport("wx-c")] static extern void   wxSpinCtrl_SetRange(IntPtr self, int min, int max);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSpinCtrl_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSpinCtrl_Create(IntPtr self, IntPtr parent, int id, string value, ref Point pos, ref Size size, uint style, int min, int max, int initial, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSpinCtrl_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSpinCtrl_GetMin(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSpinCtrl_GetMax(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSpinCtrl_SetValueStr(IntPtr self, string value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSpinCtrl_SetValue(IntPtr self, int val);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSpinCtrl_SetRange(IntPtr self, int min, int max);
 	
 		//---------------------------------------------------------------------
 		

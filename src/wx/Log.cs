@@ -30,12 +30,12 @@ namespace wx
 			xSYSERROR
 		}
 		
-		[DllImport("wx-c")] static extern IntPtr wxLog_ctor();
-		[DllImport("wx-c")] static extern bool wxLog_IsEnabled();
-		[DllImport("wx-c")] static extern void wxLog_FlushActive();
-		[DllImport("wx-c")] static extern IntPtr wxLog_SetActiveTargetTextCtrl(IntPtr pLogger);
-		[DllImport("wx-c")] static extern void wxLog_Log_Function(int what, string szFormat);
-		[DllImport("wx-c")] static extern void wxLog_AddTraceMask(string tmask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLog_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxLog_IsEnabled();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxLog_FlushActive();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLog_SetActiveTargetTextCtrl(IntPtr pLogger);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxLog_Log_Function(int what, string szFormat);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxLog_AddTraceMask(string tmask);
 		
 		public Log(IntPtr wxObject)
 		    : base(wxObject) {}

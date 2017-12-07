@@ -17,7 +17,7 @@ namespace wx
 {
 	public class GDIObject : Object
 	{
-		[DllImport("wx-c")] static extern void wxGDIObj_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGDIObj_dtor(IntPtr self);
 
 		//---------------------------------------------------------------------
 

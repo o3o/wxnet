@@ -18,37 +18,37 @@ namespace wx
 {
 	public class ListItem : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxListItem_ctor();
-		[DllImport("wx-c")] static extern void   wxListItem_Clear(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListItem_ClearAttributes(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListItem_GetAlign(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListItem_GetBackgroundColour(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListItem_GetColumn(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListItem_GetData(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListItem_GetFont(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListItem_GetId(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListItem_GetImage(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListItem_GetMask(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListItem_GetState(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListItem_GetText(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListItem_GetTextColour(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListItem_GetWidth(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListItem_SetAlign(IntPtr self, int align);
-		[DllImport("wx-c")] static extern void   wxListItem_SetBackgroundColour(IntPtr self, IntPtr col);
-		[DllImport("wx-c")] static extern void   wxListItem_SetColumn(IntPtr self, int col);
-		[DllImport("wx-c")] static extern void   wxListItem_SetData(IntPtr self, IntPtr data);
-		[DllImport("wx-c")] static extern void   wxListItem_SetFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern void   wxListItem_SetId(IntPtr self, int id);
-		[DllImport("wx-c")] static extern void   wxListItem_SetImage(IntPtr self, int image);
-		[DllImport("wx-c")] static extern void   wxListItem_SetMask(IntPtr self, int mask);
-		[DllImport("wx-c")] static extern void   wxListItem_SetState(IntPtr self, int state);
-		[DllImport("wx-c")] static extern void   wxListItem_SetStateMask(IntPtr self, int stateMask);
-		[DllImport("wx-c")] static extern void   wxListItem_SetText(IntPtr self, string text);
-		[DllImport("wx-c")] static extern void   wxListItem_SetTextColour(IntPtr self, IntPtr col);
-		[DllImport("wx-c")] static extern void   wxListItem_SetWidth(IntPtr self, int width);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItem_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_ClearAttributes(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListItem_GetAlign(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItem_GetBackgroundColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListItem_GetColumn(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItem_GetData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItem_GetFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListItem_GetId(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListItem_GetImage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListItem_GetMask(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListItem_GetState(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItem_GetText(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItem_GetTextColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListItem_GetWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetAlign(IntPtr self, int align);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetBackgroundColour(IntPtr self, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetColumn(IntPtr self, int col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetData(IntPtr self, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetId(IntPtr self, int id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetImage(IntPtr self, int image);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetMask(IntPtr self, int mask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetState(IntPtr self, int state);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetStateMask(IntPtr self, int stateMask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetText(IntPtr self, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetTextColour(IntPtr self, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItem_SetWidth(IntPtr self, int width);
 		
-		[DllImport("wx-c")] static extern IntPtr wxListItem_GetAttributes(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListItem_HasAttributes(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItem_GetAttributes(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListItem_HasAttributes(IntPtr self);
 
 		//---------------------------------------------------------------------
 
@@ -192,19 +192,19 @@ namespace wx
 	
 	public class ListItemAttr : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxListItemAttr_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxListItemAttr_ctor2(IntPtr colText, IntPtr colBack, IntPtr font);
-		[DllImport("wx-c")] static extern void   wxListItemAttr_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListItemAttr_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void   wxListItemAttr_SetTextColour(IntPtr self, IntPtr colText);
-		[DllImport("wx-c")] static extern void   wxListItemAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
-		[DllImport("wx-c")] static extern void   wxListItemAttr_SetFont(IntPtr self, IntPtr font);
-		[DllImport("wx-c")] static extern bool   wxListItemAttr_HasTextColour(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListItemAttr_HasBackgroundColour(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListItemAttr_HasFont(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListItemAttr_GetTextColour(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListItemAttr_GetBackgroundColour(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListItemAttr_GetFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItemAttr_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItemAttr_ctor2(IntPtr colText, IntPtr colBack, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItemAttr_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItemAttr_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItemAttr_SetTextColour(IntPtr self, IntPtr colText);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItemAttr_SetBackgroundColour(IntPtr self, IntPtr colBack);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListItemAttr_SetFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListItemAttr_HasTextColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListItemAttr_HasBackgroundColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListItemAttr_HasFont(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItemAttr_GetTextColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItemAttr_GetBackgroundColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListItemAttr_GetFont(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 
@@ -380,70 +380,70 @@ namespace wx
 	
 		//---------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxListCtrl_ctor();
-		[DllImport("wx-c")] static extern void   wxListCtrl_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_GetColumn(IntPtr self, int col, ref IntPtr item);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SetColumn(IntPtr self, int col, IntPtr item);
-		[DllImport("wx-c")] static extern int    wxListCtrl_GetColumnWidth(IntPtr self, int col);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SetColumnWidth(IntPtr self, int col, int width);
-		[DllImport("wx-c")] static extern int    wxListCtrl_GetCountPerPage(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListCtrl_GetItem(IntPtr self, IntPtr info, ref bool retval);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SetItem(IntPtr self, IntPtr info);
-		[DllImport("wx-c")] static extern int    wxListCtrl_SetItem_By_Row_Col(IntPtr self, int index, int col, string label, int imageId);
-		[DllImport("wx-c")] static extern int    wxListCtrl_GetItemState(IntPtr self, int item, int stateMask);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SetItemState(IntPtr self, int item, int state, int stateMask);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SetItemImage(IntPtr self, int item, int image, int selImage);
-		[DllImport("wx-c")] static extern IntPtr wxListCtrl_GetItemText(IntPtr self, int item);
-		[DllImport("wx-c")] static extern void   wxListCtrl_SetItemText(IntPtr self, int item, string str);
-		[DllImport("wx-c")] static extern IntPtr wxListCtrl_GetItemData(IntPtr self, int item);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SetItemData(IntPtr self, int item, IntPtr data);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SetItemData2(IntPtr self, int item, int data);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_GetItemRect(IntPtr self, int item, out Rectangle rect, int code);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_GetItemPosition(IntPtr self, int item, out Point pos);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SetItemPosition(IntPtr self, int item, ref Point pos);
-		[DllImport("wx-c")] static extern int    wxListCtrl_GetItemCount(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListCtrl_GetColumnCount(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListCtrl_SetItemTextColour(IntPtr self, int item, IntPtr col);
-		[DllImport("wx-c")] static extern IntPtr wxListCtrl_GetItemTextColour(IntPtr self, int item);
-		[DllImport("wx-c")] static extern void   wxListCtrl_SetItemBackgroundColour(IntPtr self, int item, IntPtr col);
-		[DllImport("wx-c")] static extern IntPtr wxListCtrl_GetItemBackgroundColour(IntPtr self, int item);
-		[DllImport("wx-c")] static extern int    wxListCtrl_GetSelectedItemCount(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListCtrl_GetTextColour(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListCtrl_SetTextColour(IntPtr self, IntPtr col);
-		[DllImport("wx-c")] static extern int    wxListCtrl_GetTopItem(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListCtrl_SetSingleStyle(IntPtr self, uint style, bool add);
-		[DllImport("wx-c")] static extern void   wxListCtrl_SetWindowStyleFlag(IntPtr self, uint style);
-		[DllImport("wx-c")] static extern int    wxListCtrl_GetNextItem(IntPtr self, int item, int geometry, int state);
-		[DllImport("wx-c")] static extern IntPtr wxListCtrl_GetImageList(IntPtr self, int which);
-		[DllImport("wx-c")] static extern void   wxListCtrl_SetImageList(IntPtr self, IntPtr imageList, int which);
-		[DllImport("wx-c")] static extern void   wxListCtrl_AssignImageList(IntPtr self, IntPtr imageList, int which);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_Arrange(IntPtr self, int flag);
-		[DllImport("wx-c")] static extern void   wxListCtrl_ClearAll(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_DeleteItem(IntPtr self, int item);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_DeleteAllItems(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_DeleteAllColumns(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_DeleteColumn(IntPtr self, int col);
-		[DllImport("wx-c")] static extern void   wxListCtrl_SetItemCount(IntPtr self, int count);
-		[DllImport("wx-c")] static extern void   wxListCtrl_EditLabel(IntPtr self, int item);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_EnsureVisible(IntPtr self, int item);
-		[DllImport("wx-c")] static extern int    wxListCtrl_FindItem(IntPtr self, int start, string str, bool partial);
-		[DllImport("wx-c")] static extern int    wxListCtrl_FindItemData(IntPtr self, int start, IntPtr data);
-		[DllImport("wx-c")] static extern int    wxListCtrl_FindItemPoint(IntPtr self, int start, ref Point pt, int direction);
-		[DllImport("wx-c")] static extern int    wxListCtrl_HitTest(IntPtr self, ref Point point, int flags);
-		[DllImport("wx-c")] static extern int    wxListCtrl_InsertItem(IntPtr self, IntPtr info);
-		[DllImport("wx-c")] static extern int    wxListCtrl_InsertTextItem(IntPtr self, int index, string label);
-		[DllImport("wx-c")] static extern int    wxListCtrl_InsertImageItem(IntPtr self, int index, int imageIndex);
-		[DllImport("wx-c")] static extern int    wxListCtrl_InsertTextImageItem(IntPtr self, int index, string label, int imageIndex);
-		[DllImport("wx-c")] static extern int    wxListCtrl_InsertColumn(IntPtr self, int col, IntPtr info);
-		[DllImport("wx-c")] static extern int    wxListCtrl_InsertTextColumn(IntPtr self, int col, string heading, int format, int width);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_ScrollList(IntPtr self, int dx, int dy);
-		[DllImport("wx-c")] static extern bool   wxListCtrl_SortItems(IntPtr self, wxListCtrlCompare fn, long data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListCtrl_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_GetColumn(IntPtr self, int col, ref IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SetColumn(IntPtr self, int col, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_GetColumnWidth(IntPtr self, int col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SetColumnWidth(IntPtr self, int col, int width);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_GetCountPerPage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListCtrl_GetItem(IntPtr self, IntPtr info, ref bool retval);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SetItem(IntPtr self, IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_SetItem_By_Row_Col(IntPtr self, int index, int col, string label, int imageId);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_GetItemState(IntPtr self, int item, int stateMask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SetItemState(IntPtr self, int item, int state, int stateMask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SetItemImage(IntPtr self, int item, int image, int selImage);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListCtrl_GetItemText(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_SetItemText(IntPtr self, int item, string str);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListCtrl_GetItemData(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SetItemData(IntPtr self, int item, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SetItemData2(IntPtr self, int item, int data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_GetItemRect(IntPtr self, int item, out Rectangle rect, int code);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_GetItemPosition(IntPtr self, int item, out Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SetItemPosition(IntPtr self, int item, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_GetItemCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_GetColumnCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_SetItemTextColour(IntPtr self, int item, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListCtrl_GetItemTextColour(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_SetItemBackgroundColour(IntPtr self, int item, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListCtrl_GetItemBackgroundColour(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_GetSelectedItemCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListCtrl_GetTextColour(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_SetTextColour(IntPtr self, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_GetTopItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_SetSingleStyle(IntPtr self, uint style, bool add);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_SetWindowStyleFlag(IntPtr self, uint style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_GetNextItem(IntPtr self, int item, int geometry, int state);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListCtrl_GetImageList(IntPtr self, int which);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_SetImageList(IntPtr self, IntPtr imageList, int which);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_AssignImageList(IntPtr self, IntPtr imageList, int which);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_Arrange(IntPtr self, int flag);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_ClearAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_DeleteItem(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_DeleteAllItems(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_DeleteAllColumns(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_DeleteColumn(IntPtr self, int col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_SetItemCount(IntPtr self, int count);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_EditLabel(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_EnsureVisible(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_FindItem(IntPtr self, int start, string str, bool partial);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_FindItemData(IntPtr self, int start, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_FindItemPoint(IntPtr self, int start, ref Point pt, int direction);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_HitTest(IntPtr self, ref Point point, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_InsertItem(IntPtr self, IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_InsertTextItem(IntPtr self, int index, string label);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_InsertImageItem(IntPtr self, int index, int imageIndex);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_InsertTextImageItem(IntPtr self, int index, string label, int imageIndex);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_InsertColumn(IntPtr self, int col, IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListCtrl_InsertTextColumn(IntPtr self, int col, string heading, int format, int width);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_ScrollList(IntPtr self, int dx, int dy);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxListCtrl_SortItems(IntPtr self, wxListCtrlCompare fn, long data);
 		
-		[DllImport("wx-c")] static extern void   wxListCtrl_GetViewRect(IntPtr self, ref Rectangle rect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_GetViewRect(IntPtr self, ref Rectangle rect);
 		
-		[DllImport("wx-c")] static extern void   wxListCtrl_RefreshItem(IntPtr self, int item);
-		[DllImport("wx-c")] static extern void   wxListCtrl_RefreshItems(IntPtr self, int itemFrom, int itemTo);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_RefreshItem(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListCtrl_RefreshItems(IntPtr self, int itemFrom, int itemTo);
 	
 		//---------------------------------------------------------------------
         
@@ -1094,24 +1094,24 @@ namespace wx
 
 	public class ListEvent : Event 
 	{
-		[DllImport("wx-c")] static extern IntPtr wxListEvent_ctor(int commandType, int id);
-		[DllImport("wx-c")] static extern IntPtr wxListEvent_GetItem(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxListEvent_GetLabel(IntPtr self);
-		[DllImport("wx-c")] static extern int   wxListEvent_GetIndex(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListEvent_GetKeyCode(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxListEvent_GetColumn(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxListEvent_GetPoint(IntPtr self, ref Point pt);
-		[DllImport("wx-c")] static extern IntPtr wxListEvent_GetText(IntPtr self);
-		[DllImport("wx-c")] static extern int wxListEvent_GetImage(IntPtr self);
-		[DllImport("wx-c")] static extern int wxListEvent_GetData(IntPtr self);
-		[DllImport("wx-c")] static extern int wxListEvent_GetMask(IntPtr self);
-		[DllImport("wx-c")] static extern int wxListEvent_GetCacheFrom(IntPtr self);
-		[DllImport("wx-c")] static extern int wxListEvent_GetCacheTo(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxListEvent_IsEditCancelled(IntPtr self);
-		[DllImport("wx-c")] static extern void wxListEvent_SetEditCanceled(IntPtr self, bool editCancelled);
-		[DllImport("wx-c")] static extern void wxListEvent_Veto(IntPtr self);
-		[DllImport("wx-c")] static extern void wxListEvent_Allow(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxListEvent_IsAllowed(IntPtr self);			
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListEvent_ctor(int commandType, int id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListEvent_GetItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListEvent_GetLabel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int   wxListEvent_GetIndex(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListEvent_GetKeyCode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxListEvent_GetColumn(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxListEvent_GetPoint(IntPtr self, ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListEvent_GetText(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListEvent_GetImage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListEvent_GetData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListEvent_GetMask(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListEvent_GetCacheFrom(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxListEvent_GetCacheTo(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListEvent_IsEditCancelled(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListEvent_SetEditCanceled(IntPtr self, bool editCancelled);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListEvent_Veto(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListEvent_Allow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListEvent_IsAllowed(IntPtr self);			
 		
 		//---------------------------------------------------------------------
        
@@ -1243,16 +1243,16 @@ namespace wx
 
 	public class ListView : ListCtrl
 	{
-		[DllImport("wx-c")] static extern IntPtr wxListView_ctor();
-		[DllImport("wx-c")] static extern bool wxListView_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern void wxListView_Select(IntPtr self, uint n, bool on);
-		[DllImport("wx-c")] static extern void wxListView_Focus(IntPtr self, uint index);
-		[DllImport("wx-c")] static extern uint wxListView_GetFocusedItem(IntPtr self);
-		[DllImport("wx-c")] static extern uint wxListView_GetNextSelected(IntPtr self, uint item);
-		[DllImport("wx-c")] static extern uint wxListView_GetFirstSelected(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxListView_IsSelected(IntPtr self, uint index);
-		[DllImport("wx-c")] static extern void wxListView_SetColumnImage(IntPtr self, int col, int image);
-		[DllImport("wx-c")] static extern void wxListView_ClearColumnImage(IntPtr self, int col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxListView_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListView_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListView_Select(IntPtr self, uint n, bool on);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListView_Focus(IntPtr self, uint index);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint wxListView_GetFocusedItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint wxListView_GetNextSelected(IntPtr self, uint item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint wxListView_GetFirstSelected(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxListView_IsSelected(IntPtr self, uint index);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListView_SetColumnImage(IntPtr self, int col, int image);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxListView_ClearColumnImage(IntPtr self, int col);
 
 		//-----------------------------------------------------------------------------
 

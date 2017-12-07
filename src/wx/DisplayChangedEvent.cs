@@ -17,7 +17,7 @@ namespace wx
 {
 	public class DisplayChangedEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxDisplayChangedEvent_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDisplayChangedEvent_ctor();
 		
 		//-----------------------------------------------------------------------------
 

@@ -22,11 +22,11 @@ namespace wx
 	public class MessageDialog : Dialog
 	{
 		// MessageBox function
-		[DllImport("wx-c")] static extern int    wxMsgBox(IntPtr parent, string msg, string cap, uint style, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxMsgBox(IntPtr parent, string msg, string cap, uint style, ref Point pos);
 
 		// Message dialog methods
-		[DllImport("wx-c")] static extern IntPtr wxMessageDialog_ctor(IntPtr parent, string message, string caption, uint style, ref Point pos);
-		[DllImport("wx-c")] static extern int    wxMessageDialog_ShowModal(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMessageDialog_ctor(IntPtr parent, string message, string caption, uint style, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxMessageDialog_ShowModal(IntPtr self);
 
 		//---------------------------------------------------------------------
 	

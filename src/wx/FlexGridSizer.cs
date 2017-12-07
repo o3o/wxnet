@@ -18,14 +18,14 @@ namespace wx
 {
 	public class FlexGridSizer : GridSizer
 	{
-		[DllImport("wx-c")] static extern IntPtr wxFlexGridSizer_ctor(int rows, int cols, int vgap, int hgap);
-		[DllImport("wx-c")] static extern void wxFlexGridSizer_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxFlexGridSizer_RecalcSizes(IntPtr self);
-		[DllImport("wx-c")] static extern void wxFlexGridSizer_CalcMin(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern void wxFlexGridSizer_AddGrowableRow(IntPtr self, uint idx);
-		[DllImport("wx-c")] static extern void wxFlexGridSizer_RemoveGrowableRow(IntPtr self, uint idx);
-		[DllImport("wx-c")] static extern void wxFlexGridSizer_AddGrowableCol(IntPtr self, uint idx);
-		[DllImport("wx-c")] static extern void wxFlexGridSizer_RemoveGrowableCol(IntPtr self, uint idx);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFlexGridSizer_ctor(int rows, int cols, int vgap, int hgap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFlexGridSizer_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFlexGridSizer_RecalcSizes(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFlexGridSizer_CalcMin(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFlexGridSizer_AddGrowableRow(IntPtr self, uint idx);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFlexGridSizer_RemoveGrowableRow(IntPtr self, uint idx);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFlexGridSizer_AddGrowableCol(IntPtr self, uint idx);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFlexGridSizer_RemoveGrowableCol(IntPtr self, uint idx);
 
 		//---------------------------------------------------------------------
 

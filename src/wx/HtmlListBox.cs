@@ -39,8 +39,8 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 		
-		[DllImport("wx-c")] static extern IntPtr wxHtmlListBox_ctor2(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void wxHtmlListBox_RegisterVirtual(IntPtr self,
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlListBox_ctor2(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_RegisterVirtual(IntPtr self,
 			Virtual_VoidNoParams refreshAll,
 			Virtual_VoidSizeT setItemCount,
 			Virtual_wxStringSizeT onGetItem,
@@ -52,21 +52,21 @@ namespace wx
 			Virtual_OnDrawItem onDrawSeparator,
 			Virtual_OnDrawItem onDrawBackground,
 			Virtual_OnMeasureItem onGetLineHeight);
-		[DllImport("wx-c")] static extern bool wxHtmlListBox_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, int style, string name);
-		[DllImport("wx-c")] static extern void wxHtmlListBox_RefreshAll(IntPtr self);
-		[DllImport("wx-c")] static extern void wxHtmlListBox_SetItemCount(IntPtr self, int count);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlListBox_OnGetItemMarkup(IntPtr self, int n);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlListBox_GetSelectedTextColour(IntPtr self, IntPtr colFg);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlListBox_GetSelectedTextBgColour(IntPtr self, IntPtr colBg);
-		[DllImport("wx-c")] static extern void wxHtmlListBox_OnDrawItem(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
-		[DllImport("wx-c")] static extern int wxHtmlListBox_OnMeasureItem(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void wxHtmlListBox_OnSize(IntPtr self, IntPtr evt);
-		[DllImport("wx-c")] static extern void wxHtmlListBox_Init(IntPtr self);
-		[DllImport("wx-c")] static extern void wxHtmlListBox_CacheItem(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxHtmlListBox_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, int style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_RefreshAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_SetItemCount(IntPtr self, int count);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlListBox_OnGetItemMarkup(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlListBox_GetSelectedTextColour(IntPtr self, IntPtr colFg);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlListBox_GetSelectedTextBgColour(IntPtr self, IntPtr colBg);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_OnDrawItem(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxHtmlListBox_OnMeasureItem(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_OnSize(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_Init(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_CacheItem(IntPtr self, int n);
 		
-		[DllImport("wx-c")] static extern void wxHtmlListBox_OnDrawSeparator(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
-		[DllImport("wx-c")] static extern void wxHtmlListBox_OnDrawBackground(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
-		[DllImport("wx-c")] static extern int wxHtmlListBox_OnGetLineHeight(IntPtr self, int line);		
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_OnDrawSeparator(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlListBox_OnDrawBackground(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxHtmlListBox_OnGetLineHeight(IntPtr self, int line);		
 		
 		//-----------------------------------------------------------------------------
 		

@@ -18,17 +18,17 @@ namespace wx
 {
 	public class GridSizer : Sizer
 	{
-		[DllImport("wx-c")] static extern IntPtr wxGridSizer_ctor(int rows, int cols, int vgap, int hgap);
-		[DllImport("wx-c")] static extern void wxGridSizer_RecalcSizes(IntPtr self);
-		[DllImport("wx-c")] static extern void wxGridSizer_CalcMin(IntPtr self, ref Size size);
-		[DllImport("wx-c")] static extern void wxGridSizer_SetCols(IntPtr self, int cols);
-		[DllImport("wx-c")] static extern void wxGridSizer_SetRows(IntPtr self, int rows);
-		[DllImport("wx-c")] static extern void wxGridSizer_SetVGap(IntPtr self, int gap);
-		[DllImport("wx-c")] static extern void wxGridSizer_SetHGap(IntPtr self, int gap);
-		[DllImport("wx-c")] static extern int wxGridSizer_GetCols(IntPtr self);
-		[DllImport("wx-c")] static extern int wxGridSizer_GetRows(IntPtr self);
-		[DllImport("wx-c")] static extern int wxGridSizer_GetVGap(IntPtr self);
-		[DllImport("wx-c")] static extern int wxGridSizer_GetHGap(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridSizer_ctor(int rows, int cols, int vgap, int hgap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridSizer_RecalcSizes(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridSizer_CalcMin(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridSizer_SetCols(IntPtr self, int cols);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridSizer_SetRows(IntPtr self, int rows);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridSizer_SetVGap(IntPtr self, int gap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridSizer_SetHGap(IntPtr self, int gap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridSizer_GetCols(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridSizer_GetRows(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridSizer_GetVGap(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGridSizer_GetHGap(IntPtr self);
 
 		//---------------------------------------------------------------------
 

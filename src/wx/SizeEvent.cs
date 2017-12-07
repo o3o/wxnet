@@ -18,8 +18,8 @@ namespace wx
 {
 	public class SizeEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxSizeEvent_ctor();
-		[DllImport("wx-c")] static extern void wxSizeEvent_GetSize(IntPtr self, out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizeEvent_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizeEvent_GetSize(IntPtr self, out Size size);
 		
 		//-----------------------------------------------------------------------------
 

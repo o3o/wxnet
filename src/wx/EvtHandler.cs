@@ -62,12 +62,12 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 			
-		[DllImport("wx-c")] static extern void wxEvtHandler_proxy(IntPtr self, EvtMarshalDelegate proxy);
-		[DllImport("wx-c")] static extern void wxEvtHandler_Connect(IntPtr self, int evtType, int id, int lastId, int iListener);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxEvtHandler_proxy(IntPtr self, EvtMarshalDelegate proxy);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxEvtHandler_Connect(IntPtr self, int evtType, int id, int lastId, int iListener);
 		
-		[DllImport("wx-c")] static extern bool wxEvtHandler_ProcessEvent(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxEvtHandler_ProcessEvent(IntPtr self, IntPtr evt);
 		
-		[DllImport("wx-c")] static extern void wxEvtHandler_AddPendingEvent(IntPtr self, IntPtr evt); 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxEvtHandler_AddPendingEvent(IntPtr self, IntPtr evt); 
 		
 		//---------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // wx.NET - AssemblyInfo.cs
-// 
+//
 // Licensed under the wxWidgets license, see LICENSE.txt for details.
 //
 // $Id: AssemblyInfo.cs,v 1.4 2005/07/25 05:15:16 t9mike Exp $
@@ -24,7 +24,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("(C) 2004,2005 Various Authors")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]	
+[assembly: AssemblyCulture("")]
 
 [assembly: AllowPartiallyTrustedCallers()]
 
@@ -33,6 +33,8 @@ using System.Runtime.InteropServices;
 #if __WXMSW__
 [assembly: AssemblyKeyFile("../../keys.snk")]
 #else
-[assembly: AssemblyKeyFile("keys.snk")]
+[assembly: AssemblyKeyFile("src/wx/keys.snk")]
 #endif
 [assembly: AssemblyDelaySign(false)]
+
+[assembly:  System.Security.SecurityTransparent()]

@@ -38,16 +38,16 @@ namespace wx
  
     public class DataFormat : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxDataFormat_ctor();
-	[DllImport("wx-c")] static extern void   wxDataFormat_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxDataFormat_ctorByType(int type);
-        [DllImport("wx-c")] static extern IntPtr wxDataFormat_ctorById(string id);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDataFormat_ctor();
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDataFormat_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDataFormat_ctorByType(int type);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDataFormat_ctorById(string id);
 
-        [DllImport("wx-c")] static extern string wxDataFormat_GetId(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDataFormat_SetId(IntPtr self, string id);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern string wxDataFormat_GetId(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDataFormat_SetId(IntPtr self, string id);
 
-        [DllImport("wx-c")] static extern int    wxDataFormat_GetType(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDataFormat_SetType(IntPtr self, int type);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDataFormat_GetType(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDataFormat_SetType(IntPtr self, int type);
 	
         //-----------------------------------------------------------------------------
 	

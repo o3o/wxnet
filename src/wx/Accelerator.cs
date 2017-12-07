@@ -24,17 +24,17 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxAcceleratorEntry_ctor(int flags, int keyCode, int cmd, IntPtr item);
-		[DllImport("wx-c")] static extern void   wxAcceleratorEntry_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxAcceleratorEntry_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void   wxAcceleratorEntry_Set(IntPtr self, int flags, int keyCode, int cmd, IntPtr item);
-		[DllImport("wx-c")] static extern void   wxAcceleratorEntry_SetMenuItem(IntPtr self, IntPtr item);
-		[DllImport("wx-c")] static extern int    wxAcceleratorEntry_GetFlags(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxAcceleratorEntry_GetKeyCode(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxAcceleratorEntry_GetCommand(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxAcceleratorEntry_GetMenuItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxAcceleratorEntry_ctor(int flags, int keyCode, int cmd, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxAcceleratorEntry_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxAcceleratorEntry_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxAcceleratorEntry_Set(IntPtr self, int flags, int keyCode, int cmd, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxAcceleratorEntry_SetMenuItem(IntPtr self, IntPtr item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxAcceleratorEntry_GetFlags(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxAcceleratorEntry_GetKeyCode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxAcceleratorEntry_GetCommand(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxAcceleratorEntry_GetMenuItem(IntPtr self);
 		
-		[DllImport("wx-c")] static extern IntPtr wxAcceleratorEntry_GetAccelFromString(string label);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxAcceleratorEntry_GetAccelFromString(string label);
 		
 		//-----------------------------------------------------------------------------
 		
@@ -161,13 +161,13 @@ namespace wx
 	
 	public class AcceleratorTable : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxAcceleratorTable_ctor();
-		[DllImport("wx-c")] static extern bool   wxAcceleratorTable_Ok(IntPtr self);
-		//[DllImport("wx-c")] static extern void   wxAcceleratorTable_Add(IntPtr self, IntPtr entry);
-		//[DllImport("wx-c")] static extern void   wxAcceleratorTable_Remove(IntPtr self, IntPtr entry);
-		//[DllImport("wx-c")] static extern IntPtr wxAcceleratorTable_GetMenuItem(IntPtr self, IntPtr evt);
-		//[DllImport("wx-c")] static extern int    wxAcceleratorTable_GetCommand(IntPtr self, IntPtr evt);
-		//[DllImport("wx-c")] static extern IntPtr wxAcceleratorTable_GetEntry(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxAcceleratorTable_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxAcceleratorTable_Ok(IntPtr self);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxAcceleratorTable_Add(IntPtr self, IntPtr entry);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxAcceleratorTable_Remove(IntPtr self, IntPtr entry);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxAcceleratorTable_GetMenuItem(IntPtr self, IntPtr evt);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxAcceleratorTable_GetCommand(IntPtr self, IntPtr evt);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxAcceleratorTable_GetEntry(IntPtr self, IntPtr evt);
 		
 		//-----------------------------------------------------------------------------
 		

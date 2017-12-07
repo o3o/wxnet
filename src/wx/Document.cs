@@ -20,39 +20,39 @@ namespace wx
 {
     public class Document : EvtHandler
     {
-        [DllImport("wx-c")] static extern IntPtr wxDocument_ctor(IntPtr parent);
-        [DllImport("wx-c")] static extern void   wxDocument_SetFilename(IntPtr self, string filename, bool notifyViews);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetFilename(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDocument_SetTitle(IntPtr self, string title);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetTitle(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDocument_SetDocumentName(IntPtr self, string name);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetDocumentName(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxDocument_GetDocumentSaved(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDocument_SetDocumentSaved(IntPtr self, bool saved);
-        [DllImport("wx-c")] static extern bool   wxDocument_Close(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxDocument_Save(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxDocument_SaveAs(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxDocument_Revert(IntPtr self);
-        //[DllImport("wx-c")] static extern IntPtr wxDocument_SaveObject(IntPtr self, IntPtr stream);
-        //[DllImport("wx-c")] static extern IntPtr wxDocument_LoadObject(IntPtr self, IntPtr stream);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetCommandProcessor(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDocument_SetCommandProcessor(IntPtr self, IntPtr proc);
-        [DllImport("wx-c")] static extern bool   wxDocument_DeleteContents(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxDocument_Draw(IntPtr self, IntPtr wxDC);
-        [DllImport("wx-c")] static extern bool   wxDocument_IsModified(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDocument_Modify(IntPtr self, bool mod);
-        [DllImport("wx-c")] static extern bool   wxDocument_AddView(IntPtr self, IntPtr view);
-        [DllImport("wx-c")] static extern bool   wxDocument_RemoveView(IntPtr self, IntPtr view);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetViews(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetFirstView(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDocument_UpdateAllViews(IntPtr self, IntPtr sender, IntPtr hint);
-        [DllImport("wx-c")] static extern void   wxDocument_NotifyClosing(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxDocument_DeleteAllViews(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetDocumentManager(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetDocumentTemplate(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDocument_SetDocumentTemplate(IntPtr self, IntPtr temp);
-        [DllImport("wx-c")] static extern bool   wxDocument_GetPrintableName(IntPtr self, IntPtr buf);
-        [DllImport("wx-c")] static extern IntPtr wxDocument_GetDocumentWindow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_ctor(IntPtr parent);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_SetFilename(IntPtr self, string filename, bool notifyViews);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetFilename(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_SetTitle(IntPtr self, string title);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetTitle(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_SetDocumentName(IntPtr self, string name);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetDocumentName(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_GetDocumentSaved(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_SetDocumentSaved(IntPtr self, bool saved);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_Close(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_Save(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_SaveAs(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_Revert(IntPtr self);
+        //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_SaveObject(IntPtr self, IntPtr stream);
+        //[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_LoadObject(IntPtr self, IntPtr stream);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetCommandProcessor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_SetCommandProcessor(IntPtr self, IntPtr proc);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_DeleteContents(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_Draw(IntPtr self, IntPtr wxDC);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_IsModified(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_Modify(IntPtr self, bool mod);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_AddView(IntPtr self, IntPtr view);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_RemoveView(IntPtr self, IntPtr view);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetViews(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetFirstView(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_UpdateAllViews(IntPtr self, IntPtr sender, IntPtr hint);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_NotifyClosing(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_DeleteAllViews(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetDocumentManager(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetDocumentTemplate(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDocument_SetDocumentTemplate(IntPtr self, IntPtr temp);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDocument_GetPrintableName(IntPtr self, IntPtr buf);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDocument_GetDocumentWindow(IntPtr self);
 
         //-----------------------------------------------------------------------------
 

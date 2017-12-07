@@ -18,12 +18,12 @@ namespace wx
 {
 	public class Panel : Window
 	{
-		[DllImport("wx-c")] static extern IntPtr wxPanel_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxPanel_ctor2(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern bool wxPanel_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void wxPanel_InitDialog(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxPanel_GetDefaultItem(IntPtr self);
-		[DllImport("wx-c")] static extern void wxPanel_SetDefaultItem(IntPtr self, IntPtr btn);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPanel_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPanel_ctor2(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPanel_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPanel_InitDialog(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPanel_GetDefaultItem(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPanel_SetDefaultItem(IntPtr self, IntPtr btn);
 
 		//---------------------------------------------------------------------
 		

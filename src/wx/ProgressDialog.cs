@@ -29,11 +29,11 @@ namespace wx
 
 		//---------------------------------------------------------------------
 
-        [DllImport("wx-c")] static extern IntPtr wxProgressDialog_ctor(string title, string message, int maximum, IntPtr parent, uint style);
-	[DllImport("wx-c")] static extern void wxProgressDialog_dtor(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxProgressDialog_Update(IntPtr self, int value, string newmsg);
-        [DllImport("wx-c")] static extern void wxProgressDialog_Resume(IntPtr self);
-        [DllImport("wx-c")] static extern bool wxProgressDialog_Show(IntPtr self, bool show);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxProgressDialog_ctor(string title, string message, int maximum, IntPtr parent, uint style);
+	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxProgressDialog_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxProgressDialog_Update(IntPtr self, int value, string newmsg);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxProgressDialog_Resume(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxProgressDialog_Show(IntPtr self, bool show);
 
         //-----------------------------------------------------------------------------
 

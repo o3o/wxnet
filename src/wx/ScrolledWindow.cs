@@ -18,18 +18,18 @@ namespace wx
 {
 	public class ScrolledWindow : Panel
 	{
-		[DllImport("wx-c")] static extern IntPtr wxScrollWnd_ctor(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_PrepareDC(IntPtr self, IntPtr dc);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_SetScrollbars(IntPtr self, int pixX, int pixY, int numX, int numY, int x, int y, bool noRefresh);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_GetViewStart(IntPtr self, ref int x, ref int y);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_GetScrollPixelsPerUnit(IntPtr self, ref int xUnit, ref int yUnit);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxScrollWnd_ctor(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_PrepareDC(IntPtr self, IntPtr dc);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_SetScrollbars(IntPtr self, int pixX, int pixY, int numX, int numY, int x, int y, bool noRefresh);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_GetViewStart(IntPtr self, ref int x, ref int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_GetScrollPixelsPerUnit(IntPtr self, ref int xUnit, ref int yUnit);
 		
-		[DllImport("wx-c")] static extern void   wxScrollWnd_CalcScrolledPosition(IntPtr self, int x, int y, ref int xx, ref int yy);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_CalcUnscrolledPosition(IntPtr self, int x, int y, ref int xx, ref int yy);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_GetVirtualSize(IntPtr self, ref int x, ref int y);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_Scroll(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_SetScrollRate(IntPtr self, int xstep, int ystep);
-		[DllImport("wx-c")] static extern void   wxScrollWnd_SetTargetWindow(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_CalcScrolledPosition(IntPtr self, int x, int y, ref int xx, ref int yy);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_CalcUnscrolledPosition(IntPtr self, int x, int y, ref int xx, ref int yy);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_GetVirtualSize(IntPtr self, ref int x, ref int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_Scroll(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_SetScrollRate(IntPtr self, int xstep, int ystep);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollWnd_SetTargetWindow(IntPtr self, IntPtr window);
 
 		//---------------------------------------------------------------------
 

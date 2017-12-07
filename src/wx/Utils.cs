@@ -18,7 +18,7 @@ namespace wx
 {
     public class Utils
     {
-		[DllImport("wx-c")] static extern IntPtr wxGlobal_GetHomeDir();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGlobal_GetHomeDir();
 
 		public static string GetHomeDir()
 		{
@@ -27,7 +27,7 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern void wxSleep_func(int num);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSleep_func(int num);
 
 		public static void wxSleep(int num)
 		{
@@ -36,7 +36,7 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern void wxYield_func();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxYield_func();
 
 		public static void wxYield()
 		{
@@ -45,14 +45,14 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern void wxBeginBusyCursor_func();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBeginBusyCursor_func();
 
 		public static void BeginBusyCursor()
 		{
 			wxBeginBusyCursor_func();
 		}
 
-		[DllImport("wx-c")] static extern void wxEndBusyCursor_func();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxEndBusyCursor_func();
 
 		public static void EndBusyCursor()
 		{
@@ -61,14 +61,14 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 		
-		[DllImport("wx-c")] static extern void wxMutexGuiEnter_func();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxMutexGuiEnter_func();
 		
 		public static void MutexGuiEnter()
 		{
 			wxMutexGuiEnter_func();
 		}
 		
-		[DllImport("wx-c")] static extern void wxMutexGuiLeave_func();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxMutexGuiLeave_func();
 		
 		public static void MutexGuiLeave()
 		{
@@ -78,7 +78,7 @@ namespace wx
 			
 		//-----------------------------------------------------------------------------
 
-	        [DllImport("wx-c")] static extern int wxGetSingleChoiceIndex_func(string message, string caption, int n, string[] choices, IntPtr parent, int x, int y, bool centre, int width, int height);
+	        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxGetSingleChoiceIndex_func(string message, string caption, int n, string[] choices, IntPtr parent, int x, int y, bool centre, int width, int height);
 
         	//-----------------------------------------------------------------------------
 
@@ -119,8 +119,8 @@ namespace wx
 
 	public class WindowDisabler : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxWindowDisabler_ctor(IntPtr winToSkip);
-		[DllImport("wx-c")] static extern void wxWindowDisabler_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDisabler_ctor(IntPtr winToSkip);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxWindowDisabler_dtor(IntPtr self);
 		
 		//---------------------------------------------------------------------
 
@@ -178,8 +178,8 @@ namespace wx
 
 	public class BusyInfo : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxBusyInfo_ctor(string message, IntPtr parent);
-		[DllImport("wx-c")] static extern void   wxBusyInfo_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBusyInfo_ctor(string message, IntPtr parent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBusyInfo_dtor(IntPtr self);
 		
 		//---------------------------------------------------------------------
 	
@@ -242,7 +242,7 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxGlobal_FileSelector(string message, string default_path, string default_filename, string default_extension, string wildcard, int flags, IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGlobal_FileSelector(string message, string default_path, string default_filename, string default_extension, string wildcard, int flags, IntPtr self, int x, int y);
 		
 		//---------------------------------------------------------------------
 
@@ -290,12 +290,12 @@ namespace wx
 
 	public class ArrayInt : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxArrayInt_ctor();
-		[DllImport("wx-c")] static extern void   wxArrayInt_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxArrayInt_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void   wxArrayInt_Add(IntPtr self, int toadd);
-		[DllImport("wx-c")] static extern int    wxArrayInt_Item(IntPtr self, int num);
-		[DllImport("wx-c")] static extern int    wxArrayInt_GetCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxArrayInt_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayInt_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayInt_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayInt_Add(IntPtr self, int toadd);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxArrayInt_Item(IntPtr self, int num);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxArrayInt_GetCount(IntPtr self);
 		
 		//---------------------------------------------------------------------
 
@@ -379,12 +379,12 @@ namespace wx
 
 	public class ArrayString : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxArrayString_ctor();
-		[DllImport("wx-c")] static extern void   wxArrayString_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxArrayString_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void   wxArrayString_Add(IntPtr self, string toadd);
-		[DllImport("wx-c")] static extern IntPtr wxArrayString_Item(IntPtr self, int num);
-		[DllImport("wx-c")] static extern int    wxArrayString_GetCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxArrayString_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayString_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayString_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxArrayString_Add(IntPtr self, string toadd);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxArrayString_Item(IntPtr self, int num);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxArrayString_GetCount(IntPtr self);
 		
 		//---------------------------------------------------------------------
 
@@ -467,12 +467,12 @@ namespace wx
 	
 	public class wxSize : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxSize_ctor(int x, int y);
-		[DllImport("wx-c")] static extern void   wxSize_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSize_SetWidth(IntPtr self, int w);
-		[DllImport("wx-c")] static extern void   wxSize_SetHeight(IntPtr self, int h);
-		[DllImport("wx-c")] static extern int    wxSize_GetWidth(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxSize_GetHeight(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSize_ctor(int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSize_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSize_SetWidth(IntPtr self, int w);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSize_SetHeight(IntPtr self, int h);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSize_GetWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSize_GetHeight(IntPtr self);
 
 		//---------------------------------------------------------------------
 
@@ -555,17 +555,17 @@ namespace wx
 	
 	public class wxRect : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxRect_ctor(int x, int y, int w, int h);
-		[DllImport("wx-c")] static extern void   wxRect_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxRect_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern int    wxRect_GetX(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxRect_SetX(IntPtr self, int x);
-		[DllImport("wx-c")] static extern int    wxRect_GetY(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxRect_SetY(IntPtr self, int y);
-		[DllImport("wx-c")] static extern int    wxRect_GetWidth(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxRect_SetWidth(IntPtr self, int w);
-		[DllImport("wx-c")] static extern int    wxRect_GetHeight(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxRect_SetHeight(IntPtr self, int h);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRect_ctor(int x, int y, int w, int h);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRect_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRect_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRect_GetX(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRect_SetX(IntPtr self, int x);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRect_GetY(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRect_SetY(IntPtr self, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRect_GetWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRect_SetWidth(IntPtr self, int w);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRect_GetHeight(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRect_SetHeight(IntPtr self, int h);
 		
 		//---------------------------------------------------------------------
 

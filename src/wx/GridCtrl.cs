@@ -18,12 +18,12 @@ namespace wx
 {
 	public class GridCellDateTimeRenderer : GridCellStringRenderer
 	{
-		[DllImport("wx-c")] static extern IntPtr wxGridCellDateTimeRenderer_ctor(string outformat, string informat);
-		[DllImport("wx-c")] static extern void wxGridCellDateTimeRenderer_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxGridCellDateTimeRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
-		[DllImport("wx-c")] static extern void wxGridCellDateTimeRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
-		[DllImport("wx-c")] static extern IntPtr wxGridCellDateTimeRenderer_Clone(IntPtr self);
-		[DllImport("wx-c")] static extern void wxGridCellDateTimeRenderer_SetParameters(IntPtr self, string parameter);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellDateTimeRenderer_ctor(string outformat, string informat);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellDateTimeRenderer_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellDateTimeRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellDateTimeRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellDateTimeRenderer_Clone(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellDateTimeRenderer_SetParameters(IntPtr self, string parameter);
 		
 		public GridCellDateTimeRenderer()
 			: this("%c", "%c") {}
@@ -104,12 +104,12 @@ namespace wx
 	
 	public class GridCellEnumRenderer : GridCellStringRenderer
 	{
-		[DllImport("wx-c")] static extern IntPtr wxGridCellEnumRenderer_ctor(int n, string[] choices);
-		[DllImport("wx-c")] static extern void wxGridCellEnumRenderer_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxGridCellEnumRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
-		[DllImport("wx-c")] static extern void wxGridCellEnumRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
-		[DllImport("wx-c")] static extern IntPtr wxGridCellEnumRenderer_Clone(IntPtr self);
-		[DllImport("wx-c")] static extern void wxGridCellEnumRenderer_SetParameters(IntPtr self, string parameter);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellEnumRenderer_ctor(int n, string[] choices);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellEnumRenderer_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellEnumRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellEnumRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellEnumRenderer_Clone(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellEnumRenderer_SetParameters(IntPtr self, string parameter);
 		
 		public GridCellEnumRenderer()
 			: this(null) {}
@@ -187,11 +187,11 @@ namespace wx
 	
 	public class GridCellEnumEditor : GridCellChoiceEditor
 	{
-		[DllImport("wx-c")] static extern IntPtr wxGridCellEnumEditor_ctor(int n, string[] choices);
-		[DllImport("wx-c")] static extern void wxGridCellEnumEditor_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxGridCellEnumEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
-		[DllImport("wx-c")] static extern bool wxGridCellEnumEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
-		[DllImport("wx-c")] static extern IntPtr wxGridCellEnumEditor_Clone(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellEnumEditor_ctor(int n, string[] choices);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellEnumEditor_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellEnumEditor_BeginEdit(IntPtr self, int row, int col, IntPtr grid);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxGridCellEnumEditor_EndEdit(IntPtr self, int row, int col, IntPtr grid);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellEnumEditor_Clone(IntPtr self);
 		
 		public GridCellEnumEditor()
 			: this(null) {}
@@ -262,11 +262,11 @@ namespace wx
 	
 	public class GridCellAutoWrapStringEditor : GridCellTextEditor
 	{
-		[DllImport("wx-c")] static extern IntPtr wxGridCellAutoWrapStringEditor_ctor();
-		[DllImport("wx-c")] static extern void wxGridCellAutoWrapStringEditor_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxGridCellAutoWrapStringEditor_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void wxGridCellAutoWrapStringEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
-		[DllImport("wx-c")] static extern IntPtr wxGridCellAutoWrapStringEditor_Clone(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAutoWrapStringEditor_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAutoWrapStringEditor_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAutoWrapStringEditor_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAutoWrapStringEditor_Create(IntPtr self, IntPtr parent, int id, IntPtr evtHandler);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAutoWrapStringEditor_Clone(IntPtr self);
 		
 		public GridCellAutoWrapStringEditor()
 			: this(wxGridCellAutoWrapStringEditor_ctor(), true) 
@@ -333,12 +333,12 @@ namespace wx
 	
 	public class GridCellAutoWrapStringRenderer : GridCellStringRenderer
 	{
-		[DllImport("wx-c")] static extern IntPtr wxGridCellAutoWrapStringRenderer_ctor();
-		[DllImport("wx-c")] static extern void wxGridCellAutoWrapStringRenderer_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxGridCellAutoWrapStringRenderer_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void wxGridCellAutoWrapStringRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
-		[DllImport("wx-c")] static extern void wxGridCellAutoWrapStringRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
-		[DllImport("wx-c")] static extern IntPtr wxGridCellAutoWrapStringRenderer_Clone(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAutoWrapStringRenderer_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAutoWrapStringRenderer_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridCellAutoWrapStringRenderer_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAutoWrapStringRenderer_Draw(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, ref Rectangle rect, int row, int col, bool isSelected);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGridCellAutoWrapStringRenderer_GetBestSize(IntPtr self, IntPtr grid, IntPtr attr, IntPtr dc, int row, int col, out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridCellAutoWrapStringRenderer_Clone(IntPtr self);
 		
 		public GridCellAutoWrapStringRenderer()
 			: this(wxGridCellAutoWrapStringRenderer_ctor(), true) 

@@ -48,26 +48,26 @@ namespace wx
 
 		//---------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxDialog_ctor();
-		[DllImport("wx-c")] static extern void   wxDialog_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDialog_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDialog_dtor(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxDialog_SetReturnCode(IntPtr self, int returnCode);
-		[DllImport("wx-c")] static extern int    wxDialog_GetReturnCode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDialog_SetReturnCode(IntPtr self, int returnCode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDialog_GetReturnCode(IntPtr self);
 
-		[DllImport("wx-c")] static extern IntPtr wxDialog_GetTitle(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxDialog_SetTitle(IntPtr self, string title);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDialog_GetTitle(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDialog_SetTitle(IntPtr self, string title);
 
-		[DllImport("wx-c")] static extern bool   wxDialog_Create(IntPtr self, IntPtr parent, int id, string title, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDialog_Create(IntPtr self, IntPtr parent, int id, string title, ref Point pos, ref Size size, uint style, string name);
 
-		[DllImport("wx-c")] static extern void   wxDialog_EndModal(IntPtr self, int retCode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDialog_EndModal(IntPtr self, int retCode);
 
-		[DllImport("wx-c")] static extern bool   wxDialog_IsModal(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxDialog_SetModal(IntPtr self, bool modal);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxDialog_IsModal(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDialog_SetModal(IntPtr self, bool modal);
 
-		[DllImport("wx-c")] static extern void   wxDialog_SetIcon(IntPtr self, IntPtr icon);
-		[DllImport("wx-c")] static extern void   wxDialog_SetIcons(IntPtr self, IntPtr icons);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDialog_SetIcon(IntPtr self, IntPtr icon);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDialog_SetIcons(IntPtr self, IntPtr icons);
 
-		[DllImport("wx-c")] static extern int    wxDialog_ShowModal(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDialog_ShowModal(IntPtr self);
 
 		//---------------------------------------------------------------------
 		

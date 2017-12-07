@@ -29,34 +29,34 @@ namespace wx
 
     public class FileDialog : Dialog
     {
-        [DllImport("wx-c")] static extern IntPtr wxFileDialog_ctor(IntPtr parent, string message, string defaultDir, string defaultFile, string wildcard, uint style, ref Point pos);
-        [DllImport("wx-c")] static extern void   wxFileDialog_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDialog_ctor(IntPtr parent, string message, string defaultDir, string defaultFile, string wildcard, uint style, ref Point pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFileDialog_dtor(IntPtr self);
 
-        [DllImport("wx-c")] static extern IntPtr wxFileDialog_GetDirectory(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFileDialog_SetDirectory(IntPtr self, string dir);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDialog_GetDirectory(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFileDialog_SetDirectory(IntPtr self, string dir);
 
-        [DllImport("wx-c")] static extern IntPtr wxFileDialog_GetFilename(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFileDialog_SetFilename(IntPtr self, string filename);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDialog_GetFilename(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFileDialog_SetFilename(IntPtr self, string filename);
 
-        [DllImport("wx-c")] static extern IntPtr wxFileDialog_GetPath(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFileDialog_SetPath(IntPtr self, string path);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDialog_GetPath(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFileDialog_SetPath(IntPtr self, string path);
 
-        [DllImport("wx-c")] static extern void   wxFileDialog_SetFilterIndex(IntPtr self, int filterIndex);
-        [DllImport("wx-c")] static extern int    wxFileDialog_GetFilterIndex(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFileDialog_SetFilterIndex(IntPtr self, int filterIndex);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFileDialog_GetFilterIndex(IntPtr self);
 
-        [DllImport("wx-c")] static extern IntPtr wxFileDialog_GetWildcard(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFileDialog_SetWildcard(IntPtr self, string wildcard);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDialog_GetWildcard(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFileDialog_SetWildcard(IntPtr self, string wildcard);
 
-        [DllImport("wx-c")] static extern void   wxFileDialog_SetMessage(IntPtr self, string message);
-        [DllImport("wx-c")] static extern IntPtr wxFileDialog_GetMessage(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFileDialog_SetMessage(IntPtr self, string message);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDialog_GetMessage(IntPtr self);
 
-        [DllImport("wx-c")] static extern int    wxFileDialog_ShowModal(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFileDialog_ShowModal(IntPtr self);
 
-        [DllImport("wx-c")] static extern int    wxFileDialog_GetStyle(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFileDialog_SetStyle(IntPtr self, int style);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFileDialog_GetStyle(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFileDialog_SetStyle(IntPtr self, int style);
 
-        [DllImport("wx-c")] static extern IntPtr wxFileDialog_GetPaths(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxFileDialog_GetFilenames(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDialog_GetPaths(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDialog_GetFilenames(IntPtr self);
 
         //---------------------------------------------------------------------
 

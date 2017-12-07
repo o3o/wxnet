@@ -155,43 +155,43 @@ namespace wx
 
 	public class Font : GDIObject, ICloneable
 	{
-		[DllImport("wx-c")] static extern        IntPtr wxFont_NORMAL_FONT();
-		[DllImport("wx-c")] static extern        IntPtr wxFont_SMALL_FONT();
-		[DllImport("wx-c")] static extern        IntPtr wxFont_ITALIC_FONT();
-		[DllImport("wx-c")] static extern        IntPtr wxFont_SWISS_FONT();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern        IntPtr wxFont_NORMAL_FONT();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern        IntPtr wxFont_SMALL_FONT();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern        IntPtr wxFont_ITALIC_FONT();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern        IntPtr wxFont_SWISS_FONT();
 
-		[DllImport("wx-c")] static extern        IntPtr wxFont_ctorDef();
-		[DllImport("wx-c")] static extern        IntPtr wxFont_ctor(int pointSize, int family, int style, int weight, bool underline, string faceName, FontEncoding encoding);
-		[DllImport("wx-c")] static extern void   wxFont_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxFont_Ok(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxFont_GetPointSize(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxFont_GetFamily(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxFont_GetStyle(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxFont_GetWeight(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxFont_GetUnderlined(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxFont_GetFaceName(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxFont_GetEncoding(IntPtr self);
-		[DllImport("wx-c")] static extern        IntPtr wxFont_GetNativeFontInfo(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxFont_IsFixedWidth(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxFont_GetNativeFontInfoDesc(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxFont_GetNativeFontInfoUserDesc(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxFont_SetPointSize(IntPtr self, int pointSize);
-		[DllImport("wx-c")] static extern void   wxFont_SetFamily(IntPtr self, int family);
-		[DllImport("wx-c")] static extern void   wxFont_SetStyle(IntPtr self, int style);
-		[DllImport("wx-c")] static extern void   wxFont_SetWeight(IntPtr self, int weight);
-		[DllImport("wx-c")] static extern void   wxFont_SetFaceName(IntPtr self, string faceName);
-		[DllImport("wx-c")] static extern void   wxFont_SetUnderlined(IntPtr self, bool underlined);
-		[DllImport("wx-c")] static extern void   wxFont_SetEncoding(IntPtr self, int encoding);
-		[DllImport("wx-c")] static extern void   wxFont_SetNativeFontInfoUserDesc(IntPtr self, IntPtr info);
-		[DllImport("wx-c")] static extern IntPtr wxFont_GetFamilyString(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxFont_GetStyleString(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxFont_GetWeightString(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxFont_SetNoAntiAliasing(IntPtr self, bool no);
-		[DllImport("wx-c")] static extern bool   wxFont_GetNoAntiAliasing(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxFont_GetDefaultEncoding();
-		[DllImport("wx-c")] static extern void   wxFont_SetDefaultEncoding(int encoding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern        IntPtr wxFont_ctorDef();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern        IntPtr wxFont_ctor(int pointSize, int family, int style, int weight, bool underline, string faceName, FontEncoding encoding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFont_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFont_GetPointSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFont_GetFamily(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFont_GetStyle(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFont_GetWeight(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFont_GetUnderlined(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFont_GetFaceName(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFont_GetEncoding(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern        IntPtr wxFont_GetNativeFontInfo(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFont_IsFixedWidth(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFont_GetNativeFontInfoDesc(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFont_GetNativeFontInfoUserDesc(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetPointSize(IntPtr self, int pointSize);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetFamily(IntPtr self, int family);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetStyle(IntPtr self, int style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetWeight(IntPtr self, int weight);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetFaceName(IntPtr self, string faceName);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetUnderlined(IntPtr self, bool underlined);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetEncoding(IntPtr self, int encoding);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetNativeFontInfoUserDesc(IntPtr self, IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFont_GetFamilyString(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFont_GetStyleString(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFont_GetWeightString(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetNoAntiAliasing(IntPtr self, bool no);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFont_GetNoAntiAliasing(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFont_GetDefaultEncoding();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFont_SetDefaultEncoding(int encoding);
 	
-		[DllImport("wx-c")] static extern IntPtr wxFont_New(string strNativeFontDesc);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFont_New(string strNativeFontDesc);
 
 		//---------------------------------------------------------------------
 

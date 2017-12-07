@@ -27,38 +27,38 @@ namespace wx
 		private Virtual_VoidDcRectSizeT onDrawBackground;
 		private Virtual_IntInt onGetLineHeight;
 		
-		[DllImport("wx-c")] static extern IntPtr wxVListBox_ctor(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void wxVListBox_RegisterVirtual(IntPtr self, 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxVListBox_ctor(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_RegisterVirtual(IntPtr self, 
 			Virtual_VoidDcRectSizeT onDrawItem, 
 			Virtual_IntInt onMeasureItem, 
 			Virtual_VoidDcRectSizeT onDrawSeparator,
 			Virtual_VoidDcRectSizeT onDrawBackground,
 			Virtual_IntInt onGetLineHeight);
-		[DllImport("wx-c")] static extern bool wxVListBox_Create(IntPtr self,IntPtr parent, int id, ref Point pos, ref Size size, int style, string name);		
-		[DllImport("wx-c")] static extern void wxVListBox_OnDrawSeparator(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
-		[DllImport("wx-c")] static extern void wxVListBox_OnDrawBackground(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
-		[DllImport("wx-c")] static extern int wxVListBox_OnGetLineHeight(IntPtr self, int line);
-		[DllImport("wx-c")] static extern int wxVListBox_GetItemCount(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxVListBox_HasMultipleSelection(IntPtr self);
-		[DllImport("wx-c")] static extern int wxVListBox_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxVListBox_IsCurrent(IntPtr self, int item);
-		[DllImport("wx-c")] static extern bool wxVListBox_IsSelected(IntPtr self, int item);
-		[DllImport("wx-c")] static extern int wxVListBox_GetSelectedCount(IntPtr self);
-		[DllImport("wx-c")] static extern int wxVListBox_GetFirstSelected(IntPtr self, out ulong cookie);
-		[DllImport("wx-c")] static extern int wxVListBox_GetNextSelected(IntPtr self, out ulong cookie);
-		[DllImport("wx-c")] static extern void wxVListBox_GetMargins(IntPtr self, out Point pt);
-		[DllImport("wx-c")] static extern IntPtr wxVListBox_GetSelectionBackground(IntPtr self);
-		[DllImport("wx-c")] static extern void wxVListBox_SetItemCount(IntPtr self, int count);
-		[DllImport("wx-c")] static extern void wxVListBox_Clear(IntPtr self);
-		[DllImport("wx-c")] static extern void wxVListBox_SetSelection(IntPtr self, int selection);
-		[DllImport("wx-c")] static extern bool wxVListBox_Select(IntPtr self, int item, bool select);
-		[DllImport("wx-c")] static extern bool wxVListBox_SelectRange(IntPtr self, int from, int to);
-		[DllImport("wx-c")] static extern void wxVListBox_Toggle(IntPtr self, int item);
-		[DllImport("wx-c")] static extern bool wxVListBox_SelectAll(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxVListBox_DeselectAll(IntPtr self);
-		[DllImport("wx-c")] static extern void wxVListBox_SetMargins(IntPtr self, ref Point pt);
-		[DllImport("wx-c")] static extern void wxVListBox_SetMargins2(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern void wxVListBox_SetSelectionBackground(IntPtr self, IntPtr col);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVListBox_Create(IntPtr self,IntPtr parent, int id, ref Point pos, ref Size size, int style, string name);		
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_OnDrawSeparator(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_OnDrawBackground(IntPtr self, IntPtr dc, ref Rectangle rect, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVListBox_OnGetLineHeight(IntPtr self, int line);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVListBox_GetItemCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVListBox_HasMultipleSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVListBox_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVListBox_IsCurrent(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVListBox_IsSelected(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVListBox_GetSelectedCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVListBox_GetFirstSelected(IntPtr self, out ulong cookie);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxVListBox_GetNextSelected(IntPtr self, out ulong cookie);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_GetMargins(IntPtr self, out Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxVListBox_GetSelectionBackground(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_SetItemCount(IntPtr self, int count);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_SetSelection(IntPtr self, int selection);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVListBox_Select(IntPtr self, int item, bool select);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVListBox_SelectRange(IntPtr self, int from, int to);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_Toggle(IntPtr self, int item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVListBox_SelectAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxVListBox_DeselectAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_SetMargins(IntPtr self, ref Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_SetMargins2(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxVListBox_SetSelectionBackground(IntPtr self, IntPtr col);
 		
 		public VListBox(IntPtr wxObject)
 			: base(wxObject) {}

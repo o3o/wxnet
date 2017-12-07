@@ -50,13 +50,13 @@ namespace wx
 
 	public class Cursor : Bitmap
 	{
-		[DllImport("wx-c")] static extern IntPtr wxCursor_ctorById(StockCursor id);
-		[DllImport("wx-c")] static extern IntPtr wxCursor_ctorImage(IntPtr image);
-		[DllImport("wx-c")] static extern IntPtr wxCursor_ctorCopy(IntPtr cursor);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCursor_ctorById(StockCursor id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCursor_ctorImage(IntPtr image);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCursor_ctorCopy(IntPtr cursor);
 
-		[DllImport("wx-c")] static extern bool   wxCursor_Ok(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCursor_Ok(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxCursor_SetCursor(IntPtr cursor);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCursor_SetCursor(IntPtr cursor);
 
 		//---------------------------------------------------------------------
 		

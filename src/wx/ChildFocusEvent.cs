@@ -17,8 +17,8 @@ namespace wx
 {
 	public class ChildFocusEvent : CommandEvent
 	{
-		[DllImport("wx-c")] static extern IntPtr wxChildFocusEvent_ctor(IntPtr win);
-		[DllImport("wx-c")] static extern IntPtr wxChildFocusEvent_GetWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChildFocusEvent_ctor(IntPtr win);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChildFocusEvent_GetWindow(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

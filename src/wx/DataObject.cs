@@ -73,12 +73,12 @@ namespace wx
 
 	public class DataObjectSimple : DataObject
 	{
-		[DllImport("wx-c")] static extern IntPtr wxDataObjectSimple_ctor(IntPtr format);
-		[DllImport("wx-c")] static extern void wxDataObjectSimple_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxDataObjectSimple_SetFormat(IntPtr self, IntPtr format);
-		[DllImport("wx-c")] static extern uint wxDataObjectSimple_GetDataSize(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxDataObjectSimple_GetDataHere(IntPtr self, IntPtr buf);
-		[DllImport("wx-c")] static extern bool wxDataObjectSimple_SetData(IntPtr self, uint len, IntPtr buf);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDataObjectSimple_ctor(IntPtr format);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDataObjectSimple_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxDataObjectSimple_SetFormat(IntPtr self, IntPtr format);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint wxDataObjectSimple_GetDataSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxDataObjectSimple_GetDataHere(IntPtr self, IntPtr buf);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxDataObjectSimple_SetData(IntPtr self, uint len, IntPtr buf);
 		
 		//---------------------------------------------------------------------
 
@@ -130,12 +130,12 @@ namespace wx
 
 	public class TextDataObject : DataObjectSimple
 	{
-		[DllImport("wx-c")] static extern IntPtr wxTextDataObject_ctor(string text);
-		[DllImport("wx-c")] static extern void wxTextDataObject_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxTextDataObject_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern int wxTextDataObject_GetTextLength(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxTextDataObject_GetText(IntPtr self);
-		[DllImport("wx-c")] static extern void wxTextDataObject_SetText(IntPtr self, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextDataObject_ctor(string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTextDataObject_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTextDataObject_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTextDataObject_GetTextLength(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxTextDataObject_GetText(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxTextDataObject_SetText(IntPtr self, string text);
 		
 		//---------------------------------------------------------------------
 
@@ -212,11 +212,11 @@ namespace wx
 
 	public class FileDataObject : DataObjectSimple
 	{
-		[DllImport("wx-c")] static extern IntPtr wxFileDataObject_ctor();
-		[DllImport("wx-c")] static extern void wxFileDataObject_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxFileDataObject_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern void wxFileDataObject_AddFile(IntPtr self, string filename);
-		[DllImport("wx-c")] static extern IntPtr wxFileDataObject_GetFilenames(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDataObject_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFileDataObject_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFileDataObject_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxFileDataObject_AddFile(IntPtr self, string filename);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFileDataObject_GetFilenames(IntPtr self);
 		
 		//---------------------------------------------------------------------
 		

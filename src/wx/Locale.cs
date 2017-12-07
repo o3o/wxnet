@@ -282,14 +282,14 @@ namespace wx
 	
 	public class LanguageInfo : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxLanguageInfo_ctor();
-		[DllImport("wx-c")] static extern void   wxLanguageInfo_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxLanguageInfo_SetLanguage(IntPtr self, int value);
-		[DllImport("wx-c")] static extern int    wxLanguageInfo_GetLanguage(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxLanguageInfo_SetCanonicalName(IntPtr self, string name);
-		[DllImport("wx-c")] static extern IntPtr wxLanguageInfo_GetCanonicalName(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxLanguageInfo_SetDescription(IntPtr self, string name);
-		[DllImport("wx-c")] static extern IntPtr wxLanguageInfo_GetDescription(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLanguageInfo_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxLanguageInfo_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxLanguageInfo_SetLanguage(IntPtr self, int value);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxLanguageInfo_GetLanguage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxLanguageInfo_SetCanonicalName(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLanguageInfo_GetCanonicalName(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxLanguageInfo_SetDescription(IntPtr self, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLanguageInfo_GetDescription(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 
@@ -368,29 +368,29 @@ namespace wx
 	
 	public class Locale : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxLocale_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxLocale_ctor2(int language, int flags);
-		[DllImport("wx-c")] static extern void   wxLocale_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxLocale_Init(IntPtr self, int language, int flags);
-		[DllImport("wx-c")] static extern bool   wxLocale_AddCatalog(IntPtr self, string szDomain);
-		[DllImport("wx-c")] static extern bool   wxLocale_AddCatalog2(IntPtr self, string szDomain, int msgIdLanguage, string msgIdCharset);
-		[DllImport("wx-c")] static extern void   wxLocale_AddCatalogLookupPathPrefix(IntPtr self, string prefix);
-		[DllImport("wx-c")] static extern void   wxLocale_AddLanguage(IntPtr info);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_FindLanguageInfo(string locale);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetCanonicalName(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxLocale_GetLanguage(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetLanguageInfo(int lang);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetLanguageName(int lang);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetLocale(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetName(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetString(IntPtr self, string szOrigString, string szDomain);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetHeaderValue(IntPtr self, string szHeader, string szDomain);
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetSysName(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxLocale_GetSystemEncoding();
-		[DllImport("wx-c")] static extern IntPtr wxLocale_GetSystemEncodingName();
-		[DllImport("wx-c")] static extern int    wxLocale_GetSystemLanguage();
-		[DllImport("wx-c")] static extern bool   wxLocale_IsLoaded(IntPtr self, string domain);
-		[DllImport("wx-c")] static extern bool   wxLocale_IsOk(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_ctor2(int language, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxLocale_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxLocale_Init(IntPtr self, int language, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxLocale_AddCatalog(IntPtr self, string szDomain);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxLocale_AddCatalog2(IntPtr self, string szDomain, int msgIdLanguage, string msgIdCharset);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxLocale_AddCatalogLookupPathPrefix(IntPtr self, string prefix);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxLocale_AddLanguage(IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_FindLanguageInfo(string locale);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetCanonicalName(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxLocale_GetLanguage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetLanguageInfo(int lang);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetLanguageName(int lang);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetLocale(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetName(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetString(IntPtr self, string szOrigString, string szDomain);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetHeaderValue(IntPtr self, string szHeader, string szDomain);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetSysName(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxLocale_GetSystemEncoding();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxLocale_GetSystemEncodingName();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxLocale_GetSystemLanguage();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxLocale_IsLoaded(IntPtr self, string domain);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxLocale_IsOk(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

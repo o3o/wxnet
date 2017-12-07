@@ -17,8 +17,8 @@ namespace wx
 {
 	public class WindowCreateEvent : CommandEvent
 	{
-		[DllImport("wx-c")] static extern IntPtr wxWindowCreateEvent_ctor(IntPtr type);
-		[DllImport("wx-c")] static extern IntPtr wxWindowCreateEvent_GetWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowCreateEvent_ctor(IntPtr type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowCreateEvent_GetWindow(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

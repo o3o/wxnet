@@ -31,16 +31,16 @@ namespace wx
 		public const long wxCHK_3STATE           = 0x1000;
 		public const long wxCHK_ALLOW_3RD_STATE_FOR_USER           = 0x2000;
 	
-		[DllImport("wx-c")] static extern IntPtr wxCheckBox_ctor();
-		[DllImport("wx-c")] static extern bool   wxCheckBox_Create(IntPtr self, IntPtr parent, int id, string label, ref Point pos, ref Size size, uint style, IntPtr val, string name);
-		[DllImport("wx-c")] static extern bool   wxCheckBox_GetValue(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxCheckBox_SetValue(IntPtr self, bool state);
-		[DllImport("wx-c")] static extern bool   wxCheckBox_IsChecked(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCheckBox_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCheckBox_Create(IntPtr self, IntPtr parent, int id, string label, ref Point pos, ref Size size, uint style, IntPtr val, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCheckBox_GetValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCheckBox_SetValue(IntPtr self, bool state);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCheckBox_IsChecked(IntPtr self);
 		
-		[DllImport("wx-c")] static extern CheckBoxState wxCheckBox_Get3StateValue(IntPtr self);
-		[DllImport("wx-c")] static extern void wxCheckBox_Set3StateValue(IntPtr self, CheckBoxState state);
-		[DllImport("wx-c")] static extern bool wxCheckBox_Is3State(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxCheckBox_Is3rdStateAllowedForUser(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern CheckBoxState wxCheckBox_Get3StateValue(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCheckBox_Set3StateValue(IntPtr self, CheckBoxState state);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCheckBox_Is3State(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCheckBox_Is3rdStateAllowedForUser(IntPtr self);
 
 		//---------------------------------------------------------------------
 		

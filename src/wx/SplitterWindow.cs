@@ -43,27 +43,27 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxSplitWnd_ctor(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void   wxSplitWnd_RegisterVirtual(IntPtr self, Virtual_OnDoubleClickSash onDoubleClickSash, Virtual_OnUnsplit onUnsplit, Virtual_OnSashPositionChange onSashPositionChange);
-		[DllImport("wx-c")] static extern void   wxSplitWnd_OnDoubleClickSash(IntPtr self, int x, int y);
-		[DllImport("wx-c")] static extern void   wxSplitWnd_OnUnsplit(IntPtr self, IntPtr removed);
-		[DllImport("wx-c")] static extern bool   wxSplitWnd_OnSashPositionChange(IntPtr self, int newSashPosition);
-		[DllImport("wx-c")] static extern int    wxSplitWnd_GetSplitMode(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxSplitWnd_IsSplit(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxSplitWnd_SplitHorizontally(IntPtr self, IntPtr wnd1, IntPtr wnd2, int sashPos);
-		[DllImport("wx-c")] static extern bool   wxSplitWnd_SplitVertically(IntPtr self, IntPtr wnd1, IntPtr wnd2, int sashPos);
-		[DllImport("wx-c")] static extern bool   wxSplitWnd_Unsplit(IntPtr self, IntPtr toRemove);
-		[DllImport("wx-c")] static extern void   wxSplitWnd_SetSashPosition(IntPtr self, int position, bool redraw);
-		[DllImport("wx-c")] static extern int    wxSplitWnd_GetSashPosition(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSplitWnd_ctor(IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplitWnd_RegisterVirtual(IntPtr self, Virtual_OnDoubleClickSash onDoubleClickSash, Virtual_OnUnsplit onUnsplit, Virtual_OnSashPositionChange onSashPositionChange);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplitWnd_OnDoubleClickSash(IntPtr self, int x, int y);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplitWnd_OnUnsplit(IntPtr self, IntPtr removed);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSplitWnd_OnSashPositionChange(IntPtr self, int newSashPosition);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSplitWnd_GetSplitMode(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSplitWnd_IsSplit(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSplitWnd_SplitHorizontally(IntPtr self, IntPtr wnd1, IntPtr wnd2, int sashPos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSplitWnd_SplitVertically(IntPtr self, IntPtr wnd1, IntPtr wnd2, int sashPos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSplitWnd_Unsplit(IntPtr self, IntPtr toRemove);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplitWnd_SetSashPosition(IntPtr self, int position, bool redraw);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSplitWnd_GetSashPosition(IntPtr self);
 		
-		[DllImport("wx-c")] static extern int    wxSplitWnd_GetMinimumPaneSize(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxSplitWnd_GetWindow1(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxSplitWnd_GetWindow2(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxSplitWnd_Initialize(IntPtr self, IntPtr window);
-		[DllImport("wx-c")] static extern bool   wxSplitWnd_ReplaceWindow(IntPtr self, IntPtr winOld, IntPtr winNew);
-		[DllImport("wx-c")] static extern void   wxSplitWnd_SetMinimumPaneSize(IntPtr self, int paneSize);
-		[DllImport("wx-c")] static extern void   wxSplitWnd_SetSplitMode(IntPtr self, int mode);
-		[DllImport("wx-c")] static extern void   wxSplitWnd_UpdateSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxSplitWnd_GetMinimumPaneSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSplitWnd_GetWindow1(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSplitWnd_GetWindow2(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplitWnd_Initialize(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxSplitWnd_ReplaceWindow(IntPtr self, IntPtr winOld, IntPtr winNew);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplitWnd_SetMinimumPaneSize(IntPtr self, int paneSize);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplitWnd_SetSplitMode(IntPtr self, int mode);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxSplitWnd_UpdateSize(IntPtr self);
 
 		//---------------------------------------------------------------------
 

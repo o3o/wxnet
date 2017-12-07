@@ -33,25 +33,25 @@ namespace wx
 		
 		//---------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxImageList_ctor(int width, int height, bool mask, int initialCount);
-		[DllImport("wx-c")] static extern IntPtr wxImageList_ctor2();
-		[DllImport("wx-c")] static extern int    wxImageList_AddBitmap1(IntPtr self, IntPtr bmp, IntPtr mask);
-		[DllImport("wx-c")] static extern int    wxImageList_AddBitmap(IntPtr self, IntPtr bmp, IntPtr maskColour);
-		[DllImport("wx-c")] static extern int    wxImageList_AddIcon(IntPtr self, IntPtr icon);
-		[DllImport("wx-c")] static extern int    wxImageList_GetImageCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImageList_ctor(int width, int height, bool mask, int initialCount);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImageList_ctor2();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxImageList_AddBitmap1(IntPtr self, IntPtr bmp, IntPtr mask);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxImageList_AddBitmap(IntPtr self, IntPtr bmp, IntPtr maskColour);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxImageList_AddIcon(IntPtr self, IntPtr icon);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxImageList_GetImageCount(IntPtr self);
 		
-		[DllImport("wx-c")] static extern bool   wxImageList_Draw(IntPtr self, int index, IntPtr dc, int x, int y, int flags, bool solidBackground);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImageList_Draw(IntPtr self, int index, IntPtr dc, int x, int y, int flags, bool solidBackground);
 		
-		[DllImport("wx-c")] static extern bool   wxImageList_Create(IntPtr self, int width, int height, bool mask, int initialCount);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImageList_Create(IntPtr self, int width, int height, bool mask, int initialCount);
 		
-		[DllImport("wx-c")] static extern bool   wxImageList_Replace(IntPtr self, int index, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImageList_Replace(IntPtr self, int index, IntPtr bitmap);
 		
-		[DllImport("wx-c")] static extern bool   wxImageList_Remove(IntPtr self, int index);
-		[DllImport("wx-c")] static extern bool   wxImageList_RemoveAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImageList_Remove(IntPtr self, int index);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImageList_RemoveAll(IntPtr self);
 		
-		//[DllImport("wx-c")] static extern IntPtr wxImageList_GetBitmap(IntPtr self, int index);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxImageList_GetBitmap(IntPtr self, int index);
 		
-		[DllImport("wx-c")] static extern bool   wxImageList_GetSize(IntPtr self, int index, ref int width, ref int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxImageList_GetSize(IntPtr self, int index, ref int width, ref int height);
 
 		//---------------------------------------------------------------------
 

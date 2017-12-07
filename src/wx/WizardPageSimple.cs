@@ -17,8 +17,8 @@ namespace wx
 {
 	public class WizardPageSimple : WizardPage
 	{
-		[DllImport("wx-c")] static extern IntPtr wxWizPageSimp_ctor(IntPtr parent, IntPtr prev, IntPtr next);
-		[DllImport("wx-c")] static extern void   wxWizPageSimp_Chain(IntPtr first, IntPtr second);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWizPageSimp_ctor(IntPtr parent, IntPtr prev, IntPtr next);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxWizPageSimp_Chain(IntPtr first, IntPtr second);
 
 		//---------------------------------------------------------------------
 

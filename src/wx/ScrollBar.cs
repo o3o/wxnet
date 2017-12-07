@@ -23,15 +23,15 @@ namespace wx
 
 		//-----------------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxScrollBar_ctor();
-		[DllImport("wx-c")] static extern bool   wxScrollBar_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern int    wxScrollBar_GetThumbPosition(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxScrollBar_GetThumbSize(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxScrollBar_GetPageSize(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxScrollBar_GetRange(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxScrollBar_IsVertical(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxScrollBar_SetThumbPosition(IntPtr self, int viewStart);
-		[DllImport("wx-c")] static extern void   wxScrollBar_SetScrollbar(IntPtr self, int position, int thumbSize, int range, int pageSize, bool refresh);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxScrollBar_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxScrollBar_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxScrollBar_GetThumbPosition(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxScrollBar_GetThumbSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxScrollBar_GetPageSize(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxScrollBar_GetRange(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxScrollBar_IsVertical(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollBar_SetThumbPosition(IntPtr self, int viewStart);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxScrollBar_SetScrollbar(IntPtr self, int position, int thumbSize, int range, int pageSize, bool refresh);
 
 		//-----------------------------------------------------------------------------
 

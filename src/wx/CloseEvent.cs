@@ -18,13 +18,13 @@ namespace wx
 {
 	public class CloseEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxCloseEvent_ctor(int type);
-		[DllImport("wx-c")] static extern void wxCloseEvent_SetLoggingOff(IntPtr self, bool logOff);
-		[DllImport("wx-c")] static extern bool wxCloseEvent_GetLoggingOff(IntPtr self);
-		[DllImport("wx-c")] static extern void wxCloseEvent_Veto(IntPtr self, bool veto);
-		[DllImport("wx-c")] static extern void wxCloseEvent_SetCanVeto(IntPtr self, bool canVeto);
-		[DllImport("wx-c")] static extern bool wxCloseEvent_CanVeto(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxCloseEvent_GetVeto(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCloseEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_SetLoggingOff(IntPtr self, bool logOff);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_GetLoggingOff(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_Veto(IntPtr self, bool veto);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_SetCanVeto(IntPtr self, bool canVeto);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_CanVeto(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_GetVeto(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

@@ -18,9 +18,9 @@ namespace wx
 {
 	public class MemoryDC : WindowDC
 	{
-		[DllImport("wx-c")] static extern IntPtr wxMemoryDC_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxMemoryDC_ctorByDC(IntPtr dc);
-		[DllImport("wx-c")] static extern void   wxMemoryDC_SelectObject(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMemoryDC_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMemoryDC_ctorByDC(IntPtr dc);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMemoryDC_SelectObject(IntPtr self, IntPtr bitmap);
 
 		//---------------------------------------------------------------------
 
@@ -45,13 +45,13 @@ namespace wx
 
 	public class BufferedDC : MemoryDC
 	{
-		[DllImport("wx-c")] static extern IntPtr wxBufferedDC_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxBufferedDC_ctorByBitmap(IntPtr dc, IntPtr buffer);
-		[DllImport("wx-c")] static extern IntPtr wxBufferedDC_ctorBySize(IntPtr dc, ref Size area);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBufferedDC_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBufferedDC_ctorByBitmap(IntPtr dc, IntPtr buffer);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBufferedDC_ctorBySize(IntPtr dc, ref Size area);
 
-		[DllImport("wx-c")] static extern void   wxBufferedDC_InitByBitmap(IntPtr self, IntPtr dc, IntPtr bitmap);
-		[DllImport("wx-c")] static extern void   wxBufferedDC_InitBySize(IntPtr self, IntPtr dc, ref Size area);
-		[DllImport("wx-c")] static extern void   wxBufferedDC_UnMask(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBufferedDC_InitByBitmap(IntPtr self, IntPtr dc, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBufferedDC_InitBySize(IntPtr self, IntPtr dc, ref Size area);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBufferedDC_UnMask(IntPtr self);
 
 		//---------------------------------------------------------------------
 
@@ -91,7 +91,7 @@ namespace wx
 
 	public class BufferedPaintDC : BufferedDC
 	{
-		[DllImport("wx-c")] static extern IntPtr wxBufferedPaintDC_ctor(IntPtr window, IntPtr buffer);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBufferedPaintDC_ctor(IntPtr window, IntPtr buffer);
 
 		//---------------------------------------------------------------------
         

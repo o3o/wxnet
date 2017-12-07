@@ -18,19 +18,19 @@ namespace wx
 	public class CommandEvent : Event
 	{
 
-		[DllImport("wx-c")] static extern int    wxCommandEvent_GetSelection(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxCommandEvent_GetString(IntPtr self);
-		[DllImport("wx-c")] static extern void wxCommandEvent_SetString(IntPtr self, string s);
-		[DllImport("wx-c")] static extern bool   wxCommandEvent_IsChecked(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxCommandEvent_IsSelection(IntPtr self);
-		[DllImport("wx-c")] static extern int    wxCommandEvent_GetInt(IntPtr self);
-		[DllImport("wx-c")] static extern void wxCommandEvent_SetInt(IntPtr self, int i);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxCommandEvent_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCommandEvent_GetString(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCommandEvent_SetString(IntPtr self, string s);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCommandEvent_IsChecked(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxCommandEvent_IsSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxCommandEvent_GetInt(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCommandEvent_SetInt(IntPtr self, int i);
 
-		[DllImport("wx-c")] static extern IntPtr wxCommandEvent_GetClientObject(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxCommandEvent_SetClientObject(IntPtr self, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCommandEvent_GetClientObject(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxCommandEvent_SetClientObject(IntPtr self, IntPtr data);
 		
-		[DllImport("wx-c")] static extern void wxCommandEvent_SetExtraLong(IntPtr self, uint extralong);
-		[DllImport("wx-c")] static extern uint wxCommandEvent_GetExtraLong(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCommandEvent_SetExtraLong(IntPtr self, uint extralong);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern uint wxCommandEvent_GetExtraLong(IntPtr self);
 
 		//-----------------------------------------------------------------------------
 

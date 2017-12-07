@@ -20,32 +20,32 @@ namespace wx
 	{
 		private delegate void Virtual_OnSetBitmap();
 		
-		[DllImport("wx-c")] static extern IntPtr wxBitmapButton_ctor();
-		[DllImport("wx-c")] static extern void   wxBitmapButton_RegisterVirtual(IntPtr self, Virtual_OnSetBitmap onSetBitmap);
-		//[DllImport("wx-c")] static extern void   wxBitmapButton_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
-		[DllImport("wx-c")] static extern bool   wxBitmapButton_Create(IntPtr self, IntPtr parent, int id, IntPtr label, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern void   wxBitmapButton_SetDefault(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmapButton_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBitmapButton_RegisterVirtual(IntPtr self, Virtual_OnSetBitmap onSetBitmap);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBitmapButton_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxBitmapButton_Create(IntPtr self, IntPtr parent, int id, IntPtr label, ref Point pos, ref Size size, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBitmapButton_SetDefault(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void wxBitmapButton_SetLabel(IntPtr self, string label);
-		[DllImport("wx-c")] static extern IntPtr wxBitmapButton_GetLabel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBitmapButton_SetLabel(IntPtr self, string label);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmapButton_GetLabel(IntPtr self);
 		
-		[DllImport("wx-c")] static extern bool wxBitmapButton_Enable(IntPtr self, bool enable);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxBitmapButton_Enable(IntPtr self, bool enable);
 
-		[DllImport("wx-c")] static extern void   wxBitmapButton_SetBitmapLabel(IntPtr self, IntPtr bitmap);
-		[DllImport("wx-c")] static extern IntPtr wxBitmapButton_GetBitmapLabel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxBitmapButton_SetBitmapLabel(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmapButton_GetBitmapLabel(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void wxBitmapButton_SetBitmapSelected(IntPtr self, IntPtr bitmap);
-		[DllImport("wx-c")] static extern IntPtr wxBitmapButton_GetBitmapSelected(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBitmapButton_SetBitmapSelected(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmapButton_GetBitmapSelected(IntPtr self);
 
-		[DllImport("wx-c")] static extern void wxBitmapButton_SetBitmapFocus(IntPtr self, IntPtr bitmap);
-		[DllImport("wx-c")] static extern IntPtr wxBitmapButton_GetBitmapFocus(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBitmapButton_SetBitmapFocus(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmapButton_GetBitmapFocus(IntPtr self);
 
-		[DllImport("wx-c")] static extern void wxBitmapButton_SetBitmapDisabled(IntPtr self, IntPtr bitmap);
-		[DllImport("wx-c")] static extern IntPtr wxBitmapButton_GetBitmapDisabled(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBitmapButton_SetBitmapDisabled(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxBitmapButton_GetBitmapDisabled(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void wxBitmapButton_OnSetBitmap(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBitmapButton_OnSetBitmap(IntPtr self);
 		
-		//[DllImport("wx-c")] static extern void wxBitmapButton_ApplyParentThemeBackground(IntPtr self, IntPtr colour);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxBitmapButton_ApplyParentThemeBackground(IntPtr self, IntPtr colour);
 
 		//---------------------------------------------------------------------
 		

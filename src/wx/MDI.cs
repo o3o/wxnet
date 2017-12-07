@@ -28,25 +28,25 @@ namespace wx
 	
 		//-----------------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxMDIParentFrame_ctor();
-		[DllImport("wx-c")] static extern void wxMDIParentFrame_RegisterVirtual(IntPtr self, Virtual_OnCreateClient onCreateClient);
-		[DllImport("wx-c")] static extern IntPtr wxMDIParentFrame_OnCreateClient(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxMDIParentFrame_Create(IntPtr self, IntPtr parent, int id, string title, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMDIParentFrame_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxMDIParentFrame_RegisterVirtual(IntPtr self, Virtual_OnCreateClient onCreateClient);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMDIParentFrame_OnCreateClient(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMDIParentFrame_Create(IntPtr self, IntPtr parent, int id, string title, ref Point pos, ref Size size, uint style, string name);
 	
-		[DllImport("wx-c")] static extern IntPtr wxMDIParentFrame_GetActiveChild(IntPtr self);
-		//[DllImport("wx-c")] static extern void   wxMDIParentFrame_SetActiveChild(IntPtr self, IntPtr pChildFrame);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMDIParentFrame_GetActiveChild(IntPtr self);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIParentFrame_SetActiveChild(IntPtr self, IntPtr pChildFrame);
 	
-		[DllImport("wx-c")] static extern IntPtr wxMDIParentFrame_GetClientWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMDIParentFrame_GetClientWindow(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxMDIParentFrame_Cascade(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMDIParentFrame_Tile(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIParentFrame_Cascade(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIParentFrame_Tile(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxMDIParentFrame_ArrangeIcons(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIParentFrame_ArrangeIcons(IntPtr self);
 	
-		[DllImport("wx-c")] static extern void   wxMDIParentFrame_ActivateNext(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMDIParentFrame_ActivatePrevious(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIParentFrame_ActivateNext(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIParentFrame_ActivatePrevious(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void   wxMDIParentFrame_GetClientSize(IntPtr self, out int width, out int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIParentFrame_GetClientSize(IntPtr self, out int width, out int height);
 
 		//-----------------------------------------------------------------------------
 
@@ -183,11 +183,11 @@ namespace wx
 
 	public class MDIChildFrame : Frame 
 	{
-		[DllImport("wx-c")] static extern IntPtr wxMDIChildFrame_ctor();
-		[DllImport("wx-c")] static extern bool   wxMDIChildFrame_Create(IntPtr self, IntPtr parent, int id, string title, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern void   wxMDIChildFrame_Activate(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMDIChildFrame_Restore(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMDIChildFrame_Maximize(IntPtr self, bool maximize);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMDIChildFrame_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMDIChildFrame_Create(IntPtr self, IntPtr parent, int id, string title, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIChildFrame_Activate(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIChildFrame_Restore(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMDIChildFrame_Maximize(IntPtr self, bool maximize);
 
 		//-----------------------------------------------------------------------------
 
@@ -281,8 +281,8 @@ namespace wx
 
 	public class MDIClientWindow : Window
 	{
-		[DllImport("wx-c")] static extern IntPtr wxMDIClientWindow_ctor();
-		[DllImport("wx-c")] static extern bool   wxMDIClientWindow_CreateClient(IntPtr self, IntPtr parent, uint style);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMDIClientWindow_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMDIClientWindow_CreateClient(IntPtr self, IntPtr parent, uint style);
 	
 		//-----------------------------------------------------------------------------
 	

@@ -18,12 +18,12 @@ namespace wx
 {
 	public class Control : Window
 	{
-		[DllImport("wx-c")] static extern void   wxControl_Command(IntPtr self, IntPtr evt);
-		[DllImport("wx-c")] static extern IntPtr wxControl_GetLabel(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxControl_SetLabel(IntPtr self, string label);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxControl_Command(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxControl_GetLabel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxControl_SetLabel(IntPtr self, string label);
 		
-		[DllImport("wx-c")] static extern int wxControl_GetAlignment(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxControl_SetFont(IntPtr self, IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxControl_GetAlignment(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxControl_SetFont(IntPtr self, IntPtr font);
 
 		//---------------------------------------------------------------------
 

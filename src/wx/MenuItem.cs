@@ -17,37 +17,37 @@ namespace wx
 {
 	public class MenuItem : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetMenu(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetMenu(IntPtr self, IntPtr menu);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetId(IntPtr self, int id);
-		[DllImport("wx-c")] static extern int    wxMenuItem_GetId(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxMenuItem_IsSeparator(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetText(IntPtr self, string str);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetLabel(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetText(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetLabelFromText(IntPtr self, string text);
-		[DllImport("wx-c")] static extern int    wxMenuItem_GetKind(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetCheckable(IntPtr self, bool checkable);
-		[DllImport("wx-c")] static extern bool   wxMenuItem_IsCheckable(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxMenuItem_IsSubMenu(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetSubMenu(IntPtr self, IntPtr menu);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetSubMenu(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_Enable(IntPtr self, bool enable);
-		[DllImport("wx-c")] static extern bool   wxMenuItem_IsEnabled(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_Check(IntPtr self, bool check);
-		[DllImport("wx-c")] static extern bool   wxMenuItem_IsChecked(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_Toggle(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetHelp(IntPtr self, string str);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetHelp(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetAccel(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetAccel(IntPtr self, IntPtr accel);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetName(IntPtr self, string str);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetName(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_NewCheck(IntPtr parentMenu, int id, string text, string help, bool isCheckable, IntPtr subMenu);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_New(IntPtr parentMenu, int id, string text, string help, int kind, IntPtr subMenu);
-		[DllImport("wx-c")] static extern void   wxMenuItem_SetBitmap(IntPtr self, IntPtr bitmap);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_GetBitmap(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxMenuItem_ctor(IntPtr parentMenu, int id, string text, string help, int kind, IntPtr subMenu);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetMenu(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetMenu(IntPtr self, IntPtr menu);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetId(IntPtr self, int id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxMenuItem_GetId(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMenuItem_IsSeparator(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetText(IntPtr self, string str);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetLabel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetText(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetLabelFromText(IntPtr self, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxMenuItem_GetKind(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetCheckable(IntPtr self, bool checkable);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMenuItem_IsCheckable(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMenuItem_IsSubMenu(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetSubMenu(IntPtr self, IntPtr menu);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetSubMenu(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_Enable(IntPtr self, bool enable);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMenuItem_IsEnabled(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_Check(IntPtr self, bool check);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxMenuItem_IsChecked(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_Toggle(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetHelp(IntPtr self, string str);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetHelp(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetAccel(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetAccel(IntPtr self, IntPtr accel);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetName(IntPtr self, string str);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetName(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_NewCheck(IntPtr parentMenu, int id, string text, string help, bool isCheckable, IntPtr subMenu);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_New(IntPtr parentMenu, int id, string text, string help, int kind, IntPtr subMenu);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxMenuItem_SetBitmap(IntPtr self, IntPtr bitmap);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_GetBitmap(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMenuItem_ctor(IntPtr parentMenu, int id, string text, string help, int kind, IntPtr subMenu);
 
 		//-----------------------------------------------------------------------------
 

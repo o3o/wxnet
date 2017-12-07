@@ -24,44 +24,44 @@ namespace wx
     public class Region : GDIObject
     {
 
-        [DllImport("wx-c")] static extern IntPtr wxRegion_ctor();
-        [DllImport("wx-c")] static extern IntPtr wxRegion_ctorByCoords(int x, int y, int w, int h);
-        [DllImport("wx-c")] static extern IntPtr wxRegion_ctorByCorners(ref Point topLeft, ref Point bottomRight);
-        [DllImport("wx-c")] static extern IntPtr wxRegion_ctorByRect(ref Rectangle rect);
-        [DllImport("wx-c")] static extern IntPtr wxRegion_ctorByPoly(int n, ref Point[] points, int fillStyle);
-        [DllImport("wx-c")] static extern IntPtr wxRegion_ctorByBitmap(IntPtr bmp, IntPtr transColour, int tolerance);
-        [DllImport("wx-c")] static extern IntPtr wxRegion_ctorByRegion(IntPtr region);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegion_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegion_ctorByCoords(int x, int y, int w, int h);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegion_ctorByCorners(ref Point topLeft, ref Point bottomRight);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegion_ctorByRect(ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegion_ctorByPoly(int n, ref Point[] points, int fillStyle);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegion_ctorByBitmap(IntPtr bmp, IntPtr transColour, int tolerance);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegion_ctorByRegion(IntPtr region);
 
-        [DllImport("wx-c")] static extern void   wxRegion_dtor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRegion_dtor(IntPtr self);
 
-        [DllImport("wx-c")] static extern void   wxRegion_Clear(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxRegion_Offset(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRegion_Clear(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_Offset(IntPtr self, int x, int y);
 
-        [DllImport("wx-c")] static extern bool   wxRegion_Union(IntPtr self, int x, int y, int width, int height);
-        [DllImport("wx-c")] static extern bool   wxRegion_UnionRect(IntPtr self, ref Rectangle rect);
-        [DllImport("wx-c")] static extern bool   wxRegion_UnionRegion(IntPtr self, IntPtr region);
-        [DllImport("wx-c")] static extern bool   wxRegion_UnionBitmap(IntPtr self, IntPtr bmp, IntPtr transColour, int tolerance);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_Union(IntPtr self, int x, int y, int width, int height);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_UnionRect(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_UnionRegion(IntPtr self, IntPtr region);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_UnionBitmap(IntPtr self, IntPtr bmp, IntPtr transColour, int tolerance);
 
-        [DllImport("wx-c")] static extern bool   wxRegion_Intersect(IntPtr self, int x, int y, int width, int height);
-        [DllImport("wx-c")] static extern bool   wxRegion_IntersectRect(IntPtr self, ref Rectangle rect);
-        [DllImport("wx-c")] static extern bool   wxRegion_IntersectRegion(IntPtr self, IntPtr region);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_Intersect(IntPtr self, int x, int y, int width, int height);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_IntersectRect(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_IntersectRegion(IntPtr self, IntPtr region);
 
-        [DllImport("wx-c")] static extern bool   wxRegion_Subtract(IntPtr self, int x, int y, int width, int height);
-        [DllImport("wx-c")] static extern bool   wxRegion_SubtractRect(IntPtr self, ref Rectangle rect);
-        [DllImport("wx-c")] static extern bool   wxRegion_SubtractRegion(IntPtr self, IntPtr region);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_Subtract(IntPtr self, int x, int y, int width, int height);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_SubtractRect(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_SubtractRegion(IntPtr self, IntPtr region);
 
-        [DllImport("wx-c")] static extern bool   wxRegion_Xor(IntPtr self, int x, int y, int width, int height);
-        [DllImport("wx-c")] static extern bool   wxRegion_XorRect(IntPtr self, ref Rectangle rect);
-        [DllImport("wx-c")] static extern bool   wxRegion_XorRegion(IntPtr self, IntPtr region);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_Xor(IntPtr self, int x, int y, int width, int height);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_XorRect(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_XorRegion(IntPtr self, IntPtr region);
 
-        [DllImport("wx-c")] static extern RegionContain wxRegion_ContainsCoords(IntPtr self, int x, int y);
-        [DllImport("wx-c")] static extern RegionContain wxRegion_ContainsPoint(IntPtr self, ref Point pt);
-        [DllImport("wx-c")] static extern RegionContain wxRegion_ContainsRectCoords(IntPtr self, int x, int y, int width, int height);
-        [DllImport("wx-c")] static extern RegionContain wxRegion_ContainsRect(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern RegionContain wxRegion_ContainsCoords(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern RegionContain wxRegion_ContainsPoint(IntPtr self, ref Point pt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern RegionContain wxRegion_ContainsRectCoords(IntPtr self, int x, int y, int width, int height);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern RegionContain wxRegion_ContainsRect(IntPtr self, ref Rectangle rect);
 
-        [DllImport("wx-c")] static extern void   wxRegion_GetBox(IntPtr self, ref Rectangle rect);
-        [DllImport("wx-c")] static extern bool   wxRegion_IsEmpty(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxRegion_ConvertToBitmap(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRegion_GetBox(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegion_IsEmpty(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegion_ConvertToBitmap(IntPtr self);
 
         //---------------------------------------------------------------------
 
@@ -218,23 +218,23 @@ namespace wx
 
     public class RegionIterator : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxRegionIterator_ctor();
-        [DllImport("wx-c")] static extern IntPtr wxRegionIterator_ctorByRegion(IntPtr region);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegionIterator_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxRegionIterator_ctorByRegion(IntPtr region);
 
-        [DllImport("wx-c")] static extern void   wxRegionIterator_Reset(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxRegionIterator_ResetToRegion(IntPtr self, IntPtr region);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRegionIterator_Reset(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRegionIterator_ResetToRegion(IntPtr self, IntPtr region);
 
-        [DllImport("wx-c")] static extern bool   wxRegionIterator_HaveRects(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxRegionIterator_HaveRects(IntPtr self);
         
-        [DllImport("wx-c")] static extern int    wxRegionIterator_GetX(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxRegionIterator_GetY(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRegionIterator_GetX(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRegionIterator_GetY(IntPtr self);
 
-        [DllImport("wx-c")] static extern int    wxRegionIterator_GetW(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxRegionIterator_GetWidth(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxRegionIterator_GetH(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxRegionIterator_GetHeight(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRegionIterator_GetW(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRegionIterator_GetWidth(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRegionIterator_GetH(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxRegionIterator_GetHeight(IntPtr self);
 
-        [DllImport("wx-c")] static extern void   wxRegionIterator_GetRect(IntPtr self, ref Rectangle rect);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxRegionIterator_GetRect(IntPtr self, ref Rectangle rect);
 
         //---------------------------------------------------------------------
 

@@ -17,8 +17,8 @@ namespace wx
 {
 	public class WindowDestroyEvent : CommandEvent
 	{
-		[DllImport("wx-c")] static extern IntPtr wxWindowDestroyEvent_ctor(IntPtr type);
-		[DllImport("wx-c")] static extern IntPtr wxWindowDestroyEvent_GetWindow(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDestroyEvent_ctor(IntPtr type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDestroyEvent_GetWindow(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

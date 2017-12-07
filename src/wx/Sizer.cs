@@ -18,56 +18,56 @@ namespace wx
 {
 	public abstract class Sizer : Object
 	{
-		[DllImport("wx-c")] static extern void wxSizer_AddWindow(IntPtr self, IntPtr window, int proportion, int flag, int border, IntPtr userData);
-		[DllImport("wx-c")] static extern void wxSizer_AddSizer(IntPtr self, IntPtr sizer, int proportion, int flag, int border, IntPtr userData);
-		[DllImport("wx-c")] static extern void wxSizer_Add(IntPtr self, int width, int height, int proportion, int flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_AddWindow(IntPtr self, IntPtr window, int proportion, int flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_AddSizer(IntPtr self, IntPtr sizer, int proportion, int flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_Add(IntPtr self, int width, int height, int proportion, int flag, int border, IntPtr userData);
 
-		[DllImport("wx-c")] static extern void wxSizer_Fit(IntPtr self, IntPtr window, ref Size size);
-		[DllImport("wx-c")] static extern void wxSizer_FitInside(IntPtr self, IntPtr window);
-		[DllImport("wx-c")] static extern void wxSizer_Layout(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_Fit(IntPtr self, IntPtr window, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_FitInside(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_Layout(IntPtr self);
 
-		[DllImport("wx-c")] static extern void wxSizer_InsertWindow(IntPtr self, int before, IntPtr window, int option, uint flag, int border, IntPtr userData);
-		[DllImport("wx-c")] static extern void wxSizer_InsertSizer(IntPtr self, int before, IntPtr sizer, int option, uint flag, int border, IntPtr userData);
-		[DllImport("wx-c")] static extern void wxSizer_Insert(IntPtr self, int before, int width, int height, int option, uint flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_InsertWindow(IntPtr self, int before, IntPtr window, int option, uint flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_InsertSizer(IntPtr self, int before, IntPtr sizer, int option, uint flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_Insert(IntPtr self, int before, int width, int height, int option, uint flag, int border, IntPtr userData);
 
-		[DllImport("wx-c")] static extern void wxSizer_PrependWindow(IntPtr self, IntPtr window, int option, uint flag, int border, IntPtr userData);
-		[DllImport("wx-c")] static extern void wxSizer_PrependSizer(IntPtr self, IntPtr sizer, int option, uint flag, int border, IntPtr userData);
-		[DllImport("wx-c")] static extern void wxSizer_Prepend(IntPtr self, int width, int height, int option, uint flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_PrependWindow(IntPtr self, IntPtr window, int option, uint flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_PrependSizer(IntPtr self, IntPtr sizer, int option, uint flag, int border, IntPtr userData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_Prepend(IntPtr self, int width, int height, int option, uint flag, int border, IntPtr userData);
 
-		[DllImport("wx-c")] static extern bool wxSizer_RemoveWindow(IntPtr self, IntPtr window);
-		[DllImport("wx-c")] static extern bool wxSizer_RemoveSizer(IntPtr self, IntPtr sizer);
-		[DllImport("wx-c")] static extern bool wxSizer_Remove(IntPtr self, int pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_RemoveWindow(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_RemoveSizer(IntPtr self, IntPtr sizer);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_Remove(IntPtr self, int pos);
 
-		[DllImport("wx-c")] static extern void wxSizer_Clear(IntPtr self, bool delete_windows);
-		[DllImport("wx-c")] static extern void wxSizer_DeleteWindows(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_Clear(IntPtr self, bool delete_windows);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_DeleteWindows(IntPtr self);
 
-		[DllImport("wx-c")] static extern void wxSizer_SetMinSize(IntPtr self, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_SetMinSize(IntPtr self, ref Size size);
 
-		[DllImport("wx-c")] static extern bool wxSizer_SetItemMinSizeWindow(IntPtr self, IntPtr window, ref Size size);
-		[DllImport("wx-c")] static extern bool wxSizer_SetItemMinSizeSizer(IntPtr self, IntPtr sizer, ref Size size);
-		[DllImport("wx-c")] static extern bool wxSizer_SetItemMinSize(IntPtr self, int pos, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_SetItemMinSizeWindow(IntPtr self, IntPtr window, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_SetItemMinSizeSizer(IntPtr self, IntPtr sizer, ref Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_SetItemMinSize(IntPtr self, int pos, ref Size size);
 
-		[DllImport("wx-c")] static extern void wxSizer_GetSize(IntPtr self, out Size size);
-		[DllImport("wx-c")] static extern void wxSizer_GetPosition(IntPtr self, out Point pt);
-		[DllImport("wx-c")] static extern void wxSizer_GetMinSize(IntPtr self, out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_GetSize(IntPtr self, out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_GetPosition(IntPtr self, out Point pt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_GetMinSize(IntPtr self, out Size size);
 
-		[DllImport("wx-c")] static extern void wxSizer_RecalcSizes(IntPtr self);
-		[DllImport("wx-c")] static extern void wxSizer_CalcMin(IntPtr self, out Size size);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_RecalcSizes(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_CalcMin(IntPtr self, out Size size);
 
-		[DllImport("wx-c")] static extern void wxSizer_SetSizeHints(IntPtr self, IntPtr window);
-		[DllImport("wx-c")] static extern void wxSizer_SetVirtualSizeHints(IntPtr self, IntPtr window);
-		[DllImport("wx-c")] static extern void wxSizer_SetDimension(IntPtr self, int x, int y, int width, int height);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_SetSizeHints(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_SetVirtualSizeHints(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_SetDimension(IntPtr self, int x, int y, int width, int height);
 
-		[DllImport("wx-c")] static extern void wxSizer_ShowWindow(IntPtr self, IntPtr window, bool show);
-		[DllImport("wx-c")] static extern void wxSizer_HideWindow(IntPtr self, IntPtr window);
-		[DllImport("wx-c")] static extern void wxSizer_ShowSizer(IntPtr self, IntPtr sizer, bool show);
-		[DllImport("wx-c")] static extern void wxSizer_HideSizer(IntPtr self, IntPtr sizer);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_ShowWindow(IntPtr self, IntPtr window, bool show);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_HideWindow(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_ShowSizer(IntPtr self, IntPtr sizer, bool show);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizer_HideSizer(IntPtr self, IntPtr sizer);
 
-		[DllImport("wx-c")] static extern bool wxSizer_IsShownWindow(IntPtr self, IntPtr window);
-		[DllImport("wx-c")] static extern bool wxSizer_IsShownSizer(IntPtr self, IntPtr sizer);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_IsShownWindow(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_IsShownSizer(IntPtr self, IntPtr sizer);
 		
-		[DllImport("wx-c")] static extern bool wxSizer_Detach(IntPtr self, IntPtr window);
-		[DllImport("wx-c")] static extern bool wxSizer_Detach2(IntPtr self, IntPtr sizer);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_Detach(IntPtr self, IntPtr window);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxSizer_Detach2(IntPtr self, IntPtr sizer);
 		[DllImport("wx.c")] static extern bool wxSizer_Detach3(IntPtr self, int index);
 
 		//---------------------------------------------------------------------

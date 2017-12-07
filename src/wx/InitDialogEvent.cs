@@ -17,7 +17,7 @@ namespace wx
 {
 	public class InitDialogEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxInitDialogEvent_ctor(int Id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxInitDialogEvent_ctor(int Id);
 		
 		//-----------------------------------------------------------------------------
 

@@ -18,18 +18,18 @@ namespace wx
 {
     public class DirDialog : Dialog
     {
-        [DllImport("wx-c")] static extern IntPtr wxDirDialog_ctor(IntPtr parent, string message, string defaultPath, uint style, ref Point pos, ref Size size, string name);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDirDialog_ctor(IntPtr parent, string message, string defaultPath, uint style, ref Point pos, ref Size size, string name);
 
-        [DllImport("wx-c")] static extern void   wxDirDialog_SetPath(IntPtr self, string path);
-        [DllImport("wx-c")] static extern IntPtr wxDirDialog_GetPath(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDirDialog_SetPath(IntPtr self, string path);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDirDialog_GetPath(IntPtr self);
 
-        [DllImport("wx-c")] static extern int    wxDirDialog_GetStyle(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxDirDialog_SetStyle(IntPtr self, int style);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDirDialog_GetStyle(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDirDialog_SetStyle(IntPtr self, int style);
 
-        [DllImport("wx-c")] static extern void   wxDirDialog_SetMessage(IntPtr self, string message);
-        [DllImport("wx-c")] static extern IntPtr wxDirDialog_GetMessage(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxDirDialog_SetMessage(IntPtr self, string message);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDirDialog_GetMessage(IntPtr self);
 
-        [DllImport("wx-c")] static extern int    wxDirDialog_ShowModal(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxDirDialog_ShowModal(IntPtr self);
 
         //-----------------------------------------------------------------------------
 

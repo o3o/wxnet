@@ -18,54 +18,54 @@ namespace wx
 {
 	public class Choice : Control, IControlWithItems
 	{
-		[DllImport("wx-c")] static extern IntPtr wxChoice_ctor();
-		[DllImport("wx-c")] static extern bool   wxChoice_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, int n, string[] choices, uint style, IntPtr validator, string name);
-		[DllImport("wx-c")] static extern void   wxChoice_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChoice_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxChoice_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, int n, string[] choices, uint style, IntPtr validator, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxChoice_dtor(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxChoice_SetSelection(IntPtr self, int n);
-		[DllImport("wx-c")] static extern bool   wxChoice_SetStringSelection(IntPtr self, string s);
-		[DllImport("wx-c")] static extern IntPtr wxChoice_GetStringSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxChoice_SetSelection(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxChoice_SetStringSelection(IntPtr self, string s);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChoice_GetStringSelection(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxChoice_SetColumns(IntPtr self, int n);
-		[DllImport("wx-c")] static extern int    wxChoice_GetColumns(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxChoice_SetColumns(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxChoice_GetColumns(IntPtr self);
 
-		[DllImport("wx-c")] static extern void   wxChoice_Command(IntPtr self, IntPtr evt);
-		[DllImport("wx-c")] static extern int    wxChoice_GetCount(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxChoice_GetString(IntPtr self, int n);
-		[DllImport("wx-c")] static extern int    wxChoice_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxChoice_Command(IntPtr self, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxChoice_GetCount(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChoice_GetString(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxChoice_GetSelection(IntPtr self);
 
-		[DllImport("wx-c")] static extern IntPtr wxChoice_GetClientData(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxChoice_SetClientData(IntPtr self, int n, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChoice_GetClientData(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxChoice_SetClientData(IntPtr self, int n, IntPtr data);
 
-		[DllImport("wx-c")] static extern int    wxChoice_FindString(IntPtr self, string str);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxChoice_FindString(IntPtr self, string str);
 		
-		[DllImport("wx-c")] static extern void   wxChoice_Delete(IntPtr self, int n);
-		[DllImport("wx-c")] static extern void   wxChoice_Clear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxChoice_Delete(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxChoice_Clear(IntPtr self);
 
-		[DllImport("wx-c")] static extern int   wxChoice_Append(IntPtr self, string item);
-		[DllImport("wx-c")] static extern int   wxChoice_AppendData(IntPtr self, string item, IntPtr data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int   wxChoice_Append(IntPtr self, string item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int   wxChoice_AppendData(IntPtr self, string item, IntPtr data);
 		
-		[DllImport("wx-c")] static extern	void wxChoice_AppendString(IntPtr self, string item);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	void wxChoice_AppendString(IntPtr self, string item);
 		
-		[DllImport("wx-c")] static extern	void wxChoice_AppendArrayString(IntPtr self, int n, string[] strings);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	void wxChoice_AppendArrayString(IntPtr self, int n, string[] strings);
 		
-		[DllImport("wx-c")] static extern	int wxChoice_Insert(IntPtr self, string item, int pos);
-		[DllImport("wx-c")] static extern	int wxChoice_InsertClientData(IntPtr self, string item, int pos, IntPtr clientData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	int wxChoice_Insert(IntPtr self, string item, int pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	int wxChoice_InsertClientData(IntPtr self, string item, int pos, IntPtr clientData);
 		
-		[DllImport("wx-c")] static extern	IntPtr wxChoice_GetStrings(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	IntPtr wxChoice_GetStrings(IntPtr self);
 		
-		[DllImport("wx-c")] static extern	void wxChoice_SetClientObject(IntPtr self, int n, IntPtr clientData);
-		[DllImport("wx-c")] static extern	IntPtr wxChoice_GetClientObject(IntPtr self, int n);
-		[DllImport("wx-c")] static extern	bool wxChoice_HasClientObjectData(IntPtr self);
-		[DllImport("wx-c")] static extern	bool wxChoice_HasClientUntypedData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	void wxChoice_SetClientObject(IntPtr self, int n, IntPtr clientData);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	IntPtr wxChoice_GetClientObject(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	bool wxChoice_HasClientObjectData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	bool wxChoice_HasClientUntypedData(IntPtr self);
 		
-		[DllImport("wx-c")] static extern void wxChoice_SetString(IntPtr self, int n, string text);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxChoice_SetString(IntPtr self, int n, string text);
 		
-		[DllImport("wx-c")] static extern void wxChoice_Select(IntPtr self, int n);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxChoice_Select(IntPtr self, int n);
 		
-		[DllImport("wx-c")] static extern	bool wxChoice_ShouldInheritColours(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	bool wxChoice_ShouldInheritColours(IntPtr self);
 		
-		[DllImport("wx-c")] static extern	bool wxChoice_IsEmpty(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern	bool wxChoice_IsEmpty(IntPtr self);
 
 		//---------------------------------------------------------------------
 		

@@ -25,15 +25,15 @@ namespace wx
 
     public class Printer : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxPrinter_ctor(IntPtr data);
-        [DllImport("wx-c")] static extern IntPtr wxPrinter_CreateAbortWindow(IntPtr self, IntPtr parent, IntPtr printout);
-        [DllImport("wx-c")] static extern void   wxPrinter_ReportError(IntPtr self, IntPtr parent, IntPtr printout, string message);
-        [DllImport("wx-c")] static extern IntPtr wxPrinter_GetPrintDialogData(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxPrinter_GetAbort(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxPrinter_GetLastError(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxPrinter_Setup(IntPtr self, IntPtr parent);
-        [DllImport("wx-c")] static extern bool   wxPrinter_Print(IntPtr self, IntPtr parent, IntPtr printout, bool prompt);
-        [DllImport("wx-c")] static extern IntPtr wxPrinter_PrintDialog(IntPtr self, IntPtr parent);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrinter_ctor(IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrinter_CreateAbortWindow(IntPtr self, IntPtr parent, IntPtr printout);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrinter_ReportError(IntPtr self, IntPtr parent, IntPtr printout, string message);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrinter_GetPrintDialogData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrinter_GetAbort(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxPrinter_GetLastError(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrinter_Setup(IntPtr self, IntPtr parent);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrinter_Print(IntPtr self, IntPtr parent, IntPtr printout, bool prompt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrinter_PrintDialog(IntPtr self, IntPtr parent);
 
         //-----------------------------------------------------------------------------
 
@@ -120,29 +120,29 @@ namespace wx
 
         //-----------------------------------------------------------------------------
 
-        [DllImport("wx-c")] static extern IntPtr wxPrintout_ctor(string title);
-        [DllImport("wx-c")] static extern bool   wxPrintout_OnBeginDocument(IntPtr self, int startPage, int endPage);
-        [DllImport("wx-c")] static extern void   wxPrintout_OnEndDocument(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintout_OnBeginPrinting(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintout_OnEndPrinting(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintout_OnPreparePrinting(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxPrintout_HasPage(IntPtr self, int page);
-        [DllImport("wx-c")] static extern void   wxPrintout_GetPageInfo(IntPtr self, ref int minPage, ref int maxPage, ref int pageFrom, ref int pageTo);
-        [DllImport("wx-c")] static extern IntPtr wxPrintout_GetTitle(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxPrintout_GetDC(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintout_SetDC(IntPtr self, IntPtr dc);
-        [DllImport("wx-c")] static extern void   wxPrintout_SetPageSizePixels(IntPtr self, int w, int h);
-        [DllImport("wx-c")] static extern void   wxPrintout_GetPageSizePixels(IntPtr self, ref int w, ref int h);
-        [DllImport("wx-c")] static extern void   wxPrintout_SetPageSizeMM(IntPtr self, int w, int h);
-        [DllImport("wx-c")] static extern void   wxPrintout_GetPageSizeMM(IntPtr self, ref int w, ref int h);
-        [DllImport("wx-c")] static extern void   wxPrintout_SetPPIScreen(IntPtr self, int x, int y);
-        [DllImport("wx-c")] static extern void   wxPrintout_GetPPIScreen(IntPtr self, ref int x, ref int y);
-        [DllImport("wx-c")] static extern void   wxPrintout_SetPPIPrinter(IntPtr self, int x, int y);
-        [DllImport("wx-c")] static extern void   wxPrintout_GetPPIPrinter(IntPtr self, ref int x, ref int y);
-        [DllImport("wx-c")] static extern bool   wxPrintout_IsPreview(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxPrintout_SetIsPreview(IntPtr self, bool p);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintout_ctor(string title);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintout_OnBeginDocument(IntPtr self, int startPage, int endPage);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_OnEndDocument(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_OnBeginPrinting(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_OnEndPrinting(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_OnPreparePrinting(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintout_HasPage(IntPtr self, int page);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_GetPageInfo(IntPtr self, ref int minPage, ref int maxPage, ref int pageFrom, ref int pageTo);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintout_GetTitle(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintout_GetDC(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_SetDC(IntPtr self, IntPtr dc);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_SetPageSizePixels(IntPtr self, int w, int h);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_GetPageSizePixels(IntPtr self, ref int w, ref int h);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_SetPageSizeMM(IntPtr self, int w, int h);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_GetPageSizeMM(IntPtr self, ref int w, ref int h);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_SetPPIScreen(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_GetPPIScreen(IntPtr self, ref int x, ref int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_SetPPIPrinter(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_GetPPIPrinter(IntPtr self, ref int x, ref int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxPrintout_IsPreview(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_SetIsPreview(IntPtr self, bool p);
 
-        [DllImport("wx-c")] static extern void   wxPrintout_RegisterVirtual(IntPtr self, Virtual_OnBeginDocument onBeginDocument, Virtual_NoParams onEndDocument, Virtual_NoParams onBeginPrinting, Virtual_NoParams onEndPrinting, Virtual_NoParams onPreparePrinting, Virtual_ParamsInt hasPage, Virtual_ParamsInt onPrintPage, Virtual_GetPageInfo getPageInfo);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxPrintout_RegisterVirtual(IntPtr self, Virtual_OnBeginDocument onBeginDocument, Virtual_NoParams onEndDocument, Virtual_NoParams onBeginPrinting, Virtual_NoParams onEndPrinting, Virtual_NoParams onPreparePrinting, Virtual_ParamsInt hasPage, Virtual_ParamsInt onPrintPage, Virtual_GetPageInfo getPageInfo);
 
         //-----------------------------------------------------------------------------
 

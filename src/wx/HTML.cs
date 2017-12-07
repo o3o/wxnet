@@ -56,51 +56,51 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_ctor();
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_RegisterVirtual(IntPtr self, 
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_RegisterVirtual(IntPtr self, 
 			Virtual_OnLinkClicked onLinkClicked,
 			Virtual_OnSetTitle onSetTitle,
 			Virtual_OnCellMouseHover onCellMouseHover,
 			Virtual_OnCellClicked onCellClicked,
 			Virtual_OnOpeningURL onOpeningURL);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_SetPage(IntPtr self, string source);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_AppendToPage(IntPtr self, string source);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_LoadPage(IntPtr self, string location);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_LoadFile(IntPtr self, string filename);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_GetOpenedPage(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_GetOpenedAnchor(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_GetOpenedPageTitle(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_SetRelatedFrame(IntPtr self, IntPtr frame, string format);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_GetRelatedFrame(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_SetRelatedStatusBar(IntPtr self, int bar);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_SetFonts(IntPtr self, string normal_face, string fixed_face, int[] sizes);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_SetBorders(IntPtr self, int b);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_ReadCustomization(IntPtr self, IntPtr cfg, string path);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_WriteCustomization(IntPtr self, IntPtr cfg, string path);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_HistoryBack(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_HistoryForward(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_HistoryCanBack(IntPtr self);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_HistoryCanForward(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_HistoryClear(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_GetInternalRepresentation(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_AddFilter(IntPtr filter);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_GetParser(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_AddProcessor(IntPtr self, IntPtr processor);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_AddGlobalProcessor(IntPtr processor);
-		[DllImport("wx-c")] static extern bool   wxHtmlWindow_AcceptsFocusFromKeyboard(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_OnSetTitle(IntPtr self, string title);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_OnCellClicked(IntPtr self, IntPtr cell, int x, int y, IntPtr evt);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_OnLinkClicked(IntPtr self, IntPtr link);
-		[DllImport("wx-c")] static extern int    wxHtmlWindow_OnOpeningURL(IntPtr self, int type, string url, string redirect);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_Create(IntPtr self, IntPtr parent, int id, ref Point pos, ref Size size, uint style, string name);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_SetPage(IntPtr self, string source);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_AppendToPage(IntPtr self, string source);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_LoadPage(IntPtr self, string location);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_LoadFile(IntPtr self, string filename);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_GetOpenedPage(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_GetOpenedAnchor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_GetOpenedPageTitle(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_SetRelatedFrame(IntPtr self, IntPtr frame, string format);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_GetRelatedFrame(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_SetRelatedStatusBar(IntPtr self, int bar);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_SetFonts(IntPtr self, string normal_face, string fixed_face, int[] sizes);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_SetBorders(IntPtr self, int b);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_ReadCustomization(IntPtr self, IntPtr cfg, string path);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_WriteCustomization(IntPtr self, IntPtr cfg, string path);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_HistoryBack(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_HistoryForward(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_HistoryCanBack(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_HistoryCanForward(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_HistoryClear(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_GetInternalRepresentation(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_AddFilter(IntPtr filter);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_GetParser(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_AddProcessor(IntPtr self, IntPtr processor);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_AddGlobalProcessor(IntPtr processor);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlWindow_AcceptsFocusFromKeyboard(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_OnSetTitle(IntPtr self, string title);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_OnCellClicked(IntPtr self, IntPtr cell, int x, int y, IntPtr evt);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_OnLinkClicked(IntPtr self, IntPtr link);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWindow_OnOpeningURL(IntPtr self, int type, string url, string redirect);
 		
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_SelectAll(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_SelectWord(IntPtr self, ref Point pos);
-		[DllImport("wx-c")] static extern void   wxHtmlWindow_SelectLine(IntPtr self, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_SelectAll(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_SelectWord(IntPtr self, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWindow_SelectLine(IntPtr self, ref Point pos);
 		
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_ToText(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_ToText(IntPtr self);
 		
-		[DllImport("wx-c")] static extern IntPtr wxHtmlWindow_SelectionToText(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWindow_SelectionToText(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 
@@ -425,9 +425,9 @@ namespace wx
 
 	public class HtmlFontCell : HtmlCell
 	{
-		[DllImport("wx-c")] static extern IntPtr wxHtmlFontCell_ctor(IntPtr font);
-		[DllImport("wx-c")] static extern void   wxHtmlFontCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
-		[DllImport("wx-c")] static extern void   wxHtmlFontCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlFontCell_ctor(IntPtr font);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlFontCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlFontCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
 
 		//-----------------------------------------------------------------------------
 
@@ -456,9 +456,9 @@ namespace wx
 
 	public class HtmlColourCell : HtmlCell
 	{
-		[DllImport("wx-c")] static extern IntPtr wxHtmlColourCell_ctor(IntPtr clr, int flags);
-		[DllImport("wx-c")] static extern void   wxHtmlColourCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
-		[DllImport("wx-c")] static extern void   wxHtmlColourCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlColourCell_ctor(IntPtr clr, int flags);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlColourCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlColourCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
 
 		//-----------------------------------------------------------------------------
 
@@ -487,15 +487,15 @@ namespace wx
 
 	public class HtmlLinkInfo : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxHtmlLinkInfo_ctor();
-		[DllImport("wx-c")] static extern IntPtr wxHtmlLinkInfo_ctor(string href, string target);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlLinkInfo_ctor(IntPtr l);
-		[DllImport("wx-c")] static extern void   wxHtmlLinkInfo_SetEvent(IntPtr self, IntPtr e);
-		[DllImport("wx-c")] static extern void   wxHtmlLinkInfo_SetHtmlCell(IntPtr self, IntPtr e);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlLinkInfo_GetHref(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlLinkInfo_GetTarget(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlLinkInfo_GetEvent(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlLinkInfo_GetHtmlCell(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlLinkInfo_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlLinkInfo_ctor(string href, string target);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlLinkInfo_ctor(IntPtr l);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlLinkInfo_SetEvent(IntPtr self, IntPtr e);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlLinkInfo_SetHtmlCell(IntPtr self, IntPtr e);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlLinkInfo_GetHref(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlLinkInfo_GetTarget(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlLinkInfo_GetEvent(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlLinkInfo_GetHtmlCell(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 		
@@ -550,10 +550,10 @@ namespace wx
 
     public class HtmlWidgetCell : HtmlCell
     {
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWidgetCell_ctor(IntPtr wnd, int w);
-        [DllImport("wx-c")] static extern void   wxHtmlWidgetCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
-        [DllImport("wx-c")] static extern void   wxHtmlWidgetCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
-        [DllImport("wx-c")] static extern void   wxHtmlWidgetCell_Layout(IntPtr self, int w);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWidgetCell_ctor(IntPtr wnd, int w);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWidgetCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWidgetCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWidgetCell_Layout(IntPtr self, int w);
 
         //-----------------------------------------------------------------------------
 
@@ -589,30 +589,30 @@ namespace wx
 
     public class HtmlCell : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxHtmlCell_ctor();
-        [DllImport("wx-c")] static extern void   wxHtmlCell_SetParent(IntPtr self, IntPtr p);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlCell_GetParent(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlCell_GetPosX(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlCell_GetPosY(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlCell_GetWidth(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlCell_GetHeight(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlCell_GetDescent(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlCell_GetId(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_SetId(IntPtr self, string id);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlCell_GetNext(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_SetPos(IntPtr self, int x, int y);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_SetLink(IntPtr self, IntPtr link);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_SetNext(IntPtr self, IntPtr cell);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_Layout(IntPtr self, int w);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlCell_Find(IntPtr self, int condition, IntPtr param);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_OnMouseClick(IntPtr self, IntPtr parent, int x, int y, IntPtr evt);
-        [DllImport("wx-c")] static extern bool   wxHtmlCell_AdjustPagebreak(IntPtr self, ref int pagebreak);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_SetCanLiveOnPagebreak(IntPtr self, bool can);
-        [DllImport("wx-c")] static extern void   wxHtmlCell_GetHorizontalConstraints(IntPtr self, ref int left, ref int right);
-        [DllImport("wx-c")] static extern bool   wxHtmlCell_IsTerminalCell(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlCell_FindCellByPos(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlCell_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_SetParent(IntPtr self, IntPtr p);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlCell_GetParent(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlCell_GetPosX(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlCell_GetPosY(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlCell_GetWidth(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlCell_GetHeight(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlCell_GetDescent(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlCell_GetId(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_SetId(IntPtr self, string id);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlCell_GetNext(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_SetPos(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_SetLink(IntPtr self, IntPtr link);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_SetNext(IntPtr self, IntPtr cell);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_Layout(IntPtr self, int w);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlCell_Find(IntPtr self, int condition, IntPtr param);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_OnMouseClick(IntPtr self, IntPtr parent, int x, int y, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlCell_AdjustPagebreak(IntPtr self, ref int pagebreak);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_SetCanLiveOnPagebreak(IntPtr self, bool can);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlCell_GetHorizontalConstraints(IntPtr self, ref int left, ref int right);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlCell_IsTerminalCell(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlCell_FindCellByPos(IntPtr self, int x, int y);
 
         //-----------------------------------------------------------------------------
 
@@ -772,8 +772,8 @@ namespace wx
 
     public class HtmlWordCell : HtmlCell
     {
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWordCell_ctor(string word, IntPtr dc);
-        [DllImport("wx-c")] static extern void   wxHtmlWordCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWordCell_ctor(string word, IntPtr dc);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWordCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
 
         //-----------------------------------------------------------------------------
 
@@ -795,33 +795,33 @@ namespace wx
 
     public class HtmlContainerCell : HtmlCell
     {
-        [DllImport("wx-c")] static extern IntPtr wxHtmlContainerCell_ctor(IntPtr parent);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_Layout(IntPtr self, int w);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
-        [DllImport("wx-c")] static extern bool   wxHtmlContainerCell_AdjustPagebreak(IntPtr self, ref int pagebreak);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_InsertCell(IntPtr self, IntPtr cell);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetAlignHor(IntPtr self, int al);
-        [DllImport("wx-c")] static extern int    wxHtmlContainerCell_GetAlignHor(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetAlignVer(IntPtr self, int al);
-        [DllImport("wx-c")] static extern int    wxHtmlContainerCell_GetAlignVer(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetIndent(IntPtr self, int i, int what, int units);
-        [DllImport("wx-c")] static extern int    wxHtmlContainerCell_GetIndent(IntPtr self, int ind);
-        [DllImport("wx-c")] static extern int    wxHtmlContainerCell_GetIndentUnits(IntPtr self, int ind);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetAlign(IntPtr self, IntPtr tag);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetWidthFloat(IntPtr self, int w, int units);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetWidthFloatTag(IntPtr self, IntPtr tag, double pixel_scale);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetMinHeight(IntPtr self, int h, int align);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetBackgroundColour(IntPtr self, IntPtr clr);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlContainerCell_GetBackgroundColour(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_SetBorder(IntPtr self, IntPtr clr1, IntPtr clr2);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlContainerCell_GetLink(IntPtr self, int x, int y);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlContainerCell_Find(IntPtr self, int condition, IntPtr param);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_OnMouseClick(IntPtr self, IntPtr parent, int x, int y, IntPtr evt);
-        [DllImport("wx-c")] static extern void   wxHtmlContainerCell_GetHorizontalConstraints(IntPtr self, ref int left, ref int right);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlContainerCell_GetFirstCell(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxHtmlContainerCell_IsTerminalCell(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlContainerCell_FindCellByPos(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlContainerCell_ctor(IntPtr parent);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_Layout(IntPtr self, int w);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_Draw(IntPtr self, IntPtr dc, int x, int y, int view_y1, int view_y2, IntPtr info);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_DrawInvisible(IntPtr self, IntPtr dc, int x, int y, IntPtr info);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlContainerCell_AdjustPagebreak(IntPtr self, ref int pagebreak);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_InsertCell(IntPtr self, IntPtr cell);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetAlignHor(IntPtr self, int al);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlContainerCell_GetAlignHor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetAlignVer(IntPtr self, int al);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlContainerCell_GetAlignVer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetIndent(IntPtr self, int i, int what, int units);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlContainerCell_GetIndent(IntPtr self, int ind);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlContainerCell_GetIndentUnits(IntPtr self, int ind);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetAlign(IntPtr self, IntPtr tag);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetWidthFloat(IntPtr self, int w, int units);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetWidthFloatTag(IntPtr self, IntPtr tag, double pixel_scale);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetMinHeight(IntPtr self, int h, int align);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetBackgroundColour(IntPtr self, IntPtr clr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlContainerCell_GetBackgroundColour(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_SetBorder(IntPtr self, IntPtr clr1, IntPtr clr2);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlContainerCell_GetLink(IntPtr self, int x, int y);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlContainerCell_Find(IntPtr self, int condition, IntPtr param);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_OnMouseClick(IntPtr self, IntPtr parent, int x, int y, IntPtr evt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlContainerCell_GetHorizontalConstraints(IntPtr self, ref int left, ref int right);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlContainerCell_GetFirstCell(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlContainerCell_IsTerminalCell(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlContainerCell_FindCellByPos(IntPtr self, int x, int y);
 
         //-----------------------------------------------------------------------------
 
@@ -995,25 +995,25 @@ namespace wx
 
     public class HtmlTag : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetParent(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetFirstSibling(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetLastSibling(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetChildren(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetPreviousSibling(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetNextSibling(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetNextTag(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetName(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxHtmlTag_HasParam(IntPtr self, string par);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetParam(IntPtr self, string par, bool with_commas);
-        [DllImport("wx-c")] static extern bool   wxHtmlTag_GetParamAsColour(IntPtr self, string par, IntPtr clr);
-        [DllImport("wx-c")] static extern bool   wxHtmlTag_GetParamAsInt(IntPtr self, string par, ref int clr);
-        [DllImport("wx-c")] static extern int    wxHtmlTag_ScanParam(IntPtr self, string par, string format, IntPtr param);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTag_GetAllParams(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxHtmlTag_IsEnding(IntPtr self);
-        [DllImport("wx-c")] static extern bool   wxHtmlTag_HasEnding(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlTag_GetBeginPos(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlTag_GetEndPos1(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlTag_GetEndPos2(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetParent(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetFirstSibling(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetLastSibling(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetChildren(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetPreviousSibling(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetNextSibling(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetNextTag(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetName(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlTag_HasParam(IntPtr self, string par);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetParam(IntPtr self, string par, bool with_commas);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlTag_GetParamAsColour(IntPtr self, string par, IntPtr clr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlTag_GetParamAsInt(IntPtr self, string par, ref int clr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlTag_ScanParam(IntPtr self, string par, string format, IntPtr param);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTag_GetAllParams(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlTag_IsEnding(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlTag_HasEnding(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlTag_GetBeginPos(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlTag_GetEndPos1(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlTag_GetEndPos2(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -1161,8 +1161,8 @@ namespace wx
 
     public class HtmlFilterPlainText : HtmlFilter
     {
-        [DllImport("wx-c")] static extern bool   wxHtmlFilterPlainText_CanRead(IntPtr self, IntPtr file);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlFilterPlainText_ReadFile(IntPtr self, IntPtr file);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlFilterPlainText_CanRead(IntPtr self, IntPtr file);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlFilterPlainText_ReadFile(IntPtr self, IntPtr file);
 
         //-----------------------------------------------------------------------------
 
@@ -1188,8 +1188,8 @@ namespace wx
 
     public class HtmlFilterHTML : HtmlFilter
     {
-        [DllImport("wx-c")] static extern bool   wxHtmlFilterHTML_CanRead(IntPtr self, IntPtr file);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlFilterHTML_ReadFile(IntPtr self, IntPtr file);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlFilterHTML_CanRead(IntPtr self, IntPtr file);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlFilterHTML_ReadFile(IntPtr self, IntPtr file);
 
         //-----------------------------------------------------------------------------
 
@@ -1215,10 +1215,10 @@ namespace wx
 
     public class HtmlTagsModule : Object // TODO: Module
     {
-        [DllImport("wx-c")] static extern IntPtr wxHtmlTagsModule_ctor();
-        [DllImport("wx-c")] static extern bool   wxHtmlTagsModule_OnInit(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlTagsModule_OnExit(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlTagsModule_FillHandlersTable(IntPtr self, IntPtr parser);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlTagsModule_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlTagsModule_OnInit(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlTagsModule_OnExit(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlTagsModule_FillHandlersTable(IntPtr self, IntPtr parser);
 
         //-----------------------------------------------------------------------------
 
@@ -1262,45 +1262,45 @@ namespace wx
 
     public class HtmlWinParser : HtmlParser
     {
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_ctor(IntPtr wnd);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_InitParser(IntPtr self, string source);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_DoneParser(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_GetProduct(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_OpenURL(IntPtr self, int type, string url);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetDC(IntPtr self, IntPtr dc, double pixel_scale);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_GetDC(IntPtr self);
-        [DllImport("wx-c")] static extern double wxHtmlWinParser_GetPixelScale(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlWinParser_GetCharHeight(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlWinParser_GetCharWidth(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_GetWindow(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetFonts(IntPtr self, string normal_face, string fixed_face, int[] sizes);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_AddModule(IntPtr self, IntPtr module);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_RemoveModule(IntPtr self, IntPtr module);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_GetContainer(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_OpenContainer(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_SetContainer(IntPtr self, IntPtr c);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_CloseContainer(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxHtmlWinParser_GetFontSize(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetFontSize(IntPtr self, int s);
-        [DllImport("wx-c")] static extern int    wxHtmlWinParser_GetFontBold(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetFontBold(IntPtr self, int x);
-        [DllImport("wx-c")] static extern int    wxHtmlWinParser_GetFontItalic(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetFontItalic(IntPtr self, int x);
-        [DllImport("wx-c")] static extern int    wxHtmlWinParser_GetFontUnderlined(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetFontUnderlined(IntPtr self, int x);
-        [DllImport("wx-c")] static extern int    wxHtmlWinParser_GetFontFixed(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetFontFixed(IntPtr self, int x);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_GetFontFace(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetFontFace(IntPtr self, string face);
-        [DllImport("wx-c")] static extern int    wxHtmlWinParser_GetAlign(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetAlign(IntPtr self, int a);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_GetLinkColor(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetLinkColor(IntPtr self, IntPtr clr);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_GetActualColor(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetActualColor(IntPtr self, IntPtr clr);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_GetLink(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlWinParser_SetLink(IntPtr self, IntPtr link);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlWinParser_CreateCurrentFont(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_ctor(IntPtr wnd);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_InitParser(IntPtr self, string source);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_DoneParser(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_GetProduct(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_OpenURL(IntPtr self, int type, string url);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetDC(IntPtr self, IntPtr dc, double pixel_scale);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_GetDC(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern double wxHtmlWinParser_GetPixelScale(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWinParser_GetCharHeight(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWinParser_GetCharWidth(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_GetWindow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetFonts(IntPtr self, string normal_face, string fixed_face, int[] sizes);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_AddModule(IntPtr self, IntPtr module);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_RemoveModule(IntPtr self, IntPtr module);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_GetContainer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_OpenContainer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_SetContainer(IntPtr self, IntPtr c);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_CloseContainer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWinParser_GetFontSize(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetFontSize(IntPtr self, int s);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWinParser_GetFontBold(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetFontBold(IntPtr self, int x);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWinParser_GetFontItalic(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetFontItalic(IntPtr self, int x);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWinParser_GetFontUnderlined(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetFontUnderlined(IntPtr self, int x);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWinParser_GetFontFixed(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetFontFixed(IntPtr self, int x);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_GetFontFace(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetFontFace(IntPtr self, string face);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlWinParser_GetAlign(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetAlign(IntPtr self, int a);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_GetLinkColor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetLinkColor(IntPtr self, IntPtr clr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_GetActualColor(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetActualColor(IntPtr self, IntPtr clr);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_GetLink(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlWinParser_SetLink(IntPtr self, IntPtr link);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlWinParser_CreateCurrentFont(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -1501,7 +1501,7 @@ namespace wx
 
     public abstract class HtmlTagHandler : Object
     {
-        [DllImport("wx-c")] static extern void   wxHtmlTagHandler_SetParser(IntPtr self, IntPtr parser);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlTagHandler_SetParser(IntPtr self, IntPtr parser);
 
         //-----------------------------------------------------------------------------
 
@@ -1525,11 +1525,11 @@ namespace wx
 
     public class HtmlEntitiesParser : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxHtmlEntitiesParser_ctor();
-        [DllImport("wx-c")] static extern void   wxHtmlEntitiesParser_SetEncoding(IntPtr self, int encoding);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlEntitiesParser_Parse(IntPtr self, string input);
-        [DllImport("wx-c")] static extern char   wxHtmlEntitiesParser_GetEntityChar(IntPtr self, string entity);
-        [DllImport("wx-c")] static extern char   wxHtmlEntitiesParser_GetCharForCode(IntPtr self, uint code);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlEntitiesParser_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlEntitiesParser_SetEncoding(IntPtr self, int encoding);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlEntitiesParser_Parse(IntPtr self, string input);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern char   wxHtmlEntitiesParser_GetEntityChar(IntPtr self, string entity);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern char   wxHtmlEntitiesParser_GetCharForCode(IntPtr self, uint code);
 
         //-----------------------------------------------------------------------------
 
@@ -1570,24 +1570,24 @@ namespace wx
 
     public abstract class HtmlParser : Object
     {
-        [DllImport("wx-c")] static extern void   wxHtmlParser_SetFS(IntPtr self, IntPtr fs);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlParser_GetFS(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlParser_OpenURL(IntPtr self, int type, string url);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlParser_Parse(IntPtr self, string source);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_InitParser(IntPtr self, string source);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_DoneParser(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_StopParsing(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_DoParsing(IntPtr self, int begin_pos, int end_pos);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_DoParsingAll(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlParser_GetCurrentTag(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_AddTagHandler(IntPtr self, IntPtr handler);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_PushTagHandler(IntPtr self, IntPtr handler, string tags);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_PopTagHandler(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlParser_GetSource(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_SetSource(IntPtr self, string src);
-        [DllImport("wx-c")] static extern void   wxHtmlParser_SetSourceAndSaveState(IntPtr self, string src);
-        [DllImport("wx-c")] static extern bool   wxHtmlParser_RestoreState(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxHtmlParser_ExtractCharsetInformation(IntPtr self, string markup);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_SetFS(IntPtr self, IntPtr fs);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlParser_GetFS(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlParser_OpenURL(IntPtr self, int type, string url);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlParser_Parse(IntPtr self, string source);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_InitParser(IntPtr self, string source);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_DoneParser(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_StopParsing(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_DoParsing(IntPtr self, int begin_pos, int end_pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_DoParsingAll(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlParser_GetCurrentTag(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_AddTagHandler(IntPtr self, IntPtr handler);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_PushTagHandler(IntPtr self, IntPtr handler, string tags);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_PopTagHandler(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlParser_GetSource(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_SetSource(IntPtr self, string src);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlParser_SetSourceAndSaveState(IntPtr self, string src);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlParser_RestoreState(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlParser_ExtractCharsetInformation(IntPtr self, string markup);
 
         //-----------------------------------------------------------------------------
 
@@ -1719,9 +1719,9 @@ namespace wx
 
     public abstract class HtmlProcessor : Object
     {
-        [DllImport("wx-c")] static extern int    wxHtmlProcessor_GetPriority(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxHtmlProcessor_Enable(IntPtr self, bool enable);
-        [DllImport("wx-c")] static extern bool   wxHtmlProcessor_IsEnabled(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxHtmlProcessor_GetPriority(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlProcessor_Enable(IntPtr self, bool enable);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlProcessor_IsEnabled(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -1752,10 +1752,10 @@ namespace wx
     
 	public class HtmlRenderingInfo : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxHtmlRenderingInfo_ctor();
-		[DllImport("wx-c")] static extern void wxHtmlRenderingInfo_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxHtmlRenderingInfo_SetSelection(IntPtr self, IntPtr s);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlRenderingInfo_GetSelection(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlRenderingInfo_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlRenderingInfo_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlRenderingInfo_SetSelection(IntPtr self, IntPtr s);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlRenderingInfo_GetSelection(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 		
@@ -1818,20 +1818,20 @@ namespace wx
 	
 	public class HtmlSelection : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxHtmlSelection_ctor();
-		[DllImport("wx-c")] static extern void wxHtmlSelection_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_Set(IntPtr self, ref Point fromPos, IntPtr fromCell, ref Point toPos, IntPtr toCell);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_Set2(IntPtr self, IntPtr fromCell, IntPtr toCell);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlSelection_GetFromCell(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlSelection_GetToCell(IntPtr self);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_GetFromPos(IntPtr self, out Point fromPos);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_GetToPos(IntPtr self, out Point toPos);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_GetFromPrivPos(IntPtr self, out Point fromPrivPos);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_GetToPrivPos(IntPtr self, out Point toPrivPos);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_SetFromPrivPos(IntPtr self, ref Point pos);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_SetToPrivPos(IntPtr self, ref Point pos);
-		[DllImport("wx-c")] static extern void wxHtmlSelection_ClearPrivPos(IntPtr self);
-		[DllImport("wx-c")] static extern bool wxHtmlSelection_IsEmpty(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlSelection_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_Set(IntPtr self, ref Point fromPos, IntPtr fromCell, ref Point toPos, IntPtr toCell);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_Set2(IntPtr self, IntPtr fromCell, IntPtr toCell);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlSelection_GetFromCell(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlSelection_GetToCell(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_GetFromPos(IntPtr self, out Point fromPos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_GetToPos(IntPtr self, out Point toPos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_GetFromPrivPos(IntPtr self, out Point fromPrivPos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_GetToPrivPos(IntPtr self, out Point toPrivPos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_SetFromPrivPos(IntPtr self, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_SetToPrivPos(IntPtr self, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxHtmlSelection_ClearPrivPos(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxHtmlSelection_IsEmpty(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 
@@ -1974,19 +1974,19 @@ namespace wx
 		
 		//-----------------------------------------------------------------------------
 	
-		[DllImport("wx-c")] static extern IntPtr wxHtmlEasyPrinting_ctor(string name, IntPtr parent);
-		[DllImport("wx-c")] static extern bool   wxHtmlEasyPrinting_PreviewFile(IntPtr self, string htmlfile);
-		[DllImport("wx-c")] static extern bool   wxHtmlEasyPrinting_PreviewText(IntPtr self, string htmltext, string basepath);
-		[DllImport("wx-c")] static extern bool   wxHtmlEasyPrinting_PrintFile(IntPtr self, string htmlfile);
-		[DllImport("wx-c")] static extern bool   wxHtmlEasyPrinting_PrintText(IntPtr self, string htmltext, string basepath);
-		//[DllImport("wx-c")] static extern void   wxHtmlEasyPrinting_PrinterSetup(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlEasyPrinting_PageSetup(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxHtmlEasyPrinting_SetHeader(IntPtr self, string header, int pg);
-		[DllImport("wx-c")] static extern void   wxHtmlEasyPrinting_SetFooter(IntPtr self, string footer, int pg);
-		[DllImport("wx-c")] static extern void   wxHtmlEasyPrinting_SetFonts(IntPtr self, string normal_face, string fixed_face, int[] sizes);
-		[DllImport("wx-c")] static extern void   wxHtmlEasyPrinting_SetStandardFonts(IntPtr self, int size, string normal_face, string fixed_face);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlEasyPrinting_GetPrintData(IntPtr self);
-		[DllImport("wx-c")] static extern IntPtr wxHtmlEasyPrinting_GetPageSetupData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlEasyPrinting_ctor(string name, IntPtr parent);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlEasyPrinting_PreviewFile(IntPtr self, string htmlfile);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlEasyPrinting_PreviewText(IntPtr self, string htmltext, string basepath);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlEasyPrinting_PrintFile(IntPtr self, string htmlfile);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxHtmlEasyPrinting_PrintText(IntPtr self, string htmltext, string basepath);
+		//[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlEasyPrinting_PrinterSetup(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlEasyPrinting_PageSetup(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlEasyPrinting_SetHeader(IntPtr self, string header, int pg);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlEasyPrinting_SetFooter(IntPtr self, string footer, int pg);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlEasyPrinting_SetFonts(IntPtr self, string normal_face, string fixed_face, int[] sizes);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxHtmlEasyPrinting_SetStandardFonts(IntPtr self, int size, string normal_face, string fixed_face);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlEasyPrinting_GetPrintData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxHtmlEasyPrinting_GetPageSetupData(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 		

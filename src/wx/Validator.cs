@@ -17,7 +17,7 @@ namespace wx
 {
 	public class Validator : EvtHandler
 	{
-		[DllImport("wx-c")] static extern IntPtr wxValidator_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxValidator_ctor();
 		
 		//---------------------------------------------------------------------
 		

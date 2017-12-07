@@ -17,12 +17,12 @@ namespace wx
 {
 	public class SetCursorEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr	wxSetCursorEvent_ctor(int type);
-		[DllImport("wx-c")] static extern int		wxSetCursorEvent_GetX(IntPtr self);
-		[DllImport("wx-c")] static extern int		wxSetCursorEvent_GetY(IntPtr self);
-		[DllImport("wx-c")] static extern void		wxSetCursorEvent_SetCursor(IntPtr self, IntPtr cursor);
-		[DllImport("wx-c")] static extern IntPtr	wxSetCursorEvent_GetCursor(IntPtr self);
-		[DllImport("wx-c")] static extern bool		wxSetCursorEvent_HasCursor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr	wxSetCursorEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int		wxSetCursorEvent_GetX(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int		wxSetCursorEvent_GetY(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void		wxSetCursorEvent_SetCursor(IntPtr self, IntPtr cursor);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr	wxSetCursorEvent_GetCursor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool		wxSetCursorEvent_HasCursor(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

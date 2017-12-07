@@ -18,9 +18,9 @@ namespace wx
 {
 	public class ContextMenuEvent : CommandEvent
 	{
-		[DllImport("wx-c")] static extern IntPtr wxContextMenuEvent_ctor(int type);
-		[DllImport("wx-c")] static extern void   wxContextMenuEvent_GetPosition(IntPtr self, ref Point pos);
-		[DllImport("wx-c")] static extern void   wxContextMenuEvent_SetPosition(IntPtr self, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxContextMenuEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxContextMenuEvent_GetPosition(IntPtr self, ref Point pos);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxContextMenuEvent_SetPosition(IntPtr self, ref Point pos);
 		
 		//-----------------------------------------------------------------------------
 

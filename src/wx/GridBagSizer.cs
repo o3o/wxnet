@@ -12,25 +12,25 @@ namespace wx
 {
     public class GBSizerItem : SizerItem
     {
-        [DllImport("wx-c")] static extern IntPtr wxGBSizerItem_ctor(int width, int height, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern IntPtr wxGBSizerItem_ctorWindow(IntPtr window, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern IntPtr wxGBSizerItem_ctorSizer(IntPtr sizer, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern IntPtr wxGBSizerItem_ctorDefault();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSizerItem_ctor(int width, int height, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSizerItem_ctorWindow(IntPtr window, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSizerItem_ctorSizer(IntPtr sizer, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSizerItem_ctorDefault();
 
-        [DllImport("wx-c")] static extern IntPtr wxGBSizerItem_GetPos(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSizerItem_GetPos(IntPtr self);
 
-        [DllImport("wx-c")] static extern IntPtr wxGBSizerItem_GetSpan(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGBSizerItem_GetSpan(IntPtr self, IntPtr rowspan, IntPtr colspan);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSizerItem_GetSpan(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGBSizerItem_GetSpan(IntPtr self, IntPtr rowspan, IntPtr colspan);
 
-        [DllImport("wx-c")] static extern bool   wxGBSizerItem_SetPos(IntPtr self, IntPtr pos);
-        [DllImport("wx-c")] static extern bool   wxGBSizerItem_SetSpan(IntPtr self, IntPtr span);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGBSizerItem_SetPos(IntPtr self, IntPtr pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGBSizerItem_SetSpan(IntPtr self, IntPtr span);
 
-        [DllImport("wx-c")] static extern bool   wxGBSizerItem_IntersectsSizer(IntPtr self, IntPtr other);
-        [DllImport("wx-c")] static extern bool   wxGBSizerItem_IntersectsSpan(IntPtr self, IntPtr pos, IntPtr span);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGBSizerItem_IntersectsSizer(IntPtr self, IntPtr other);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGBSizerItem_IntersectsSpan(IntPtr self, IntPtr pos, IntPtr span);
 
-        [DllImport("wx-c")] static extern void   wxGBSizerItem_GetEndPos(IntPtr self, ref int row, ref int col);
-        [DllImport("wx-c")] static extern IntPtr wxGBSizerItem_GetGBSizer(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGBSizerItem_SetGBSizer(IntPtr self, IntPtr sizer);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGBSizerItem_GetEndPos(IntPtr self, ref int row, ref int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSizerItem_GetGBSizer(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGBSizerItem_SetGBSizer(IntPtr self, IntPtr sizer);
 
         //-----------------------------------------------------------------------------
 
@@ -95,13 +95,13 @@ namespace wx
 
     public class GBSpan : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxGBSpan_ctorDefault();
-        [DllImport("wx-c")] static extern IntPtr wxGBSpan_ctor(int rowspan, int colspan);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSpan_ctorDefault();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBSpan_ctor(int rowspan, int colspan);
 
-        [DllImport("wx-c")] static extern void   wxGBSpan_SetRowspan(IntPtr self, int rowspan);
-        [DllImport("wx-c")] static extern int    wxGBSpan_GetRowspan(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxGBSpan_GetColspan(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGBSpan_SetColspan(IntPtr self, int colspan);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGBSpan_SetRowspan(IntPtr self, int rowspan);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGBSpan_GetRowspan(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGBSpan_GetColspan(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGBSpan_SetColspan(IntPtr self, int colspan);
 
         //-----------------------------------------------------------------------------
 
@@ -130,38 +130,38 @@ namespace wx
 
     public class GridBagSizer : FlexGridSizer
     {
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_ctor(int vgap, int hgap);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_AddWindow(IntPtr self, IntPtr window, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_AddSizer(IntPtr self, IntPtr sizer, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_Add(IntPtr self, int width, int height, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_AddItem(IntPtr self, IntPtr item);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_ctor(int vgap, int hgap);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_AddWindow(IntPtr self, IntPtr window, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_AddSizer(IntPtr self, IntPtr sizer, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_Add(IntPtr self, int width, int height, IntPtr pos, IntPtr span, int flag, int border, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_AddItem(IntPtr self, IntPtr item);
 
-        [DllImport("wx-c")] static extern void   wxGridBagSizer_GetEmptyCellSize(IntPtr self, ref Size size);
-        [DllImport("wx-c")] static extern void   wxGridBagSizer_SetEmptyCellSize(IntPtr self, ref Size sz);
-        [DllImport("wx-c")] static extern void   wxGridBagSizer_GetCellSize(IntPtr self, int row, int col, ref Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridBagSizer_GetEmptyCellSize(IntPtr self, ref Size size);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridBagSizer_SetEmptyCellSize(IntPtr self, ref Size sz);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGridBagSizer_GetCellSize(IntPtr self, int row, int col, ref Size size);
 
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_GetItemPositionWindow(IntPtr self, IntPtr window);
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_GetItemPositionSizer(IntPtr self, IntPtr sizer);
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_GetItemPositionIndex(IntPtr self, int index);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_SetItemPositionWindow(IntPtr self, IntPtr window, IntPtr pos);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_SetItemPositionSizer(IntPtr self, IntPtr sizer, IntPtr pos);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_SetItemPositionIndex(IntPtr self, int index, IntPtr pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_GetItemPositionWindow(IntPtr self, IntPtr window);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_GetItemPositionSizer(IntPtr self, IntPtr sizer);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_GetItemPositionIndex(IntPtr self, int index);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_SetItemPositionWindow(IntPtr self, IntPtr window, IntPtr pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_SetItemPositionSizer(IntPtr self, IntPtr sizer, IntPtr pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_SetItemPositionIndex(IntPtr self, int index, IntPtr pos);
 
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_GetItemSpanWindow(IntPtr self, IntPtr window);
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_GetItemSpanSizer(IntPtr self, IntPtr sizer);
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_GetItemSpanIndex(IntPtr self, int index);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_SetItemSpanWindow(IntPtr self, IntPtr window, IntPtr span);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_SetItemSpanSizer(IntPtr self, IntPtr sizer, IntPtr span);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_SetItemSpanIndex(IntPtr self, int index, IntPtr span);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_GetItemSpanWindow(IntPtr self, IntPtr window);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_GetItemSpanSizer(IntPtr self, IntPtr sizer);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_GetItemSpanIndex(IntPtr self, int index);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_SetItemSpanWindow(IntPtr self, IntPtr window, IntPtr span);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_SetItemSpanSizer(IntPtr self, IntPtr sizer, IntPtr span);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_SetItemSpanIndex(IntPtr self, int index, IntPtr span);
 
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_FindItemWindow(IntPtr self, IntPtr window);
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_FindItemSizer(IntPtr self, IntPtr sizer);
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_FindItemAtPosition(IntPtr self, IntPtr pos);
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_FindItemAtPoint(IntPtr self, ref Point pt);
-        [DllImport("wx-c")] static extern IntPtr wxGridBagSizer_FindItemWithData(IntPtr self, IntPtr userData);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_FindItemWindow(IntPtr self, IntPtr window);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_FindItemSizer(IntPtr self, IntPtr sizer);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_FindItemAtPosition(IntPtr self, IntPtr pos);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_FindItemAtPoint(IntPtr self, ref Point pt);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGridBagSizer_FindItemWithData(IntPtr self, IntPtr userData);
 
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_CheckForIntersectionItem(IntPtr self, IntPtr item, IntPtr excludeItem);
-        [DllImport("wx-c")] static extern bool   wxGridBagSizer_CheckForIntersectionPos(IntPtr self, IntPtr pos, IntPtr span, IntPtr excludeItem);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_CheckForIntersectionItem(IntPtr self, IntPtr item, IntPtr excludeItem);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxGridBagSizer_CheckForIntersectionPos(IntPtr self, IntPtr pos, IntPtr span, IntPtr excludeItem);
 
         //-----------------------------------------------------------------------------
 
@@ -321,12 +321,12 @@ namespace wx
 
     public class GBPosition : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxGBPosition_ctor();
-        [DllImport("wx-c")] static extern IntPtr wxGBPosition_ctor(int row, int col);
-        [DllImport("wx-c")] static extern int    wxGBPosition_GetRow(IntPtr self);
-        [DllImport("wx-c")] static extern int    wxGBPosition_GetCol(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxGBPosition_SetRow(IntPtr self, int row);
-        [DllImport("wx-c")] static extern void   wxGBPosition_SetCol(IntPtr self, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBPosition_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxGBPosition_ctor(int row, int col);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGBPosition_GetRow(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxGBPosition_GetCol(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGBPosition_SetRow(IntPtr self, int row);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxGBPosition_SetCol(IntPtr self, int col);
 
         //-----------------------------------------------------------------------------
 

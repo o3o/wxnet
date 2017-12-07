@@ -17,9 +17,9 @@ namespace wx
 {
 	public class ClientData : Object
 	{
-		[DllImport("wx-c")] static extern IntPtr wxClientData_ctor();
-		[DllImport("wx-c")] static extern void wxClientData_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void wxClientData_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxClientData_ctor();
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxClientData_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxClientData_RegisterDisposable(IntPtr self, Virtual_Dispose onDispose);
 		
 		//---------------------------------------------------------------------
         
@@ -77,10 +77,10 @@ namespace wx
     
 	public class StringClientData : ClientData
 	{
-		[DllImport("wx-c")] static extern IntPtr wxStringClientData_ctor(string data);
-		[DllImport("wx-c")] static extern void   wxStringClientData_dtor(IntPtr self);
-		[DllImport("wx-c")] static extern void   wxStringClientData_SetData(IntPtr self, string data);
-		[DllImport("wx-c")] static extern IntPtr wxStringClientData_GetData(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStringClientData_ctor(string data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStringClientData_dtor(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxStringClientData_SetData(IntPtr self, string data);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxStringClientData_GetData(IntPtr self);
 		
 		//---------------------------------------------------------------------
         

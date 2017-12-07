@@ -18,8 +18,8 @@ namespace wx
 {
     public class PageSetupDialog : Dialog
     {
-        [DllImport("wx-c")] static extern IntPtr wxPageSetupDialog_ctor(IntPtr parent, IntPtr data);
-        [DllImport("wx-c")] static extern IntPtr wxPageSetupDialog_GetPageSetupData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPageSetupDialog_ctor(IntPtr parent, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPageSetupDialog_GetPageSetupData(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -41,11 +41,11 @@ namespace wx
 
     public class PrintDialog : Dialog
     {
-        [DllImport("wx-c")] static extern IntPtr wxPrintDialog_ctor(IntPtr parent, IntPtr data);
-        [DllImport("wx-c")] static extern IntPtr wxPrintDialog_ctorPrintData(IntPtr parent, IntPtr data);
-        [DllImport("wx-c")] static extern IntPtr wxPrintDialog_GetPrintData(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxPrintDialog_GetPrintDialogData(IntPtr self);
-        [DllImport("wx-c")] static extern IntPtr wxPrintDialog_GetPrintDC(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintDialog_ctor(IntPtr parent, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintDialog_ctorPrintData(IntPtr parent, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintDialog_GetPrintData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintDialog_GetPrintDialogData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintDialog_GetPrintDC(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -86,10 +86,10 @@ namespace wx
     
     public class PrintSetupDialog : Dialog
     {
-        [DllImport("wx-c")] static extern IntPtr wxPrintSetupDialog_ctor(IntPtr parent, IntPtr data);
-        [DllImport("wx-c")] static extern IntPtr wxPrintSetupDialog_ctorPrintData(IntPtr parent, IntPtr data);
-        [DllImport("wx-c")] static extern void wxPrintSetupDialog_Init(IntPtr self, IntPtr data);
-        [DllImport("wx-c")] static extern IntPtr wxPrintSetupDialog_GetPrintData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintSetupDialog_ctor(IntPtr parent, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintSetupDialog_ctorPrintData(IntPtr parent, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPrintSetupDialog_Init(IntPtr self, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPrintSetupDialog_GetPrintData(IntPtr self);
 
         //-----------------------------------------------------------------------------
 

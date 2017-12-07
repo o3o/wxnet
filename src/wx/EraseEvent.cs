@@ -17,8 +17,8 @@ namespace wx
 {
 	public class EraseEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxEraseEvent_ctor(int type);
-		[DllImport("wx-c")] static extern IntPtr wxEraseEvent_GetDC(IntPtr self);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxEraseEvent_ctor(int type);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxEraseEvent_GetDC(IntPtr self);
 		
 		//-----------------------------------------------------------------------------
 

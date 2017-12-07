@@ -29,11 +29,11 @@ namespace wx
 
         //-----------------------------------------------------------------------------
 
-        [DllImport("wx-c")] static extern IntPtr wxFindReplaceDialog_ctor();
-        [DllImport("wx-c")] static extern bool   wxFindReplaceDialog_Create(IntPtr self, IntPtr parent, IntPtr data, string title, uint style);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindReplaceDialog_ctor();
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxFindReplaceDialog_Create(IntPtr self, IntPtr parent, IntPtr data, string title, uint style);
 
-        [DllImport("wx-c")] static extern IntPtr wxFindReplaceDialog_GetData(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFindReplaceDialog_SetData(IntPtr self, IntPtr data);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindReplaceDialog_GetData(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFindReplaceDialog_SetData(IntPtr self, IntPtr data);
 
         //-----------------------------------------------------------------------------
 
@@ -105,18 +105,18 @@ namespace wx
 
     public class FindDialogEvent : CommandEvent
     {
-        [DllImport("wx-c")] static extern IntPtr wxFindDialogEvent_ctor(int commandType, int id);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindDialogEvent_ctor(int commandType, int id);
 
-        [DllImport("wx-c")] static extern int    wxFindDialogEvent_GetFlags(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFindDialogEvent_SetFlags(IntPtr self, int flags);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFindDialogEvent_GetFlags(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFindDialogEvent_SetFlags(IntPtr self, int flags);
 
-        [DllImport("wx-c")] static extern IntPtr wxFindDialogEvent_GetFindString(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFindDialogEvent_SetFindString(IntPtr self, string str);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindDialogEvent_GetFindString(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFindDialogEvent_SetFindString(IntPtr self, string str);
 
-        [DllImport("wx-c")] static extern IntPtr wxFindDialogEvent_GetReplaceString(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFindDialogEvent_SetReplaceString(IntPtr self, string str);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindDialogEvent_GetReplaceString(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFindDialogEvent_SetReplaceString(IntPtr self, string str);
 
-        [DllImport("wx-c")] static extern IntPtr wxFindDialogEvent_GetDialog(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindDialogEvent_GetDialog(IntPtr self);
 
         //-----------------------------------------------------------------------------
 
@@ -162,16 +162,16 @@ namespace wx
 
     public class FindReplaceData : Object
     {
-        [DllImport("wx-c")] static extern IntPtr wxFindReplaceData_ctor(uint flags);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindReplaceData_ctor(uint flags);
 
-        [DllImport("wx-c")] static extern IntPtr wxFindReplaceData_GetFindString(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFindReplaceData_SetFindString(IntPtr self, string str);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindReplaceData_GetFindString(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFindReplaceData_SetFindString(IntPtr self, string str);
 
-        [DllImport("wx-c")] static extern int    wxFindReplaceData_GetFlags(IntPtr self);
-        [DllImport("wx-c")] static extern void   wxFindReplaceData_SetFlags(IntPtr self, int flags);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int    wxFindReplaceData_GetFlags(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFindReplaceData_SetFlags(IntPtr self, int flags);
 
-        [DllImport("wx-c")] static extern void   wxFindReplaceData_SetReplaceString(IntPtr self, string str);
-        [DllImport("wx-c")] static extern IntPtr wxFindReplaceData_GetReplaceString(IntPtr self);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFindReplaceData_SetReplaceString(IntPtr self, string str);
+        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFindReplaceData_GetReplaceString(IntPtr self);
 
         //-----------------------------------------------------------------------------
 

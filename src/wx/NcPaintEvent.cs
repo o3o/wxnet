@@ -17,7 +17,7 @@ namespace wx
 {
 	public class NCPaintEvent : Event
 	{
-		[DllImport("wx-c")] static extern IntPtr wxNcPaintEvent_ctor(int Id);
+		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNcPaintEvent_ctor(int Id);
 		
 		//-----------------------------------------------------------------------------
 
