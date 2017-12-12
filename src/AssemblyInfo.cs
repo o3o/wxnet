@@ -25,16 +25,14 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("(C) 2004,2005 Various Authors")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-
+[assembly: SecurityRules(SecurityRuleSet.Level1)]
 [assembly: AllowPartiallyTrustedCallers()]
 
 // Currently use an unsecured private/public keypair. Given the pre-release
 // nature of the project this simplifies strong naming.
-#if __WXMSW__
-[assembly: AssemblyKeyFile("../../keys.snk")]
-#else
-[assembly: AssemblyKeyFile("src/wx/keys.snk")]
-#endif
+//#if __WXMSW__
+//[assembly: AssemblyKeyFile("../../keys.snk")]
+//#else
+//[assembly: AssemblyKeyFile("src/wx/keys.snk")]
+//#endif
 [assembly: AssemblyDelaySign(false)]
-
-[assembly:  System.Security.SecurityTransparent()]

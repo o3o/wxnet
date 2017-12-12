@@ -50,6 +50,7 @@ BASE_NAME = $(basename $(NAME))
 CSCFLAGS += -nologo
 CSCFLAGS += -target:$(TARGET)
 CSCFLAGS += -lib:$(BIN)
+#CSCFLAGS += -keyfile:keys.snk
 CSCFLAGS += $(RES_OPT)
 
 NAME_TEST = test-runner
