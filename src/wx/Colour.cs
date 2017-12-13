@@ -13,10 +13,8 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class Colour : Object
-	{
+namespace wx {
+	public class Colour : Object {
 		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColour_ctor();
 		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColour_ctorByName(string name);
 		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColour_ctorByParts(byte red, byte green, byte blue);
@@ -29,7 +27,7 @@ namespace wx
 
 		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxColour_Ok(IntPtr self);
 		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxColour_Set(IntPtr self, byte red, byte green, byte blue);
-		
+
 		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxColour_CreateByName(string name);
 
 		//---------------------------------------------------------------------
@@ -44,92 +42,69 @@ namespace wx
 
 		//---------------------------------------------------------------------
 
-		public Colour(IntPtr wxObject)
-			: base(wxObject) 
-		{
-			this.wxObject = wxObject; 
+		public Colour(IntPtr wxObject) : base(wxObject) {
+			this.wxObject = wxObject;
 		}
-			
-		internal Colour(IntPtr wxObject, bool memOwn)
-			: base(wxObject)
-		{ 
+
+		internal Colour(IntPtr wxObject, bool memOwn) : base(wxObject) {
 			this.memOwn = memOwn;
 			this.wxObject = wxObject;
 		}
 
-		public Colour() 
-			: this(wxColour_ctor(), true) 
-		{ 
+		public Colour() : this(wxColour_ctor(), true) {
 			/*virtual_Dispose = new Virtual_Dispose(VirtualDispose);
 			wxColour_RegisterDisposable(wxObject, virtual_Dispose);*/
 		}
 
-		public Colour(string name)
-			: this(wxColour_ctorByName(name.ToUpper()), true) 
-		{ 
+		public Colour(string name) : this(wxColour_ctorByName(name.ToUpper()), true) {
 			/*virtual_Dispose = new Virtual_Dispose(VirtualDispose);
 			wxColour_RegisterDisposable(wxObject, virtual_Dispose);*/
 		}
 
-		public Colour(byte red, byte green, byte blue)
-			: this(wxColour_ctorByParts(red, green, blue), true) 
-		{ 
+		public Colour(byte red, byte green, byte blue) : this(wxColour_ctorByParts(red, green, blue), true) {
 			/*virtual_Dispose = new Virtual_Dispose(VirtualDispose);
 			wxColour_RegisterDisposable(wxObject, virtual_Dispose);*/
 		}
 
-		~Colour()
-		{
+		~Colour() {
 			Dispose();
 		}
-		
-		//---------------------------------------------------------------------
 
-		public override void Dispose()
-		{
+		public override void Dispose() {
 			if ((this != Colour.wxBLACK) && (this != Colour.wxWHITE) &&
 				(this != Colour.wxRED) && (this != Colour.wxBLUE) &&
 					(this != Colour.wxGREEN) && (this != Colour.wxCYAN) &&
-						(this != Colour.wxLIGHT_GREY)) 
+						(this != Colour.wxLIGHT_GREY))
 			{
 				Dispose(true);
 			}
 		}
 
-		//---------------------------------------------------------------------
 
-		public byte Red
-		{
+		public byte Red {
 			get { return wxColour_Red(wxObject); }
 		}
 
-		public byte Green
-		{
+		public byte Green {
 			get { return wxColour_Green(wxObject); }
 		}
 
-		public byte Blue
-		{
+		public byte Blue {
 			get { return wxColour_Blue(wxObject); }
 		}
 
-		//---------------------------------------------------------------------
 
-		public bool Ok()
-		{
+		public bool Ok() {
 			return wxColour_Ok(wxObject);
 		}
 
-		public void Set(byte red, byte green, byte blue)
-		{
+		public void Set(byte red, byte green, byte blue) {
 			wxColour_Set(wxObject, red, green, blue);
 		}
 
-		//---------------------------------------------------------------------
-		
+
 		#if __WXGTK__
-		public static Colour CreateByName(string name)
-		{
+		public static Colour CreateByName(string name) {
 			return new Colour(wxColour_CreateByName(name), true);
 		}
 		#endif
