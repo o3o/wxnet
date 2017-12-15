@@ -13,21 +13,19 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class InitDialogEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxInitDialogEvent_ctor(int Id);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class InitDialogEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxInitDialogEvent_ctor(int Id);
 
-		public InitDialogEvent(IntPtr wxObject) 
-			: base(wxObject) { }
-			
-		public InitDialogEvent()
-			: base(wxInitDialogEvent_ctor(0)) {}
+      //-----------------------------------------------------------------------------
 
-		public InitDialogEvent(int Id)
-			: this(wxInitDialogEvent_ctor(Id)) { }
-	}
+      public InitDialogEvent(IntPtr wxObject)
+      : base(wxObject) { }
+
+      public InitDialogEvent()
+      : base(wxInitDialogEvent_ctor(0)) {}
+
+      public InitDialogEvent(int Id)
+      : this(wxInitDialogEvent_ctor(Id)) { }
+   }
 }

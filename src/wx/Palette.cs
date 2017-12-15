@@ -13,59 +13,51 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class Palette : GDIObject
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPalette_ctor();
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPalette_dtor(IntPtr self);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_Ok(IntPtr self);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_Create(IntPtr self, int n, char[] red, char[] green, char[] blue);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxPalette_GetPixel(IntPtr self, char red, char green, char blue);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_GetRGB(IntPtr self, int pixel, out char red, out char green, out char blue);
+namespace wx {
+   public class Palette : GDIObject {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPalette_ctor();
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPalette_dtor(IntPtr self);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_Ok(IntPtr self);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_Create(IntPtr self, int n, char[] red, char[] green, char[] blue);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxPalette_GetPixel(IntPtr self, char red, char green, char blue);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxPalette_GetRGB(IntPtr self, int pixel, out char red, out char green, out char blue);
 
-		//---------------------------------------------------------------------
+      //---------------------------------------------------------------------
 
-		public Palette()
-			: this(wxPalette_ctor()) {}
+      public Palette()
+      : this(wxPalette_ctor()) {}
 
-		public Palette(IntPtr wxObject)
-			: base(wxObject) {}
+      public Palette(IntPtr wxObject)
+      : base(wxObject) {}
 
-		public Palette(int n, char[] r, char[] g, char[] b)
-			: this(wxPalette_ctor())
-		{
-			if (!wxPalette_Create(wxObject, n, r, g, b))
-			{
-				throw new InvalidOperationException("Failed to create Palette");
-			}
-		}
+      public Palette(int n, char[] r, char[] g, char[] b)
+      : this(wxPalette_ctor()) {
+         if (!wxPalette_Create(wxObject, n, r, g, b)) {
+            throw new InvalidOperationException("Failed to create Palette");
+         }
+      }
 
-		public bool Create(int n, char[] r, char[] g, char[] b)
-		{
-			return wxPalette_Create(wxObject, n, r, g, b);
-		}
+      public bool Create(int n, char[] r, char[] g, char[] b) {
+         return wxPalette_Create(wxObject, n, r, g, b);
+      }
 
-		//---------------------------------------------------------------------
+      //---------------------------------------------------------------------
 
-		public bool Ok()
-		{
-			return wxPalette_Ok(wxObject);
-		}
+      public bool Ok() {
+         return wxPalette_Ok(wxObject);
+      }
 
-		//---------------------------------------------------------------------
+      //---------------------------------------------------------------------
 
-		public int GetPixel(char red, char green, char blue)
-		{
-			return wxPalette_GetPixel(wxObject, red, green, blue);
-		}
+      public int GetPixel(char red, char green, char blue) {
+         return wxPalette_GetPixel(wxObject, red, green, blue);
+      }
 
-		public bool GetRGB(int pixel, out char red, out char green, out char blue)
-		{
-			return wxPalette_GetRGB(wxObject, pixel, out red, out green, out blue);
-		}
+      public bool GetRGB(int pixel, out char red, out char green, out char blue) {
+         return wxPalette_GetRGB(wxObject, pixel, out red, out green, out blue);
+      }
 
-		//---------------------------------------------------------------------
-	}
+      //---------------------------------------------------------------------
+   }
 
 }

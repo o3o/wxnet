@@ -13,28 +13,29 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class PaletteChangedEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPaletteChangedEvent_ctor(int type);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPaletteChangedEvent_SetChangedWindow(IntPtr self, IntPtr win);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPaletteChangedEvent_GetChangedWindow(IntPtr self);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class PaletteChangedEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPaletteChangedEvent_ctor(int type);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxPaletteChangedEvent_SetChangedWindow(IntPtr self, IntPtr win);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxPaletteChangedEvent_GetChangedWindow(IntPtr self);
 
-		public PaletteChangedEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public PaletteChangedEvent(int type)
-			: this(wxPaletteChangedEvent_ctor(type)) { }
+      public PaletteChangedEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public Window ChangedWindow
-		{
-			get { return (Window)FindObject(wxPaletteChangedEvent_GetChangedWindow(wxObject), typeof(Window)); }
-			set { wxPaletteChangedEvent_SetChangedWindow(wxObject, Object.SafePtr(value)); }
-		}
-	}
+      public PaletteChangedEvent(int type)
+      : this(wxPaletteChangedEvent_ctor(type)) { }
+
+      //-----------------------------------------------------------------------------
+
+      public Window ChangedWindow {
+         get {
+            return (Window)FindObject(wxPaletteChangedEvent_GetChangedWindow(wxObject), typeof(Window));
+         }
+         set {
+            wxPaletteChangedEvent_SetChangedWindow(wxObject, Object.SafePtr(value));
+         }
+      }
+   }
 }

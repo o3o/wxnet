@@ -14,32 +14,28 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-    public class TipProvider
-    {
-	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCreateFileTipProvider_func(string filename, int currentTip);
-	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxShowTip_func(IntPtr parent, IntPtr tipProvider, bool showAtStartup);
-	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTipProvider_GetCurrentTip();
+namespace wx {
+   public class TipProvider {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCreateFileTipProvider_func(string filename, int currentTip);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxShowTip_func(IntPtr parent, IntPtr tipProvider, bool showAtStartup);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern int wxTipProvider_GetCurrentTip();
 
-	public static IntPtr CreateFileTipProvider(string filename, int currentTip)
-	{
-		return wxCreateFileTipProvider_func(filename, currentTip);
-	}
+      public static IntPtr CreateFileTipProvider(string filename, int currentTip) {
+         return wxCreateFileTipProvider_func(filename, currentTip);
+      }
 
-	public static bool ShowTip(Window parent, IntPtr tipProvider)
-	{
-		return wxShowTip_func(Object.SafePtr(parent), tipProvider, true);
-	}
+      public static bool ShowTip(Window parent, IntPtr tipProvider) {
+         return wxShowTip_func(Object.SafePtr(parent), tipProvider, true);
+      }
 
-	public static bool ShowTip(Window parent, IntPtr tipProvider, bool showAtStartup)
-	{
-		return wxShowTip_func(Object.SafePtr(parent), tipProvider, showAtStartup);
-	}
+      public static bool ShowTip(Window parent, IntPtr tipProvider, bool showAtStartup) {
+         return wxShowTip_func(Object.SafePtr(parent), tipProvider, showAtStartup);
+      }
 
-	public static int CurrentTip
-	{
-		get { return wxTipProvider_GetCurrentTip(); }
-	}
-    }
+      public static int CurrentTip {
+         get {
+            return wxTipProvider_GetCurrentTip();
+         }
+      }
+   }
 }

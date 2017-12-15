@@ -14,30 +14,27 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class SizeEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizeEvent_ctor();
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizeEvent_GetSize(IntPtr self, out Size size);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class SizeEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSizeEvent_ctor();
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxSizeEvent_GetSize(IntPtr self, out Size size);
 
-		public SizeEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public SizeEvent()
-			: this(wxSizeEvent_ctor()) { }
+      public SizeEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public Size Size
-		{
-			get {
-				Size size = new Size();
-				wxSizeEvent_GetSize(wxObject, out size);
-				return size;
-			}
-		}		
-	}
+      public SizeEvent()
+      : this(wxSizeEvent_ctor()) { }
+
+      //-----------------------------------------------------------------------------
+
+      public Size Size {
+         get {
+            Size size = new Size();
+            wxSizeEvent_GetSize(wxObject, out size);
+            return size;
+         }
+      }
+   }
 }

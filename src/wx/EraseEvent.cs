@@ -13,26 +13,25 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class EraseEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxEraseEvent_ctor(int type);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxEraseEvent_GetDC(IntPtr self);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class EraseEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxEraseEvent_ctor(int type);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxEraseEvent_GetDC(IntPtr self);
 
-		public EraseEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public EraseEvent(int type)
-			: this(wxEraseEvent_ctor(type)) { }
+      public EraseEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public DC DC
-		{
-			get { return (DC)FindObject(wxEraseEvent_GetDC(wxObject), typeof(DC)); }
-		}
-	}
+      public EraseEvent(int type)
+      : this(wxEraseEvent_ctor(type)) { }
+
+      //-----------------------------------------------------------------------------
+
+      public DC DC {
+         get {
+            return (DC)FindObject(wxEraseEvent_GetDC(wxObject), typeof(DC));
+         }
+      }
+   }
 }

@@ -13,20 +13,18 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class Validator : EvtHandler
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxValidator_ctor();
-		
-		//---------------------------------------------------------------------
-		
-		public Validator()
-			: base(wxValidator_ctor()) {}
+namespace wx {
+   public class Validator : EvtHandler {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxValidator_ctor();
 
-		public Validator(IntPtr wxObject) 
-			: base(wxObject) {}
+      //---------------------------------------------------------------------
 
-		//---------------------------------------------------------------------
-	}
+      public Validator()
+      : base(wxValidator_ctor()) {}
+
+      public Validator(IntPtr wxObject)
+      : base(wxObject) {}
+
+      //---------------------------------------------------------------------
+   }
 }

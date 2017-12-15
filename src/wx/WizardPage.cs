@@ -13,16 +13,13 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class WizardPage : Panel
-	{
-		//---------------------------------------------------------------------
+namespace wx {
+   public class WizardPage : Panel {
+      //---------------------------------------------------------------------
 
-		public WizardPage(IntPtr wxObject) : base(wxObject)
-		{
-		}
+      public WizardPage(IntPtr wxObject) : base(wxObject) {
+      }
 
-		//---------------------------------------------------------------------
-	}
+      //---------------------------------------------------------------------
+   }
 }

@@ -13,28 +13,29 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class FocusEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFocusEvent_ctor(int type);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFocusEvent_GetWindow(IntPtr self);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFocusEvent_SetWindow(IntPtr self, IntPtr win);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class FocusEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFocusEvent_ctor(int type);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxFocusEvent_GetWindow(IntPtr self);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxFocusEvent_SetWindow(IntPtr self, IntPtr win);
 
-		public FocusEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public FocusEvent(int type)
-			: this(wxFocusEvent_ctor(type)) { }
+      public FocusEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public Window Window
-		{
-			get { return (Window)FindObject(wxFocusEvent_GetWindow(wxObject), typeof(Window)); }
-			set { wxFocusEvent_SetWindow(wxObject, Object.SafePtr(value)); }
-		}
-	}
+      public FocusEvent(int type)
+      : this(wxFocusEvent_ctor(type)) { }
+
+      //-----------------------------------------------------------------------------
+
+      public Window Window {
+         get {
+            return (Window)FindObject(wxFocusEvent_GetWindow(wxObject), typeof(Window));
+         }
+         set {
+            wxFocusEvent_SetWindow(wxObject, Object.SafePtr(value));
+         }
+      }
+   }
 }

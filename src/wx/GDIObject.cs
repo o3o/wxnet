@@ -13,23 +13,21 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class GDIObject : Object
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGDIObj_dtor(IntPtr self);
+namespace wx {
+   public class GDIObject : Object {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxGDIObj_dtor(IntPtr self);
 
-		//---------------------------------------------------------------------
+      //---------------------------------------------------------------------
 
-		public GDIObject(IntPtr wxObject) 
-			: base(wxObject) {}
+      public GDIObject(IntPtr wxObject)
+      : base(wxObject) {}
 
-		/*public override void Dispose()
-		{
-			wxObject = IntPtr.Zero;
-			Dispose(false);
-		}*/		
+      /*public override void Dispose()
+      {
+         wxObject = IntPtr.Zero;
+         Dispose(false);
+      }*/
 
-		//---------------------------------------------------------------------
-	}
+      //---------------------------------------------------------------------
+   }
 }

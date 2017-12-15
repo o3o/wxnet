@@ -14,30 +14,27 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class MoveEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMoveEvent_ctor();
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMoveEvent_GetPosition(IntPtr self, out Point point);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class MoveEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMoveEvent_ctor();
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMoveEvent_GetPosition(IntPtr self, out Point point);
 
-		public MoveEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public MoveEvent()
-			: this(wxMoveEvent_ctor()) { }
+      public MoveEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public Point Position
-		{
-			get {
-				Point point = new Point();
-				wxMoveEvent_GetPosition(wxObject, out point);
-				return point;
-			}
-		}
-	}
+      public MoveEvent()
+      : this(wxMoveEvent_ctor()) { }
+
+      //-----------------------------------------------------------------------------
+
+      public Point Position {
+         get {
+            Point point = new Point();
+            wxMoveEvent_GetPosition(wxObject, out point);
+            return point;
+         }
+      }
+   }
 }

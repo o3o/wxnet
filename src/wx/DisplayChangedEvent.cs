@@ -13,18 +13,16 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class DisplayChangedEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDisplayChangedEvent_ctor();
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class DisplayChangedEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxDisplayChangedEvent_ctor();
 
-		public DisplayChangedEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public DisplayChangedEvent()
-			: this(wxDisplayChangedEvent_ctor()) { }
-	}
+      public DisplayChangedEvent(IntPtr wxObject)
+      : base(wxObject) { }
+
+      public DisplayChangedEvent()
+      : this(wxDisplayChangedEvent_ctor()) { }
+   }
 }

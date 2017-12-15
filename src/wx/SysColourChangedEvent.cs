@@ -13,18 +13,16 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class SysColourChangedEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSysColourChangedEvent_ctor();
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class SysColourChangedEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxSysColourChangedEvent_ctor();
 
-		public SysColourChangedEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public SysColourChangedEvent()
-			: this(wxSysColourChangedEvent_ctor()) { }
-	}
+      public SysColourChangedEvent(IntPtr wxObject)
+      : base(wxObject) { }
+
+      public SysColourChangedEvent()
+      : this(wxSysColourChangedEvent_ctor()) { }
+   }
 }

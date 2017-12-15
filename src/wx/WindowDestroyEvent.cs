@@ -13,26 +13,25 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class WindowDestroyEvent : CommandEvent
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDestroyEvent_ctor(IntPtr type);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDestroyEvent_GetWindow(IntPtr self);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class WindowDestroyEvent : CommandEvent {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDestroyEvent_ctor(IntPtr type);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowDestroyEvent_GetWindow(IntPtr self);
 
-		public WindowDestroyEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public WindowDestroyEvent(Window win)
-			: this(wxWindowDestroyEvent_ctor(Object.SafePtr(win))) { }
+      public WindowDestroyEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public Window Active
-		{
-			get { return (Window)FindObject(wxWindowDestroyEvent_GetWindow(wxObject), typeof(Window)); }
-		}
-	}
+      public WindowDestroyEvent(Window win)
+      : this(wxWindowDestroyEvent_ctor(Object.SafePtr(win))) { }
+
+      //-----------------------------------------------------------------------------
+
+      public Window Active {
+         get {
+            return (Window)FindObject(wxWindowDestroyEvent_GetWindow(wxObject), typeof(Window));
+         }
+      }
+   }
 }

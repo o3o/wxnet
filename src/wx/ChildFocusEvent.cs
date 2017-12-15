@@ -13,29 +13,28 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class ChildFocusEvent : CommandEvent
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChildFocusEvent_ctor(IntPtr win);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChildFocusEvent_GetWindow(IntPtr self);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class ChildFocusEvent : CommandEvent {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChildFocusEvent_ctor(IntPtr win);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxChildFocusEvent_GetWindow(IntPtr self);
 
-		public ChildFocusEvent(IntPtr wxObject) 
-			: base(wxObject) { }
-			
-		public ChildFocusEvent()
-			: this(null) {}
+      //-----------------------------------------------------------------------------
 
-		public ChildFocusEvent(Window win)
-			: base(wxChildFocusEvent_ctor(Object.SafePtr(win))) { }
+      public ChildFocusEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public Window Window
-		{
-			get { return (Window)FindObject(wxChildFocusEvent_GetWindow(wxObject), typeof(Window)); }
-		}
-	}
+      public ChildFocusEvent()
+      : this(null) {}
+
+      public ChildFocusEvent(Window win)
+      : base(wxChildFocusEvent_ctor(Object.SafePtr(win))) { }
+
+      //-----------------------------------------------------------------------------
+
+      public Window Window {
+         get {
+            return (Window)FindObject(wxChildFocusEvent_GetWindow(wxObject), typeof(Window));
+         }
+      }
+   }
 }

@@ -13,26 +13,25 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class WindowCreateEvent : CommandEvent
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowCreateEvent_ctor(IntPtr type);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowCreateEvent_GetWindow(IntPtr self);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class WindowCreateEvent : CommandEvent {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowCreateEvent_ctor(IntPtr type);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxWindowCreateEvent_GetWindow(IntPtr self);
 
-		public WindowCreateEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public WindowCreateEvent(Window win)
-			: this(wxWindowCreateEvent_ctor(Object.SafePtr(win))) { }
+      public WindowCreateEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public Window Active
-		{
-			get { return (Window)FindObject(wxWindowCreateEvent_GetWindow(wxObject), typeof(Window)); }
-		}
-	}
+      public WindowCreateEvent(Window win)
+      : this(wxWindowCreateEvent_ctor(Object.SafePtr(win))) { }
+
+      //-----------------------------------------------------------------------------
+
+      public Window Active {
+         get {
+            return (Window)FindObject(wxWindowCreateEvent_GetWindow(wxObject), typeof(Window));
+         }
+      }
+   }
 }

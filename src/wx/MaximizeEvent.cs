@@ -13,21 +13,19 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class MaximizeEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMaximizeEvent_ctor(int Id);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class MaximizeEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxMaximizeEvent_ctor(int Id);
 
-		public MaximizeEvent(IntPtr wxObject) 
-			: base(wxObject) { }
-			
-		public MaximizeEvent()
-			: base(wxMaximizeEvent_ctor(0)) {}
+      //-----------------------------------------------------------------------------
 
-		public MaximizeEvent(int Id)
-			: this(wxMaximizeEvent_ctor(Id)) { }
-	}
+      public MaximizeEvent(IntPtr wxObject)
+      : base(wxObject) { }
+
+      public MaximizeEvent()
+      : base(wxMaximizeEvent_ctor(0)) {}
+
+      public MaximizeEvent(int Id)
+      : this(wxMaximizeEvent_ctor(Id)) { }
+   }
 }

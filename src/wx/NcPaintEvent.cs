@@ -13,18 +13,16 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class NCPaintEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNcPaintEvent_ctor(int Id);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class NCPaintEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxNcPaintEvent_ctor(int Id);
 
-		public NCPaintEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public NCPaintEvent(int Id)
-			: this(wxNcPaintEvent_ctor(Id)) { }
-	}
+      public NCPaintEvent(IntPtr wxObject)
+      : base(wxObject) { }
+
+      public NCPaintEvent(int Id)
+      : this(wxNcPaintEvent_ctor(Id)) { }
+   }
 }

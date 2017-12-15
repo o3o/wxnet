@@ -14,61 +14,54 @@ using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class Icon : Bitmap
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxIcon_ctor();
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxIcon_CopyFromBitmap(IntPtr self, IntPtr bitmap);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxIcon_LoadFile(IntPtr self, string name, BitmapType type);
+namespace wx {
+   public class Icon : Bitmap {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxIcon_ctor();
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void   wxIcon_CopyFromBitmap(IntPtr self, IntPtr bitmap);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool   wxIcon_LoadFile(IntPtr self, string name, BitmapType type);
 
-		//---------------------------------------------------------------------
+      //---------------------------------------------------------------------
 
-		public Icon(string name)
-			: this()
-		{
-			Image img = new Image();
-			if (!img.LoadFile(name))
-				throw new ArgumentException("file '" + name + "' not found");
+      public Icon(string name)
+      : this() {
+         Image img = new Image();
+         if (!img.LoadFile(name)) {
+            throw new ArgumentException("file '" + name + "' not found");
+         }
 
-			Bitmap bmp = new Bitmap(img);
-			wxIcon_CopyFromBitmap(wxObject, bmp.wxObject);
-		}
+         Bitmap bmp = new Bitmap(img);
+         wxIcon_CopyFromBitmap(wxObject, bmp.wxObject);
+      }
 
-		public Icon(string name, BitmapType type)
-			: this()
-		{
-			if (type == BitmapType.wxBITMAP_TYPE_RESOURCE)
-			{
-				Assembly ResourceAssembly = Assembly.GetCallingAssembly();
+      public Icon(string name, BitmapType type)
+      : this() {
+         if (type == BitmapType.wxBITMAP_TYPE_RESOURCE) {
+            Assembly ResourceAssembly = Assembly.GetCallingAssembly();
 
-				Image img = new Image(name, ResourceAssembly);
+            Image img = new Image(name, ResourceAssembly);
 
-				Bitmap bmp = new Bitmap(img);
-				wxIcon_CopyFromBitmap(wxObject, bmp.wxObject);
-			}
-			else
-			{
-				if (!wxIcon_LoadFile(wxObject, name, type))
-					throw new ArgumentException();
-			}
-		}
+            Bitmap bmp = new Bitmap(img);
+            wxIcon_CopyFromBitmap(wxObject, bmp.wxObject);
+         } else {
+            if (!wxIcon_LoadFile(wxObject, name, type)) {
+               throw new ArgumentException();
+            }
+         }
+      }
 
-		public Icon()
-			: base(wxIcon_ctor())
-		{
-		}
-		
-		public Icon(IntPtr wxObject) 
-			: base(wxObject) { }		
+      public Icon()
+      : base(wxIcon_ctor()) {
+      }
 
-		//---------------------------------------------------------------------
+      public Icon(IntPtr wxObject)
+      : base(wxObject) { }
 
-		public void CopyFromBitmap(Bitmap bitmap)
-		{
-			wxIcon_CopyFromBitmap(wxObject, Object.SafePtr(bitmap));
-		}
+      //---------------------------------------------------------------------
 
-		//---------------------------------------------------------------------
-	}
+      public void CopyFromBitmap(Bitmap bitmap) {
+         wxIcon_CopyFromBitmap(wxObject, Object.SafePtr(bitmap));
+      }
+
+      //---------------------------------------------------------------------
+   }
 }

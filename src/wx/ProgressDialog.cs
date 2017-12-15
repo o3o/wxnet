@@ -14,96 +14,86 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-    public class ProgressDialog : Dialog
-    {
-        public const int wxPD_CAN_ABORT      = 0x0001;
-        public const int wxPD_APP_MODAL      = 0x0002;
-        public const int wxPD_AUTO_HIDE      = 0x0004;
-        public const int wxPD_ELAPSED_TIME   = 0x0008;
-        public const int wxPD_ESTIMATED_TIME = 0x0010;
-        public const int wxPD_REMAINING_TIME = 0x0040;
-	
-	internal bool xdisposed = false;
+namespace wx {
+   public class ProgressDialog : Dialog {
+      public const int wxPD_CAN_ABORT      = 0x0001;
+      public const int wxPD_APP_MODAL      = 0x0002;
+      public const int wxPD_AUTO_HIDE      = 0x0004;
+      public const int wxPD_ELAPSED_TIME   = 0x0008;
+      public const int wxPD_ESTIMATED_TIME = 0x0010;
+      public const int wxPD_REMAINING_TIME = 0x0040;
 
-		//---------------------------------------------------------------------
+      internal bool xdisposed = false;
 
-        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxProgressDialog_ctor(string title, string message, int maximum, IntPtr parent, uint style);
-	[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxProgressDialog_dtor(IntPtr self);
-        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxProgressDialog_Update(IntPtr self, int value, string newmsg);
-        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxProgressDialog_Resume(IntPtr self);
-        [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxProgressDialog_Show(IntPtr self, bool show);
+      //---------------------------------------------------------------------
 
-        //-----------------------------------------------------------------------------
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxProgressDialog_ctor(string title, string message, int maximum, IntPtr parent, uint style);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxProgressDialog_dtor(IntPtr self);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxProgressDialog_Update(IntPtr self, int value, string newmsg);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxProgressDialog_Resume(IntPtr self);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxProgressDialog_Show(IntPtr self, bool show);
 
-        public ProgressDialog(IntPtr wxObject)
-            : base(wxObject) {}
+      //-----------------------------------------------------------------------------
 
-        public ProgressDialog(string title, string message)
-            : this(title, message, 100, null, wxPD_APP_MODAL | wxPD_AUTO_HIDE) {}
+      public ProgressDialog(IntPtr wxObject)
+      : base(wxObject) {}
 
-        public ProgressDialog(string title, string message, int maximum)
-            : this(title, message, maximum, null, wxPD_APP_MODAL | wxPD_AUTO_HIDE) {}
+      public ProgressDialog(string title, string message)
+      : this(title, message, 100, null, wxPD_APP_MODAL | wxPD_AUTO_HIDE) {}
 
-        public ProgressDialog(string title, string message, int maximum, Window parent)
-            : this(title, message, maximum, parent, wxPD_APP_MODAL | wxPD_AUTO_HIDE) {}
+      public ProgressDialog(string title, string message, int maximum)
+      : this(title, message, maximum, null, wxPD_APP_MODAL | wxPD_AUTO_HIDE) {}
 
-        public ProgressDialog(string title, string message, int maximum, Window parent, int style)
-            : this(wxProgressDialog_ctor(title, message, maximum, Object.SafePtr(parent), (uint)style)) {}
+      public ProgressDialog(string title, string message, int maximum, Window parent)
+      : this(title, message, maximum, parent, wxPD_APP_MODAL | wxPD_AUTO_HIDE) {}
 
-        //-----------------------------------------------------------------------------
+      public ProgressDialog(string title, string message, int maximum, Window parent, int style)
+      : this(wxProgressDialog_ctor(title, message, maximum, Object.SafePtr(parent), (uint)style)) {}
 
-        public bool Update(int value)
-        {
-            return wxProgressDialog_Update(wxObject, value, "");
-        }
+      //-----------------------------------------------------------------------------
 
-		//---------------------------------------------------------------------
+      public bool Update(int value) {
+         return wxProgressDialog_Update(wxObject, value, "");
+      }
 
-        public bool Update(int value, string newmsg)
-        {
-            return wxProgressDialog_Update(wxObject, value, newmsg);
-        }
+      //---------------------------------------------------------------------
 
-		//---------------------------------------------------------------------
+      public bool Update(int value, string newmsg) {
+         return wxProgressDialog_Update(wxObject, value, newmsg);
+      }
 
-        public void Resume()
-        {
-            wxProgressDialog_Resume(wxObject);
-        }
+      //---------------------------------------------------------------------
 
-		//---------------------------------------------------------------------
+      public void Resume() {
+         wxProgressDialog_Resume(wxObject);
+      }
 
-        public override bool Show()
-        {
-            return wxProgressDialog_Show(wxObject, true);
-        }
+      //---------------------------------------------------------------------
 
-		//---------------------------------------------------------------------
+      public override bool Show() {
+         return wxProgressDialog_Show(wxObject, true);
+      }
 
-        public new bool Show(bool show)
-        {
-            return wxProgressDialog_Show(wxObject, show);
-        }
-	
-	//---------------------------------------------------------------------
-	
-	public new void Dispose()
-        {
-            XDispose(true);
-        }
-	
-	//---------------------------------------------------------------------
+      //---------------------------------------------------------------------
 
-        public void XDispose(bool disposing)
-        {
-            if (!disposed)
-            {
-                wxProgressDialog_dtor(wxObject);
-            }
-            xdisposed = true;
-        }
-    }
+      public new bool Show(bool show) {
+         return wxProgressDialog_Show(wxObject, show);
+      }
+
+      //---------------------------------------------------------------------
+
+      public new void Dispose() {
+         XDispose(true);
+      }
+
+      //---------------------------------------------------------------------
+
+      public void XDispose(bool disposing) {
+         if (!disposed) {
+            wxProgressDialog_dtor(wxObject);
+         }
+         xdisposed = true;
+      }
+   }
 }
 

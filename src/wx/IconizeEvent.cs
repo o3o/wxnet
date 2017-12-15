@@ -13,26 +13,25 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class IconizeEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxIconizeEvent_ctor(int type);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxIconizeEvent_Iconized(IntPtr self);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class IconizeEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxIconizeEvent_ctor(int type);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxIconizeEvent_Iconized(IntPtr self);
 
-		public IconizeEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public IconizeEvent(int type)
-			: this(wxIconizeEvent_ctor(type)) { }
+      public IconizeEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------	
-		
-		public bool Iconized
-		{
-			get { return wxIconizeEvent_Iconized(wxObject); }
-		}
-	}
+      public IconizeEvent(int type)
+      : this(wxIconizeEvent_ctor(type)) { }
+
+      //-----------------------------------------------------------------------------
+
+      public bool Iconized {
+         get {
+            return wxIconizeEvent_Iconized(wxObject);
+         }
+      }
+   }
 }

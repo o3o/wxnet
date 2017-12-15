@@ -14,53 +14,56 @@ using System;
 using System.Collections;
 using System.Runtime.InteropServices;
 
-namespace wx
-{
-	public class CloseEvent : Event
-	{
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCloseEvent_ctor(int type);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_SetLoggingOff(IntPtr self, bool logOff);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_GetLoggingOff(IntPtr self);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_Veto(IntPtr self, bool veto);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_SetCanVeto(IntPtr self, bool canVeto);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_CanVeto(IntPtr self);
-		[DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_GetVeto(IntPtr self);
-		
-		//-----------------------------------------------------------------------------
+namespace wx {
+   public class CloseEvent : Event {
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern IntPtr wxCloseEvent_ctor(int type);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_SetLoggingOff(IntPtr self, bool logOff);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_GetLoggingOff(IntPtr self);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_Veto(IntPtr self, bool veto);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern void wxCloseEvent_SetCanVeto(IntPtr self, bool canVeto);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_CanVeto(IntPtr self);
+      [DllImport("wx-c"), System.Security.SuppressUnmanagedCodeSecurity] static extern bool wxCloseEvent_GetVeto(IntPtr self);
 
-		public CloseEvent(IntPtr wxObject) 
-			: base(wxObject) { }
+      //-----------------------------------------------------------------------------
 
-		public CloseEvent(int type)
-			: this(wxCloseEvent_ctor(type)) { }
+      public CloseEvent(IntPtr wxObject)
+      : base(wxObject) { }
 
-		//-----------------------------------------------------------------------------
-		
-		public bool LoggingOff
-		{
-			get { return wxCloseEvent_GetLoggingOff(wxObject); }
-			set { wxCloseEvent_SetLoggingOff(wxObject, value); } 
-		}
-		
-		public void Veto()
-		{
-			Veto(true);
-		}
-		
-		public void Veto(bool veto)
-		{
-			wxCloseEvent_Veto(wxObject, veto);
-		}
-		
-		public bool CanVeto
-		{
-			set { wxCloseEvent_SetCanVeto(wxObject, value); }
-			get { return wxCloseEvent_CanVeto(wxObject); }
-		}
-		
-		public bool GetVeto
-		{
-			get { return wxCloseEvent_GetVeto(wxObject); }
-		}
-	}
+      public CloseEvent(int type)
+      : this(wxCloseEvent_ctor(type)) { }
+
+      //-----------------------------------------------------------------------------
+
+      public bool LoggingOff {
+         get {
+            return wxCloseEvent_GetLoggingOff(wxObject);
+         }
+         set {
+            wxCloseEvent_SetLoggingOff(wxObject, value);
+         }
+      }
+
+      public void Veto() {
+         Veto(true);
+      }
+
+      public void Veto(bool veto) {
+         wxCloseEvent_Veto(wxObject, veto);
+      }
+
+      public bool CanVeto {
+         set {
+            wxCloseEvent_SetCanVeto(wxObject, value);
+         }
+         get {
+            return wxCloseEvent_CanVeto(wxObject);
+         }
+      }
+
+      public bool GetVeto {
+         get {
+            return wxCloseEvent_GetVeto(wxObject);
+         }
+      }
+   }
 }
